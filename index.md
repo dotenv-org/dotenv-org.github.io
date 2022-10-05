@@ -3,18 +3,6 @@ layout: default
 title: "Sync .env files"
 ---
 
-<nav>
-  <div class="logo">
-    <a href="/"><img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg" width="50" /></a>
-  </div>
-
-  <ul>
-    <li><a href="/security">Security</a></li>
-    <li><a href="">Documentation</a></li>
-    <li><a href=""><button>Sign In</button></a></li>
-  </ul>
-</nav>
-
 <article class="hero" markdown="1">
 
 # Sync .env files
@@ -22,12 +10,13 @@ title: "Sync .env files"
 {:.font-weight-normal}
 #### Dotenv Vault makes it safe and easy to sync your .env files across multiple machines, teammates, and environments.
 
-[Get Started with Dotenv](/signup){:.btn}
+[Get Started with Dotenv](/signup){:.btn} &nbsp;&nbsp;[See pricing](/pricing)
 
 </article>
 
-<article class="" markdown="1">
+<article markdown="1">
 
+{:.text-center}
 ### Why you'll love using Dotenv
 
 ---
@@ -69,7 +58,9 @@ Next, commit .env.vault to code and deploy
 
 ---
 
+{:.text-center}
 #### Start syncing .env files instantly.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv](/signup){:.btn}
+
 </article>
 
 <!--
@@ -83,6 +74,3 @@ Make your experience even better!
 
 <pre><code>npx dotenv-vault pull</code></pre>
 -->
-
-
-

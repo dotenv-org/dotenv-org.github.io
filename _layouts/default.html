@@ -3,10 +3,37 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
+    <nav>
+      <div class="logo">
+        <a href="/"><img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg" width="50" /></a>
+      </div>
+
+      <ul>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/docs">Documentation</a></li>
+        <li><a href="/login"><button>Sign In</button></a></li>
+      </ul>
+    </nav>
+
     {{ content }}
+
+    <footer>
+      <div>
+        <ul class="mb-0 mt-0">
+          <li><a href="https://status.dotenv.org">Status</a></li>
+          <li><a href="/changelog">Changelog</a></li>
+          <li><a href="/legal">Legal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-right mt-02">&copy; Dotenv</p>
+      </div>
+    </footer>
   </body>
 </html>
