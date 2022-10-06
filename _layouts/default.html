@@ -8,17 +8,19 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
   </head>
   <body>
-    <nav>
+    <nav class="flex">
       <div class="logo">
         <a href="/"><img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg" width="50" /></a>
       </div>
 
-      <ul>
-        <li><a href="/pricing">Pricing</a></li>
-        <li><a href="/security">Security</a></li>
-        <li><a href="/docs">Documentation</a></li>
-        <li><a href="/login"><button>Sign In</button></a></li>
-      </ul>
+      <div class="flex-auto">
+        <ul>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/security">Security</a></li>
+          <li><a href="/docs">Documentation</a></li>
+          <li><a href="/login"><button>Sign In</button></a></li>
+        </ul>
+      </div>
     </nav>
 
     {{ content }}

@@ -43,7 +43,7 @@ body {
   background: $white;
   color: $black;
   font-family: $fontFamily;
-  padding: 1rem 0 1rem 0;
+  padding: 0.1rem 0 1rem 0;
   margin: 0;
 }
 
@@ -53,7 +53,9 @@ h3, .h3 { font-size: 1.3rem; line-height: 1.5rem; }
 h4, .h4 { font-size: 1.0rem; line-height: 1.3rem; }
 h5, .h5 { font-size: 0.8rem; line-height: 1.1rem; }
 h6, .h6 { font-size: 0.7rem; line-height: 1rem; }
-p, ul { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+p { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+ul li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+ol li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
 small, .small { font-size: 60%; }
 hr {
   border: 0;
@@ -83,7 +85,7 @@ article {
     }
   }
 
-  ul {
+  li {
     max-width: $charWidth;
   }
 
@@ -97,7 +99,7 @@ article {
   &.security-hero {
     padding-top: 4ch;
     padding-bottom: $padWidth;
-    border: 0;
+    border: 0.2rem solid $yellow;
     background: $black;
     color: $white;
     p {
@@ -117,14 +119,9 @@ article {
 
 nav {
   width: $width;
-  display: flex;
-  margin: 0.5rem auto 0 auto;
+  margin: 0.5rem auto 0.3rem auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-
-  .logo {
-    flex: 1;
-  }
 
   ul {
     list-style-type: none;
