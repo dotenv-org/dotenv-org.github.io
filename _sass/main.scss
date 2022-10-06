@@ -4,6 +4,8 @@ $fontFamily: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-se
 $rootFontSize: 20px; // rem is 1 root size
 $black:  #000000;
 $secondary: rgba(0, 0, 0, 0.8);
+$light: rgba(0, 0, 0, 0.2);
+$lighter: rgba(0, 0, 0, 0.05);
 $yellow: #ECD53F;
 $white: #fdfdfd;
 $width: 55ch;
@@ -26,6 +28,7 @@ $btn-blue: #1652F0;
 
 html {
   background: $white;
+  color: $black;
 }
 
 html.dark-mode {
@@ -38,6 +41,7 @@ html.dark-mode {
 
 body {
   background: $white;
+  color: $black;
   font-family: $fontFamily;
   padding: 1rem 0 1rem 0;
   margin: 0;
@@ -49,7 +53,7 @@ h3, .h3 { font-size: 1.3rem; line-height: 1.5rem; }
 h4, .h4 { font-size: 1.0rem; line-height: 1.3rem; }
 h5, .h5 { font-size: 0.8rem; line-height: 1.1rem; }
 h6, .h6 { font-size: 0.7rem; line-height: 1rem; }
-p { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+p, ul { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
 small, .small { font-size: 60%; }
 hr {
   border: 0;
@@ -73,6 +77,14 @@ article {
 
   p {
     max-width: $charWidth;
+
+    &.w-100 {
+      max-width: 100%;
+    }
+  }
+
+  ul {
+    max-width: $charWidth;
   }
 
   &.hero {
@@ -83,7 +95,7 @@ article {
   }
 
   &.security-hero {
-    padding-top: 2ch;
+    padding-top: 4ch;
     padding-bottom: $padWidth;
     border: 0;
     background: $black;
@@ -94,6 +106,12 @@ article {
     a {
       color: $white;
     }
+  }
+
+  .security-statement {
+    font-size: 0.7rem;
+    width: $charWidth;
+    margin: 0 auto;
   }
 }
 
@@ -123,12 +141,7 @@ nav {
 
 footer {
   width: $width;
-  display: flex;
   margin: 0.5rem auto 0 auto;
-
-  div {
-    flex: 1;
-  }
 
   ul {
     flex: 1;
@@ -151,14 +164,14 @@ footer {
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 .text-green { color: green; }
-.flex { display: flex; }
-.flex-1 { flex: 1; }
-.flex-auto { }
+.text-light { color: $light; }
 .shadow { }
 .padding-top-2 { padding-top: 2ch; }
 .rounded { border-radius: $border-radius; }
 .mt-0 { margin-top: 0; }
 .mt-02 { margin-top: 0.2rem; }
+.mt-03 { margin-top: 0.3rem; }
+.mt-04 { margin-top: 0.4rem; }
 .mt-1 { margin-top: 1rem; }
 .mb-0 { margin-bottom: 0; }
 .pb-0 { padding-bottom: 0; }
@@ -172,8 +185,10 @@ footer {
 .bl-0 { border-left: 0; }
 .br-0 { border-right: 0; }
 .w-100 { width: 100% !important; }
+.w-char-width { width: $charWidth; }
 .lh-08 { line-height: 0.8rem; }
 .font-weight-normal { font-weight: normal; }
+.italic { font-style: italic; }
 
 /* HIGHLIGHT */
 .h { border: 1px solid #0FFF50; }
@@ -199,6 +214,37 @@ table {
       border-left: 0;
       border-right: 0;
       padding: 0;
+    }
+
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
+/* FLEX */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    flex: 1;
+
+    &.flex-auto {
+      flex: none;
+    }
+    &.flex-0 {
+      flex: 0;
+    }
+    &.flex-1 {
+      flex: 1;
+    }
+    &.flex-2 {
+      flex: 2;
+    }
+    &.flex-3 {
+      flex: 3;
     }
   }
 }
@@ -255,4 +301,32 @@ code {
 .btn:active {
   background-color: #0039D7;
   border-color: #0039D7;
+}
+
+/* Blockquotes */
+blockquote{
+  font-size: 1.4em;
+  margin-bottom: 0.7rem;
+  font-style: italic;
+  color: $secondary;
+  padding: 0.5rem;
+  padding-left: 3rem;
+  border-left: 0.4rem solid $light;
+  line-height: 1.6;
+  position: relative;
+  background: $lighter;
+}
+
+blockquote::before{
+  font-family: Arial;
+  content: "\201C";
+  color: $light;
+  font-size: 3rem;
+  position: absolute;
+  left: 1rem;
+  top: 0.2rem;
+}
+
+blockquote::after{
+  content: '';
 }
