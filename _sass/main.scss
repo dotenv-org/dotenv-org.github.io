@@ -22,8 +22,7 @@ $btn-blue: #1652F0;
 
 * {
   box-sizing: border-box;
-  //margin-block-start: auto;
-  //margin-block-end: auto;
+  min-width: 0; // important, fixes flexbox issue with pre tags. https://stackoverflow.com/questions/32035406/how-to-limit-pre-tag-width-inside-flex-container
 }
 
 html {
@@ -138,10 +137,12 @@ nav.site-nav {
   margin: 0.5rem auto 0.3rem auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-bottom: 0;
 
   ul {
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 0;
 
     li {
       font-size: 0.7rem;
@@ -168,10 +169,12 @@ nav.site-nav {
 
   nav.docs-nav {
     border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
     display: block;
     padding-left: 1rem;
     padding-top: 0.5rem;
     padding-right: 1rem;
+    padding-bottom: 2rem;
     margin-right: 1rem;
     background: rgba(0, 0, 0, 0.01);
 
@@ -187,6 +190,19 @@ nav.site-nav {
       li {
         font-size: 0.7rem;
       }
+    }
+  }
+
+  .docs-content {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+    h1, h2, h3, h4, h5, h6, p { margin-bottom: 0; }
+
+    img {
+      width: 100%;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
     }
   }
 }
@@ -294,8 +310,6 @@ table {
   justify-content: top;
 
   div {
-    flex: 1;
-
     &.flex-auto {
       flex: none;
     }
@@ -315,12 +329,20 @@ table {
 }
 
 /* CODE BLOCKS */
+.bar {
+  border: 1px solid red;
+  width: auto;
+}
+
 pre {
   background: #f6f8fa;
   border-radius: $border-radius;
   padding: $padWidth / 2;
   font-size: 0.7rem;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
 }
 code {
   background: #f6f8fa;

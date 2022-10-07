@@ -10,49 +10,9 @@
     <article markdown="1" class="docs">
       <div class="flex">
         <div class="flex-1">
-          <nav class="docs-nav">
-            <p><a href="/docs">Documentation</a></p>
-
-            <h6>Getting Started</h6>
-            <ul>
-              <li><a href="/docs/tutorials/sync">Syncing</a></li>
-              <li><a href="/docs/tutorials/environments">Managing Environments</a></li>
-              <li><a href="/docs/tutorials/deploy">Deploying</a></li>
-              <li><a href="/docs/tutorials/teammates">Adding Teammates</a></li>
-              <li><a href="/docs/tutorials/access">Managing Access</a></li>
-            </ul>
-            <hr/>
-            <h6>Security</h6>
-            <ul>
-              <li><a href="/docs/security/env">.env</a></li>
-              <li><a href="/docs/security/env-vault">.env.vault</a></li>
-              <li><a href="/docs/security/env-me">.env.me</a></li>
-              <li><a href="/docs/security/env-it">IT Tokens</a></li>
-              <li><a href="/docs/security/specs">Specifications</a></li>
-            </ul>
-            <hr/>
-            <h6>CLI <a href="https://github.com/dotenv-org/dotenv-vault" class="font-weight-normal" style="font-size: 80%;">dotenv-vault</a></h6>
-            <ul>
-              <li><a href="/docs/dotenv-vault/new">new</a></li>
-              <li><a href="/docs/dotenv-vault/login">login</a></li>
-              <li><a href="/docs/dotenv-vault/logout">logout</a></li>
-              <li><a href="/docs/dotenv-vault/open">open</a></li>
-              <li><a href="/docs/dotenv-vault/push">push</a></li>
-              <li><a href="/docs/dotenv-vault/pull">pull</a></li>
-              <li><a href="/docs/dotenv-vault/build">build</a></li>
-              <li><a href="/docs/dotenv-vault/keys">keys</a></li>
-              <li><a href="/docs/dotenv-vault/versions">versions</a></li>
-              <li><a href="/docs/dotenv-vault/whoami">whoami</a></li>
-              <li><a href="/docs/dotenv-vault/status">status</a></li>
-              <li><a href="/docs/dotenv-vault/help">help</a></li>
-            </ul>
-
-            <br/>
-            <br/>
-
-          </nav>
+          {% include layouts/docs_nav.html %}
         </div>
-        <div class="flex-2">
+        <div class="flex-2 docs-content">
           {{ content }}
         </div>
       </div>

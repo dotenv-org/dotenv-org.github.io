@@ -1,0 +1,65 @@
+---
+layout: docs
+title: "dotenv-vault logout"
+parent: Docs
+---
+
+##### CLI
+
+# dotenv-vault logout
+
+Log out of dotenv-vault.
+
+#### 1. Run logout command
+
+```
+$ npx dotenv-vault logout
+
+local:    Press y (or any key) to logout and revoke credential (.env.me) or q to exit: y
+local:    Opening browser to https://vault.dotenv.org/logout?DOTENV_VAULT=vlt_6beaae5…
+local:    Waiting for logout and credential (.env.me) to be revoked... ⡿
+```
+
+#### 2. Click revoke
+
+On the next screen, click 'Revoke'.
+
+![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659309637/Screen_Shot_2022-07-31_at_3.47.08_PM_rrrslv.png)
+![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659307985/Screen_Shot_2022-07-31_at_3.48.41_PM_to1cwr.png)
+
+That's it!
+
+Attempting to use the revoked .env.me credential for any further dotenv-vault push or dotenv-vault pull commands will be denied.
+
+---
+
+## Command Details
+
+For more information on the logout command, run dotenv-vault help logout.
+
+```
+$ npx dotenv-vault help logout
+Log out
+
+USAGE
+  $ dotenv-vault logout [-y]
+
+FLAGS
+  -y, --yes  Automatic yes to prompts. Assume yes to all prompts and run non-interactively.
+
+DESCRIPTION
+  Log out
+
+EXAMPLES
+  $ dotenv-vault logout
+```
+
+##### FLAGS
+
+*-y, --yes*
+
+Automatic yes to prompts. Assume yes to all prompts and run non-interactively.
+
+```
+$ npx dotenv-vault logout -y
+```

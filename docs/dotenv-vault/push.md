@@ -1,0 +1,87 @@
+---
+layout: docs
+title: "dotenv-vault push"
+permalink: /docs/dotenv-vault/push
+parent: Docs
+---
+
+##### CLI
+
+# dotenv-vault push
+
+Push .env securely with dotenv-vault.
+
+#### 1. Run push command
+
+```
+$ npx dotenv-vault push
+
+remote:   Securely pushing (.env)... done
+remote:   Securely pushed development (.env)
+```
+
+That's it!
+
+---
+
+## Command Details
+
+For more information on the push command, run dotenv-vault help push.
+
+```
+$ npx dotenv-vault help push
+Push .env securely
+
+USAGE
+  $ dotenv-vault push [ENVIRONMENT] [FILENAME] [-m ] [-y]
+
+ARGUMENTS
+  ENVIRONMENT  Set environment to push to. Defaults to development
+  FILENAME     Set input filename. Defaults to .env
+
+FLAGS
+  -m, --dotenvMe=  Pass .env.me (DOTENV_ME) credential directly (rather than reading from .env.me file)
+  -y, --yes               Automatic yes to prompts. Assume yes to all prompts and run non-interactively.
+
+DESCRIPTION
+  Push .env securely
+
+EXAMPLES
+  $ dotenv-vault push
+```
+
+##### ARGUMENTS
+
+*[ENVIRONMENT]*
+
+Set environment to push to. Defaults to development
+
+```
+$ npx dotenv-vault push production
+```
+
+*[FILENAME]*
+
+Set input filename. Defaults to .env for development and .env.{environment} for other environments
+
+```
+$ npx dotenv-vault push production .env.production
+```
+
+##### FLAGS
+
+*-m, --dotenvMe*
+
+Pass .env.me (DOTENV_ME) credential directly (rather than reading from .env.me file)
+
+```
+$ npx dotenv-vault push --dotenvMe=me_b1831e…
+```
+
+*-y, --yes*
+
+Automatic yes to prompts. Assume yes to all prompts and run non-interactively.
+
+```
+$ npx dotenv-vault push -y
+```
