@@ -55,7 +55,7 @@ h6, .h6 { font-size: 0.7rem; line-height: 1rem; }
 p { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
 ul li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
 ol li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
-small, .small { font-size: 60%; }
+small, .small { font-size: 80%; }
 hr {
   border: 0;
   height: 0;
@@ -165,7 +165,6 @@ nav.site-nav {
   p { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
   ul li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
   ol li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
-  small, .small { font-size: 60%; }
 
   nav.docs-nav {
     border-right: 1px solid $border-color;
