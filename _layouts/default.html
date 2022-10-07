@@ -1,47 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <meta name="description" content="Sync .env files">
-    <meta name="keywords" content="dotenv, .env, dotenv-vault, environments, encrypt, vault, developer secrets, secret manager, share">
-
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-
+    {% include layouts/meta.html %}
+    {% include layouts/analytics.html %}
   </head>
   <body>
-    <nav class="flex">
-      <div class="logo">
-        <a href="/"><img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg" width="50" /></a>
-      </div>
-
-      <div class="flex-auto">
-        <ul>
-          <li><a href="/pricing">Pricing</a></li>
-          <li><a href="/security">Security</a></li>
-          <li><a href="/docs">Documentation</a></li>
-          <li><a href="/login"><button>Sign In</button></a></li>
-        </ul>
-      </div>
-    </nav>
-
+    {% include layouts/nav.html %}
     {{ content }}
-
-    <footer class="flex">
-      <div>
-        <ul class="mb-0 mt-0">
-          <li><a href="https://status.dotenv.org">Status</a></li>
-          <!--<li><a href="/changelog">Changelog</a></li>-->
-          <li><a href="/legal">Legal</a></li>
-        </ul>
-      </div>
-      <div class="flex-auto">
-        <ul class="mb-0 mt-0">
-          <li>&copy; Dotenv</li>
-        </ul>
-      </div>
-    </footer>
+    {% include layouts/footer.html %}
   </body>
 </html>

@@ -89,3 +89,5 @@ Questions about this privacy policy? Please [get in touch](mailto:support@dotenv
 
 {:.text-center}
 ~
+
+</article>

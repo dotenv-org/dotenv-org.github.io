@@ -54,7 +54,7 @@ title: "Pricing"
 
 <h4 class="mb-03 pb-0">Free</h4>
 <h1 class="mb-0 pb-0 mt-0">$0 <small>/ forever</small></h1>
-<p>Free for up to 3 teammates.</p>
+<p>Free for individuals and up to 3 teammates.</p>
 
 <div class="flex">
   <div>

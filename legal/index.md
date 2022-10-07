@@ -14,3 +14,5 @@ The fine print. We make all our policies as clear and readable as possible while
 
 <br/>
 <br/>
+
+</article>

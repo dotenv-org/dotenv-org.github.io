@@ -27,72 +27,98 @@ Let's get started. See how it works below.
 
 ---
 
-##### Step 1 – npx dotenv-vault push
+<div class="security-how-it-works">
+  <div class="flex">
+    <div>
+      <p>Step 1</p>
+      <h5>npx dotenv-vault push</h5>
+      <p>You run <code>npx dotenv-vault push</code>. Your request is started.</p>
+    </div>
+    <div>
+      <p>Step 2</p>
+      <h5>Encrypted Connection</h5>
+      <p>Your <kbd>.env</kbd> file is encrypted and sent securely over SSL to Dotenv's in-memory servers.</p>
+    </div>
+  </div>
 
-You run `npx dotenv-vault push`. Your request is started.
+  <div class="flex">
+    <div>
+      <p>Step 3</p>
+      <h5>Dotenv Servers</h5>
+      <p>This encrypted payload is decrypted and briefly held in memory to complete the next steps. Afterward, the memory is flushed. Rest assured the decrypted version is never peristed to Dotenv systems.</p>
+    </div>
+    <div>
+      <p>Step 4</p>
+      <h5>Parsing</h5>
+      <p>Your .env file is parsed line by line - in memory.</p>
+      <p>Note: There are minor differences between dotenv parsers across various languages and frameworks. So far Dotenv Vault handles 100% of these, and we continue to add test cases to cover all edge cases.</p>
+    </div>
+  </div>
 
-##### Step 2 – Encrypted Connection
+  <div class="flex">
+    <div>
+      <p>Step 5</p>
+      <h5>Secret Extraction</h5>
+      <p>Each key/value pair (and any comments) are extracted - in memory.</p>
+    </div>
+    <div>
+      <p>Step 6</p>
+      <h5>Secret Division</h5>
+      <p>The secret is divided into its separate key and value. This is by design. They will be stored in separate databases for added security. This way if an attacker somehow gained access to one database they would not be able to make sense of the data - having only half the puzzle.</p>
+    </div>
+  </div>
 
-Your <kbd>.env</kbd> file is encrypted and sent securely over SSL to Dotenv's in-memory servers.
+  <div class="flex">
+    <div>
+      <p>Step 7</p>
+      <h5>AES-GCM Encryption</h5>
+      <p>The KEY is encrypted. The VALUE is encrypted. They are encrypted with different master encryption keys. This way if an attacker somehow gained access to the VALUE decryption key they would find the data useless. They would not know if the secret belonged to Twilio or to AWS.</p>
+      <p>Encryption uses the AES-GCM algorithm. It is:</p>
 
-##### Step 3 – Dotenv Servers
+      <ul>
+        <li>well-studied</li>
+        <li>NIST recommended</li>
+        <li>an IETF standard</li>
+        <li>fast thanks to a dedicated instruction set</li>
+      </ul>
 
-This encrypted payload is decrypted and briefly held in memory to complete the next steps. Afterward, the memory is flushed. Rest assured the decrypted version is never peristed to Dotenv systems.
+      <p>Additionally, all master encryption keys are rotated on an unpublished schedule, further adding to the level of security.</p>
+    </div>
+    <div>
+      <p>Step 8</p>
+      <h5>Tokenization</h5>
+      <p>The encrypted VALUE is sent to Dotenv Vault for safe storage. A token is returned as an identifier. The token is used in the next step for mapping the KEY to the VALUE for later secure-read operations.</p>
+      <p>Multiple security measures go into the Vault. They include but are not limited to:</p>
+      <ul>
+        <li>Separate datastore from the application database</li>
+        <li>Not accessible via the internet and all external connections are prevented</li>
+        <li>Encrypted clients are required and these clients have to go through the application - which has its own additional layers of encryption</li>
+        <li>There are stricter TLS requirements for connecting to the Vault. TLS 1.0 cannot be used to connect.</li>
+        <li>The secrets stored in the Vault are not just encrypted at the datastore level. They are also encrypted at each datastore entry as you saw in the prior step(s).</li>
+      </ul>
+    </div>
+  </div>
 
-##### Step 4 – Parsing
-
-Your .env file is parsed line by line - in memory.
-
-Note: There are minor differences between dotenv parsers across various languages and frameworks. So far Dotenv Vault handles 100% of these, and we continue to add test cases to cover all edge cases.
-
-##### Step 5 – Secret Extraction
-
-Each key/value pair (and any comments) are extracted - in memory.
-
-##### Step 6 – Secret Division
-
-The secret is divided into its separate key and value. This is by design. They will be stored in separate databases for added security. This way if an attacker somehow gained access to one database they would not be able to make sense of the data - having only half the puzzle.
-
-##### Step 7 – AES-GCM Encryption
-
-The KEY is encrypted. The VALUE is encrypted. They are encrypted with different master encryption keys. This way if an attacker somehow gained access to the VALUE decryption key they would find the data useless. They would not know if the secret belonged to Twilio or to AWS.
-
-Encryption uses the AES-GCM algorithm. It is:
-
-* well-studied
-* NIST recommended
-* an IETF standard
-* fast thanks to a dedicated instruction set
-
-Additionally, all master encryption keys are rotated on an unpublished schedule, further adding to the level of security.
-
-##### Step 8 - Tokenization
-
-The encrypted VALUE is sent to Dotenv Vault for safe storage. A token is returned as an identifier. The token is used in the next step for mapping the KEY to the VALUE for later secure-read operations.
-
-Multiple security measures go into the Vault. They include but are not limited to:
-
-* Separate datastore from the application database
-* Not accessible via the internet and all external connections are prevented
-* Encrypted clients are required and these clients have to go through the application - which has its own additional layers of encryption
-* There are stricter TLS requirements for connecting to the Vault. TLS 1.0 cannot be used to connect.
-* The secrets stored in the Vault are not just encrypted at the datastore level. They are also encrypted at each datastore entry as you saw in the prior step(s).
-
-##### Step 9 - Store Key Part with Token
-
-Lastly, the encrypted KEY and token (representing the encrypted VALUE) are placed in an envelope and stored together in the application database.
-
-##### Step 10 - Success 201
-
-A success message is returned to the developer.
+  <div class="flex">
+    <div>
+      <p>Step 9</p>
+      <h5>Store Key Part with Token</h5>
+      <p>Lastly, the encrypted KEY and token (representing the encrypted VALUE) are placed in an envelope and stored together in the application database.</p>
+    </div>
+    <div>
+      <p>Step 10</p>
+      <h5>Success 201</h5>
+      <p>A success message is returned to the developer.</p>
+    </div>
+  </div>
+</div>
 
 ---
 
-## Security Specifications
+<h2 class="mb-0 text-center">Security Specifications</h2>
+<h6 class="mt-04 text-center font-weight-normal">Here's additional specifications that went into build Dotenv Vault.</h6>
 
-Here's additional specifications that went into building Dotenv Vault.
-
-<table class="pricing-table">
+<table class="specs-table">
   <tr><td><p><span class="text-green">✓</span> The Dotenv Vault is a separate datastore from the application database. This way if an attacker gains access to the application database they do not gain access to the vault datastore.</p></td></tr>
   <tr><td><p><span class="text-green">✓</span> The Dotenv Vault datastore is not accessible via the internet and all external connections are prevented. This way an attacker can not remotely access the Dotenv Vault datastore.</p></td></tr>
   <tr><td><p><span class="text-green">✓</span> Encrypted clients are required and these clients have to go through the application - which has its own layers of encryption.</p></td></tr>
@@ -103,7 +129,8 @@ Here's additional specifications that went into building Dotenv Vault.
   <tr><td><p><span class="text-green">✓</span> Encryption uses AES-GCM encryption. It is a well-studied, NIST recommended, and IEFT standard algorithim.</p></td></tr>
 </table>
 
-As you see, we go to great lengths to make sure your secrets are safe. Afterall, we keep our secrets here too.
+{:.w-100}
+**As you see, we go to great lengths to make sure your secrets are safe. Afterall, we keep our secrets here too.**
 
 ---
 

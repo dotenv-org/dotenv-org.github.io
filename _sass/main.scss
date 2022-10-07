@@ -110,6 +110,22 @@ article {
     }
   }
 
+  .security-how-it-works {
+    div.flex div {
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      h5 {
+        margin-top: 0;
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+
   .security-statement {
     font-size: 0.7rem;
     width: $charWidth;
@@ -117,7 +133,7 @@ article {
   }
 }
 
-nav {
+nav.site-nav {
   width: $width;
   margin: 0.5rem auto 0.3rem auto;
   padding-left: 0.5rem;
@@ -132,6 +148,45 @@ nav {
       display: inline-block;
       padding-left: 0.2rem;
       padding-right: 0.2rem;
+    }
+  }
+}
+
+.docs {
+  padding: 0 !important;
+
+  h1, .h1 { font-size: 1.5rem; line-height: 1.7rem; }
+  h2, .h2 { font-size: 1.3rem; line-height: 1.5rem; }
+  h3, .h3 { font-size: 1.0rem; line-height: 1.3rem; }
+  h4, .h4 { font-size: 1.0rem; line-height: 1.0rem; }
+  h5, .h5 { font-size: 0.7rem; line-height: 1rem; }
+  h6, .h6 { font-size: 0.7rem; line-height: 1rem; }
+  p { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+  ul li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+  ol li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+  small, .small { font-size: 60%; }
+
+  nav.docs-nav {
+    border-right: 1px solid $border-color;
+    display: block;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    background: rgba(0, 0, 0, 0.01);
+
+    h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+    h6 { margin-bottom: 0.2rem; }
+
+    ul {
+      margin-top: 0;
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li {
+        font-size: 0.7rem;
+      }
     }
   }
 }
@@ -206,6 +261,19 @@ table {
     padding: 0.3rem;
   }
 
+  &.specs-table {
+    td {
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      padding: 0;
+    }
+
+    p {
+      max-width: 100%;
+    }
+  }
+
   &.pricing-table {
     td {
       border-left: 0;
@@ -222,8 +290,8 @@ table {
 /* FLEX */
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: top;
+  justify-content: top;
 
   div {
     flex: 1;

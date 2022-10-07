@@ -3,7 +3,7 @@ layout: default
 title: "Sync .env files"
 ---
 
-<article class="hero" markdown="1">
+<article class="hero" markdown="1" style="background-image: url(https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg) !important; background-size: 25rem; background-repeat: no-repeat; background-position: 12rem -5rem;">
 
 # Sync .env files
 
@@ -33,6 +33,8 @@ remote:   Securely pushed development (.env)
 Run npx dotenv-vault open to view in the ui
 ```
 
+[Watch the 1 minute overview video](https://www.youtube.com/watch?v=z-lBjxfhWeY)
+
 ### Multiple Environments
 
 After you've pushed your .env file, you can manage your secrets across multiple environments. Open an environment to view and edit its environment variables.
@@ -46,7 +48,7 @@ Run npx dotenv-vault build to encrypt .env.vault file
 
 ### Deploy Everywhere™
 
-Dotenv Vault works everywhere you already deploy your code. Run the build command to generate your encrypted .env.vault file, commit that safely to code, and deploy. There's nothing else like it. <a href="">Learn more</a>
+Dotenv Vault works everywhere you already deploy your code. Run the build command to generate your encrypted .env.vault file, commit that safely to code, and deploy. There's nothing else like it.
 
 ```
 $ npx dotenv-vault build
