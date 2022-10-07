@@ -32,7 +32,7 @@ title: "Pricing"
     <br/>
     <small><span class="text-green">✓</span> Custom environments</small>
     <br/>
-    <small><span class="text-light">✓</span> Audit log (soon)</small>
+    <small><span class="text-light">✓</span> Audit log (2023)</small>
 
   </div>
   <div>
@@ -42,7 +42,7 @@ title: "Pricing"
     <br/>
     <small><span class="text-green">✓</span> User access controls</small>
     <br/>
-    <small><span class="text-light">✓</span> Trusted IPs (soon)</small>
+    <small><span class="text-light">✓</span> Trusted IPs (2023)</small>
   </div>
   <div>
   </div>
