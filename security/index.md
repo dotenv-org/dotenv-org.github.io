@@ -29,89 +29,55 @@ Let's get started. See how it works below.
 
 <div class="security-how-it-works">
   <div class="flex">
-    <div>
-      <p>Step 1</p>
-      <h5>npx dotenv-vault push</h5>
-      <p>You run <code>npx dotenv-vault push</code>. Your request is started.</p>
+    <div class="flex-1">
+      {% include vault/step1.html %}
     </div>
-    <div>
-      <p>Step 2</p>
-      <h5>Encrypted Connection</h5>
-      <p>Your <kbd>.env</kbd> file is encrypted and sent securely over SSL to Dotenv's in-memory servers.</p>
+    <div class="flex-1">
+      {% include vault/step2.html %}
     </div>
   </div>
 
   <div class="flex">
-    <div>
-      <p>Step 3</p>
-      <h5>Dotenv Servers</h5>
-      <p>This encrypted payload is decrypted and briefly held in memory to complete the next steps. Afterward, the memory is flushed. Rest assured the decrypted version is never peristed to Dotenv systems.</p>
+    <div class="flex-1">
+      {% include vault/step3.html %}
     </div>
-    <div>
-      <p>Step 4</p>
-      <h5>Parsing</h5>
-      <p>Your .env file is parsed line by line - in memory.</p>
-      <p>Note: There are minor differences between dotenv parsers across various languages and frameworks. So far Dotenv Vault handles 100% of these, and we continue to add test cases to cover all edge cases.</p>
+    <div class="flex-1">
+      {% include vault/step4.html %}
     </div>
   </div>
 
   <div class="flex">
-    <div>
-      <p>Step 5</p>
-      <h5>Secret Extraction</h5>
-      <p>Each key/value pair (and any comments) are extracted - in memory.</p>
+    <div class="flex-1">
+      {% include vault/step5.html %}
     </div>
-    <div>
-      <p>Step 6</p>
-      <h5>Secret Division</h5>
-      <p>The secret is divided into its separate key and value. This is by design. They will be stored in separate databases for added security. This way if an attacker somehow gained access to one database they would not be able to make sense of the data - having only half the puzzle.</p>
+    <div class="flex-1">
+      {% include vault/step6.html %}
     </div>
   </div>
 
   <div class="flex">
-    <div>
-      <p>Step 7</p>
-      <h5>AES-GCM Encryption</h5>
-      <p>The KEY is encrypted. The VALUE is encrypted. They are encrypted with different master encryption keys. This way if an attacker somehow gained access to the VALUE decryption key they would find the data useless. They would not know if the secret belonged to Twilio or to AWS.</p>
-      <p>Encryption uses the AES-GCM algorithm. It is:</p>
-
-      <ul>
-        <li>well-studied</li>
-        <li>NIST recommended</li>
-        <li>an IETF standard</li>
-        <li>fast thanks to a dedicated instruction set</li>
-      </ul>
-
-      <p>Additionally, all master encryption keys are rotated on an unpublished schedule, further adding to the level of security.</p>
+    <div class="flex-1">
+      {% include vault/step7.html %}
     </div>
-    <div>
-      <p>Step 8</p>
-      <h5>Tokenization</h5>
-      <p>The encrypted VALUE is sent to Dotenv Vault for safe storage. A token is returned as an identifier. The token is used in the next step for mapping the KEY to the VALUE for later secure-read operations.</p>
-      <p>Multiple security measures go into the Vault. They include but are not limited to:</p>
-      <ul>
-        <li>Separate datastore from the application database</li>
-        <li>Not accessible via the internet and all external connections are prevented</li>
-        <li>Encrypted clients are required and these clients have to go through the application - which has its own additional layers of encryption</li>
-        <li>There are stricter TLS requirements for connecting to the Vault. TLS 1.0 cannot be used to connect.</li>
-        <li>The secrets stored in the Vault are not just encrypted at the datastore level. They are also encrypted at each datastore entry as you saw in the prior step(s).</li>
-      </ul>
+    <div class="flex-1">
+      {% include vault/step8.html %}
     </div>
   </div>
 
   <div class="flex">
-    <div>
-      <p>Step 9</p>
-      <h5>Store Key Part with Token</h5>
-      <p>Lastly, the encrypted KEY and token (representing the encrypted VALUE) are placed in an envelope and stored together in the application database.</p>
+    <div class="flex-1">
+      {% include vault/step9.html %}
     </div>
-    <div>
-      <p>Step 10</p>
-      <h5>Success 201</h5>
-      <p>A success message is returned to the developer.</p>
+    <div class="flex-1">
+      {% include vault/step10.html %}
     </div>
   </div>
 </div>
+
+---
+
+{:.text-center}
+#### Learn more about security in the [security docs](/docs/security).
 
 ---
 

@@ -1,0 +1,11 @@
+<p class="mb-0">Step 8</p>
+<h5 class="mt-0 mb-02">Tokenization</h5>
+<p class="mt-0">The encrypted VALUE is sent to Dotenv Vault for safe storage. A token is returned as an identifier. The token is used in the next step for mapping the KEY to the VALUE for later secure-read operations.</p>
+<p>Multiple security measures go into the Vault. They include but are not limited to:</p>
+<ul>
+  <li>Separate datastore from the application database</li>
+  <li>Not accessible via the internet and all external connections are prevented</li>
+  <li>Encrypted clients are required and these clients have to go through the application - which has its own additional layers of encryption</li>
+  <li>There are stricter TLS requirements for connecting to the Vault. TLS 1.0 cannot be used to connect.</li>
+  <li>The secrets stored in the Vault are not just encrypted at the datastore level. They are also encrypted at each datastore entry as you saw in the prior step(s).</li>
+</ul>
