@@ -8,14 +8,25 @@
     {% include layouts/nav.html %}
 
     <article markdown="1" class="docs">
-      <div class="flex">
-        <div class="flex-1">
-          {% include layouts/docs_nav.html %}
-        </div>
-        <div class="flex-2 docs-content">
-          {{ content }}
-        </div>
-      </div>
+
+      <table class="docs-table">
+        <tr>
+          <td class="nav">
+            {% include layouts/docs_nav.html %}
+          </td>
+          <td class="content">
+            {{ content }}
+          </td>
+        </tr>
+        <tr>
+          <td class="nav">
+          </td>
+          <td class="content">
+            {% include layouts/github_edit_link.html %}
+          </td>
+        </tr>
+      </table>
+
     </article>
 
     {% include layouts/footer.html %}
