@@ -35,6 +35,11 @@ social:
 favicon:
   source: "favicon.png"
 
+# Exclude files
+exclude:
+  - .DS_Store
+  - README.md
+
 plugins:
   - jekyll-target-blank
   - jekyll-redirect-from
