@@ -33,3 +33,4 @@ plugins:
   - liquid_reading_time
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-minifier

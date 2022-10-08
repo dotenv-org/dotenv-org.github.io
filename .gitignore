@@ -3,3 +3,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 node_modules
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
