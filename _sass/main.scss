@@ -266,6 +266,7 @@ footer {
 .lh-08 { line-height: 0.8rem; }
 .font-weight-normal { font-weight: normal; }
 .italic { font-style: italic; }
+.align-middle { vertical-align: middle; }
 
 /* HIGHLIGHT */
 .h { border: 1px solid #0FFF50; }
@@ -309,6 +310,25 @@ table {
     p {
       max-width: 100%;
     }
+  }
+
+  &.libraries-table {
+    width: 100%;
+
+    tr td:first-child {
+      max-width: 100%;
+      white-space: nowrap;
+      width: 3rem;
+    }
+
+    tr td:last-child {
+      width: 3rem;
+    }
+
+    .small { 
+      font-size: 0.6rem;
+    }
+
   }
 }
 
