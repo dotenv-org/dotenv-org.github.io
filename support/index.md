@@ -11,11 +11,11 @@ Email Support, GitHub Issues, and Documentation.
 
 ---
 
-### Email Support
+### Documentation
 
-Talk to a real person over email at [support@dotenv.org](mailto:support@dotenv.org). It's the fastest way to get help.
+Read and view documentation. We are adding to it daily.
 
-[Email Support](mailto:support@dotenv.org){:.btn}
+[Documentation](/docs){:.btn}
 
 ---
 
@@ -27,17 +27,17 @@ Have an issue or bug that you've found? Let us know on GitHub issues. This can b
 
 ---
 
-### Documentation
+### Email Support
 
-Read and view documentation. We are adding to it daily.
+Talk to a real person over email at [support@dotenv.org](mailto:support@dotenv.org). It's the fastest way to get help.
 
-[Documentation](/docs){:.btn}
+[Email Support](mailto:support@dotenv.org){:.btn}
 
 ---
 
 ##### Need to to report a security vulnerability?
 
-If you believe you have discovered a security or privacy vulnerability in any of Dotenv's services, please report it to us at [security@dotenv.org](mailto:security@dotenv.org).
+If you believe you have discovered a security or privacy vulnerability in any of Dotenv's services, tools, or libraries, please report it to us at [security@dotenv.org](mailto:security@dotenv.org).
 
 <br/>
 
