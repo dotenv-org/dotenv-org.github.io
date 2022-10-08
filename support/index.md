@@ -7,7 +7,7 @@ title: "Support"
 
 # Get Support
 
-Email Support, GitHub Issues, and Documentation.
+Documentation, GitHub Issues, and Email Support (fastest).
 
 ---
 
