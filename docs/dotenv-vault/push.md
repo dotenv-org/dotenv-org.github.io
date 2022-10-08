@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: "dotenv-vault push"
-permalink: /docs/dotenv-vault/push
 parent: Docs
 ---
 

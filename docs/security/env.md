@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: ".env File - Security"
+redirect_from:
+  - /env
 ---
 
 <div class="text-right mb-0 p"><small>{{ content | reading_time | pluralize: "minute" }} reading time</small></div>

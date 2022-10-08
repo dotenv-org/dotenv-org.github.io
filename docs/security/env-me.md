@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: ".env.me Credential - Security"
+redirect_from:
+  - /env-me
 ---
 
 <div class="text-right mb-0 p"><small>{{ content | reading_time | pluralize: "minute" }} reading time</small></div>

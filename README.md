@@ -11,6 +11,6 @@ bundle exec jekyll serve --livereload
 ## Build
 
 ```
-bundle exe jekyll build
+bundle exec jekyll build
 cp -a _site/. ../dotenv.org/public/
 ```

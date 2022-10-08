@@ -2,7 +2,6 @@
 layout: docs
 title: "dotenv-vault pull"
 parent: Docs
-permalink: "/docs/dotenv-vault/pull"
 ---
 
 ##### CLI
