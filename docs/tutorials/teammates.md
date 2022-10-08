@@ -2,6 +2,8 @@
 layout: docs
 title: "Adding Teammates - Tutorial"
 parent: Docs
+redirect_from:
+  - /docs/getting-started/with-adding-teammates
 ---
 
 ##### Tutorial

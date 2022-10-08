@@ -2,6 +2,8 @@
 layout: docs
 title: "Managing Environments - Tutorial"
 parent: Docs
+redirect_from:
+  - /docs/getting-started/with-multiple-environments
 ---
 
 ##### Tutorial
