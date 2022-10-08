@@ -1,4 +1,4 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.dotenv.org" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Dotenv" # the name of your site, e.g. ACME Corp.
 
@@ -8,3 +8,6 @@ github_edit_link_text: "Edit this page on GitHub"
 github_edit_repository: "https://github.com/dotenv-org/www" # the github URL for your repo
 github_edit_branch: "master" # the branch that your docs is served from
 github_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+plugins:
+  - jekyll-target-blank
