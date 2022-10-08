@@ -1,6 +1,7 @@
 url: "https://www.dotenv.org" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Dotenv" # the name of your site, e.g. ACME Corp.
+logo: "https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg"
 
 # Footer "Edit this page on GitHub" link text
 github_edit_link: true # show or hide edit this page link
@@ -9,9 +10,26 @@ github_edit_repository: "https://github.com/dotenv-org/www" # the github URL for
 github_edit_branch: "master" # the branch that your docs is served from
 github_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
+# For SEO Jekyll Plugin
+author:
+  name: Dotenv
+  twitter: dotenvorg
+  image: https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png
+twitter:
+  username: dotenvorg
+  card: summary
+social:
+  name: Dotenv
+  links:
+    - https://twitter.com/dotenvorg
+    - https://github.com/dotenv-org
+    - https://linkedin.com/company/dotenvorg
+    - https://www.youtube.com/channel/UC1ghIojOGfkXlhR94e5-jdQ
+
 plugins:
   - jekyll-target-blank
   - jekyll-redirect-from
   - liquid_pluralize
   - liquid_reading_time
   - jekyll-sitemap
+  - jekyll-seo-tag
