@@ -5,7 +5,7 @@ redirect_from:
   - /env-vault
 ---
 
-<div class="text-right mb-0 p"><small>{{ content | reading_time | pluralize: "minute" }} reading time</small></div>
+{% include helpers/reading_time.html %}
 
 ##### Security
 
