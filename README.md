@@ -5,12 +5,12 @@ Source code for www.dotenv.org
 ## Development
 
 ```
-bundle exec jekyll serve --livereload
+bundle exec jekyll serve --livereload --verbose
 ```
 
 ## Build
 
 ```
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build --verbose
 cp -a _site/. ../dotenv.org/public/
 ```
