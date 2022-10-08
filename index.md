@@ -10,7 +10,7 @@ title: "Sync .env files"
 {:.font-weight-normal}
 #### Dotenv Vault makes it safe and easy to sync your .env files across multiple machines, teammates, and environments.
 
-[Get Started with Dotenv](/signup){:.btn} &nbsp;&nbsp;[See pricing](/pricing)
+[Get Started with Dotenv](/signup){:.btn} &nbsp;&nbsp;[See Pricing](/pricing)
 
 </article>
 

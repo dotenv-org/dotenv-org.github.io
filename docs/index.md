@@ -7,4 +7,7 @@ title: "Docs"
 
 In these pages you'll find tutorials that will teach you how to use Dotenv, and reference documentation for all the moving parts.
 
-Get started with [syncing .env files](/docs/tutorials/sync).
+{:.font-weight-normal}
+#### [Get started in 60 seconds →](/docs/tutorials/sync)
+
+Learn to sync .env files.
