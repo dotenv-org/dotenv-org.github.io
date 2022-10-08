@@ -12,3 +12,5 @@ github_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump in
 plugins:
   - jekyll-target-blank
   - jekyll-redirect-from
+  - liquid_pluralize
+  - liquid_reading_time

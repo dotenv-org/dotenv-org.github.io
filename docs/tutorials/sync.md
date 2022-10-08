@@ -6,6 +6,8 @@ redirect_from:
   - /docs/getting-started/with-dotenv-vault
 ---
 
+<div class="text-right mb-0 p"><small>{{ content | reading_time | pluralize: "minute" }} reading time</small></div>
+
 ##### Tutorial
 
 # Syncing .env Files
