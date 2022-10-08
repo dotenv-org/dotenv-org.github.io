@@ -26,6 +26,10 @@ social:
     - https://linkedin.com/company/dotenvorg
     - https://www.youtube.com/channel/UC1ghIojOGfkXlhR94e5-jdQ
 
+# For Favicon Plugin
+favicon:
+  source: "favicon.svg"
+
 plugins:
   - jekyll-target-blank
   - jekyll-redirect-from
@@ -33,4 +37,4 @@ plugins:
   - liquid_reading_time
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-minifier
+  - jekyll-favicon
