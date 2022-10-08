@@ -4,6 +4,7 @@ title: "Syncing .env Files - Tutorial"
 parent: Docs
 redirect_from:
   - /docs/getting-started/with-dotenv-vault
+  - /get-started
 ---
 
 {% include helpers/reading_time.html %}
