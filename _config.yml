@@ -28,7 +28,7 @@ social:
 
 # For Favicon Plugin
 favicon:
-  source: "favicon.svg"
+  source: "favicon.png"
 
 plugins:
   - jekyll-target-blank
