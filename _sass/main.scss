@@ -48,15 +48,15 @@ body {
   margin: 0;
 }
 
-h1, .h1 { font-size: 2rem; line-height: 2.1rem; }
-h2, .h2 { font-size: 1.5rem; line-height: 1.7rem; }
-h3, .h3 { font-size: 1.3rem; line-height: 1.5rem; }
-h4, .h4 { font-size: 1.0rem; line-height: 1.3rem; }
-h5, .h5 { font-size: 0.8rem; line-height: 1.1rem; }
-h6, .h6 { font-size: 0.7rem; line-height: 1rem; }
-p, .p { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
-ul li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
-ol li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+h1, .h1 { font-size: 2rem; line-height: 1.2; }
+h2, .h2 { font-size: 1.5rem; line-height: 1.2; }
+h3, .h3 { font-size: 1.3rem; line-height: 1.2; }
+h4, .h4 { font-size: 1.0rem; line-height: 1.2; }
+h5, .h5 { font-size: 0.8rem; line-height: 1.2; }
+h6, .h6 { font-size: 0.7rem; line-height: 1.2; }
+p, .p { font-size: 0.7rem; line-height: 1.5; color: $secondary; }
+ul li { font-size: 0.7rem; line-height: 1.5; color: $secondary; }
+ol li { font-size: 0.7rem; line-height: 1.5; color: $secondary; }
 small, .small { font-size: 80%; }
 hr {
   border: 0;
@@ -148,15 +148,15 @@ nav.site-nav {
 .docs {
   padding: 0 !important;
 
-  h1, .h1 { font-size: 1.5rem; line-height: 1.7rem; }
-  h2, .h2 { font-size: 1.3rem; line-height: 1.5rem; }
-  h3, .h3 { font-size: 1.0rem; line-height: 1.3rem; }
-  h4, .h4 { font-size: 1.0rem; line-height: 1.0rem; }
-  h5, .h5 { font-size: 0.7rem; line-height: 1rem; }
-  h6, .h6 { font-size: 0.7rem; line-height: 1rem; }
-  p { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
-  ul li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
-  ol li { font-size: 0.7rem; line-height: 1rem; color: $secondary; }
+  h1, .h1 { font-size: 1.5rem; }
+  h2, .h2 { font-size: 1.3rem; }
+  h3, .h3 { font-size: 1.0rem; }
+  h4, .h4 { font-size: 1.0rem; }
+  h5, .h5 { font-size: 0.7rem; }
+  h6, .h6 { font-size: 0.7rem; }
+  p { font-size: 0.7rem; color: $secondary; }
+  ul li { font-size: 0.7rem; color: $secondary; }
+  ol li { font-size: 0.7rem; color: $secondary; }
 
   table.docs-table {
     border-collapse: collapse;
@@ -263,7 +263,6 @@ footer {
 .br-0 { border-right: 0; }
 .w-100 { width: 100% !important; }
 .w-char-width { width: $charWidth; }
-.lh-08 { line-height: 0.8rem; }
 .font-weight-normal { font-weight: normal; }
 .italic { font-style: italic; }
 .align-middle { vertical-align: middle; }
@@ -379,6 +378,7 @@ code {
 
 /* CSS */
 .btn {
+  display: inline-block;
   appearance: button;
   background-color: $btn-blue;
   border: 1px solid $btn-blue;
@@ -386,9 +386,9 @@ code {
   color: #FFFFFF;
   cursor: pointer;
   font-size: 0.7rem;
-  line-height: 0.6rem;
+  line-height: 1.5;
   overflow: visible;
-  padding: 0.5rem 0.6rem;
+  padding: 0.3rem 0.6rem;
   position: relative;
   text-align: center;
   text-transform: none;
