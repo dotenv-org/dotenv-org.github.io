@@ -16,35 +16,32 @@ title: "Pricing"
 <p>Keep your secrets safe. Advanced security for teams of all sizes.</p>
 
 <div class="flex">
-  <div>
-    <small><span class="text-green">✓</span> Unlimited projects</small>
+  <div class="flex-1">
+    <small><span class="text-green">✓</span> <small>Unlimited projects</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Partner integrations</small>
+    <small><span class="text-green">✓</span> <small>Partner integrations</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Slack notifications</small>
+    <small><span class="text-green">✓</span> <small>Slack notifications</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Version history</small>
+    <small><span class="text-green">✓</span> <small>Version history</small></small>
   </div>
-  <div>
-    <small><span class="text-green">✓</span> Unlimited teammates</small>
+  <div class="flex-1">
+    <small><span class="text-green">✓</span> <small>Unlimited teammates</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Multiple environments</small>
+    <small><span class="text-green">✓</span> <small>Multiple environments</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Custom environments</small>
+    <small><span class="text-green">✓</span> <small>Custom environments</small></small>
     <br/>
-    <small><span class="text-light">✓</span> Audit log (2023)</small>
-
+    <small><span class="text-light">✓</span> <small>Audit log (2023)</small></small>
   </div>
-  <div>
-    <small><span class="text-green">✓</span> Standard support</small>
+  <div class="flex-1">
+    <small><span class="text-green">✓</span> <small>Standard support</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Deploy Everywhere™</small>
+    <small><span class="text-green">✓</span> <small>Deploy Everywhere™</small></small>
     <br/>
-    <small><span class="text-green">✓</span> User access controls</small>
+    <small><span class="text-green">✓</span> <small>User access controls</small></small>
     <br/>
-    <small><span class="text-light">✓</span> Trusted IPs (2023)</small>
-  </div>
-  <div>
+    <small><span class="text-light">✓</span> <small>Trusted IPs (2023)</small></small>
   </div>
 </div>
 
@@ -57,22 +54,20 @@ title: "Pricing"
 <p>Free for individuals and up to 3 teammates.</p>
 
 <div class="flex">
-  <div>
-    <small><span class="text-green">✓</span> Unlimited projects</small>
+  <div class="flex-1">
+    <small><span class="text-green">✓</span> <small>Unlimited projects</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Partner integrations</small>
+    <small><span class="text-green">✓</span> <small>Partner integrations</small></small>
   </div>
-  <div>
-    <small><span class="text-green">✓</span> Up to 3 teammates</small>
+  <div class="flex-1">
+    <small><span class="text-green">✓</span> <small>Up to 3 teammates</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Multiple environments</small>
+    <small><span class="text-green">✓</span> <small>Multiple environments</small></small>
   </div>
-  <div>
-    <small><span class="text-green">✓</span> Community support</small>
+  <div class="flex-1">
+    <small><span class="text-green">✓</span> <small>Community support</small></small>
     <br/>
-    <small><span class="text-green">✓</span> Deploy Everywhere™</small>
-  </div>
-  <div>
+    <small><span class="text-green">✓</span> <small>Deploy Everywhere™</small></small>
   </div>
 </div>
 
