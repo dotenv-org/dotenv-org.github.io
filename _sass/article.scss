@@ -1,0 +1,57 @@
+article {
+  border: 0.5rem solid $borderColor;
+  padding-right: $padWidth;
+  padding-left: $padWidth;
+  border-right-width: 0.2rem;
+  border-bottom-width: 0.2rem;
+  border-top-width: 1px;
+  margin-bottom: 0rem;
+  background: $white;
+
+  p {
+    max-width: $charWidth;
+
+    &.w-100 {
+      max-width: 100%;
+    }
+  }
+
+  li {
+    max-width: $charWidth;
+  }
+
+  &.hero {
+    padding-top: 2ch;
+    padding-bottom: $padWidth;
+    border: 0;
+    background: $yellow;
+  }
+
+  &.security-hero {
+    padding-top: 4ch;
+    padding-bottom: $padWidth;
+    border: 0.2rem solid $yellow;
+    background: $black;
+    color: $white;
+    p {
+      color: $white;
+    }
+    a {
+      color: $white;
+    }
+  }
+
+  .security-how-it-works {
+    div.flex div.flex-1 {
+      padding: 0 0.5rem;
+    }
+  }
+
+  .security-statement {
+    font-size: 0.7rem;
+    width: $charWidth;
+    margin: 0 auto;
+  }
+}
+
+
