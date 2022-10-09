@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include layouts/meta.html %}
+    {% include layouts/analytics.html %}
+  </head>
+  <body class="bg-lighter">
+    <div class="wrapper">
+      {{ content }}
+
+      <div class="focus">
+        <form class="mb-1 mt-5">
+          <fieldset>
+            <h5 class="text-center">Welcome back!</h5>
+
+            <p>
+              <input autofocus="autofocus" placeholder="Email" class="bg-black text-white text-left form-control form-control border-secondary" required="required" autocomplete="off" type="email" name="email" id="email">
+            </p>
+            <input type="submit" value="Continue">
+            <p class="text-center">
+              <input name="keep_me_logged_in" type="hidden" value="0" autocomplete="off">
+              <input value="1" class="form-check-input" type="checkbox" checked="checked" name="keep_me_logged_in" id="keep_me_logged_in">
+              <label for="keep_me_logged_in">Keep me logged in</label>
+            </p>
+          </fieldset>
+        </form>
+
+        <a href="/signup" class="btn btn-outline block mb-5 w-100">
+          Don't have an account? <u>Sign Up</u>
+        </div>
+      </div>
+
+      <footer>
+        <div class="flex">
+          <div class="flex-1">
+            <ul class="mb-0 mt-0 text-center">
+              <li><a href="/support">Help &amp; Support</a></li>
+              <li><a href="/legal">Privacy & Terms</a></li>
+              <li><a href="/" class="text-secondary text-decoration-none">&copy; Dotenv</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>

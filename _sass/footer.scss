@@ -1,0 +1,23 @@
+footer {
+  margin: 0 auto;
+
+  ul {
+    flex: 1;
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      font-size: 0.7rem;
+      display: inline-block;
+      padding-left: 0.2rem;
+      padding-right: 0.2rem;
+      font-size: 0.6rem;
+
+      a {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+

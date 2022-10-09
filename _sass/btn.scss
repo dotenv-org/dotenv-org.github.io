@@ -1,0 +1,54 @@
+.btn {
+  display: inline-block;
+  appearance: button;
+  background-color: $btnBlue;
+  border: 1px solid $btnBlue;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 0.7rem;
+  line-height: 1.5;
+  overflow: visible;
+  padding: 0.3rem 0.6rem;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  font-weight: normal;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.btn:disabled {
+  opacity: .5;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover {
+  background-color: #0A46E4;
+  border-color: #0A46E4;
+}
+
+.btn:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}
+
+.btn-outline {
+  background: none;
+  border: 1px solid $light;
+  color: $gray;
+
+  &:hover, &:active {
+    background: none;
+    border: 1px solid $gray;
+    text-decoration: none;
+    color: $secondary;
+  }
+}

@@ -5,8 +5,10 @@
     {% include layouts/analytics.html %}
   </head>
   <body>
-    {% include layouts/nav.html %}
-    {{ content }}
-    {% include layouts/footer.html %}
+    <div class="wrapper">
+      {% include layouts/nav.html %}
+      {{ content }}
+      {% include layouts/footer.html %}
+    </div>
   </body>
 </html>

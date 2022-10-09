@@ -13,10 +13,10 @@ $white: #fdfdfd;
 $width: 55ch;
 $charWidth: 44ch;
 $padWidth: 2ch;
-$border-color: rgba(0, 0, 0, 0.1);
-$border-radius: 0.1rem;
-$border-width: 0.5rem;
-$btn-blue: #1652F0;
+$borderColor: rgba(0, 0, 0, 0.1);
+$borderRadius: 0.1rem;
+$borderWidth: 0.5rem;
+$btnBlue: #1652F0;
 
 :root {
   font-size: $rootFontSize;
@@ -27,25 +27,20 @@ $btn-blue: #1652F0;
   min-width: 0; // important, fixes flexbox issue with pre tags. https://stackoverflow.com/questions/32035406/how-to-limit-pre-tag-width-inside-flex-container
 }
 
-html {
-  background: $white;
-  color: $black;
-}
-
-html.dark-mode {
-  filter: invert(100%);
-
-  img {
-    filter: invert(100%);
-  }
-}
-
 body {
   background: $white;
   color: $black;
   font-family: $fontFamily;
   padding: 0.1rem 0 1rem 0;
   margin: 0;
+}
+
+body.dark-mode {
+  filter: invert(100%);
+
+  img {
+    filter: invert(100%);
+  }
 }
 
 h1, .h1 { font-size: 2rem; line-height: 1.2; }
@@ -65,17 +60,22 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-article {
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
   width: $width;
+  margin: 0 auto;
+}
+
+article {
   padding-left: $padWidth;
   padding-right: $padWidth;
-  // border-radius: $border-radius;
-  //box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  border: 0.5rem solid $border-color;
+  border: 0.5rem solid $borderColor;
   border-right-width: 0.2rem;
   border-bottom-width: 0.2rem;
   border-top-width: 1px;
-  margin: 0 auto;
   margin-bottom: 0rem;
 
   p {
@@ -125,10 +125,7 @@ article {
 }
 
 nav.site-nav {
-  width: $width;
   margin: 0.5rem auto 0.3rem auto;
-  //padding-left: 0.5rem;
-  //padding-right: 0.5rem;
   padding-bottom: 0;
 
   ul {
@@ -180,8 +177,8 @@ nav.site-nav {
 
         img {
           width: 100%;
-          border: 1px solid $border-color;
-          border-radius: $border-radius;
+          border: 1px solid $borderColor;
+          border-radius: $borderRadius;
         }
       }
     }
@@ -209,68 +206,6 @@ nav.site-nav {
 
 }
 
-footer {
-  width: $width;
-  margin: 0.5rem auto 0 auto;
-
-  ul {
-    flex: 1;
-    list-style-type: none;
-    padding-left: 0;
-
-    li {
-      font-size: 0.7rem;
-      display: inline-block;
-      padding-left: 0.2rem;
-      padding-right: 0.2rem;
-    }
-  }
-}
-
-/* UTIILITIES */
-.m-auto { margin: 0 auto; }
-.inline { display: inline-block; }
-.v-middle { vertical-align: middle; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.text-green { color: green; }
-.text-light { color: $light; }
-.text-gray, .text-grey { color: $gray; }
-.text-black { color: $black; }
-.text-secondary { color: $secondary; }
-.text-decoration-none { text-decoration: none; }
-.shadow { }
-.padding-top-2 { padding-top: 2ch; }
-.rounded { border-radius: $border-radius; }
-.mt-0 { margin-top: 0; }
-.mt-02 { margin-top: 0.2rem; }
-.mt-03 { margin-top: 0.3rem; }
-.mt-04 { margin-top: 0.4rem; }
-.mt-1 { margin-top: 1rem; }
-.mb-0 { margin-bottom: 0; }
-.mb-1 { margin-bottom: 1rem; }
-.mb-02 { margin-bottom: 0.2rem; }
-.mb-03 { margin-bottom: 0.3rem; }
-.mb-04 { margin-bottom: 0.4rem; }
-.mb-05 { margin-bottom: 0.5rem; }
-.mb-06 { margin-bottom: 0.6rem; }
-.mb-07 { margin-bottom: 0.7rem; }
-.mb-08 { margin-bottom: 0.8rem; }
-.pb-0 { padding-bottom: 0; }
-.pr-1 { padding-right: 1rem; }
-.pr-08 { padding-right: 0.8rem; }
-.pr-06 { padding-right: 0.6rem; }
-.bl-0 { border-left: 0; }
-.br-0 { border-right: 0; }
-.w-100 { width: 100% !important; }
-.w-char-width { width: $charWidth; }
-.font-weight-normal { font-weight: normal; }
-.italic { font-style: italic; }
-.align-middle { vertical-align: middle; }
-
-/* HIGHLIGHT */
-.h { border: 1px solid #0FFF50; }
-
 /* TABLE */
 table {
   //font-size: 0.5rem;
@@ -283,7 +218,7 @@ table {
   }
 
   th, td {
-    border: 1px solid $border-color;
+    border: 1px solid $borderColor;
     padding: 0.3rem;
   }
 
@@ -365,7 +300,7 @@ table {
 
 pre {
   background: #f6f8fa;
-  border-radius: $border-radius;
+  border-radius: $borderRadius;
   padding: $padWidth / 2;
   font-size: 0.7rem;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
@@ -378,48 +313,6 @@ code {
 }
 
 /* CSS */
-.btn {
-  display: inline-block;
-  appearance: button;
-  background-color: $btn-blue;
-  border: 1px solid $btn-blue;
-  border-radius: 4px;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 0.7rem;
-  line-height: 1.5;
-  overflow: visible;
-  padding: 0.3rem 0.6rem;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  text-decoration: none;
-  transition: all 80ms ease-in-out;
-  user-select: none;
-  font-weight: normal;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: fit-content;
-}
-
-.btn:disabled {
-  opacity: .5;
-}
-
-.btn:focus {
-  outline: 0;
-}
-
-.btn:hover {
-  background-color: #0A46E4;
-  border-color: #0A46E4;
-}
-
-.btn:active {
-  background-color: #0039D7;
-  border-color: #0039D7;
-}
-
 /* Blockquotes */
 blockquote{
   font-size: 1.4em;
@@ -446,4 +339,9 @@ blockquote::before{
 
 blockquote::after{
   content: '';
+}
+
+.focus {
+  width: 18rem;
+  margin: 0 auto;
 }

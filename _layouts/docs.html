@@ -5,30 +5,32 @@
     {% include layouts/analytics.html %}
   </head>
   <body>
-    {% include layouts/nav.html %}
+    <div class="wrapper">
+      {% include layouts/nav.html %}
 
-    <article markdown="1" class="docs">
+      <article markdown="1" class="docs">
 
-      <table class="docs-table">
-        <tr>
-          <td class="nav">
-            {% include layouts/docs_nav.html %}
-          </td>
-          <td class="content">
-            {{ content }}
-          </td>
-        </tr>
-        <tr>
-          <td class="nav">
-          </td>
-          <td class="content">
-            {% include layouts/github_edit_link.html %}
-          </td>
-        </tr>
-      </table>
+        <table class="docs-table">
+          <tr>
+            <td class="nav">
+              {% include layouts/docs_nav.html %}
+            </td>
+            <td class="content">
+              {{ content }}
+            </td>
+          </tr>
+          <tr>
+            <td class="nav">
+            </td>
+            <td class="content">
+              {% include layouts/github_edit_link.html %}
+            </td>
+          </tr>
+        </table>
 
-    </article>
+      </article>
 
-    {% include layouts/footer.html %}
+      {% include layouts/footer.html %}
+    </div>
   </body>
 </html>
