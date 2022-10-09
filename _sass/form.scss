@@ -3,13 +3,11 @@ form {
   border-right-width: 0.2rem;
   border-bottom-width: 0.2rem;
   border-top-width: 1px;
-  width: 18rem;
-  margin: 0 auto;
   background: $white;
 
   fieldset {
     border: none;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;
   }
 }
 

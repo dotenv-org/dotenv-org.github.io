@@ -267,37 +267,7 @@ table {
   }
 }
 
-/* FLEX */
-.flex {
-  display: flex;
-  align-items: top;
-  justify-content: top;
-
-  div {
-    &.flex-auto {
-      flex: none;
-    }
-    &.flex-0 {
-      flex: 0;
-    }
-    &.flex-1 {
-      flex: 1;
-    }
-    &.flex-2 {
-      flex: 2;
-    }
-    &.flex-3 {
-      flex: 3;
-    }
-  }
-}
-
 /* CODE BLOCKS */
-.bar {
-  border: 1px solid red;
-  width: auto;
-}
-
 pre {
   background: #f6f8fa;
   border-radius: $borderRadius;
@@ -339,9 +309,4 @@ blockquote::before{
 
 blockquote::after{
   content: '';
-}
-
-.focus {
-  width: 18rem;
-  margin: 0 auto;
 }
