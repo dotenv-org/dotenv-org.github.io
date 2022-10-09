@@ -27,11 +27,6 @@ You don't need to install anything to use Dotenv Vault. No error prone binaries 
 
 ```
 $ npx dotenv-vault push
-
-remote:   Securely pushing (.env)... done
-remote:   Securely pushed development (.env)
-
-Run npx dotenv-vault open to view in the ui
 ```
 
 [Watch the 1 minute overview video](https://www.youtube.com/watch?v=z-lBjxfhWeY)
@@ -42,10 +37,6 @@ After you've pushed your .env file, you can manage your secrets across multiple 
 
 ```
 $ npx dotenv-vault open production
-
-local:    Opening project page... done
-
-Run npx dotenv-vault build to encrypt .env.vault file
 ```
 
 ### Deploy Everywhere™
@@ -54,11 +45,8 @@ Dotenv Vault works everywhere you already deploy your code. Run the build comman
 
 ```
 $ npx dotenv-vault build
-
-remote:   Securely building .env.vault... done
-remote:   Securely built .env.vault
-
-Next, commit .env.vault to code and deploy
+$ git commit -am "Add .env.vault"
+$ git push
 ```
 
 ---
