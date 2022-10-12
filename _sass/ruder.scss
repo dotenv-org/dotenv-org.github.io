@@ -1,4 +1,4 @@
-.wrapper2 {
+.wrapper {
   max-width: 680px;
   margin: 0 auto;
 }
@@ -9,7 +9,7 @@
   }
 }
 
-.site-nav2 {
+.site-nav {
   display: grid;
   grid-gap: 0.2rem;
   grid-template-columns: 100px auto;
@@ -172,7 +172,7 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
-  .site-nav2 {
+  .site-nav {
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     > div:nth-child(1) { text-align: center; }
     > div:nth-child(2) { text-align: center; }

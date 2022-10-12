@@ -64,29 +64,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.wrapper {
-  width: $width;
-  margin: 0 auto;
-}
-
-nav.site-nav {
-  margin: 0.5rem auto 0.3rem auto;
-  padding-bottom: 0;
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;
-
-    li {
-      font-size: 0.7rem;
-      display: inline-block;
-      padding-left: 0.2rem;
-      padding-right: 0.2rem;
-    }
-  }
-}
-
 /* TABLE */
 table {
   //font-size: 0.5rem;
