@@ -1,0 +1,113 @@
+.wrapper2 {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.article {
+  h1, h2, h3, h4, h5, h6, p {
+    max-width: $charWidth;
+  }
+}
+
+.site-nav2 {
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  margin: 0.5rem auto;
+  //grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  //grid-template-rows: repeat(2, 240px);
+
+  > div:nth-child(1) {
+    text-align: left;
+  }
+
+  > div:nth-child(2) {
+    text-align: right;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 0.2rem;
+    }
+  }
+}
+
+.hero2 {
+  background: $yellow;
+  padding: $padWidth;
+  border: 0;
+
+  background-image: url(https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 25rem;
+  background-position: 12rem -5rem;
+}
+
+.footer2 {
+  display: grid;
+  grid-gap: 0.2rem;
+  grid-template-columns: auto 100px;
+  align-items: top;
+  margin: 0.5rem auto;
+
+  > div:nth-child(1) {
+    text-align: left;
+  }
+
+  > div:nth-child(2) {
+    text-align: right;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 0.2rem;
+    }
+  }
+
+  a { color: $secondary; }
+}
+
+@media only screen and (max-width: 400px) {
+  .site-nav2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+
+    > div:nth-child(1) {
+      text-align: center;
+    }
+    > div:nth-child(2) {
+      text-align: center;
+    }
+  }
+
+  .hero2 {
+    background-image: none !important;
+  }
+
+  .footer2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    margin: 0.5rem 1rem;
+
+    > div:nth-child(1) {
+      text-align: center;
+    }
+
+    > div:nth-child(2) {
+      text-align: center;
+    }
+  }
+}
+
+
+
+
