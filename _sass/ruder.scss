@@ -68,7 +68,7 @@
   }
 }
 
-.footer2 {
+footer {
   display: grid;
   grid-gap: 0.2rem;
   grid-template-columns: auto 100px;
@@ -178,9 +178,9 @@
     > div:nth-child(2) { text-align: center; }
   }
 
-  .hero2 { background-image: none !important; }
+  .hero { background-image: none !important; }
 
-  .footer2 {
+  footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     margin: 0.5rem 1rem;
     > div:nth-child(1) { text-align: center; }

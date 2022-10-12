@@ -233,6 +233,3 @@ Most tools don't work everywhere. Dotenv does — with libraries for almost ever
 #### Use with your favorite language.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv](/signup){:.btn}
 
 </article>
-
----
-
