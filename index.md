@@ -6,7 +6,7 @@ title: "Sync .env files"
 <div class="hero">
   <h1>Sync .env files</h1>
 
-  <div class="article">
+  <div>
     <h4 class="font-weight-normal">Dotenv Vault makes it safe and easy to sync your .env files across multiple machines, teammates, and environments.</h4>
     <p><a class="btn" href="/pricing">Get Started with Dotenv</a>&nbsp;&nbsp;<a href="/pricing">See Pricing</a></p>
   </div>

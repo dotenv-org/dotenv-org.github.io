@@ -3,12 +3,6 @@
   margin: 0 auto;
 }
 
-.article {
-  h1, h2, h3, h4, h5, h6, p {
-    max-width: $charWidth;
-  }
-}
-
 .site-nav {
   display: grid;
   grid-gap: 0.2rem;
@@ -47,6 +41,12 @@
   background-repeat: no-repeat;
   background-size: 25rem;
   background-position: 12rem -5rem;
+
+  > div:nth-child(2) {
+    h1, h2, h3, h4, h5, h6, p {
+      max-width: $charWidth;
+    }
+  }
 }
 
 .security-hero {
@@ -63,6 +63,7 @@
   p {
     color: $white;
   }
+
   a {
     color: $white;
   }
@@ -133,6 +134,18 @@ footer {
   p { font-size: 0.7rem; color: $secondary; }
   ul li { font-size: 0.7rem; color: $secondary; }
   ol li { font-size: 0.7rem; color: $secondary; }
+
+  a img {
+    border: 1px solid #0000EE;
+    border-bottom: 5px solid #0000EE;
+    border-right: 4px solid #0000EE;
+  }
+
+  a:visited img {
+    border: 1px solid #551A8B;
+    border-bottom: 5px solid #551A8B;
+    border-right: 4px solid #551A8B;
+  }
 }
 
 .docs-grid {
