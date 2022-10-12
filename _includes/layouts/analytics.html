@@ -1,1 +1,3 @@
-<script async defer data-website-id="7e9b3078-4985-4aa6-b36c-009841dc0b98" src="https://dotenv-umami.pikapod.net/umami.js"></script>
+{% if jekyll.environment == "production" %}
+  <script async defer data-website-id="7e9b3078-4985-4aa6-b36c-009841dc0b98" src="https://dotenv-umami.pikapod.net/umami.js"></script>
+{% endif %}
