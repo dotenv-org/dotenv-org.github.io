@@ -10,4 +10,4 @@ In these pages you'll find tutorials that will teach you how to use Dotenv, and 
 {:.font-weight-normal}
 #### [Get started in 60 seconds →](/docs/tutorials/sync)
 
-Learn to sync .env files.
+*Learn to sync .env files.*
