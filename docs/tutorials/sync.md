@@ -13,7 +13,7 @@ redirect_from:
 
 # Syncing .env Files
 
-Sync environment variables securely with dotenv-vault. In this tutorial, I'll show you how. As a developer myself, I prefer to jump right into it so let's get started.
+Sync environment variables securely with dotenv-vault. I'll show you how in this tutorial. Let's get started.
 
 #### 1. Run dotenv-vault new
 
