@@ -171,7 +171,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .site-nav {
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     > div:nth-child(1) { text-align: center; }
