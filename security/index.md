@@ -12,18 +12,16 @@ title: "Security"
 
 #### From the same people that pioneered [dotenv](https://github.com/motdotla/dotenv) - trusted by more than 2.5 million developers.
 
-Trust is earned. You and 2.5 million+ developers trust us with securing your secrets through dotenv. Thank you. It's a solid foundation, but the challenges for [dotenv-vault](https://github.com/dotenv-org/dotenv-vault) are different and we are earning your trust again.
+Trust is earned. You and 2.5 million+ developers trust us with securing your secrets through dotenv. Thank you. It's a solid foundation, but the challenges for [Dotenv Vault](https://github.com/dotenv-org/dotenv-vault) are different and we are earning your trust again.
 
 Let's get started. See how it works below.
-
-<!--[dotenv-vault](https://github.com/dotenv-org/dotenv-vault) extends this proven & trusted foundation. See how it works below.-->
 
 </article>
 
 <article markdown="1">
 
 <h2 class="mb-0 text-center">How It Works. Securely.</h2>
-<h6 class="mt-04 text-center font-weight-normal">Here's what happens when you sync your .env file with <a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a>.</h6>
+<h6 class="mt-04 text-center font-weight-normal">Here's what happens when you sync your .env file with <a href="https://github.com/dotenv-org/dotenv-vault">Dotenv Vault</a>.</h6>
 
 ---
 

@@ -32,20 +32,21 @@ title: "Pricing"
     <br/>
     <small><span class="text-green">✓</span> <small>Custom environments</small></small>
     <br/>
-    <small><span class="text-light">✓</span> <small>Audit log (2023)</small></small>
+    <small><span class="text-green">✓</span> <small>High Availability</small></small>
+    <!--<small><span class="text-light">✓</span> <small>Audit log (2023)</small></small>-->
   </div>
   <div class="flex-1">
-    <small><span class="text-green">✓</span> <small>Standard support</small></small>
+    <small><span class="text-green">✓</span> <small>Email support</small></small>
     <br/>
     <small><span class="text-green">✓</span> <small>Deploy Everywhere™</small></small>
     <br/>
     <small><span class="text-green">✓</span> <small>User access controls</small></small>
-    <br/>
-    <small><span class="text-light">✓</span> <small>Trusted IPs (2023)</small></small>
+    <!--<br/>
+    <small><span class="text-light">✓</span> <small>Trusted IPs (2023)</small></small>-->
   </div>
 </div>
 
-<p><a href="/signup" class="btn">Get Started with Dotenv</a>&nbsp;&nbsp;<a href="/security">Security</a> &amp; <a href="/docs">Documentation</a></p>
+<p><a href="/signup" class="btn">Get Started with Dotenv Vault</a>&nbsp;&nbsp;<a href="/docs">Documentation</a></p>
 
 ---
 

@@ -8,14 +8,16 @@ title: "Sync .env files"
 
   <div>
     <h4 class="font-weight-normal">Stop sharing them over insecure channels like Slack and email and never lose an important .env file again.</h4>
-    <p><a class="btn" href="/signup">Get Started with Dotenv</a>&nbsp;&nbsp;<a href="/pricing">See Pricing</a></p>
+    <p><a class="btn" href="/signup">Get Started with Dotenv Vault</a>&nbsp;&nbsp;<a href="/pricing">See Pricing</a></p>
+
+    <p class="bg-yellow">From the same people that pioneered <a href="https://github.com/motdotla/dotenv">dotenv</a> - trusted by more than 2.5 million developers.</p>
   </div>
 </div>
 
 <article markdown="1">
 
 {:.text-center}
-### Why you'll love using Dotenv
+### Why you'll love using Dotenv Vault
 
 ---
 
@@ -50,7 +52,7 @@ $ git push
 ---
 
 {:.text-center}
-#### Sync .env files instantly.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv](/signup){:.btn}
+#### Sync .env files instantly.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv Vault](/signup){:.btn}
 
 </article>
 
