@@ -85,18 +85,6 @@ button,
 //   border-color: #0039D7;
 // }
 // 
-// .btn-outline {
-//   background: none;
-//   border: 1px solid $light;
-//   color: $gray;
-// 
-//   &:hover, &:active {
-//     background: none;
-//     border: 1px solid $gray;
-//     text-decoration: none;
-//     color: $secondary;
-//   }
-// }
 
 
 
@@ -231,3 +219,17 @@ button,
 .btn-secondary {
   background-color: $light !important;
 }
+
+.btn-outline {
+  background: none;
+  border: 1px solid $light;
+  color: $gray;
+
+  &:hover, &:active {
+    background: none;
+    border: 1px solid $gray;
+    text-decoration: none;
+    color: $secondary;
+  }
+}
+
