@@ -38,7 +38,7 @@
   }
 }
 
-.hero2 {
+.hero {
   background: $yellow;
   padding: $padWidth;
   border: 0;
@@ -47,6 +47,25 @@
   background-repeat: no-repeat;
   background-size: 25rem;
   background-position: 12rem -5rem;
+}
+
+.security-hero {
+  padding-top: 4ch;
+  padding-bottom: $padWidth;
+  border: 0.2rem solid $yellow;
+  background: $black;
+  color: $white;
+  background-image: url(https://www.dotenv.org/assets/vault/bg-black2-75038b987fd2182de1fc5c2aeba7310f7ae5b8cc3a0d993e05b483b5fdb9fb5e.png) !important;
+  background-size: fit;
+  background-repeat: repeat;
+  background-position: center !important;
+
+  p {
+    color: $white;
+  }
+  a {
+    color: $white;
+  }
 }
 
 .footer2 {
@@ -78,36 +97,99 @@
   a { color: $secondary; }
 }
 
-@media only screen and (max-width: 400px) {
-  .site-nav2 {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+.flex {
+  display: flex;
+  align-items: top;
+  justify-content: top;
 
-    > div:nth-child(1) {
-      text-align: center;
+  div {
+    &.flex-auto {
+      flex: none;
     }
-    > div:nth-child(2) {
-      text-align: center;
+    &.flex-0 {
+      flex: 0;
     }
-  }
-
-  .hero2 {
-    background-image: none !important;
-  }
-
-  .footer2 {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-    margin: 0.5rem 1rem;
-
-    > div:nth-child(1) {
-      text-align: center;
+    &.flex-1 {
+      flex: 1;
     }
-
-    > div:nth-child(2) {
-      text-align: center;
+    &.flex-2 {
+      flex: 2;
+    }
+    &.flex-3 {
+      flex: 3;
     }
   }
 }
 
+.docs {
+  padding: 0 !important;
 
+  h1, .h1 { font-size: 1.5rem; }
+  h2, .h2 { font-size: 1.3rem; }
+  h3, .h3 { font-size: 1.0rem; }
+  h4, .h4 { font-size: 1.0rem; }
+  h5, .h5 { font-size: 0.7rem; }
+  h6, .h6 { font-size: 0.7rem; }
+  p { font-size: 0.7rem; color: $secondary; }
+  ul li { font-size: 0.7rem; color: $secondary; }
+  ol li { font-size: 0.7rem; color: $secondary; }
+}
 
+.docs-grid {
+  display: grid;
+  grid-template-columns: 10rem auto;
 
+  > div {
+    padding: 1rem;
+
+    nav {
+      display: block;
+      padding: 0;
+      background: none;
+
+      h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+      h6 { margin-bottom: 0.2rem; }
+
+      ul {
+        margin-top: 0;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  > div:nth-child(1) {
+    border-right: 1px solid $light;
+    background: rgba(0, 0, 0, 0.01);
+  }
+
+  img {
+    max-width: 100%;
+    border: 1px solid $borderColor;
+    border-radius: $borderRadius;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .site-nav2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    > div:nth-child(1) { text-align: center; }
+    > div:nth-child(2) { text-align: center; }
+  }
+
+  .hero2 { background-image: none !important; }
+
+  .footer2 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    margin: 0.5rem 1rem;
+    > div:nth-child(1) { text-align: center; }
+    > div:nth-child(2) { text-align: center; }
+  }
+
+  .docs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    > div:nth-child(1) { order: 2; border-top: 1px solid $light; border-right: none; }
+    > div:nth-child(2) { order: 1; }
+  }
+}

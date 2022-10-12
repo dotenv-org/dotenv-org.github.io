@@ -3,7 +3,7 @@ layout: default
 title: "Security"
 ---
 
-<article class="security-hero" markdown="1" style="background-image: url(https://www.dotenv.org/assets/vault/bg-black2-75038b987fd2182de1fc5c2aeba7310f7ae5b8cc3a0d993e05b483b5fdb9fb5e.png) !important; background-size: fit; background-repeat: repeat; background-position: center !important;">
+<article class="security-hero" markdown="1">
 
 <h5 class="font-weight-normal mb-0">Security</h5>
 
@@ -103,8 +103,6 @@ Let's get started. See how it works below.
 <h2 class="mb-0 text-center">Security Statement</h2>
 <h6 class="mt-04 text-center font-weight-normal">A message from Dotenv's Founder & CTO.</h6>
 
-<div class="security-statement" markdown="1">
-
 Fellow developer,
 
 As you already know, security is an evermoving target - an arms race. But that doesn't mean it should be hard to use. Good design can make complex things simple, and that is what we are after at Dotenv.
@@ -119,11 +117,9 @@ Join us.
 
 <p>- Mot.<br/>Founder & CTO</p>
 
-</div>
-
 ---
 
 {:.text-center}
-#### Start syncing .env files securely.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv](/signup){:.btn}
+#### Sync .env files securely.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv](/signup){:.btn}
 
 </article>

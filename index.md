@@ -3,7 +3,7 @@ layout: default
 title: "Sync .env files"
 ---
 
-<div class="hero2">
+<div class="hero">
   <h1>Sync .env files</h1>
 
   <div class="article">
@@ -50,7 +50,7 @@ $ git push
 ---
 
 {:.text-center}
-#### Start syncing .env files instantly.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv](/signup){:.btn}
+#### Sync .env files instantly.&nbsp;&nbsp;&nbsp;[Get Started with Dotenv](/signup){:.btn}
 
 </article>
 
