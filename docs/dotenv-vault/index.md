@@ -11,7 +11,7 @@ parent: Docs
 Sync your .env files between machines, environments, and team members with dotenv-vault.
 
 ```
-$ npx dotenv-vaul
+$ npx dotenv-vault
 Sync your .env files, securely.
 
 VERSION
