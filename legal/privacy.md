@@ -6,6 +6,8 @@ parent: Legal
 
 <article markdown="1">
 
+###### The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer’s requirements.
+
 # Privacy Policy
 
 The privacy of your data is paramount to us. It's our entire business. We'll only ever access your account to help you with a problem or squash a software bug. We'll never access the content of a secret unless you ask us to. We log all access to all accounts by IP address, so we can verify that no unauthorized access has happened for as long as the logs are kept.
