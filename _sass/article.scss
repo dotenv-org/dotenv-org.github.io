@@ -19,6 +19,8 @@ article {
   img {
     max-width: 100%;
     border: 1px solid $borderColor;
+    border-bottom: 5px solid $borderColor;
+    border-right: 4px solid $borderColor;
     border-radius: $borderRadius;
   }
 

@@ -46,9 +46,9 @@ After you've pushed your .env file, you can manage your secrets across multiple 
 $ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659628722/Screen_Shot_2022-08-04_at_8.53.16_AM_pukxin.png" %}
-
-
+<div>
+  <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659628722/Screen_Shot_2022-08-04_at_8.53.16_AM_pukxin.png">
+</div>
 
 ---
 
@@ -62,7 +62,9 @@ $ git commit -am "Add .env.vault"
 $ git push
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665603984/npx-build_qqcbcb.gif" %}
+<div>
+  <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1665603984/npx-build_qqcbcb.gif">
+</div>
 
 ---
 
