@@ -64,6 +64,7 @@ As early as possible in your application, import and configure dotenv-vault:
 require('dotenv-vault').config()
 console.log(process.env) // remove this after you've confirmed it working
 ```
+[Node](https://github.com/dotenv-org/dotenv-vault), [Ruby](https://github.com/dotenv-org/dotenv-vault-ruby) – [Request language](https://github.com/dotenv-org/dotenv-vault/discussions/95)
 
 That's it!
 
