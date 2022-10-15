@@ -5,74 +5,118 @@ title: "Security"
 
 <article class="security-hero" markdown="1">
 
-<h5 class="font-weight-normal mb-0">Security</h5>
+<!--<img src="https://www.dotenv.org/assets/security/shield-env-e557cbc35ef4cd8d3df9fb39578f873110adc17549910717160309211561c48c.png">-->
+
+<h5 class="font-weight-normal text-black mb-0">Security</h5>
 
 {:.mt-0}
 # Proven. Trusted. Secure.
 
-#### From the same people that pioneered [dotenv](https://github.com/motdotla/dotenv) - trusted by more than 2.5 million developers.
+#### From the same people that pioneered dotenv - trusted by more than 2.5 million developers.
 
-Trust is earned. You and 2.5 million+ developers trust us with securing your secrets through dotenv. Thank you. It's a solid foundation, but the challenges for [Dotenv Vault](https://github.com/dotenv-org/dotenv-vault) are different and we are earning your trust again.
+Trust is earned. You and 2.5 million+ developers trust us with securing your secrets through dotenv. Thank you. It's a solid foundation, but the challenges for <strong>Dotenv Vault</strong> are different and we are earning your trust again.
 
 Let's get started. See how it works below.
 
 </article>
 
-<article markdown="1">
+<article class="security-how-it-works" markdown="1">
 
 <h2 class="mb-0 text-center">How It Works. Securely.</h2>
 <h6 class="mt-04 text-center font-weight-normal">Here's what happens when you sync your .env file with <a href="https://github.com/dotenv-org/dotenv-vault">Dotenv Vault</a>.</h6>
 
----
-
-<div class="security-how-it-works">
-  <div class="flex">
-    <div class="flex-1">
-      {% include vault/step1.html %}
-    </div>
-    <div class="flex-1">
-      {% include vault/step2.html %}
-    </div>
+<div class="security-grid">
+  <div>
+    {% include vault/step1_icon.html %}
   </div>
-
-  <div class="flex">
-    <div class="flex-1">
-      {% include vault/step3.html %}
-    </div>
-    <div class="flex-1">
-      {% include vault/step4.html %}
-    </div>
+  <div>
+    {% include vault/step1.html %}
   </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
 
-  <div class="flex">
-    <div class="flex-1">
-      {% include vault/step5.html %}
-    </div>
-    <div class="flex-1">
-      {% include vault/step6.html %}
-    </div>
+  <div>
+    {% include vault/step2_icon.html %}
   </div>
-
-  <div class="flex">
-    <div class="flex-1">
-      {% include vault/step7.html %}
-    </div>
-    <div class="flex-1">
-      {% include vault/step8.html %}
-    </div>
+  <div>
+    {% include vault/step2.html %}
   </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
 
-  <div class="flex">
-    <div class="flex-1">
-      {% include vault/step9.html %}
-    </div>
-    <div class="flex-1">
-      {% include vault/step10.html %}
-    </div>
+  <div>
+    {% include vault/step3_icon.html %}
+  </div>
+  <div>
+    {% include vault/step3.html %}
+  </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
+
+  <div>
+    {% include vault/step4_icon.html %}
+  </div>
+  <div>
+    {% include vault/step4.html %}
+  </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
+
+  <div>
+    {% include vault/step5_icon.html %}
+  </div>
+  <div>
+    {% include vault/step5.html %}
+  </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
+
+  <div>
+    {% include vault/step6_icon.html %}
+  </div>
+  <div>
+    {% include vault/step6.html %}
+  </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
+
+  <div class="align-items-top">
+    {% include vault/step7_icon.html %}
+  </div>
+  <div>
+    {% include vault/step7.html %}
+  </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
+
+  <div class="align-items-top">
+    {% include vault/step8_icon.html %}
+  </div>
+  <div>
+    {% include vault/step8.html %}
+  </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
+
+  <div>
+    {% include vault/step9_icon.html %}
+  </div>
+  <div class="align-items-top">
+    {% include vault/step9.html %}
+  </div>
+  <div class="text-center">{% include vault/arrow_down.html %}</div>
+  <div></div>
+
+  <div>
+    {% include vault/step10_icon.html %}
+  </div>
+  <div>
+    {% include vault/step10.html %}
   </div>
 </div>
+</article>
 
----
+<article markdown="1">
 
 {:.text-center}
 #### Learn more about security in the [security docs](/docs/security).

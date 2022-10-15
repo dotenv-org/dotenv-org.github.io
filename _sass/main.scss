@@ -10,6 +10,7 @@ $lighter: rgba(0, 0, 0, 0.05);
 $lightest: rgba(0, 0, 0, 0.01);
 $yellow: #ECD53F;
 $white: #fdfdfd;
+$secondary: #6e757c;
 $width: 55ch;
 $charWidth: 44ch;
 $padWidth: 2ch;
@@ -28,7 +29,7 @@ $btnBlue: #1652F0;
 }
 
 body {
-  background: $white;
+  background: #F2F2F2;
   color: $black;
   font-family: $fontFamily;
   padding: 0.1rem 0 1rem 0;

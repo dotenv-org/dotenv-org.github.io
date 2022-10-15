@@ -1,3 +1,13 @@
+kbd {
+  background: #222222;
+  color: white;
+  padding: 0.3rem;
+
+  &.small {
+    font-size: 0.6rem;
+  }
+}
+
 .wrapper {
   max-width: 680px;
   margin: 0 auto;
@@ -50,9 +60,39 @@
 }
 
 .security-hero {
-  padding-top: 4ch;
+  padding-top: 1ch;
+  padding-bottom: $padWidth;
+  //border: 0.2rem solid $yellow;
+  //background: $black;
+  //color: $white;
+  // p {
+  //   color: $white;
+  // }
+
+  // a {
+  //   color: $white;
+  // }
+
+  background: $yellow;
+  padding: $padWidth;
+  border: 0;
+
+  p {
+    color: $black;
+  }
+
+  > div:nth-child(2) {
+    h1, h2, h3, h4, h5, h6, p {
+      max-width: $charWidth;
+    }
+  }
+
+}
+
+.security-how-it-works {
   padding-bottom: $padWidth;
   border: 0.2rem solid $yellow;
+  border-top: 1px solid $yellow;
   background: $black;
   color: $white;
   background-image: url(https://www.dotenv.org/assets/vault/bg-black2-75038b987fd2182de1fc5c2aeba7310f7ae5b8cc3a0d993e05b483b5fdb9fb5e.png) !important;
@@ -68,6 +108,8 @@
     color: $white;
   }
 }
+
+
 
 footer {
   display: grid;
@@ -145,6 +187,39 @@ footer {
     border: 1px solid #551A8B;
     border-bottom: 5px solid #551A8B;
     border-right: 4px solid #551A8B;
+  }
+}
+
+.security-grid {
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-columns: 5rem auto;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+
+  color: $secondary;
+
+  > div {
+    padding: 0;
+
+    &:nth-child(even) {
+      text-align: left;
+    }
+
+    &.align-items-top {
+      align-self: start !important;
+    }
+  }
+
+  p, li {
+    color: $secondary;
+  }
+
+  h5 {
+    color: $white;
+    font-weight: normal;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
 }
 

@@ -5,6 +5,7 @@
 .m-auto { margin: 0 auto; }
 .v-middle { vertical-align: middle; }
 .align-middle { vertical-align: middle; }
+.small { font-size: 0.6rem; }
 
 // misc
 .rounded { border-radius: $borderRadius; }
@@ -15,6 +16,11 @@
 // background colors
 .bg-lighter { background: #F2F2F2 !important; }
 .bg-yellow { background: $yellow !important; }
+.bg-black { background: $black !important; }
+
+.body-lighter { background: #F2F2F2 !important; }
+.body-yellow { background: $yellow !important; }
+.body-black { background: $black !important; }
 
 // text colors
 .text-right { text-align: right; }
@@ -26,6 +32,7 @@
 .text-secondary { color: $secondary; }
 .text-decoration-none { text-decoration: none; }
 .text-decoration-none-important { text-decoration: none !important; }
+.text-yellow { color: $yellow !important; }
 
 // margins
 .mt-0 { margin-top: 0; }
@@ -117,6 +124,15 @@
 .mw-25 { max-width: 25rem; }
 .mw-26 { max-width: 26rem; }
 .w-char-width { width: $charWidth; }
+
+.security-icon {
+  min-width: 5rem !important;
+  min-height: 5rem !important;
+  border: 1px solid $yellow;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
 // font style
 .font-weight-normal { font-weight: normal; }
