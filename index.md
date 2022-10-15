@@ -26,7 +26,7 @@ title: "Sync .env files"
 
 ### Works with a single command
 
-You don't need to install anything to use Dotenv Vault. No error prone binaries to install, infrastructure to maintain, or custom code to write. It just works – with a single command.
+You don't need to install anything to use Dotenv Vault. No error prone binaries to install, infrastructure to maintain, or custom code to write. It just works – with a single command. [Learn how &rarr;](/docs/tutorials/sync)
 
 ```
 $ npx dotenv-vault push
@@ -40,7 +40,7 @@ $ npx dotenv-vault push
 
 ### Multiple Environments
 
-After you've pushed your .env file, you can manage your secrets across multiple environments. Open an environment to view and edit its environment variables.
+After you've pushed your .env file, you can manage your secrets across multiple environments. Open an environment to view and edit its environment variables. [Learn more &rarr;](/docs/tutorials/environments)
 
 ```
 $ npx dotenv-vault open production
@@ -48,11 +48,13 @@ $ npx dotenv-vault open production
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659628722/Screen_Shot_2022-08-04_at_8.53.16_AM_pukxin.png" %}
 
+
+
 ---
 
 ### Deploy Everywhere™
 
-Dotenv Vault works everywhere you already deploy your code. Run the build command to generate your encrypted .env.vault file, commit that safely to code, and deploy. There's nothing else like it.
+Dotenv Vault works everywhere you already deploy your code. Run the build command to generate your encrypted .env.vault file, commit that safely to code, and deploy. There's nothing else like it. [Learn how it works &rarr;](/docs/tutorials/deploy)
 
 ```
 $ npx dotenv-vault build
