@@ -15,4 +15,22 @@ article {
       max-width: 100%;
     }
   }
+
+  img {
+    max-width: 100%;
+    border: 1px solid $borderColor;
+    border-radius: $borderRadius;
+  }
+
+  a img {
+    border: 1px solid #0000EE;
+    border-bottom: 5px solid #0000EE;
+    border-right: 4px solid #0000EE;
+  }
+
+  a:visited img {
+    border: 1px solid #551A8B;
+    border-bottom: 5px solid #551A8B;
+    border-right: 4px solid #551A8B;
+  }
 }

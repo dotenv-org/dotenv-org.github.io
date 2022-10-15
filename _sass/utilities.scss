@@ -12,6 +12,22 @@
 .rounded-circle { border-radius: 50%; }
 .h { border: 1px solid #0FFF50; }
 .d-none { display: none; }
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.27659574468085%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 // background colors
 .bg-lighter { background: #F2F2F2 !important; }

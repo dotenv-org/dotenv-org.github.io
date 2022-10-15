@@ -29,7 +29,7 @@ $ npx dotenv-vault new
 
 On the page that opens, name your project (typically prefilled for you), and enter your email address.
 
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1659056744/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png)
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1659056744/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png" %}
 
 #### 3. View .env.vault file (optional)
 
@@ -51,7 +51,7 @@ Jul 27 14:48 package-lock.json
 Jul 27 14:12 package.json
 ```
 
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1659059249/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png)
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1659059249/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png" %}
 
 #### 4. Run dotenv-vault login
 
@@ -65,7 +65,7 @@ $ npx dotenv-vault login
 
 On the next screen, follow the login process and click 'Log in'.
 
-![](https://res.cloudinary.com/dotenv-org/image/upload/v1658986132/dotenv-vault-login-2_vdb9sq.png)
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1658986132/dotenv-vault-login-2_vdb9sq.png" %}
 
 #### 6. View .env.me file (optional)
 
@@ -87,7 +87,7 @@ Jul 27 14:48 package-lock.json
 Jul 27 14:12 package.json
 ```
 
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659128781/dotenv-me_bsffi2.png)
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659128781/dotenv-me_bsffi2.png" %}
 
 #### 7. Run dotenv-vault push
 
@@ -116,6 +116,6 @@ Let's check out the UI. Run dotenv-vault open.
 $ npx dotenv-vault open
 ```
 
-![](https://res.cloudinary.com/dotenv-org/image/upload/v1658987582/dotenv-vault-ui_ep5nrs.png)
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1658987582/dotenv-vault-ui_ep5nrs.png" %}
 
 That's it! Thanks for using dotenv-vault.
