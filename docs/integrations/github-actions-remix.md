@@ -1,19 +1,19 @@
 ---
 layout: docs
-title: "GitHub Actions with NextJS - Integrations"
+title: "GitHub Actions with Remix - Integrations"
 ---
 
 {% include helpers/reading_time.html %}
 
 ##### Integrations
 
-# GitHub Actions with NextJS
+# GitHub Actions with Remix
 
-Learn how to configure GitHub Actions with Dotenv Vault for a NextJS application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
+Learn how to configure GitHub Actions with Dotenv Vault for a Remix application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
 ## 1. Add GitHub Actions yaml file
 
-In your NextJS project add the file .github/workflows/main.yml.
+In your Remix project add the file .github/workflows/main.yml.
 
 ```
 {% raw %}# .github/workflow/main.yml
@@ -33,7 +33,7 @@ jobs:
         DOTENV_KEY: ${{ secrets.DOTENV_KEY }}{% endraw %}
 ```
 
-[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/.github/workflows/main.yml)
+[example](https://github.com/dotenv-org/integration-example-github-actions-remix/blob/master/.github/workflows/main.yml)
 
 ## 2. Require dotenv-vault
 
@@ -43,22 +43,19 @@ Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 npm install dotenv-vault --save
 ```
 
-And add it to next.config.js.
+And add it to remix.config.js.
 
 ```
-// next.config.js
+// remix.config.js
 require('dotenv-vault').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
-
-module.exports = nextConfig
+module.exports = {
+  ...
+};
 ```
 
-[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/next.config.js#L2)
+[example](https://github.com/dotenv-org/integration-example-github-actions-remix/blob/master/remix.config.js#L2)
 
 ## 3. Run dotenv-vault build
 
