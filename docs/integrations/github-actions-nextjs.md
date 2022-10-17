@@ -35,24 +35,25 @@ jobs:
 
 [example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/.github/workflows/main.yml)
 
-## 2. Require dotenv-vault
+## 2. Require dotenv-vault-core
 
-Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
+Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core)
 
 ```
-npm install dotenv-vault --save
+npm install dotenv-vault-core --save
 ```
 
 And add it to next.config.js.
 
 ```
 // next.config.js
-require('dotenv-vault').config()
-console.log(process.env) // for debugging purposes. remove when ready.
+const result = require('dotenv-vault-core').config()
+console.log(result) // for debugging purposes. remove when ready.
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  env: result.parsed
 }
 
 module.exports = nextConfig
