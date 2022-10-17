@@ -1,38 +1,36 @@
 ---
 layout: docs
-title: "Vercel with Express - Integrations"
+title: "Vercel with Node.js - Integrations"
 ---
 
 {% include helpers/reading_time.html %}
 
 ##### Integrations
 
-# Vercel with Express
+# Vercel with Node.js
 
-Learn how to make Vercel, Express, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
+Learn how to make Vercel, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Set up Express for Vercel
+## 1. Set up Node.js for Vercel
 
-Set up your Express app to work with Vercel. Add `module.exports = app` to index.js.
+Set up your Node.js app to work with Vercel. Add `module.exports = app` to index.js.
 
 ```
 // index.js
+const http = require('http')
 const PORT = process.env.PORT || 5000
-const express = require('express')
-const app = express()
 
-app.listen(PORT, () => {
-  console.log(`Running on port ${PORT}.`)
+const server = http.createServer((req, res) => {
+  res.write(`Hello ${process.env.HELLO}`)
+  res.end()
 })
 
-app.get('/', (req, res) => {
-  res.send(`Hello ${process.env.HELLO}`)
+server.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`)
 })
-
-// Export the Express API for Vercel
-module.exports = app
 ```
-[example](https://github.com/dotenv-org/integration-example-vercel-express/blob/master/index.js)
+
+[example](https://github.com/dotenv-org/integration-example-vercel-nodejs/blob/master/index.js)
 
 Add `vercel.json` file.
 
@@ -62,20 +60,27 @@ Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 npm install dotenv-vault-core --save
 ```
 
-Require it as early as possible in your Express application.
+Require it as early as possible in your Node.js application.
 
 ```
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
+const http = require('http')
 const PORT = process.env.PORT || 5000
-const express = require('express')
-const app = express()
-...
+
+const server = http.createServer((req, res) => {
+  res.write(`Hello ${process.env.HELLO}`)
+  res.end()
+})
+
+server.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`)
+})
 ```
 
-[example](https://github.com/dotenv-org/integration-example-vercel-express/blob/master/index.js)
+[example](https://github.com/dotenv-org/integration-example-vercel-nodejs/blob/master/index.js)
 
 ## 3. Run dotenv-vault build
 
