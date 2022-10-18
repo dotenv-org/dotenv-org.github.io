@@ -1,19 +1,19 @@
 ---
 layout: docs
-title: "Vercel with Node.js - Integrations"
+title: "Railway with Node.js - Integrations"
 ---
 
 {% include helpers/reading_time.html %}
 
 ##### Integrations
 
-# Vercel with Node.js
+# Railway with Node.js
 
-Learn how to make Vercel, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
+Learn how to make Railway, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Set up Node.js for Vercel
+## 1. Set up Node.js for Railway
 
-Set up your Node.js app to work with Vercel.
+Set up your Node.js app to work with Railway.
 
 ```
 // index.js
@@ -32,24 +32,10 @@ server.listen(PORT, () => {
 
 [example](https://github.com/dotenv-org/integration-example-vercel-nodejs/blob/master/index.js)
 
-Add `vercel.json` file.
+Run railway up.
 
 ```
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@now/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
-    }
-  ]
-}
+$ railway up
 ```
 
 ## 2. Require dotenv-vault-core
@@ -103,16 +89,16 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 
 ## 5. Set DOTENV_KEY
 
-Visit your Vercel Project > Settings > Environment Variables.
+Visit your Railway Project's Environment Variables.
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666027615/integrations-vercel-envs_y43bwi.gif" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666066429/integrations-railway-nodejs_rwo40w.gif" %}
 
 ## 6. Commit and push
 
 That's it! 
 
-Commit those changes safely to code and push to Vercel.
+Commit those changes safely to code and deploy to Railway.
 
 When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault file, and load the production environment variables to `ENV`. If a `DOTENV_KEY` is not set (like during development on your local machine) it will fall back to regular dotenv.
