@@ -40,7 +40,7 @@ jobs:
 Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 
 ```
-npm install dotenv-vault --save
+$ npm install dotenv-vault --save
 ```
 
 And add it to remix.config.js.

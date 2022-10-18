@@ -40,7 +40,7 @@ jobs:
 Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core)
 
 ```
-npm install dotenv-vault-core --save
+$ npm install dotenv-vault-core --save
 ```
 
 And add it to next.config.js.
