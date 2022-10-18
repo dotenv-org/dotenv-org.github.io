@@ -11,22 +11,28 @@ title: "Vercel with Remix - Integrations"
 
 Learn how to configure Vercel with Dotenv Vault for a Remix application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Set up Remix ENV
+## 1. Install dotenv-vault
 
-In entry.server.tsx require dotenv-vault at the top of the file.
+Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 
 ```
-require('dotenv-vault').config()
-
-export default function handleRequest(
-...
+$ npm install dotenv-vault --save
 ```
 
-Use loader() to load process.env where needed. Here's a hello world example in the app/routes/index.tsx file.
+## 2. Set up Remix ENV
+
+Do the following for any endpoints that use environment variables.
+
+* Require dotenv-vault-core
+* Add a loader that exposes process.env as data
+
+Here's a hello world example in the app/routes/index.tsx file.
 
 ```
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
+
+require('dotenv-vault-core').config()
 
 export async function loader() {
   return json({
@@ -44,30 +50,7 @@ export default function Index() {
   );
 }
 ```
-
 [example](https://github.com/dotenv-org/integration-example-vercel-remix/blob/master/app/routes/index.tsx)
-
-## 2. Require dotenv-vault
-
-Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
-
-```
-npm install dotenv-vault --save
-```
-
-And add it to remix.config.js.
-
-```
-// remix.config.js
-require('dotenv-vault').config()
-console.log(process.env) // for debugging purposes. remove when ready.
-
-module.exports = {
-  ...
-};
-```
-
-[example](https://github.com/dotenv-org/integration-example-vercel-remix/blob/master/remix.config.js#L2)
 
 ## 3. Run dotenv-vault build
 
@@ -96,12 +79,6 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666027615/integrations-vercel-envs_y43bwi.gif" %}
 
-## 6. Enable Vercel File System API
-
-```
-ENABLE_FILE_SYSTEM_API": "1"
-```
-
 ## 6. Commit and push
 
 That's it! 
@@ -109,7 +86,3 @@ That's it!
 Commit those changes safely to code and push to GitHub.
 
 When the CI runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault file, and load the CI environment variables to `ENV`. If a `DOTENV_KEY` is not set (like during development on your local machine) it will fall back to regular dotenv.
-
-You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
-
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666027587/Screen_Shot_2022-10-17_at_10.22.47_AM_z2nf9q.png" %}

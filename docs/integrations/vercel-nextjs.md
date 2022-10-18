@@ -68,7 +68,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 That's it! 
 
-Commit those changes safely to code and push to GitHub.
+Commit those changes safely to code and push to Vercel.
 
 When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault file, and load the production environment variables to `ENV`. If a `DOTENV_KEY` is not set (like during development on your local machine) it will fall back to regular dotenv.
 

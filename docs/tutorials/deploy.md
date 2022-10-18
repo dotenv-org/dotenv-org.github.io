@@ -54,17 +54,17 @@ Set `DOTENV_KEY` on your infrastructure. For example, on Heroku:
 $ heroku config:set DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production"
 ```
 
-#### 3. Require dotenv-vault code
+#### 3. Require dotenv-vault-core code
 
-The last step is to add the dotenv-vault library into your code.
+The last step is to add the [dotenv-vault-core library](https://github.com/dotenv-org/dotenv-vault-core) into your code.
 
-As early as possible in your application, import and configure dotenv-vault:
+As early as possible in your application, import and configure dotenv-vault-core:
 
 ```
-require('dotenv-vault').config()
+require('dotenv-vault-core').config()
 console.log(process.env) // remove this after you've confirmed it working
 ```
-[Node](https://github.com/dotenv-org/dotenv-vault), [Ruby](https://github.com/dotenv-org/dotenv-vault-ruby) – [Request language](https://github.com/dotenv-org/dotenv-vault/discussions/95)
+[Node](https://github.com/dotenv-org/dotenv-vault-core), [Ruby](https://github.com/dotenv-org/dotenv-vault-ruby) – [Request language](https://github.com/dotenv-org/dotenv-vault/discussions/95)
 
 That's it!
 
