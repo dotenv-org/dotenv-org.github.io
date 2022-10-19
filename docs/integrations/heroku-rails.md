@@ -15,6 +15,8 @@ Learn how to make Heroku, Rails, and Dotenv Vault work together. This tutorial a
 
 Set up your Rails app to work with Heroku.
 
+Example shows using environment variable [example](https://github.com/dotenv-org/integration-example-heroku-rails/blob/374e9a3e5e5f6ffe2f4a83f08bf2c0222871ed40/app/views/welcome/index.html.erb)
+
 ```
 // Add 'dotenv-vault-rails' to Gemfile
 gem 'dotenv-vault-rails'
