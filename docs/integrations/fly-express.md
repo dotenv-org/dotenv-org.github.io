@@ -66,7 +66,7 @@ const app = express()
 ...
 ```
 
-[example](https://github.com/dotenv-org/integration-example-vercel-express/blob/master/index.js)
+[example](https://github.com/dotenv-org/integration-example-fly-express/blob/master/index.js)
 
 Test that it is working locally.
 
@@ -114,8 +114,10 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 Set it on Fly.io
 
 ```
-$ flyctl secrets set NODE_ENV=production DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production"
+$ flyctl secrets set NODE_ENV=production DOTENV_KEY='dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production'
 ```
+
+WARNING: The single apostrophe is important. Otherwise, Fly.io will truncate the DOTENV_KEY incorrectly and decryption will not work.
 
 That's it! 
 
