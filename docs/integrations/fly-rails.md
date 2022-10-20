@@ -37,7 +37,7 @@ Create your local `.env` file.
 HELLO="Rails on fly"
 ```
 
-Install dotenv-vault-rails gem to Gemfile
+Add dotenv-vault-rails gem to Gemfile
 ```
 // Add 'dotenv-vault-rails' to Gemfile
 gem 'dotenv-vault-rails'
