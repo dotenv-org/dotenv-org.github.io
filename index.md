@@ -8,11 +8,9 @@ title: "Sync .env files"
 
   <div>
     <h4 class="font-weight-normal">Stop sharing them over insecure channels like Slack and email and never lose an important .env file again.</h4>
-    <p><a class="btn" href="/signup">Get Started with Dotenv Vault</a>&nbsp;&nbsp;<a href="/pricing">See Pricing</a></p>
+    <p><a class="btn mr-05" href="/signup">Get Started with Dotenv Vault</a> <a href="/pricing">Pricing</a></p>
     <p>
-      From the same people that pioneered dotenv.
-      <br/>
-      Trusted by more than 2.5 million developers.
+      From the same people that pioneered dotenv. Trusted by more than 2.5 million developers.
     </p>
   </div>
 </div>

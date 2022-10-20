@@ -46,7 +46,7 @@ title: "Pricing"
   </div>
 </div>
 
-<p><a href="/signup" class="btn">Get Started with Dotenv Vault</a>&nbsp;&nbsp;<a href="/docs">Documentation</a></p>
+<p><a href="/signup" class="btn mr-05">Get Started with Dotenv Vault</a> <a href="/docs">Documentation</a></p>
 
 ---
 
