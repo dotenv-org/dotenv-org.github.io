@@ -11,14 +11,6 @@ title: "Circle CI Quickstart - Integrations"
 
 In this tutorial, learn how to integrate Dotenv Vault with Circle CI. Setup CI file to work with rails application. [example](https://github.com/dotenv-org/integration-example-circleci/blob/master/.circleci/config.yml) 
 
-Here's an example of a simple static page index page.
-
-```
-// static/index.html.erb
-<h1>Welcome <%= ENV["HELLO"] %></h1>
-```
-[example](https://github.com/dotenv-org/integration-example-circleci/blob/master/app/views/static/index.html.erb)
-
 ## Install dotenv-vault
 
 Create your local `.env` file.
@@ -33,10 +25,18 @@ Add dotenv-vault-rails gem to Gemfile
 gem 'dotenv-vault-rails'
 ``` 
 
+Require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby) as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
+
+```
+// config/application.rb
+require 'dotenv-vault/load'
+```
+
 ## Test for Circle CI
 ```
   describe "hello spec" do
     it "returns World" do
+      print(ENV["HELLO"])
       expect(ENV["HELLO"]).to eql("World")
     end
   end
