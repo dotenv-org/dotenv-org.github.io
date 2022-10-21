@@ -7,7 +7,7 @@ title: "Circle CI Quickstart - Integrations"
 
 ##### Integrations
 
-# Circle CI Quickstart
+# Circle CI with Rails application
 
 In this tutorial, learn how to integrate Dotenv Vault with Circle CI. Setup CI file to work with rails application. [example](https://github.com/dotenv-org/integration-example-circleci/blob/master/.circleci/config.yml) 
 
