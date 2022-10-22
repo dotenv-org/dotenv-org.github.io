@@ -1,18 +1,21 @@
 ---
 layout: docs
-title: "Deploying - Tutorial"
+title: "Integrations - Tutorial"
 parent: Docs
+redirect_from:
+  - /docs/tutorials/deploy
+
 ---
 
 {% include helpers/reading_time.html %}
 
 ##### Tutorial
 
-# Deploying
+# Integrations
 
-Deploy Everywhere™ with Dotenv Vault.
+Integrate everywhere you deploy your code, with Dotenv Vault.
 
-#### 1. Run dotenv-vault build
+#### Run dotenv-vault build
 
 Open terminal, enter your project's root directory (where your .env.vault file is), and run dotenv-vault build.
 
@@ -34,7 +37,7 @@ DOTENV_VAULT_PRODUCTION="oJ6qWV1erwlU1TP4..."
 
 As you can see, your environment variables are encrypted per environment.
 
-#### 3. Set production DOTENV_KEY
+#### Set DOTENV_KEY
 
 The `DOTENV_KEY` decrypts the encrypted values from `DOTENV_VAULT_PRODUCTION`. Run dotenv-vault keys production.
 
@@ -54,7 +57,7 @@ Set `DOTENV_KEY` on your infrastructure. For example, on Heroku:
 $ heroku config:set DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production"
 ```
 
-#### 3. Require dotenv-vault-core code
+#### Require dotenv-vault-core
 
 The last step is to add the [dotenv-vault-core library](https://github.com/dotenv-org/dotenv-vault-core) into your code.
 

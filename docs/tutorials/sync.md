@@ -15,7 +15,7 @@ redirect_from:
 
 Sync environment variables securely with Dotenv Vault. I'll show you how in this tutorial. Let's get started.
 
-#### 1. Run dotenv-vault new
+#### Run dotenv-vault new
 
 Open terminal, enter your project's root directory (where you keep your .env file), and run dotenv-vault new.
 
@@ -25,13 +25,13 @@ $ npx dotenv-vault new
 
 <small>FYI: npx is a very powerful command that lets you run code built with NodeJS and published through the npm registry.</small>
 
-#### 2. Name your project
+#### Name your project
 
 On the page that opens, name your project (typically prefilled for you), and enter your email address.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1659056744/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png" %}
 
-#### 3. View .env.vault file (optional)
+#### View .env.vault file (optional)
 
 A .env.vault was generated for your project. It uniquely identifies your project in dotenv-vault. Think of it like a unique git url at GitHub. It identifies your project so that you (and your teammates) pull the correct .env from dotenv-vault.
 
@@ -53,7 +53,7 @@ Jul 27 14:12 package.json
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1659059249/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png" %}
 
-#### 4. Run dotenv-vault login
+#### Run dotenv-vault login
 
 Next, authenticate your machine by running dotenv-vault login.
 
@@ -61,13 +61,13 @@ Next, authenticate your machine by running dotenv-vault login.
 $ npx dotenv-vault login
 ```
 
-#### 5. Click log in
+#### Click log in
 
 On the next screen, follow the login process and click 'Log in'.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1658986132/dotenv-vault-login-2_vdb9sq.png" %}
 
-#### 6. View .env.me file (optional)
+#### View .env.me file (optional)
 
 You now have a .env.me file in the root of your project. The .env.me file uniquely authorizes you to access a project's shared .env file. You can think of it like your unique SSH key at GitHub.
 
@@ -89,7 +89,7 @@ Jul 27 14:12 package.json
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659128781/dotenv-me_bsffi2.png" %}
 
-#### 7. Run dotenv-vault push
+#### Run dotenv-vault push
 
 Return one last time to terminal and run dotenv-vault push.
 
@@ -108,7 +108,7 @@ Congratulations 🎉, you just pushed (and secured) your first .env file in dote
 
 <small>ProTip: For a list of all available commands, run npx dotenv-vault help.</small>
 
-#### 8. Run dotenv-vault open (bonus)
+#### Run dotenv-vault open (bonus)
 
 Let's check out the UI. Run dotenv-vault open.
 
