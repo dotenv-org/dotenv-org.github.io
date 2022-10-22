@@ -10,6 +10,10 @@ bundle exec jekyll serve --livereload --verbose
 
 Use [simpleicons.org](https://simpleicons.org/) for svg icons.
 
+Use Mac Preview to add arrows to screenshots.
+
+Use [screely.com](https://www.screely.com/) to make aesthetic screenshots.
+
 ## Build
 
 ```

@@ -21,40 +21,61 @@ Create your local `.env` file.
 HELLO="World"
 ```
 
-Add dotenv-vault-rails gem to Gemfile
-```
-// Add 'dotenv-vault-rails' to Gemfile
-gem 'dotenv-vault-rails'
-``` 
-
-Require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby) as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
+Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 
 ```
-// config/application.rb
-require 'dotenv-vault/load'
+$ npm install dotenv-vault-core --save
 ```
 
-## Test for Circle CI
+Require it as early as possible in your Express application.
+
 ```
-  describe "hello spec" do
-    it "returns World" do
-      print(ENV["HELLO"])
-      expect(ENV["HELLO"]).to eql("World")
-    end
-  end
+// app.js
+require('dotenv-vault-core').config();
+console.log(process.env) // for debugging purposes. remove when ready.
+
+const express = require("express");
+...
 ```
+[example](https://github.com/dotenv-org/integration-example-render-express/blob/master/app.js)
+
+Output **process.env.HELLO** in the html.
+
+```
+// app.js
+...
+  <body>
+    <section>
+      Hello ${process.env.HELLO}!
+    </section>
+  </body>
+  ...
+```
+[example](https://github.com/dotenv-org/integration-example-render-express/blob/master/app.js)
+
+Test that it is working locally.
+
+```
+$ node app.js
+{
+  HELLO: 'World'
+}
+Example app listening on port 3001!
+```
+
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666468263/screely-1666468252631_nzhntw.png" %}
 
 Next, we need to build our encrypted .env.vault file.
 
 ## Build .env.vault
 
-First set a CI value. Run **dotenv-vault open** to edit CI values.
+First set a production value. Run **dotenv-vault open** to edit production values.
 
 ```
-$ npx dotenv-vault open ci
+$ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666358400/Screen_Shot_2022-10-21_at_6.47.12_PM_fxfrzd.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666468522/Screen_Shot_2022-10-22_at_12.54.00_PM_drxdvn.png" %}
 
 Then build your localized encrypted .env.vault file.
 
@@ -62,31 +83,35 @@ Then build your localized encrypted .env.vault file.
 $ npx dotenv-vault build
 ```
 
-Great! Commit your .env.vault file to code. It is safe to do so. It is a localized encrypted vault of your environment variables.
+Great! Safely commit your .env.vault file to code.
 
 ## Set DOTENV_KEY
 
-Lastly, set the DOTENV_KEY on Circle CI.
+Lastly, set the DOTENV_KEY on Render.
 
-Run npx dotenv-vault keys ci to get your CI decryption key.
+Run npx dotenv-vault keys production to get your production decryption key.
 
 ```
-$ npx dotenv-vault keys ci
+$ npx dotenv-vault keys production
 remote:   Listing .env.vault decryption keys... done
 
-dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
+dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-Then in Circle CI click projects settings 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666358069/Screen_Shot_2022-10-21_at_6.43.47_PM_hvbpmr.png" %} and Add Environment Variable 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666356075/Screen_Shot_2022-10-21_at_6.08.47_PM_lwhnw9.png" %}
+Then in Render click Project Settings > Environment > Add Environment Variable. 
+
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666469257/screely-1666469242648_bdrnzn.png" %}
+
+Enter your DOTENV_KEY and save changes.
+
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666469438/Screen_Shot_2022-10-22_at_1.09.50_PM_r4nhpl.png" %}
 
 That’s it!
 
 Commit your changes to code and push.
 
-When the build runs, it will recognize the DOTENV_KEY, decrypt the .env.vault file, and load the CI environment variables to Circle CI. If a DOTENV_KEY is not set (like during development on your local machine) it will fall back to regular dotenv.
+When the build runs, it will recognize the DOTENV_KEY, decrypt the .env.vault file, and load the production environment variables to Render. If a DOTENV_KEY is not set (like during development on your local machine) it will fall back to regular dotenv.
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666359120/Screen_Shot_2022-10-21_at_6.58.57_PM_fuz0zv.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666470423/Screen_Shot_2022-10-22_at_1.26.32_PM_qpt22h.png" %}

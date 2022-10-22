@@ -52,7 +52,7 @@ Create your local `.env` file.
 HELLO="Development"
 ```
 
-Then install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 
 ```
 $ npm install dotenv-vault-core --save
@@ -70,7 +70,6 @@ const express = require('express')
 const app = express()
 ...
 ```
-
 [example](https://github.com/dotenv-org/integration-example-fly-express/blob/master/index.js)
 
 Test that it is working locally.
