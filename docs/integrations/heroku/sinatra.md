@@ -1,9 +1,14 @@
 ---
 layout: docs
 title: "Heroku with Sinatra - Integrations"
+redirect_from:
+  - /docs/integrations/heroku-sinatra
 ---
 
 {% include helpers/reading_time.html %}
+
+{% include icons/heroku.html width="50" color="#430098" %}
+{% include icons/sinatra.html width="50" color="#000000" %}
 
 ##### Integrations
 
@@ -11,7 +16,7 @@ title: "Heroku with Sinatra - Integrations"
 
 Learn how to make Heroku, Sinatra, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Set up Sinatra app and require dotenv-vault for Heroku
+## Set up Sinatra and require dotenv-vault
 
 Set up your Sinatra app to work with Heroku and require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby). Require it as early as possible in your sinatra application. 
 
@@ -39,7 +44,7 @@ Run bundle install.
 $ bundle install
 ```
 
-## 2. Run dotenv-vault build
+## Run dotenv-vault build
 
 On your terminal at root of your project run npx dotenv-vault build to build your encrypted .env.vault file.
 
@@ -47,7 +52,7 @@ On your terminal at root of your project run npx dotenv-vault build to build you
 $ npx dotenv-vault build
 ```
 
-## 3. Get DOTENV_KEY
+## Get DOTENV_KEY
 
 Run npx dotenv-vault keys production.
 
@@ -58,7 +63,7 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-## 4. Set DOTENV_KEY
+## Set DOTENV_KEY
 
 Visit your Heroku Project's Environment Variables under settings of your heroku application
 
@@ -66,7 +71,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666175727/Screen_Shot_2022-10-19_at_4.01.32_PM_ibbdwq.png" %}
 
-## 5. Commit and push
+## Commit and push
 
 That's it! 
 

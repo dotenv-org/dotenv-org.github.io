@@ -1,17 +1,22 @@
 ---
 layout: docs
-title: "Docker with Express - Integrations"
+title: "Docker Compose with Express - Integrations"
+redirect_from:
+  - /docs/integrations/docker-compose-express
 ---
 
 {% include helpers/reading_time.html %}
 
+{% include icons/docker.html width="50" color="#2496ED" %}
+{% include icons/express.html width="50" color="#000000" %}
+
 ##### Integrations
 
-# Docker with Express
+# Docker Compose with Express
 
-In this tutorial, learn how to integrate Dotenv Vault with Docker and an Express application.
+In this tutorial, learn how to integrate Dotenv Vault with Docker Compose and an Express application.
 
-## Dockerfile
+## Dockerfile & docker-compose.yml
 
 Create your Dockerfile
 
@@ -23,9 +28,23 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 8080
-CMD node index.js
 ```
 [example](https://github.com/dotenv-org/integration-example-docker-express/blob/master/Dockerfile)
+
+Create your docker-compose.yml
+
+```
+version: '3.8'
+services:
+  web:
+    build: .
+    command: node index.js
+    ports:
+      - "8080:8080"
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      DOTENV_KEY: ${DOTENV_KEY}
+```
 
 And create your Express app.
 
@@ -80,18 +99,18 @@ const app = express()
 
 [example](https://github.com/dotenv-org/integration-example-docker-express/blob/master/index.js)
 
-Test that it is working locally.
+Test that it is working.
 
 ```
-$ docker build -t docker-express . && docker run --rm -it -p 8080:8080 --init docker-express
+$ docker-compose up
 Running on port 8080
 ```
 
-It says **Hello Development** at [http://localhost:8080](http://localhost:8080).
+It says **Hello undefined** at [http://localhost:8080](http://localhost:8080).
 
 ## Build .env.vault
 
-First set a production value for when we deploy. I set it to **HELLO=Production**. Run **dotenv-vault open** to edit production values.
+First set a production value. I set it to **HELLO=Production**. Run **dotenv-vault open** to edit production values.
 
 ```
 $ npx dotenv-vault open production
@@ -109,7 +128,7 @@ Great! Commit your `.env.vault` file to code. It is safe to do so. It is a local
 
 ## Set DOTENV_KEY
 
-Lastly, set the **DOTENV_KEY** on the docker run command.
+Lastly, set the **DOTENV_KEY** on the docker-compose up command.
 
 Run npx dotenv-vault keys production to get your production decryption key.
 
@@ -120,20 +139,22 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-Set it for Docker run. The important part here is the `-e` flag.
+Set it for docker-compose up.
 
 ```
-$ docker build -t docker-express . && docker run -e DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production" --rm -it -p 8080:8080 --init docker-express
+$ NODE_ENV=production DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production" docker-compose up
 [dotenv-vault-core@0.3.0][INFO] Loading env from encrypted .env.vault
 Running on port 8080
 ```
 
 That's it! 
 
-Commit your changes to code and deploy your Docker image to your infrastructure.
+Commit your changes to code.
 
-When Docker runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault file, and load the production environment variables to your node process inside of Docker. If a `DOTENV_KEY` is not set (like during development on your local machine) it will fall back to regular dotenv.
+When docker-compose runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault file, and load the production environment variables to your node process inside of Docker. If a `DOTENV_KEY` is not set (like during development on your local machine) it will fall back to regular dotenv.
 
 It worked if you see the message 'Loading env from encrypted .env.vault'.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666199740/Screen_Shot_2022-10-19_at_10.14.18_AM_zsnosk.png" %}
+
+ProTip: If docker-compose seems cached on old code it probably is. Run `docker-compose build --no-cache` to rebuild it.

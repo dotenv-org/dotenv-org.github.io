@@ -1,9 +1,14 @@
 ---
 layout: docs
 title: "Fly.io with Rails - Integrations"
+redirect_from:
+  - /docs/integrations/fly-rails
 ---
 
 {% include helpers/reading_time.html %}
+
+{% include icons/fly.html width="50" color="#7B3BE2" %}
+{% include icons/rails.html width="50" color="#CC0000" %}
 
 ##### Integrations
 

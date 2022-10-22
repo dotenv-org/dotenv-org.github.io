@@ -1,9 +1,14 @@
 ---
 layout: docs
 title: "Vercel with NextJS - Integrations"
+redirect_from:
+  - /docs/integrations/vercel-nextjs
 ---
 
 {% include helpers/reading_time.html %}
+
+{% include icons/vercel.html width="50" color="#000000" %}
+{% include icons/nextjs.html width="50" color="#000000" %}
 
 ##### Integrations
 

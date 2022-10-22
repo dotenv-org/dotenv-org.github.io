@@ -1,9 +1,14 @@
 ---
 layout: docs
 title: "Heroku with Rails - Integrations"
+redirect_from:
+  - /docs/integrations/heroku-rails
 ---
 
 {% include helpers/reading_time.html %}
+
+{% include icons/heroku.html width="50" color="#430098" %}
+{% include icons/rails.html width="50" color="#CC0000" %}
 
 ##### Integrations
 
@@ -11,7 +16,7 @@ title: "Heroku with Rails - Integrations"
 
 Learn how to make Heroku, Rails, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Set up Rails app for Heroku
+## Set up Rails with Heroku
 
 Set up your Rails app to work with Heroku.
 
@@ -30,7 +35,7 @@ Run bundle install.
 $ bundle install
 ```
 
-## 2. Require dotenv-vault
+## Require dotenv-vault
 
 Require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby).
 
@@ -43,7 +48,7 @@ require 'dotenv-vault/load'
 
 [example](https://github.com/dotenv-org/integration-example-heroku-rails/blob/374e9a3e5e5f6ffe2f4a83f08bf2c0222871ed40/config/application.rb#L4)
 
-## 3. Run dotenv-vault build
+## Run dotenv-vault build
 
 On your terminal at root of your project run npx dotenv-vault build to build your encrypted .env.vault file.
 
@@ -51,7 +56,7 @@ On your terminal at root of your project run npx dotenv-vault build to build you
 $ npx dotenv-vault build
 ```
 
-## 4. Get DOTENV_KEY
+## Get DOTENV_KEY
 
 Run npx dotenv-vault keys production.
 
@@ -62,7 +67,7 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-## 5. Set DOTENV_KEY
+## Set DOTENV_KEY
 
 Visit your Heroku Project's Environment Variables under settings of your heroku application
 
@@ -70,7 +75,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666175727/Screen_Shot_2022-10-19_at_4.01.32_PM_ibbdwq.png" %}
 
-## 6. Commit and push
+## Commit and push
 
 That's it! 
 

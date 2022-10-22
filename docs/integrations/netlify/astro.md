@@ -1,9 +1,14 @@
 ---
 layout: docs
 title: "Netlify with Astro - Integrations"
+redirect_from:
+  - /docs/integrations/netlify-astro
 ---
 
 {% include helpers/reading_time.html %}
+
+{% include icons/netlify.html width="50" color="#00C7B7" %}
+{% include icons/astro.html width="50" color="#FF5D01" %}
 
 ##### Integrations
 

@@ -6,6 +6,8 @@ parent: Docs
 
 {% include helpers/reading_time.html %}
 
+{% include icons/dotenv.html width="30" color="#ECD53F" %}
+
 ##### Tutorial
 
 # Managing Access

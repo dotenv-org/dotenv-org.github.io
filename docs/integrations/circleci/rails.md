@@ -1,13 +1,18 @@
 ---
 layout: docs
-title: "Circle CI Quickstart - Integrations"
+title: "Circle CI with Rails - Integrations"
+redirect_from:
+  - /docs/integrations/circle-ci-rails
 ---
 
 {% include helpers/reading_time.html %}
 
+{% include icons/circleci.html width="50" color="#343434" %}
+{% include icons/rails.html width="50" color="#CC0000" %}
+
 ##### Integrations
 
-# Circle CI with Rails application
+# Circle CI with Rails
 
 In this tutorial, learn how to integrate Dotenv Vault with Circle CI. Setup CI file to work with rails application. [example](https://github.com/dotenv-org/integration-example-circleci/blob/master/.circleci/config.yml) 
 

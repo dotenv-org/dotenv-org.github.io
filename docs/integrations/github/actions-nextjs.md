@@ -1,19 +1,24 @@
 ---
 layout: docs
-title: "GitHub Actions with Remix - Integrations"
+title: "GitHub Actions with NextJS - Integrations"
+redirect_from:
+  - /docs/integrations/github-actions-nextjs
 ---
 
 {% include helpers/reading_time.html %}
 
+{% include icons/github.html width="50" color="#181717" %}
+{% include icons/nextjs.html width="50" color="#000000" %}
+
 ##### Integrations
 
-# GitHub Actions with Remix
+# GitHub Actions with NextJS
 
-Learn how to configure GitHub Actions with Dotenv Vault for a Remix application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
+Learn how to configure GitHub Actions with Dotenv Vault for a NextJS application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
 ## 1. Add GitHub Actions yaml file
 
-In your Remix project add the file .github/workflows/main.yml.
+In your NextJS project add the file .github/workflows/main.yml.
 
 ```
 {% raw %}# .github/workflow/main.yml
@@ -33,29 +38,33 @@ jobs:
         DOTENV_KEY: ${{ secrets.DOTENV_KEY }}{% endraw %}
 ```
 
-[example](https://github.com/dotenv-org/integration-example-github-actions-remix/blob/master/.github/workflows/main.yml)
+[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/.github/workflows/main.yml)
 
-## 2. Require dotenv-vault
+## 2. Require dotenv-vault-core
 
-Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
-
-```
-$ npm install dotenv-vault --save
-```
-
-And add it to remix.config.js.
+Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core)
 
 ```
-// remix.config.js
-require('dotenv-vault').config()
-console.log(process.env) // for debugging purposes. remove when ready.
-
-module.exports = {
-  ...
-};
+$ npm install dotenv-vault-core --save
 ```
 
-[example](https://github.com/dotenv-org/integration-example-github-actions-remix/blob/master/remix.config.js#L2)
+And add it to next.config.js.
+
+```
+// next.config.js
+const result = require('dotenv-vault-core').config()
+console.log(result) // for debugging purposes. remove when ready.
+
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  env: result.parsed
+}
+
+module.exports = nextConfig
+```
+
+[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/next.config.js#L2)
 
 ## 3. Run dotenv-vault build
 

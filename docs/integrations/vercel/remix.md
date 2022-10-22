@@ -1,9 +1,14 @@
 ---
 layout: docs
 title: "Vercel with Remix - Integrations"
+redirect_from:
+  - /docs/integrations/vercel-remix
 ---
 
 {% include helpers/reading_time.html %}
+
+{% include icons/vercel.html width="50" color="#000000" %}
+{% include icons/remix.html width="50" color="#000000" %}
 
 ##### Integrations
 

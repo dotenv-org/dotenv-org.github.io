@@ -8,6 +8,8 @@ Source code for www.dotenv.org
 bundle exec jekyll serve --livereload --verbose
 ```
 
+Use [simpleicons.org](https://simpleicons.org/) for svg icons.
+
 ## Build
 
 ```

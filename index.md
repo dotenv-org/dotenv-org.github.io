@@ -69,38 +69,36 @@ $ git commit -am "Add .env.vault"
 $ git push
 ```
 
-<p class="text-center w-100">
+<h5 class="text-center">
   <a href="/docs/tutorials/integrations">
-    {% include icons/git.html color="#F05032" width="30" %}
-    <br/>
-    Integrate Everywhere™
+    <strong>Integrate Everywhere™</strong>
   </a>
-</p>
+</h5>
 
 <div class="integrations-grid">
   <div>
     {% include helpers/integration.html icon="vercel" url="/docs/integrations/vercel-nodejs" name="Vercel" color="#000000" %}
   </div>
   <div>
-    {% include helpers/integration.html icon="heroku" url="/docs/integrations/heroku-rails" name="Heroku" color="#430098" %}
+    {% include helpers/integration.html icon="heroku" url="/docs/integrations/heroku/rails" name="Heroku" color="#430098" %}
   </div>
   <div>
-    {% include helpers/integration.html icon="github" url="/docs/integrations/github-actions-nextjs" name="GitHub Actions" color="#181717" %}
+    {% include helpers/integration.html icon="github" url="/docs/integrations/github/actions-nextjs" name="GitHub Actions" color="#181717" %}
   </div>
   <div>
-    {% include helpers/integration.html icon="gitlab" url="/docs/integrations/gitlab-ci-quickstart" name="GitLab CI/CD" color="#FC6D26" %}
+    {% include helpers/integration.html icon="gitlab" url="/docs/integrations/gitlab/ci-quickstart" name="GitLab CI/CD" color="#FC6D26" %}
   </div>
   <div>
     {% include helpers/integration.html icon="netlify" url="/docs/integrations/netlify-astro" name="Netlify" color="#00C7B7" %}
   </div>
   <div>
-    {% include helpers/integration.html icon="docker" url="/docs/integrations/docker-express" name="Docker" color="#2496ED" %}
+    {% include helpers/integration.html icon="docker" url="/docs/integrations/docker/express" name="Docker" color="#2496ED" %}
   </div>
   <div>
-    {% include helpers/integration.html icon="docker" url="/docs/integrations/docker-compose-express" name="Docker Compose" color="#2496ED" %}
+    {% include helpers/integration.html icon="docker" url="/docs/integrations/docker-compose/express" name="Docker Compose" color="#2496ED" %}
   </div>
   <div>
-    {% include helpers/integration.html icon="circleci" url="/docs/integrations/circle-ci-rails" name="CircleCI" color="#343434" %}
+    {% include helpers/integration.html icon="circleci" url="/docs/integrations/circleci/rails" name="CircleCI" color="#343434" %}
   </div>
   <div>
     {% include helpers/integration.html icon="serverless" url="/docs/integrations/serverless-express" name="Serverless" color="#FD5750" %}
@@ -112,8 +110,27 @@ $ git push
     {% include helpers/integration.html icon="render" url="/docs/integrations/render/express" name="Render" color="#46E3B7" %}
   </div>
   <div>
-    {% include helpers/integration.html icon="fly" url="/docs/integrations/fly-express" name="Fly.io" color="#7B3BE2" %}
+    {% include helpers/integration.html icon="fly" url="/docs/integrations/fly/express" name="Fly.io" color="#7B3BE2" %}
   </div>
+  <div>
+    {% include helpers/integration.html icon="nodejs" url="/docs/integrations/railway/nodejs" name="Node.js" color="#339933" %}
+  </div>
+  <div>
+    {% include helpers/integration.html icon="express" url="/docs/integrations/vercel-express" name="Express" color="#000000" %}
+  </div>
+  <div>
+    {% include helpers/integration.html icon="nextjs" url="/docs/integrations/github/actions-nextjs" name="NextJS" color="#000000" %}
+  </div>
+  <div>
+    {% include helpers/integration.html icon="remix" url="/docs/integrations/github/actions-remix" name="Remix" color="#000000" %}
+  </div>
+  <div>
+    {% include helpers/integration.html icon="astro" url="/docs/integrations/netlify/astro" name="Astro" color="#FF5D01" %}
+  </div>
+
+
+
+
 </div>
 
 ---

@@ -1,9 +1,14 @@
 ---
 layout: docs
 title: "Fly.io with Express - Integrations"
+redirect_from:
+  - /docs/integrations/fly-express
 ---
 
 {% include helpers/reading_time.html %}
+
+{% include icons/fly.html width="50" color="#7B3BE2" %}
+{% include icons/express.html width="50" color="#000000" %}
 
 ##### Integrations
 

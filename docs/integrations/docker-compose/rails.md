@@ -1,15 +1,20 @@
 ---
 layout: docs
-title: "Docker with Rails - Integrations"
+title: "Docker compose with Rails - Integrations"
+redirect_from:
+  - /docs/integrations/docker-compose-rails
 ---
 
 {% include helpers/reading_time.html %}
 
+{% include icons/docker.html width="50" color="#2496ED" %}
+{% include icons/rails.html width="50" color="#CC0000" %}
+
 ##### Integrations
 
-# Docker with Rails
+# Docker Compose with Rails
 
-In this tutorial, learn how to integrate Dotenv Vault with Docker and a Rails application.
+In this tutorial, learn how to integrate Dotenv Vault with Docker Compose and a Rails application.
 
 ## Dockerfile
 
@@ -28,6 +33,33 @@ CMD ["rails", "server", "-b", "0.0.0.0"]
 ```
 [example](https://github.com/dotenv-org/integration-example-fly-rails/blob/master/Dockerfile)
 
+Create your docker-compose.yml
+```
+version: "3.9"
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/demo
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      SECRET_KEY_BASE: 1
+      DOTENV_KEY: ${DOTENV_KEY}
+      RAILS_ENV: ${RAILS_ENV}
+
+```
+[example](https://github.com/dotenv-org/integration-example-fly-rails/blob/master/docker-compose.yml)
+
 Here's an example of a simple welcome index page that runs on docker.
 
 ```
@@ -42,7 +74,7 @@ Here's an example of a simple welcome index page that runs on docker.
 Create your local `.env` file.
 
 ```
-HELLO="Rails on docker"
+HELLO="Rails on docker compose"
 ```
 
 Add dotenv-vault-rails gem to Gemfile
@@ -62,17 +94,16 @@ require 'dotenv-vault/load'
 
 Build your rails application via docker by running
 ```
-docker build  -t demo .
+docker compose build
 ```
 
 Test that it is working locally.
 
 ```
-$ docker run -p 3000:3000 demo
+$ docker compose up
 ```
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666264420/Screen_Shot_2022-10-20_at_4.42.53_PM_eacjcf.png" %}
 
-It says **Hello Rails on docker** at [http://localhost:3000](http://localhost:3000).
+It says **Hello Rails on docker compose** at [http://localhost:3000](http://localhost:3000).
 
 ## Build .env.vault
 
@@ -108,9 +139,9 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 Set it for Docker run. The important part here is the `-e` flag.
 
 ```
-$ docker build -t demo . && docker run -e DOTENV_KEY="dotenv://:key1234@dotenv.org/vault/.env.vault?environment=production" -p 3000:3000 --init demo
+$ RAILS_ENV=production DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production" docker compose up
 ```
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666265694/Screen_Shot_2022-10-20_at_4.59.50_PM_idxvjy.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666270471/Screen_Shot_2022-10-20_at_6.21.43_PM_gl1bog.png" %}
 
 
 That's it! 
