@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "AWS with Serverless - Integrations"
+title: "Serverless with Express - Integrations"
 ---
 
 {% include helpers/reading_time.html %}
