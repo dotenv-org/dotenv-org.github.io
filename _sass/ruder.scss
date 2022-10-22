@@ -236,6 +236,19 @@ footer {
   }
 }
 
+.integrations-grid {
+  display: grid;
+  grid-gap: 0.3rem;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  text-align: left;
+  padding: 0rem;
+
+  > div {
+    padding: 0;
+  }
+}
+
 .docs-grid {
   display: grid;
   grid-template-columns: 10rem auto;
@@ -292,5 +305,9 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     > div:nth-child(1) { order: 2; border-top: 1px solid $light; border-right: none; }
     > div:nth-child(2) { order: 1; }
+  }
+
+  .integrations-grid {
+    grid-template-columns: auto auto;
   }
 }
