@@ -11,7 +11,7 @@ redirect_from:
 
 ##### Tutorial
 
-# Integrations
+# Integrate Everywhere™
 
 Integrate everywhere you deploy your code, with Dotenv Vault.
 
