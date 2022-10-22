@@ -11,7 +11,7 @@ title: "Railway with Node.js - Integrations"
 
 Learn how to make Railway, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Set up Node.js for Railway
+## Set up Node.js for Railway
 
 Set up your Node.js app to work with Railway.
 
@@ -38,7 +38,7 @@ Run railway up.
 $ railway up
 ```
 
-## 2. Require dotenv-vault-core
+## Require dotenv-vault-core
 
 Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 
@@ -68,7 +68,7 @@ server.listen(PORT, () => {
 
 [example](https://github.com/dotenv-org/integration-example-vercel-nodejs/blob/master/index.js)
 
-## 3. Run dotenv-vault build
+## Run dotenv-vault build
 
 Run npx dotenv-vault build to build your encrypted .env.vault file.
 
@@ -76,7 +76,7 @@ Run npx dotenv-vault build to build your encrypted .env.vault file.
 $ npx dotenv-vault build
 ```
 
-## 4. Get DOTENV_KEY
+## Get DOTENV_KEY
 
 Run npx dotenv-vault keys production.
 
@@ -87,7 +87,7 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-## 5. Set DOTENV_KEY
+## Set DOTENV_KEY
 
 Visit your Railway Project's Environment Variables.
 
@@ -95,7 +95,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666066429/integrations-railway-nodejs_rwo40w.gif" %}
 
-## 6. Commit and push
+## Commit and push
 
 That's it! 
 

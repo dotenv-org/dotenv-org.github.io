@@ -68,66 +68,27 @@ $ npx dotenv-vault build
 $ git commit -am "Add .env.vault"
 $ git push
 ```
-<div class="flex mt-1 mb-1">
-  <div class="flex-1 text-center">
-		<a href="/docs/integrations/vercel-nodejs">
-			{% include icons/vercel.html width="50" %}
-			<br/>
-			<small>Vercel</small>
-		</a>
-    <br/>
-    <br/>
-    <a href="/docs/integrations/netlify-astro">
-			{% include icons/netlify.html width="50" %}
-			<br/>
-			<small>Netlify</small>
-		</a>
+<div class="flex mt-1 mb-0">
+  <div class="flex-1">
+    {% include helpers/integration.html icon="vercel" url="/docs/integrations/vercel-nodejs" name="Vercel" color="#000000" %}
+    {% include helpers/integration.html icon="netlify" url="/docs/integrations/netlify-astro" name="Netlify" color="#00C7B7" %}
+    {% include helpers/integration.html icon="serverless" url="/docs/integrations/serverless-express" name="Serverless" color="#FD5750" %}
   </div>
-  <div class="flex-1 text-center">
-		<a href="/docs/integrations/heroku-rails">
-			{% include icons/heroku.html width="50" %}
-			<br/>
-			<small>Heroku</small>
-		</a>
-		<br/>
-    <br/>
-    <a href="/docs/integrations/serverless-express">
-			{% include icons/serverless.html width="50" %}
-			<br/>
-			<small>Serverless</small>
-		</a>
-	</div>
-  <div class="flex-1 text-center">
-		<a href="/docs/integrations/github-actions-nextjs">
-			{% include icons/github.html width="50" %}
-			<br/>
-			<small>GitHub Actions</small>
-		</a>
-		<br/>
-    <br/>
-    <a href="/docs/integrations/gitlab-ci-quickstart">
-			{% include icons/gitlab.html width="50" %}
-			<br/>
-			<small>GitLab CI/CD</small>
-		</a>
-	</div>
-	<div class="flex-1 text-center">
-		<a href="/docs/integrations/docker-express">
-			{% include icons/docker.html width="50" %}
-			<br/>
-			<small>Docker</small>
-		</a>
-		<br/>
-    <br/>
-    <a href="/docs/integrations/circle-ci-rails">
-			{% include icons/circleci.html width="50" %}
-			<br/>
-			<small>Circle CI</small>
-		</a>
-	</div>
+  <div class="flex-1">
+    {% include helpers/integration.html icon="heroku" url="/docs/integrations/heroku-rails" name="Heroku" color="#430098" %}
+    {% include helpers/integration.html icon="railway" url="/docs/integrations/railway-nodejs" name="Railway" color="#0B0D0E" %}
+    {% include helpers/integration.html icon="fly" url="/docs/integrations/fly-express" name="Fly.io" color="#7B3BE2" %}
+  </div>
+  <div class="flex-1">
+    {% include helpers/integration.html icon="github" url="/docs/integrations/github-actions-nextjs" name="GitHub Actions" color="#181717" %}
+    {% include helpers/integration.html icon="gitlab" url="/docs/integrations/gitlab-ci-quickstart" name="GitLab CI/CD" color="#FC6D26" %}
+    {% include helpers/integration.html icon="circleci" url="/docs/integrations/circle-ci-rails" name="CircleCI" color="#343434" %}
+  </div>
+  <div class="flex-1">
+    {% include helpers/integration.html icon="docker" url="/docs/integrations/docker-express" name="Docker" color="#2496ED" %}
+    {% include helpers/integration.html icon="docker" url="/docs/integrations/docker-compose-express" name="Docker Compose" color="#2496ED" %}
+  </div>
 </div>
-
-These are just a few of the many popular platforms Dotenv Vault integrates with.
 
 [Learn how Integrate Everywhere™ works exactly &rarr;](/docs/tutorials/deploy)
 
