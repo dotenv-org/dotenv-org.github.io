@@ -19,7 +19,6 @@ github_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump in
 author:
   name: Dotenv
   twitter: dotenvorg
-  image: https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png
 twitter:
   username: dotenvorg
   card: summary
@@ -30,6 +29,12 @@ social:
     - https://github.com/dotenv-org
     - https://linkedin.com/company/dotenvorg
     - https://www.youtube.com/channel/UC1ghIojOGfkXlhR94e5-jdQ
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "https://res.cloudinary.com/dotenv-org/image/upload/v1666566686/og-image_g0llrh.png"
 
 # For Favicon Plugin
 favicon:
@@ -49,6 +54,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-favicon
-  - jekyll-auto-image
 
-image: https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png
