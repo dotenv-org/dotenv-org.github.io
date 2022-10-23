@@ -49,3 +49,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-favicon
+  - jekyll-auto-image
+
+image: https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png
