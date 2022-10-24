@@ -54,4 +54,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-favicon
+  - jekyll-feed
 
