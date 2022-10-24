@@ -4,4 +4,6 @@
 {% favicon %}
 <meta name="description" content="Sync .env files">
 <meta name="keywords" content="dotenv, .env, dotenv-vault, environments, encrypt, vault, developer secrets, secret manager, share">
-<link rel="stylesheet" media="all" href="{{ "/assets-www/css/main.css" | relative_url }}">
+
+{% assign cacheBust = site.time | date:'?v=%s' %}
+<link rel="stylesheet" media="all" href="{{ "/assets-www/css/main.css" | relative_url | append: cacheBust }}">

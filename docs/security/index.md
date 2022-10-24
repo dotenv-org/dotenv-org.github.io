@@ -26,6 +26,6 @@ We are designing a handful of extensions and services on top of the .env file fo
 * **[.env.me credential](/docs/security/env-me)** Uniquely authorizes you to access a project's shared .env file
 * **[dotenv-vault cli](/docs/dotenv-vault/push)** Sync environment variables, securely.
 
-And this is just the start. There are integrations into 3rd party services like AWS Secrets, AWS Parameter Store, Vercel, Netlify, Slack, Heroku, GitHub, and more - as well as plans to allow you to Deploy Everywhere™ and Bring Your Own Vault™.
+And this is just the start. There are integrations into 3rd party services like AWS Secrets, AWS Parameter Store, Vercel, Netlify, Slack, Heroku, GitHub, and more - as well as plans to allow you to Integrate Everywhere™ and Bring Your Own Vault™.
 
 It is going to be an exciting journey. Thank you for using Dotenv.

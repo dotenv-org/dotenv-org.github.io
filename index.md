@@ -68,7 +68,7 @@ $ git commit -am "Add .env.vault"
 $ git push
 ```
 
-<p class=""><a class="arrow" href="/docs/tutorials/integrations">Integrate Everywhere™</a></p>
+  <p class=""><a class="arrow" href="/docs/tutorials/integrations">Integrate Everywhere™</a></p>
 
   </div>
   <div class="span2">
@@ -125,6 +125,21 @@ $ git push
         {% include helpers/integration.html icon="astro" url="/docs/integrations/netlify/astro" name="Astro" color="#FF5D01" %}
       </div>
     </div>
+  </div>
+</div>
+
+---
+
+<div class="love-grid">
+  <div>
+    <h4 class="mt-0 mb-03">Used by thousands of developers and companies</h4>
+    <p class="mt-0">Dotenv Vault powers secrets for thousands of software teams across the world. New developers and companies get started with Dotenv Vault every day.</p>
+    <p class=""><a class="arrow" href="/customers">Dotenv Customers</a></p>
+  </div>
+  <div>
+    <a href="/customers">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666593866/Group_ukiica.png" width="600" class="no-style">
+    </a>
   </div>
 </div>
 

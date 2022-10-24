@@ -38,7 +38,7 @@ title: "Pricing"
   <div class="flex-1">
     <small><span class="text-green">✓</span> <small>Email support</small></small>
     <br/>
-    <small><span class="text-green">✓</span> <small>Deploy Everywhere™</small></small>
+    <small><span class="text-green">✓</span> <small>Integrate Everywhere™</small></small>
     <br/>
     <small><span class="text-green">✓</span> <small>User access controls</small></small>
     <!--<br/>
@@ -68,7 +68,7 @@ title: "Pricing"
   <div class="flex-1">
     <small><span class="text-green">✓</span> <small>Community support</small></small>
     <br/>
-    <small><span class="text-green">✓</span> <small>Deploy Everywhere™</small></small>
+    <small><span class="text-green">✓</span> <small>Integrate Everywhere™</small></small>
   </div>
 </div>
 
