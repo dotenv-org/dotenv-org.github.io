@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: changelog
 author: mot
-title: "Sign Up Confetti"
+title: "Sign Up Confetti - Changelog"
 ---
 
 Something fun – confetti when you sign up.

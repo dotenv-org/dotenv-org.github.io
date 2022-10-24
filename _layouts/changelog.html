@@ -2,7 +2,31 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<hr/>
 
-{{ content }}
+<h6 class="text-center">
+	<a href="/changelog">
+		&larr; back to Changelog
+	</a>
+</h6>
+
+<article markdown="1" class="mt-1 mb-2">
+  <p class="text-secondary mb-0">
+    {{ page.date | date: "%b %d, %Y" }}
+  </p>
+
+  <h2 class="h4 mt-05">
+    {{ page.title }}
+  </h2>
+
+  {{ content }}
+
+</article>
+
+<h6 class="text-center">
+	<a href="/changelog">
+		&larr; back to Changelog
+	</a>
+</h6>
+
+<hr/>

@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: changelog
 author: mot
-title: "New Integrations"
+title: "New Integrations - Changelog"
 ---
 
 We added a handful of new integrations. What should we add next?

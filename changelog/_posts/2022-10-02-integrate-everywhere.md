@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: changelog
 author: mot
-title: "Integrate Everywhere™"
+title: "Integrate Everywhere™ - Changelog"
 ---
 
 Integrate Everywhere™ is our new approach to integrations. It works everywhere you can deploy your code. No more brittle integrations coordinating API calls. Instead, build and encrypt your local .env.vault file, commit it to code, and deploy. There's nothing else like it.

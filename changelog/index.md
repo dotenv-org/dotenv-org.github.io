@@ -11,8 +11,9 @@ title: "Changelog"
 {% for changelog in site.categories.changelog %}
 <article markdown="1" class="mt-1 mb-2">
   <p class="text-secondary mb-0">
-    <!--<a href="{{ changelog.url }}">-->
-    {{ changelog.date | date: "%b %d, %Y" }}
+    <a href="{{ changelog.url }}">
+      {{ changelog.date | date: "%b %d, %Y" }}
+    </a>
   </p>
 
   <h2 class="h4 mt-05">
