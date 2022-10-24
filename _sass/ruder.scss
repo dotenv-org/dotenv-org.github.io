@@ -270,6 +270,15 @@ footer {
   }
 }
 
+.github-grid {
+  text-align: right;
+  margin-bottom: 0.5rem;
+
+  > div {
+    display: inline-grid;
+  }
+}
+
 .security-grid {
   display: grid;
   grid-gap: 0.8rem;
@@ -397,5 +406,10 @@ footer {
   .customers-grid {
     grid-template-columns: 1fr;
     align-items: start;
+  }
+
+  .github-grid {
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
 }
