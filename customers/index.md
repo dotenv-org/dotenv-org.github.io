@@ -186,6 +186,24 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Probably Rational</h6>
   </div>
+  <div>
+    <a href="https://solvethex.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666637426/Soluciones-digitales-SOLVE-THE-X_y71loi.png">
+    </a>
+    <h6 class="mt-0">Solve The X</h6>
+  </div>
+  <div>
+    <a href="https://www.serenis.it/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666637583/Serenis-Psicoterapia-online-di-qualita%CC%80-da-dove-vuoi_ufmsxe.png">
+    </a>
+    <h6 class="mt-0">Serenis</h6>
+  </div>
+  <div>
+    <a href="https://csisuministros.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666637709/CSI-Suministros_pqxmjd.png">
+    </a>
+    <h6 class="mt-0">Central De Suministros</h6>
+  </div>
 
 </div>
 
