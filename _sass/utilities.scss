@@ -177,3 +177,8 @@
 a.hover-bg:hover {
   background: $lighter;
 }
+.arrow::after {
+  content: '▸';
+  display: inline-block;
+  padding-left: 3px;
+}
