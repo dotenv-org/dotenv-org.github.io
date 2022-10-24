@@ -17,6 +17,16 @@ redirect_from:
 
 Sync environment variables securely with Dotenv Vault. I'll show you how in this tutorial. Let's get started.
 
+---
+
+<div style="width: 328px;" class="m-auto">
+<div class="rounded video border border-success bg-dark">
+  <iframe width="1108" height="625" src="https://www.youtube.com/embed/z-lBjxfhWeY" title="1 Minute Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+---
+
 #### Run dotenv-vault new
 
 Open terminal, enter your project's root directory (where you keep your .env file), and run dotenv-vault new.
