@@ -78,7 +78,7 @@ def index():
 Run the app. It should say 'Hello Development'.
 
 ```
-$ flask run --host '0.0.0.0'
+$ flask run
 ```
 
 Great, let's deploy that to Heroku.
@@ -106,7 +106,7 @@ python-3.9.13
 Freeze your requirements.txt.
 
 ```
-pip freeze > requirements.txt
+$ pip freeze > requirements.txt
 ```
 
 Set up your .gitignore file.
