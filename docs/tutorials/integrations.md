@@ -73,3 +73,11 @@ console.log(process.env) // remove this after you've confirmed it working
 That's it!
 
 When your app boots, it will recognize the `DOTENV_KEY`, decrypt the `.env.vault` file, and load the variables to `ENV`. If a `DOTENV_KEY` is not set (like during development on your local machine) it will fall back to regular dotenv.
+
+---
+
+#### Bonus: Platform Integration Tutorials
+
+Sometimes it is nice to have a platform or framework specific tutorial. Here are some below.
+
+{% include helpers/integrations_grid.html %}

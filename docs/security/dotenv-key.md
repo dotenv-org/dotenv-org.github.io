@@ -11,7 +11,7 @@ redirect_from:
 
 # DOTENV_KEY
 
-**DOTENV_KEY** is key that unlocks your encrypted environment variables.
+The **DOTENV_KEY** unlocks your encrypted environment variables.
 
 You can view it with **npx dotenv-vault keys**. Set it on your server's environment variables after running **npx dotenv-vault build**.
 
