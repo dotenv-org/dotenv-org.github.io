@@ -204,6 +204,13 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Central De Suministros</h6>
   </div>
+  <div>
+    <a href="https://chainstack.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666886703/Fast-and-Reliable-Blockchain-Infrastructure-Provider-Chainstack_xtheqy.png">
+    </a>
+    <h6 class="mt-0">Chainstack</h6>
+  </div>
+
 
 </div>
 
