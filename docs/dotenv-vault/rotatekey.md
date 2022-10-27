@@ -18,7 +18,7 @@ For more information on the rotatekey command, run dotenv-vault help rotatekey.
 
 ```
 $ npx dotenv-vault help rotatekey
-remote:   Rotating decryption key... done
+Rotate DOTENV_KEY
 
 USAGE
   $ dotenv-vault rotatekey [ENVIRONMENT] [-m <value>] [-y]
