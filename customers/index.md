@@ -222,9 +222,12 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Accso</h6>
   </div>
-
-
-
+  <div>
+    <a href="https://www.gigantec.media/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666887226/Gigantec-Social-money-for-community-platforms_necwrr.png">
+    </a>
+    <h6 class="mt-0">Gigantic</h6>
+  </div>
 
 </div>
 
