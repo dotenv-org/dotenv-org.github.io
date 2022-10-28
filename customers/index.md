@@ -270,6 +270,13 @@ title: "Customers"
     </a>
     <h6 class="mt-0">AE</h6>
   </div>
+  <div>
+    <a href="https://vibrant.io">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666975361/Meet-the-ultimate-POS-app-for-any-device_t7fqph.png">
+    </a>
+    <h6 class="mt-0">Vibrant</h6>
+  </div>
+
 
 </div>
 

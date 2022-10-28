@@ -34,15 +34,18 @@ app = Flask(__name__)
 def index():
   return "<p>Hello, World!</p>"
 ```
+[example](https://github.com/dotenv-org/integration-example-heroku-flask/blob/master/app.py)
 
 Create a `wsgi.py` file.
 
 ```
+# wsgi.py
 from app import app
 
 if __name__ == '__main__':
   app.run(debug=False)
 ```
+[example](https://github.com/dotenv-org/integration-example-heroku-flask/blob/master/wsgi.py)
 
 ## Install dotenv-vault
 
@@ -56,7 +59,7 @@ HELLO="Development"
 Install dotenv-vault.
 
 ```
-$ pip install python-dotenv-vault --no-cache-dir
+$ pip install python-dotenv-vault
 ```
 
 Require dotenv-vault at the top of your code in app.py, and 
@@ -74,6 +77,7 @@ def index():
   hello = os.getenv("HELLO")
   return f"<p>Hello, {hello}!</p>"
 ```
+[example](https://github.com/dotenv-org/integration-example-heroku-flask/blob/master/app.py)
 
 Run the app. It should say 'Hello Development'.
 
