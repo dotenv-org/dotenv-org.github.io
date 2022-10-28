@@ -228,6 +228,48 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Gigantic</h6>
   </div>
+  <div>
+    <a href="https://lionrocket.ai/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666974706/%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%A5%E1%86%AB%E1%84%85%E1%85%A9%E1%84%8F%E1%85%A6%E1%86%BA_1_ex5xzv.png">
+    </a>
+    <h6 class="mt-0">Lionrocket AI</h6>
+  </div>
+  <div>
+    <a href="https://www.lab87.it/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666974710/Sviluppo-Web-Lab87_sgzero.png">
+    </a>
+    <h6 class="mt-0">lab87</h6>
+  </div>
+  <div>
+    <a href="https://www.latitude.io/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666974711/Latitude_sktyjv.png">
+    </a>
+    <h6 class="mt-0">Latitude</h6>
+  </div>
+  <div>
+    <a href="https://www.ltv.vn/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666974711/LTV-Software-_-Makes-everything-easier_avya5u.png">
+    </a>
+    <h6 class="mt-0">LTV Software</h6>
+  </div>
+  <div>
+    <a href="https://www.rubrikkgroup.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666974713/Rubrikk-Group-Aggregator-for-Cars-Property-and-Jobs_tbnvzg.png">
+    </a>
+    <h6 class="mt-0">Rubrikk Group</h6>
+  </div>
+  <div>
+    <a href="https://www.360suites.com.br/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666974713/360-Sui%CC%81tes-Aluguel-por-temporada-sem-burocracias_prhvue.png">
+    </a>
+    <h6 class="mt-0">360 Suites</h6>
+  </div>
+  <div>
+    <a href="https://www.ae.be">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666974714/IDENCE-CIAM-made-simple_zisv3p.png">
+    </a>
+    <h6 class="mt-0">AE</h6>
+  </div>
 
 </div>
 
