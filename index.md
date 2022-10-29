@@ -46,7 +46,7 @@ $ npx dotenv-vault push
     <h4 class="mt-0 mb-03">Multiple Environments</h4>
     <p class="mt-0">After you've pushed your .env file, you can manage your secrets across multiple environments. Open an environment to view and edit its environment variables.</p>
     <p class="mt-0 text-monospace">$ npx dotenv-vault open production</p>
-    <p class=""><a class="arrow" href="/docs/tutorials/sync">Managing Environments</a></p>
+    <p class=""><a class="arrow" href="/docs/tutorials/environments">Managing Environments</a></p>
   </div>
   <div>
     <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1666569664/multiple-environments_gi3o9t.gif">
