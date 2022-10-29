@@ -16,7 +16,7 @@ title: "Sync .env files"
 
 <h3 class="text-center mb-0">Why you'll love using Dotenv Vault</h3>
 
-<h6 class="mt-02 text-center"><a href="https://www.youtube.com/watch?v=z-lBjxfhWeY&t=2s">Watch the 1 minute video</a></h6>
+<h6 class="mt-02 text-center"><a href="https://www.youtube.com/watch?v=z-lBjxfhWeY">Watch the 1 minute video</a></h6>
 
 ---
 <div class="love-grid">
