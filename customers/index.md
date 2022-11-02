@@ -276,8 +276,30 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Vibrant</h6>
   </div>
-
-
+  <div>
+    <a href="https://hellorevel.com">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667328094/Events-and-social-groups-for-women-in-midlife-Revel_nxvirh.png">
+    </a>
+    <h6 class="mt-0">Revel</h6>
+  </div>
+  <div>
+    <a href="https://www.filtered.ai">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667328112/Technical-Assessment-Software-Recruiting-Tools-Filtered_uhvzuf.png">
+    </a>
+    <h6 class="mt-0">Filtered AI</h6>
+  </div>
+  <div>
+    <a href="https://www.levergrow.com">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667328107/LeverGrow-Skyrocket-your-meeting-conversion-rate_j9tiea.png">
+    </a>
+    <h6 class="mt-0">Lever Grow</h6>
+  </div>
+  <div>
+    <a href="https://www.shoecarnival.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667328215/Kids-Shoes-Shoe-Carnival_hrs7iu.png">
+    </a>
+    <h6 class="mt-0">Shoe Carnival</h6>
+  </div>
 </div>
 
 ---
