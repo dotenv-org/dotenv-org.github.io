@@ -300,6 +300,49 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Shoe Carnival</h6>
   </div>
+  <div>
+    <a href="https://www.airteam.com.au/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667396368/Airteam-Software-development-and-UX-design-Sydney-Australia_gbosd7.png">
+    </a>
+    <h6 class="mt-0">Airteam</h6>
+  </div>
+  <div>
+    <a href="https://www.qiscus.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667396368/Qiscus-Improve-Customer-Experience-with-the-Customer-Engagement-Platform_qayeyu.png">
+    </a>
+    <h6 class="mt-0">Qiscus</h6>
+  </div>
+  <div>
+    <a href="https://bego.ai/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667396369/Home-_-BeGo_hadsbn.png">
+    </a>
+    <h6 class="mt-0">Bego AI</h6>
+  </div>
+  <div>
+    <a href="https://supernova.io/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667396369/Supernova-_-Design-systems-made-easy-_dy8tb9.png">
+    </a>
+    <h6 class="mt-0">Supernova</h6>
+  </div>
+  <div>
+    <a href="https://groovetechnology.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667396370/Groove-Technology-We-Build-Amazing-Software-For-Your-Business_outkkx.png">
+    </a>
+    <h6 class="mt-0">Groove Technology</h6>
+  </div>
+  <div>
+    <a href="https://byjus.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667396370/BYJU_S-Learning-Learn-Math-Coding-Music-Arts-Online-BYJU_S-US-Tynker-Osmo-Epic_penlne.png">
+    </a>
+    <h6 class="mt-0">BYJU's Learning</h6>
+  </div>
+  <div>
+    <a href="https://www.combitech.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667396373/Combitech_gif2c2.png">
+    </a>
+    <h6 class="mt-0">Combitech</h6>
+  </div>
+
 </div>
 
 ---
