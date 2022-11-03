@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "Vercel with Rails - Integrations Quickstart"
-redirect_from:
-  - /docs/integrations/vercel-rails
 ---
 
 {% include helpers/reading_time.html %}

@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "Circle CI with Node.js - Integrations"
-redirect_from:
-  - /docs/integrations/circle-ci-nodejs
 ---
 
 {% include helpers/reading_time.html %}

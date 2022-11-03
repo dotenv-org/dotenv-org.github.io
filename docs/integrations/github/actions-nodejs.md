@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "GitHub Actions with Node.js - Integrations"
-redirect_from:
-  - /docs/integrations/github-actions-nodejs
 ---
 
 {% include helpers/reading_time.html %}

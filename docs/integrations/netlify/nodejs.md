@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "Netlify with Node.js - Integrations"
-redirect_from:
-  - /docs/integrations/netlify-nodejs
 ---
 
 {% include helpers/reading_time.html %}
