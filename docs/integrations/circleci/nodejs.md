@@ -94,6 +94,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your CircleCI logs.
 
-![Loading .env from encrypted .env.vault](https://res.cloudinary.com/dotenv-org/image/upload/v1666953474/dotenv_circleci_encrypted_loading_env_vault_gkoosy.png)
-
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666953474/dotenv_circleci_encrypted_loading_env_vault_gkoosy.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666953474/dotenv_circleci_encrypted_loading_env_vault_gkoosy.png" %}
