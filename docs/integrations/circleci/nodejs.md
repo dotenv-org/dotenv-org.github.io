@@ -19,7 +19,7 @@ Create a `config.yml` file in a `.circleci/` folder to set your CircleCI setting
 #### Yaml
 
 ```yml
-{% raw %}# .github/workflows/main.yml
+# .github/workflows/main.yml
 version: 2.1
 orbs:
   node: circleci/node@5.0.3

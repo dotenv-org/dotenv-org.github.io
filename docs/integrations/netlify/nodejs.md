@@ -18,7 +18,7 @@ Create a `netlify.toml` file in the `root` folder of your project to set your Ne
 #### Toml
 
 ```Toml
-{% raw %}# /netlify.toml
+# /netlify.toml
 [build]
   command = "npm run build"
 ```

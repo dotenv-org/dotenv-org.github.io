@@ -34,7 +34,7 @@ jobs:
     - run: npm install
     - run: npm run build
       env:
-        DOTENV_KEY: ${{ secrets.DOTENV_KEY }}
+        DOTENV_KEY: ${{ secrets.DOTENV_KEY }}{% endraw %}
 ```
 
 ## Package installation
