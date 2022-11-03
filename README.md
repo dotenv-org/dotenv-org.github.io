@@ -19,4 +19,5 @@ Use [screely.com](https://www.screely.com/) to make aesthetic screenshots.
 ```
 JEKYLL_ENV=production bundle exec jekyll build --verbose
 cp -a _site/. ../dotenv.org/public/
+mv ../dotenv.org/public/sitemap.xml ../dotenv.org/public/map.xml
 ```
