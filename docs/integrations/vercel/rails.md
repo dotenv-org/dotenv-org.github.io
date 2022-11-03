@@ -39,41 +39,12 @@ Create a `config` folder and an `application.rb` file inside it. Reference the V
 // config/application.rb
 require 'dotenv-vault/load'
 ```
-<details>
 
-  <summary>Source </summary>
-
-```Ruby
-require_relative "boot"
-
-require "rails/all"
-require 'dotenv-vault/load'
-
-# Require the gems listed in Gemfile, including any gems
-# you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
-
-module IntegrationExampleHerokuRails
-  class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.1
-
-    # Configuration for the application, engines, and railties goes here.
-    #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
-    #
-    # config.time_zone = "Central Time (US & Canada)"
-    # config.eager_load_paths << Rails.root.join("extras")
-  end
-end
-```
-</details>
-
-<!-- [example](https://github.com/dotenv-org/integration-example-vercel-rails/blob/374e9a3e5e5f6ffe2f4a83f08bf2c0222871ed40/config/application.rb#L4) -->
+[Source](https://github.com/dotenv-org/integration-example-vercel-rails/blob/main/config/application.rb)
 
 ## Build the Vault
 Make sure you are [logged in and in sync](/docs/tutorials/sync) with your Vault first then run `npx dotenv-vault` from CLI in your project root. This will build an encrypted .env.vault file that serves as a unique identifier for your project in Dotenv. Inside it you will find the public keys for every environment you have setup and must be committed to source.
+
 ##### CLI
 ```Java
 npx dotenv-vault build
