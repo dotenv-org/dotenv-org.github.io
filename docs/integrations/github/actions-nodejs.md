@@ -80,9 +80,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ## Set deployment
 Keep the key you obtained in the previous step safe for now and navigate to your GitHub project in the mean time. Once you are there move to Settings, then Secrets, until you reach Actions, where you can submit a "New Repository Secret." In the repo secrets panel, add `DOTENV_KEY` in the key field and the decryption key you stored earlier as its value.
 
-![GitHub Actions Environment Variable Settings](https://res.cloudinary.com/dotenv-org/image/upload/v1666841574/dotenv_github_actions_secrets_vault_key_jxn2sx.png)
-
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666841574/dotenv_github_actions_secrets_vault_key_jxn2sx.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666841574/dotenv_github_actions_secrets_vault_key_jxn2sx.png" %}
 
 ## Commit and push
 
@@ -94,6 +92,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your GitHub Actions logs.
 
-![Loading .env from encrypted .env.vault](https://res.cloudinary.com/dotenv-org/image/upload/v1666959610/dotenv_github_actions_encrypted_loading_env_rf1f95.png)
-
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666959610/dotenv_github_actions_encrypted_loading_env_rf1f95.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666959610/dotenv_github_actions_encrypted_loading_env_rf1f95.png" %}
