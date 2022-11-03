@@ -6,12 +6,12 @@ title: "Heroku with Node.js - Integrations"
 {% include helpers/reading_time.html %}
 
 {% include icons/heroku.html width="50" color="#430098" %}
-{% include icons/nodejs.html width="50" color="#000000" %}
+{% include icons/nodejs.html width="50" color="#339933" %}
 
-
+##### Integrations
 
 # __Heroku with Node.js__
-##### `Integrations`
+
 Learn how to make Heroku, Node.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
 ## Initial setup

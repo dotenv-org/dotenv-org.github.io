@@ -5,12 +5,13 @@ title: "Vercel with Rails - Integrations Quickstart"
 
 {% include helpers/reading_time.html %}
 
-{% include icons/vercel.html width="50" color="#430098" %}
+{% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/rails.html width="50" color="#CC0000" %}
 
+##### Integrations
 
 # __Vercel with Rails__
-##### `Integrations`
+
 Learn how to make Vercel, Rails, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
 ## Package installation
