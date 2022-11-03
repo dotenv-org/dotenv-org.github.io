@@ -94,9 +94,8 @@ Now that the local test is completed successfully, it is time for you to set a p
 ```Java
 npx dotenv-vault open production
 ```
-![Dotenv Vault Production Settings](https://res.cloudinary.com/dotenv-org/image/upload/v1666834899/dotenv_heroku_nodejs_vault_interface_production_mmdewz.png)
 
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666834899/dotenv_heroku_nodejs_vault_interface_production_mmdewz.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666834899/dotenv_heroku_nodejs_vault_interface_production_mmdewz.png" %}
 
 When you are done tinkering, pull the latest Vault version and build your encrypted local `.env.vault` file by running `npx dotenv-vault build`. Commit your `.env.vault` file to code without stress knowing it is both safe and necessary to do so, unlike `.env` files.
 
@@ -119,9 +118,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 
 Copy over the key and jump to your Heroku project. Hop on to the Settings panel and then set `DOTENV_KEY` as key and your decryption key as value `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production` as value.
 
-![Heroku Environment Variable Settings](https://res.cloudinary.com/dotenv-org/image/upload/v1666835672/dotenv_heroku_project_nodejs_config_vars_grk9c5.png)
-
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666835672/dotenv_heroku_project_nodejs_config_vars_grk9c5.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666835672/dotenv_heroku_project_nodejs_config_vars_grk9c5.png" %}
 
 ## Commit and push
 
@@ -133,6 +130,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Heroku logs.
 
-![Loading .env from encrypted .env.vault](https://res.cloudinary.com/dotenv-org/image/upload/v1666955581/dotenv_heroku_logs_encrypted_loading_env_gphwdu.png)
-
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666955581/dotenv_heroku_logs_encrypted_loading_env_gphwdu.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666955581/dotenv_heroku_logs_encrypted_loading_env_gphwdu.png" %}
