@@ -66,9 +66,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ## Set deployment
 Once you have the appropriate key secured, you can move over to your Netlify project panel to open Site settings. There, you must look for the Build & deploy section and specifically its Environment child, where you can Edit variables. Insert `DOTENV_KEY` in the key slot and place the decryption key you retrieved earlier as the value.
 
-![Netlify Environment Variable Settings](https://res.cloudinary.com/dotenv-org/image/upload/v1666846662/dotenv_netlify_environment_variable_settings_dijkbu.png)
-
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666846662/dotenv_netlify_environment_variable_settings_dijkbu.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666846662/dotenv_netlify_environment_variable_settings_dijkbu.png" %}
 
 ## Commit and push
 
@@ -80,6 +78,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Netlify logs.
 
-![Loading .env from encrypted .env.vault](https://res.cloudinary.com/dotenv-org/image/upload/v1666952821/dotenv_netlify_encrypted_loading_env_pwuzng.png)
-
-<!-- {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666952821/dotenv_netlify_encrypted_loading_env_pwuzng.png" %} -->
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666952821/dotenv_netlify_encrypted_loading_env_pwuzng.png" %}
