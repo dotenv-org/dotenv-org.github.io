@@ -336,6 +336,48 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Combitech</h6>
   </div>
+  <div>
+    <a href="https://www.5mins.ai/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667519649/5Mins-Next-Gen-Microlearning-Platform_mqom9w.png">
+    </a>
+    <h6 class="mt-0">5Mins AI</h6>
+  </div>
+  <div>
+    <a href="https://chainflux.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667519650/India-s-first-sustainability-focused-blockchain_gzq8ub.png">
+    </a>
+    <h6 class="mt-0">Chainflux</h6>
+  </div>
+  <div>
+    <a href="https://www.modsen-software.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667519649/Modsen-Modern-Software-Engineering_cxnbb3.png">
+    </a>
+    <h6 class="mt-0">Modsen</h6>
+  </div>
+  <div>
+    <a href="https://www.flowfi.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667519651/FlowFi-Accounting-and-CFO-services-for-startups-and-small-businesses-_ppryw4.png">
+    </a>
+    <h6 class="mt-0">FlowFi</h6>
+  </div>
+  <div>
+    <a href="https://atlantishealth.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667519655/Atlantis-Health-Global-Experts-in-Behavior-Change_nrgbf4.png">
+    </a>
+    <h6 class="mt-0">Atlantis Health</h6>
+  </div>
+  <div>
+    <a href="https://integralrealitylabs.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667520325/Integral-Reality-Labs_wzv0dt.png">
+    </a>
+    <h6 class="mt-0">Integral Reality</h6>
+  </div>
+
+
+
+
+
+
 
 </div>
 
