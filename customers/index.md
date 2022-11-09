@@ -372,11 +372,24 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Integral Reality</h6>
   </div>
-
-
-
-
-
+  <div>
+    <a href="https://www.3num.co/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667973536/3NUM_e8cdjj.png">
+    </a>
+    <h6 class="mt-0">3NUM</h6>
+  </div>
+  <div>
+    <a href="https://harth.io/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667973537/https-harth-io-odin-_efkas7.png">
+    </a>
+    <h6 class="mt-0">Harth Systems</h6>
+  </div>
+  <div>
+    <a href="https://biglemon.co.uk/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667973537/Big-Lemon-Tech-for-Good-App-Development-and-Web-Design_bdandi.png">
+    </a>
+    <h6 class="mt-0">Big Lemon</h6>
+  </div>
 
 
 </div>
