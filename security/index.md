@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Security"
+redirect_from:
+  - /p1/security
 ---
 
 <article class="security-hero" markdown="1">
@@ -158,6 +160,8 @@ So, today, we are extending the .env file format to support syncing across machi
 Join us.
 
 <p>- Mot.<br/>Founder & CTO</p>
+
+<img src="https://res.cloudinary.com/dotenv-org/image/upload/v1667973172/mot-dotenv_l00kth.png" width="90" alt="Mot"/>
 
 ---
 
