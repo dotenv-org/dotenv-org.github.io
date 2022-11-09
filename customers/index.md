@@ -390,7 +390,18 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Big Lemon</h6>
   </div>
-
+  <div>
+    <a href="https://heyfoodlama.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667975277/Easily-find-the-food-that-matches-your-diet-preferences-FoodLama_i08u0i.png">
+    </a>
+    <h6 class="mt-0">FoodLama</h6>
+  </div>
+  <div>
+    <a href="https://fiveelementslabs.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1667975277/Five-Elements-Labs_b401wd.png">
+    </a>
+    <h6 class="mt-0">Five Elements Labs</h6>
+  </div>
 
 </div>
 
