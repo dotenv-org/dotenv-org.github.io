@@ -40,7 +40,7 @@ jobs:
 
 [example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/.github/workflows/main.yml)
 
-## 2. Require dotenv-vault-core
+## 2. Preload dotenv-vault-core
 
 Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core)
 
@@ -48,23 +48,17 @@ Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core)
 $ npm install dotenv-vault-core --save
 ```
 
-And add it to next.config.js.
+Preload NextJS scripts using dotenv-vault-core. This will inject the environment variables ahead of NextJS.
 
 ```
-// next.config.js
-const result = require('dotenv-vault-core').config()
-console.log(result) // for debugging purposes. remove when ready.
-
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  env: result.parsed
-}
-
-module.exports = nextConfig
+"scripts": {
+  "dev": "node -r dotenv-vault-core/config ./node_modules/.bin/next dev",
+  "build": "node -r dotenv-vault-core/config ./node_modules/.bin/next build",
+  "start": "node -r dotenv-vault-core/config ./node_modules/.bin/next start",
+  "lint": "node -r dotenv-vault-core/config ./node_modules/.bin/next lint"
+},
 ```
-
-[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/next.config.js#L2)
+[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/package.json)
 
 ## 3. Run dotenv-vault build
 
@@ -74,7 +68,7 @@ Run npx dotenv-vault build to build your encrypted .env.vault file.
 $ npx dotenv-vault build
 ```
 
-## 4. Get DOTENV_KEY
+## 4. Set DOTENV_KEY
 
 Run npx dotenv-vault keys ci.
 
@@ -84,8 +78,6 @@ remote:   Listing .env.vault decryption keys... done
 
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ```
-
-## 5. Set DOTENV_KEY
 
 Visit your GitHub Project > Settings > Secrets > Actions and click 'New Repository Secret'.
 
@@ -103,4 +95,4 @@ When the CI runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault fil
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665957597/Screen_Shot_2022-10-16_at_2.59.06_PM_y9n9sc.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1668185060/Screen_Shot_2022-11-11_at_8.43.36_AM_ceqv91.png" %}
