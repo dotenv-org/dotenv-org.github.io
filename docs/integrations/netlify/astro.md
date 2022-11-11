@@ -37,7 +37,6 @@ Preload Astro scripts using dotenv-vault-core. This will inject the environment 
   "astro": "astro"
 },
 ```
-
 [example](https://github.com/dotenv-org/integration-example-netlify-astro/blob/master/package.json)
 
 ## 3. Run dotenv-vault build

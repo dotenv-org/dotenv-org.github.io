@@ -16,33 +16,29 @@ redirect_from:
 
 Learn how to make Vercel, NextJS, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Require dotenv-vault-core
+## 1. Install dotenv-vault-core
 
 Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 
 ```
-npm install dotenv-vault-core --save
+$ npm install dotenv-vault-core --save
 ```
 
-Require it in `next.config.js` and load the parsed values to `nextConfig.env`. See line 7 in example below.
+## 2. Preload dotenv-vault-core
+
+Preload NextJS scripts using dotenv-vault-core. This will inject the environment variables ahead of NextJS.
 
 ```
-// next.config.js
-const result = require('dotenv-vault-core').config()
-console.log(result) // for debugging purposes. remove when ready.
-
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  env: result.parsed
-}
-
-module.exports = nextConfig
+"scripts": {
+  "dev": "node -r dotenv-vault-core/config ./node_modules/.bin/next dev",
+  "build": "node -r dotenv-vault-core/config ./node_modules/.bin/next build",
+  "start": "node -r dotenv-vault-core/config ./node_modules/.bin/next start",
+  "lint": "node -r dotenv-vault-core/config ./node_modules/.bin/next lint"
+},
 ```
+[example](https://github.com/dotenv-org/integration-example-vercel-nextjs/blob/master/package.json)
 
-[example](https://github.com/dotenv-org/integration-example-vercel-nextjs/blob/master/next.config.js)
-
-## 2. Run dotenv-vault build
+## 3. Run dotenv-vault build
 
 Run npx dotenv-vault build to build your encrypted .env.vault file.
 
@@ -50,7 +46,7 @@ Run npx dotenv-vault build to build your encrypted .env.vault file.
 $ npx dotenv-vault build
 ```
 
-## 3. Get DOTENV_KEY
+## 4. Set DOTENV_KEY
 
 Run npx dotenv-vault keys production.
 
@@ -61,11 +57,9 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-## 4. Set DOTENV_KEY
-
 Visit your Vercel Project > Settings > Environment Variables.
 
-Set **DOTENV_KEY** to the value returned in step 4.
+Set **DOTENV_KEY** to the value returned above.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666027615/integrations-vercel-envs_y43bwi.gif" %}
 
@@ -79,4 +73,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666050504/Screen_Shot_2022-10-17_at_4.47.10_PM_vqsso3.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668184178/Screen_Shot_2022-11-11_at_8.28.40_AM_svdlil.png" %}
