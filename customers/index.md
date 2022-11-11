@@ -402,6 +402,20 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Five Elements Labs</h6>
   </div>
+  <div>
+    <a href="https://ori.org">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668126458/Oregon-Research-Institute-Home_lsl4oa.png">
+    </a>
+    <h6 class="mt-0">Oregon Research Institute</h6>
+  </div>
+  <div>
+    <a href="https://www.kitohealth.org/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668126460/Kito-Health_zpphst.png">
+    </a>
+    <h6 class="mt-0">Kito Health</h6>
+  </div>
+
+
 
 </div>
 
