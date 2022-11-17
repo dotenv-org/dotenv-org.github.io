@@ -67,7 +67,7 @@ npx dotenv-vault build
 
 When the building is complete, you will be granted access to the Vault decryption keys, which you can use to access protected environment variables freely. To fetch a key, run `npx dotenv-vault keys ci`, where `ci` represents the environment you wish to use with Vault, like `development` and `production`.
 
-The prompt will return a long URL starting with `dotenv://:key` and ending in `?environment=` followed by the environment you have selected.
+The prompt will return a long URI starting with `dotenv://:key` and ending in `?environment=` followed by the environment you have selected.
 
 #### CLI
 

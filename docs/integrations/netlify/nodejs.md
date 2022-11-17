@@ -54,7 +54,7 @@ npx dotenv-vault build
 
 Upon successful Vault build, you will be able to access its decryption keys, without which you will not be able to interact with protected environment variables. You can retrieve the key for a specific environment by running `npx dotenv-vault keys` with the environment in question added at the back.
 
-When you fetch a key, it will return as a long URL that is quite easy to recognize, as it starts with `dotenv://:key` while `?environment=` and the environment you have chosen will be always at the back.
+When you fetch a key, it will return as a long URI that is quite easy to recognize, as it starts with `dotenv://:key` while `?environment=` and the environment you have chosen will be always at the back.
 
 #### CLI
 
