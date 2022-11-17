@@ -8,10 +8,10 @@ title: "Northflank with Node.js - Integrations"
 {% include icons/northflank.html width="50" color="#01e3c5" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 
-
+##### Integrations
 
 # __Northflank with Node.js__
-##### `Integrations`
+
 Learn how to make Northflank, Node.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
 ## Initial setup
