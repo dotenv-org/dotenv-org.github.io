@@ -16,13 +16,23 @@ redirect_from:
 
 Learn how to configure Vercel with Dotenv Vault for a Remix application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
-## 1. Install dotenv-vault
+## 1. Install & preload dotenv-vault
 
 Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 
 ```
 $ npm install dotenv-vault --save
 ```
+
+Preload dotenv-vault-core. This will inject environment variables ahead of Remix.
+
+```
+"scripts": {
+  "build": "node -r dotenv-vault-core/config node_modules/.bin/remix build",
+  config node_modules/.bin/remix dev"
+},
+```
+[example](https://github.com/dotenv-org/integration-example-vercel-remix/blob/master/package.json)
 
 ## 2. Set up Remix ENV
 

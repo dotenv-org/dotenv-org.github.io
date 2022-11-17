@@ -85,7 +85,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665956342/integrations-github-actions-secrets_df9kgo.gif" %}
 
-## 6. Commit and push
+## 5. Commit and push
 
 That's it! 
 
