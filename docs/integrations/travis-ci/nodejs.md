@@ -10,9 +10,10 @@ redirect_from:
 {% include icons/travis-ci.html width="50" color="#3EAAAF" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 
+##### Integrations
 
 # __Travis CI with Node.js__
-##### `Integrations`
+
 Learn how to configure Travis CI with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
 ## Initial setup
