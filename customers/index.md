@@ -414,8 +414,42 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Kito Health</h6>
   </div>
-
-
+  <div>
+    <a href="https://www.viqr.io/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668797068/viqr-io-demo-videos_dqxfba.png">
+    </a>
+    <h6 class="mt-0">Viqr.io</h6>
+  </div>
+  <div>
+    <a href="https://www.mobb.dev/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668797068/mobb_ep4w97.png">
+    </a>
+    <h6 class="mt-0">Mobb.dev</h6>
+  </div>
+  <div>
+    <a href="https://7t.co/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668797069/Top-Mobile-App-Custom-Software-Development-Company-Dallas-TX_algyin.png">
+    </a>
+    <h6 class="mt-0">7t</h6>
+  </div>
+  <div>
+    <a href="https://getsafle.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668797069/Safle-Home_matgj2.png">
+    </a>
+    <h6 class="mt-0">Safle</h6>
+  </div>
+  <div>
+    <a href="https://masterpiecestudio.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668797069/Masterpiece-Studio_utafuv.png">
+    </a>
+    <h6 class="mt-0">Masterpiece Studio</h6>
+  </div>
+  <div>
+    <a href="https://www.copyrock.online/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668797068/CopyRock-Immersive-Technical-Content-and-Copy_hca0cc.png">
+    </a>
+    <h6 class="mt-0">CopyRock</h6>
+  </div>
 
 </div>
 
