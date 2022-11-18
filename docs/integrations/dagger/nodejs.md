@@ -62,20 +62,28 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ```
 
 ## Set deployment
-With the decryption key safely in your possession, it is time for you to open your `main.go` file and add a reference for it.
+With the decryption key safely in your possession, it is time for you to set it as an environment variable on your client machine via CLI. Enter the key-value pair directly for UNIX systems or preceeded by `set` for Windows. The set environment variable will remain available until you exit the CLI.
 
-Locate the container initialization line in your code and call the `WithEnvVariable` method for said container.
+##### CLI
 
-Put `DOTENV_KEY` as the key first, add comma and follow with the decryption key you obtained earlier as the value. Here's how it should look like if your container is declared as `container`:
+```shell
+// UNIX
+DOTENV_KEY=dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
+
+// Windows
+set DOTENV_KEY=dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
+```
+
+Once ready, open your `main.go` file, locate the container initialization line and call the `WithEnvVariable` method for said container. Insert the key `"DOTENV_KEY"` as the first argument, and use the `os` package's `Getenv` method as the second - `os.Getenv("DOTENV_KEY")`. Here's how it should look like if your container is declared as `container`:
 
 ##### Go
 
 ```go
 // main.go
-container = container.WithEnvVariable("DOTENV_KEY", "dotenv://:key_828fe6f34bf06d690ca21eab39b2efc80e5466f412058cc156352ec0d5556a87@dotenv.org/vault/.env.vault?environment=ci")
+container = container.WithEnvVariable("DOTENV_KEY", os.Getenv("DOTENV_KEY"))
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668584031/dotenv_vault_dagger_environment_variable_settings_nljafb.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668717954/dotenv_vault_dagger_environment_variable_settings_nbt7wi.png" %}
 
 ## Commit and push
 
