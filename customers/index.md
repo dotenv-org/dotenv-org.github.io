@@ -81,8 +81,12 @@ title: "Customers"
     </a>
     <h6 class="mt-0">e.l.f. Cosmetics</h6>
   </div>
-
-
+  <div>
+    <a href="https://corporate.charter.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668844707/Charter-Communications-We-Are-a-Connectivity-Company_hyh6jb.png">
+    </a>
+    <h6 class="mt-0">Charter Communications</h6>
+  </div>
   <div>
     <a href="https://labrys.io">
       <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1666589817/labrys_t6b07n.png">
@@ -473,6 +477,24 @@ title: "Customers"
       <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668842913/SNACKCLUB_d1yhjx.png">
     </a>
     <h6 class="mt-0">SNACKCLUB</h6>
+  </div>
+  <div>
+    <a href="https://www.rollouthq.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668844166/Rollout-Embed-SaaS-integrations-with-UI-components_cwj06k.png">
+    </a>
+    <h6 class="mt-0">Rollout</h6>
+  </div>
+  <div>
+    <a href="https://what.it.is/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668844166/what-it-is_e3t0qw.png">
+    </a>
+    <h6 class="mt-0">what.it.is</h6>
+  </div>
+  <div>
+    <a href="https://www.revopsrangers.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668844656/Home-My-Site_bml4f4.png">
+    </a>
+    <h6 class="mt-0">RevOps Rangers</h6>
   </div>
 
 </div>
