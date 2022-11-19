@@ -450,6 +450,30 @@ title: "Customers"
     </a>
     <h6 class="mt-0">CopyRock</h6>
   </div>
+  <div>
+    <a href="http://rik.ai/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668842907/AlfaLabs-_ixodhg.png">
+    </a>
+    <h6 class="mt-0">Alfa Labs</h6>
+  </div>
+  <div>
+    <a href="https://builtbyfield.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668842911/Field-_-A-technology-and-design-consultancy-based-in-Calgary_vmzsy6.png">
+    </a>
+    <h6 class="mt-0">Field</h6>
+  </div>
+  <div>
+    <a href="https://www.gatsbyjs.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668842932/The-Fastest-Frontend-for-the-Headless-Web-Gatsby_1_v0pewf.png">
+    </a>
+    <h6 class="mt-0">Gatsby</h6>
+  </div>
+  <div>
+    <a href="https://www.snackclub.gg/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668842913/SNACKCLUB_d1yhjx.png">
+    </a>
+    <h6 class="mt-0">SNACKCLUB</h6>
+  </div>
 
 </div>
 
