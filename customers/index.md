@@ -496,6 +496,30 @@ title: "Customers"
     </a>
     <h6 class="mt-0">RevOps Rangers</h6>
   </div>
+  <div>
+    <a href="https://qilo.co/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669068445/Qilo-Personalized-obesity-treatment-and-weight-loss-program-for-Africans_vkj00c.png">
+    </a>
+    <h6 class="mt-0">Qilo</h6>
+  </div>
+  <div>
+    <a href="https://www.shift4.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669068450/Shift4-Integrated-Payments-and-Commerce-Technology_xtdaa5.png">
+    </a>
+    <h6 class="mt-0">Shift4</h6>
+  </div>
+  <div>
+    <a href="https://aginic.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669068447/Aginic-We-solve-problems-differently_xke1ke.png">
+    </a>
+    <h6 class="mt-0">Aginic</h6>
+  </div>
+  <div>
+    <a href="https://www.aetherai.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669068452/aetherAI_ia5onq.png">
+    </a>
+    <h6 class="mt-0">Aether AI</h6>
+  </div>
 
 </div>
 
