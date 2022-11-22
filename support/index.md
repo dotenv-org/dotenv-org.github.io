@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Support"
+redirect_from:
+  - /help
 ---
 
 <article markdown="1">
