@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "Syncing .env Files - Tutorial"
+title: "Sync .env files - Tutorial"
 parent: Docs
 redirect_from:
   - /docs/getting-started/with-dotenv-vault
@@ -13,9 +13,9 @@ redirect_from:
 
 ##### Tutorial
 
-# Syncing .env Files
+# Sync .env files
 
-Sync environment variables securely with Dotenv Vault. I'll show you how in this tutorial. Let's get started.
+Sync environment variables securely with Dotenv Vault. Learn how in this tutorial. Let's get started.
 
 ---
 
