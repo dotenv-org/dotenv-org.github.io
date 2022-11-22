@@ -38,6 +38,8 @@ Preload NextJS scripts using dotenv-vault-core. This will inject the environment
 ```
 [example](https://github.com/dotenv-org/integration-example-vercel-nextjs/blob/master/package.json)
 
+When using `pnpm`, add a `.npmrc` file with `node-linker=hoisted`. See [pnpm/pnpm#4782](https://github.com/pnpm/pnpm/issues/4782) for more information.
+
 ## 3. Run dotenv-vault build
 
 Run npx dotenv-vault build to build your encrypted .env.vault file.
