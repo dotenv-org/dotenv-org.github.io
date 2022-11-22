@@ -520,6 +520,24 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Aether AI</h6>
   </div>
+  <div>
+    <a href="https://www.spatiometrics.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669142849/Spatio-Metrics_rgef7c.png">
+    </a>
+    <h6 class="mt-0">Spatio Metrics</h6>
+  </div>
+  <div>
+    <a href="https://www.gravityfree.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669142849/Floral-Marketing-Website-Design-GravityFree_edj3vx.png">
+    </a>
+    <h6 class="mt-0">Gravity Free</h6>
+  </div>
+  <div>
+    <a href="https://ca.vu/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669142862/CAVU-Unlock-value-from-the-airport-passenger-journey_jwtbpg.png">
+    </a>
+    <h6 class="mt-0">CAVU</h6>
+  </div>
 
 </div>
 
