@@ -586,6 +586,13 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Pics.io</h6>
   </div>
+  <div>
+    <a href="https://www.lendertoolkit.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217618/Lender-Toolkit-Providing-the-Sharpest-Tools-in-the-Shed_1_grevtk.png">
+    </a>
+    <h6 class="mt-0">Lender Toolkit</h6>
+  </div>
+
 
 </div>
 
