@@ -83,7 +83,7 @@ Once ready, open your `main.go` file, locate the container initialization line a
 container = container.WithEnvVariable("DOTENV_KEY", os.Getenv("DOTENV_KEY"))
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668717954/dotenv_vault_dagger_environment_variable_settings_nbt7wi.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668717954/integrations/dotenv_vault_dagger_environment_variable_settings_nbt7wi.png" %}
 
 ## Commit and push
 
@@ -97,4 +97,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Dagger logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668584031/dotenv_vault_dagger_logs_encrypted_loading_env_vault_qjfjcm.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668584031/integrations/dotenv_vault_dagger_logs_encrypted_loading_env_vault_qjfjcm.png" %}
