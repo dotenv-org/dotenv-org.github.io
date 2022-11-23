@@ -538,6 +538,54 @@ title: "Customers"
     </a>
     <h6 class="mt-0">CAVU</h6>
   </div>
+  <div>
+    <a href="https://vio.com">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217618/Vio-com-A-better-deal-on-your-next-hotel-motel-or-accommodation-booking-_bqffcb.png">
+    </a>
+    <h6 class="mt-0">Vio</h6>
+  </div>
+  <div>
+    <a href="https://wolken-asm.de/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217618/Wolken-ASM-Individualsoftware-Web-und-Mobile-Entwicklung_uqfwuj.png">
+    </a>
+    <h6 class="mt-0">Wolken</h6>
+  </div>
+  <div>
+    <a href="https://darklab.net.au/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217618/DarkLab_dokoyj.png">
+    </a>
+    <h6 class="mt-0">DARKLAB</h6>
+  </div>
+  <div>
+    <a href="https://darklab.net.au/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217618/DarkLab_dokoyj.png">
+    </a>
+    <h6 class="mt-0">DARKLAB</h6>
+  </div>
+  <div>
+    <a href="https://www.visionarytechnologies.co.nz/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217625/Visionary-Technologies-NZ-Home_ttfhs2.png">
+    </a>
+    <h6 class="mt-0">Visionary</h6>
+  </div>
+  <div>
+    <a href="https://inotec-ap.de/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217619/inotec-AP-HOME_vtii3i.png">
+    </a>
+    <h6 class="mt-0">Inotec</h6>
+  </div>
+  <div>
+    <a href="https://juro.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217620/Juro-all-in-one-contract-automation_q12qoj.png">
+    </a>
+    <h6 class="mt-0">Juro</h6>
+  </div>
+  <div>
+    <a href="https://pics.io/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217622/Pics-io-Simple-and-Powerful-Solution-for-Your-Digital-Assets_twr8ug.pn">
+    </a>
+    <h6 class="mt-0">Pics.io</h6>
+  </div>
 
 </div>
 
