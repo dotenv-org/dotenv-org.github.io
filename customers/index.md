@@ -582,7 +582,7 @@ title: "Customers"
   </div>
   <div>
     <a href="https://pics.io/">
-      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217622/Pics-io-Simple-and-Powerful-Solution-for-Your-Digital-Assets_twr8ug.pn">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217622/Pics-io-Simple-and-Powerful-Solution-for-Your-Digital-Assets_twr8ug.png">
     </a>
     <h6 class="mt-0">Pics.io</h6>
   </div>
