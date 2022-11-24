@@ -557,12 +557,6 @@ title: "Customers"
     <h6 class="mt-0">DARKLAB</h6>
   </div>
   <div>
-    <a href="https://darklab.net.au/">
-      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217618/DarkLab_dokoyj.png">
-    </a>
-    <h6 class="mt-0">DARKLAB</h6>
-  </div>
-  <div>
     <a href="https://www.visionarytechnologies.co.nz/">
       <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217625/Visionary-Technologies-NZ-Home_ttfhs2.png">
     </a>
