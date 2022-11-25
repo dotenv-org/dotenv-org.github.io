@@ -10,9 +10,10 @@ redirect_from:
 {% include icons/bitbucket.html width="50" color="#0052CC" %}
 {% include icons/nodejs.html width="50" color="#000000" %}
 
+##### `Integrations`
 
 # __Bitbucket with Node.js__
-##### `Integrations`
+
 Learn how to configure Bitbucket with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
 ## Initial setup
