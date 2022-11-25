@@ -105,7 +105,7 @@ Now that the local test is completed successfully, it is time for you to set a p
 npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668584325/dotenv_vault_environment_variable_interface_production_nh0bop.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668584325/integrations/dotenv_vault_environment_variable_interface_production_nh0bop.png" %}
 
 When you are done tinkering, pull the latest Vault version and build your encrypted local `.env.vault` file by running `npx dotenv-vault build`. Commit your `.env.vault` file to code without stress knowing it is both safe and necessary to do so, unlike `.env` files.
 
@@ -128,7 +128,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 
 Copy over the key and jump to your Cloud 66 project and your app in particular. Click on the Settings button, select your Web Service Component, and then click Edit on the Environment Variables section. Add a new environment variable by setting `DOTENV_KEY` as key and your decryption key `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production` as value.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669183074/dotenv_vault_cloud_66_environment_variable_settings_lfowyc.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669183074/integrations/dotenv_vault_cloud_66_environment_variable_settings_lfowyc.png" %}
 
 ## Commit and push
 
@@ -140,4 +140,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Cloud 66 logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669183074/dotenv_vault_cloud_66_logs_encrypted_loading_env_vault_dixzj4.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669183074/integrations/dotenv_vault_cloud_66_logs_encrypted_loading_env_vault_dixzj4.png" %}
