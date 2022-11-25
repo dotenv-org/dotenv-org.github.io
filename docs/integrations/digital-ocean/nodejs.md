@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: "Digital Ocean with Node.js - Integrations"
+redirect_from:
+  - /docs/integrations/digital-ocean/nodejs
 ---
 
 {% include helpers/reading_time.html %}
@@ -18,7 +20,7 @@ Learn how to make Digital Ocean, Node.js, and Dotenv Vault work together in a si
 Create an `index.js` file, if you haven't done so already and process the environment variables in it and proceed with a standard Node.js `http-server` setup. Reference the module, indicate the port, and add some dynamic HTML with an environment variable to confirm it works beyond local.
 
 ##### Node.js
-```Java
+```js
 // index.js
 const PORT = process.env.PORT || 8080
 const http = require('http')
@@ -48,7 +50,7 @@ npm install dotenv-vault-core --save
 Reference the Vault package as early as possible in your `index.js` code to prevent possible conflicts.
 
 ##### Node.js
-```Java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
@@ -69,15 +71,15 @@ Don't forget to call `pm2` in your `package.json` file to run the `index.js` app
 ## Vault setup
 Open your Vault project and insert the `HELLO` secret with value of your choice under `development` for local testing. For this tutorial it is `"user, your local test worked perfectly"` to complete the static text in the HTML. Once you are ready and confirmed you're logged in, sync your Dotenv Vault locally with `npx dotenv-vault pull`. Then, run locally for testing.
 
-#### Shell
+##### Shell
 ```shell
 # .env
 HELLO="user, your local test worked perfectly."
 ```
 
 
-#### Node.js
-```Java
+##### CLI
+```shell
 node index.js
 {
   HELLO: 'user, your local test worked perfectly.'
@@ -90,8 +92,8 @@ If you've set everything correctly, you will be faced with the message `"Hello u
 ## Build the Vault
 Now that the local test is completed successfully, it is time for you to set a production value for when you deploy. Following the previous fashion, it is set to `HELLO="user, your production test worked perfectly."` Run `npx dotenv-vault open production` so you can start editing production values with the Vault interface.
 
-#### CLI
-```Java
+##### CLI
+```shell
 npx dotenv-vault open production
 ```
 
@@ -99,7 +101,7 @@ npx dotenv-vault open production
 
 When you are done tinkering, pull the latest Vault version and build your encrypted local `.env.vault` file by running `npx dotenv-vault build`. Commit your `.env.vault` file to code without stress knowing it is both safe and necessary to do so, unlike `.env` files.
 
-#### CLI
+##### CLI
 ```shell
 npx dotenv-vault build
 ```
@@ -108,7 +110,7 @@ npx dotenv-vault build
 
 There is one last step to complete before you are ready - you must set the decryption `DOTENV_KEY` on Digital Ocean. To do that, first fetch your Vault production key by running `npx dotenv-vault keys production`.
 
-#### CLI
+##### CLI
 ```shell
 npx dotenv-vault keys production
 remote:   Listing .env.vault decryption keys... done

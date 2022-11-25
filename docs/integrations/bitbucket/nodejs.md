@@ -10,7 +10,7 @@ redirect_from:
 {% include icons/bitbucket.html width="50" color="#0052CC" %}
 {% include icons/nodejs.html width="50" color="#000000" %}
 
-##### `Integrations`
+##### Integrations
 
 # __Bitbucket with Node.js__
 
@@ -19,7 +19,7 @@ Learn how to configure Bitbucket with Dotenv Vault in a simple Node.js web app. 
 ## Initial setup
 Make sure you have `Pipelines` enabled in your Bitbucket project (requires 2FA). Create a `bitbucket-pipelines.yml` file in your project's `root`  folder to set your Bitbucket pipeline settings. Add the image details and what steps should be triggered, such as install and build in our case.
 
-#### Yaml
+##### Yaml
 ```Yml
 # bitbucket-pipelines.yml
 image: node:10.15.0
@@ -34,16 +34,16 @@ pipelines:
 ## Package installation
 Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
 
-#### CLI
+##### CLI
 ```shell
 npm install dotenv-vault --save
 ```
 
 Reference the Vault module as early as possible in your `index.js` code to avoid potential conflicts.
 
-#### Node.js
+##### Node.js
 
-```Java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
@@ -52,7 +52,7 @@ console.log(process.env) // for debugging purposes. remove when ready.
 ## Build the Vault
 With that out of the way, login and sync with your Vault locally with `npx dotenv-vault pull ci`, then proceed with building it via `npx dotenv-vault build`.
 
-#### CLI
+##### CLI
 
 ```shell
 npx dotenv-vault build
@@ -62,7 +62,7 @@ When the building is complete, you will be granted access to the Vault decryptio
 
 The prompt will return a long URL starting with `dotenv://:key` and ending in `?environment=` followed by the environment you have selected.
 
-#### CLI
+##### CLI
 
 ```shell
 npx dotenv-vault keys ci
