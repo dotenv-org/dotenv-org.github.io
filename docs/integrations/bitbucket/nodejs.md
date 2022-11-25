@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "Bitbucket with Node.js - Integrations"
-redirect_from:
-  - /docs/integrations/bitbucket/nodejs
 ---
 
 {% include helpers/reading_time.html %}

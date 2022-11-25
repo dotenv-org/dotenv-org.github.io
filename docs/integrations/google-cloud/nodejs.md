@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "Google Cloud with Node.js - Integrations"
-redirect_from:
-  - /docs/integrations/google-cloud/nodejs
 ---
 
 {% include helpers/reading_time.html %}

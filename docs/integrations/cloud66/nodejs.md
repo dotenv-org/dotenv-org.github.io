@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "Cloud 66 with Node.js - Integrations"
-redirect_from:
-  - /docs/integrations/cloud66/nodejs
 ---
 
 {% include helpers/reading_time.html %}

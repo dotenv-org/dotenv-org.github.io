@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: "Google Cloud Build with Express - Integrations"
-redirect_from:
-  - /docs/integrations/google-cloud/express
 ---
 
 {% include helpers/reading_time.html %}
