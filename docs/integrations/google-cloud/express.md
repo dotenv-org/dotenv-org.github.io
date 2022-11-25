@@ -10,16 +10,16 @@ redirect_from:
 {% include icons/google-cloud.html width="50" color="#4285F4" %}
 {% include icons/express.html width="50" color="#000000" %}
 
-##### `Integrations`
+##### Integrations
 
 # __Google Cloud Build with Express__
 
 Learn how to configure Google Cloud with Dotenv Vault in a simple Express web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
 ## Initial setup
-Set up your Express app or use this sample template instead:
+Set a basic Express web app or use this sample template instead:
 
-#### Express
+##### Express
 ```js
 // index.js
 const express = require('express')
@@ -37,9 +37,10 @@ app.listen(port, () => {
 
 Create a `cloudbuild.yml` file in your `root` folder to set your Google Cloud Build settings. Add the name, entry point, and arguments for each step you want executed. To load your Dotenv Vault environment variables at a certain step, add a `env` item and reference the Substitution variable that will be set in your Google Cloud Build Triggers accordingly. Keep in mind that Google Cloud Build Substitution variables always start with an underscore, which makes this reference vital for your success. In our case, the `cloudbuild.yml` should look like this:
 
-#### Yaml
+##### Yaml
 
 ```yml
+// cloudbuild.yml
 steps:
 - name: node
   entrypoint: npm
@@ -55,16 +56,16 @@ steps:
 Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
 
 
-#### CLI
+##### CLI
 ```shell
 npm install dotenv-vault --save
 ```
 
 Reference the Vault package as early in your `index.js` code as possible to skip any conflicts that may arise.
 
-#### Express
+##### Express
 
-```java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
@@ -73,7 +74,7 @@ console.log(process.env) // for debugging purposes. remove when ready.
 ## Build the Vault
 Confirm you are logged in and your Vault is synced locally by running `npx dotenv-vault pull ci`. Once ready, proceed by building your Vault with `npx dotenv-vault build`.
 
-#### CLI
+##### CLI
 
 ```shell
 npx dotenv-vault build
@@ -83,7 +84,7 @@ Once Vault has finished building, it will provide you with access to its decrypt
 
 The outcome of this will be a long URL being returned. You will immediately recognize it as it always starts with `dotenv://:key` and ends in `?environment=` with the environment you have chosen.
 
-#### CLI
+##### CLI
 
 ```shell
 npx dotenv-vault keys ci

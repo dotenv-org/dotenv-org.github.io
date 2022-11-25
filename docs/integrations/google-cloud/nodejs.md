@@ -2,7 +2,7 @@
 layout: docs
 title: "Google Cloud with Node.js - Integrations"
 redirect_from:
-  - /docs/integrations/google-cloud-nodejs
+  - /docs/integrations/google-cloud/nodejs
 ---
 
 {% include helpers/reading_time.html %}
@@ -19,7 +19,7 @@ Learn how to configure Google Cloud with Dotenv Vault in a simple Node.js web ap
 ## Initial setup
 Create a `cloudbuild.yml` file in your `root` folder to set your Google Cloud settings. Add the name, entry point, and arguments for each step you want executed.
 
-To load your Dotenv Vault environment variables at a certain step, add a `env` item and reference the Substitution variable that will be set in your Google Cloud Build Triggers accordingly.
+To load your Dotenv Vault environment variables at a certain step, add an `env` item and reference the Substitution variable that will be set in your Google Cloud Build Triggers accordingly.
 
 Keep in mind that Google Cloud Build Substitution variables always start with an underscore, which makes this reference vital for your success. In our case, the `cloudbuild.yml` should look like this:
 
