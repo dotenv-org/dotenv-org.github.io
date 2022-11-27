@@ -581,10 +581,34 @@ title: "Customers"
     <h6 class="mt-0">Pics.io</h6>
   </div>
   <div>
-    <a href="https://www.lendertoolkit.com/">
-      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669217618/Lender-Toolkit-Providing-the-Sharpest-Tools-in-the-Shed_1_grevtk.png">
+    <a href="https://alertacoches.es/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669514993/AlertaCoches-es-Coches-de-segunda-mano-Busca-anuncios-en-diferentes-portales-de-compraventa_lavqla.png">
     </a>
-    <h6 class="mt-0">Lender Toolkit</h6>
+    <h6 class="mt-0">Alerta Coches</h6>
+  </div>
+  <div>
+    <a href="https://www.wtpcg.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669514996/We-The-People-Consulting-Group_fqn44s.png">
+    </a>
+    <h6 class="mt-0">We The People</h6>
+  </div>
+  <div>
+    <a href="https://www.movedigital.ch/en/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669514995/Move-Digital-AG-Move-Digital-AG_lxzrx0.png">
+    </a>
+    <h6 class="mt-0">Move Digital</h6>
+  </div>
+  <div>
+    <a href="https://www.checktudo.com.br/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669514994/Checktudo-Consultas-Veiculares-Ana%CC%81lise-completa-de-CPF-e-CNPJ_g5tfr8.png">
+    </a>
+    <h6 class="mt-0">Checktudo</h6>
+  </div>
+  <div>
+    <a href="https://hitline.fr/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1669514997/Accueil-HITLINE_ioezyq.png">
+    </a>
+    <h6 class="mt-0">Hitline</h6>
   </div>
 
 
