@@ -14,13 +14,15 @@ title: "Circle CI with Node.js - Integrations"
 
 Learn how to configure CircleCI with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-circleci-nodejs).
+
 ## Initial setup
 Create a `config.yml` file in a `.circleci/` folder to set your CircleCI settings. Add relevant `orbs` to your project to define the tasks that need to be performed when building and be sure to include dependencies like container type. Don't forget to specify what CircleCI needs to run after it has finished building, such as your starting point script.
 
-#### Yaml
+##### Yaml
 
 ```yml
-# .github/workflows/main.yml
+# .circleci/config.yml
 version: 2.1
 orbs:
   node: circleci/node@5.0.3
@@ -36,30 +38,32 @@ jobs:
           name: Run code
           command: node index
 ```
+[Example](https://github.com/dotenv-org/integration-example-circleci-nodejs/blob/main/.circleci/config.yml).
 
 ## Package installation
 Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
 
 
-#### CLI
+##### CLI
 ```shell
 npm install dotenv-vault --save
 ```
 
 Reference the Vault package as early in your `index.js` code as possible to skip any conflicts that may arise.
 
-#### Node.js
+##### Node.js
 
-```java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-circleci-nodejs/blob/main/index.js).
 
 ## Build the Vault
 Confirm you are logged in and your Vault is synced locally by running `npx dotenv-vault pull ci`. Once ready, proceed by building your Vault with `npx dotenv-vault build`.
 
-#### CLI
+##### CLI
 
 ```shell
 npx dotenv-vault build
@@ -69,7 +73,7 @@ Once Vault has finished building, it will provide you with access to its decrypt
 
 The outcome of this will be a long URI being returned. You will immediately recognize it as it always starts with `dotenv://:key` and ends in `?environment=` with the environment you have chosen.
 
-#### CLI  
+##### CLI  
 
 ```shell
 npx dotenv-vault keys ci
@@ -79,9 +83,10 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ```
 
 ## Set deployment
+
 With the decryption key safely in your possession, it is time for you to head over to the CircleCI project settings. From there seek the Environment Variables section and click the Add Environment Variable button to begin the process. Put `DOTENV_KEY` as the key and save the decryption key you obtained earlier for the value field.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669188726/integrations/dotenv_vault_circleci_environment_variable_settings_uu4bex.png" %} 
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669188726/integrations/dotenv_vault_circleci_environment_variable_settings_uu4bex.png" %}
 
 ## Commit and push
 

@@ -14,6 +14,8 @@ title: "Cloud 66 with Node.js - Integrations"
 
 Learn how to make Cloud 66, Node.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-cloud66-nodejs).
+
 ## Initial setup
 Create an `index.js` file, if you haven't done so already and process the environment variables in it and proceed with a standard Node.js `http-server` setup. Reference the module, indicate the port, and add some dynamic HTML with an environment variable to confirm it works beyond local.
 
@@ -32,6 +34,8 @@ server.listen(PORT, () => {
   console.log(`Server running on port:${PORT}/`);
 });
 ```
+[Example](https://github.com/dotenv-org/integration-example-cloud66-nodejs/blob/main/index.js).
+
 Remember to set an event listener running on the same port so your app knows when to serve its visitors. Commit that to code and push it to Cloud 66.
 
 ##### CLI
@@ -53,6 +57,7 @@ Reference the Vault package as early as possible in your `index.js` code to prev
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-cloud66-nodejs/blob/main/index.js).
 
 With the `dotenv-vault-core` package successfully taken care of, move forward by installing the `pm2` package. `pm2` replaces the functionality of the default `http-server` Node.js module and will help your app run successfully on Cloud 66.
 
@@ -74,6 +79,7 @@ COPY . .
 EXPOSE 80
 CMD ["pm2-runtime", "index.js"]
 ```
+[Example](https://github.com/dotenv-org/integration-example-cloud66-nodejs/blob/main/Dockerfile).
 
 ## Vault setup
 Open your Vault project and insert the `HELLO` secret with value of your choice under `development` for local testing. For this tutorial it is `"user, your local test worked perfectly"` to complete the static text in the HTML. Once you are ready and confirmed you're logged in, sync your Dotenv Vault locally with `npx dotenv-vault pull`. Then, run locally for testing.

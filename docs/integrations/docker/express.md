@@ -16,6 +16,8 @@ redirect_from:
 
 In this tutorial, learn how to integrate Dotenv Vault with Docker and an Express application.
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-docker-express).
+
 ## Dockerfile
 
 Create your Dockerfile
@@ -133,7 +135,7 @@ $ docker build -t docker-express . && docker run -e DOTENV_KEY="dotenv://:key_12
 Running on port 8080
 ```
 
-That's it! 
+That's it!
 
 Commit your changes to code and deploy your Docker image to your infrastructure.
 

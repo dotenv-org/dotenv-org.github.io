@@ -16,6 +16,8 @@ redirect_from:
 
 Learn how to configure Dagger with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-dagger-nodejs).
+
 ## Initial setup
 First, you will need a Dagger CI setup, so if you don't have one already go ahead and create it. You can find an [example Node.js setup in the Dagger repo here](https://github.com/dagger/examples/tree/main/templates/nodejs/npm/gosdk).
 
@@ -31,11 +33,12 @@ Reference the Vault package as early in your `index.js` code as possible to skip
 
 ##### Node.js
 
-```java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-dagger-nodejs/blob/main/index.js).
 
 ## Build the Vault
 Confirm you are logged in and your Vault is synced locally by running `npx dotenv-vault pull ci`. Once ready, proceed by building your Vault with `npx dotenv-vault build`.
@@ -82,6 +85,7 @@ Once ready, open your `main.go` file, locate the container initialization line a
 // main.go
 container = container.WithEnvVariable("DOTENV_KEY", os.Getenv("DOTENV_KEY"))
 ```
+[Example](https://github.com/dotenv-org/integration-example-dagger-nodejs/blob/main/main.go).
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668717954/integrations/dotenv_vault_dagger_environment_variable_settings_nbt7wi.png" %}
 

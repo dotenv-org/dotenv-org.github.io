@@ -14,6 +14,8 @@ title: "Heroku with Express - Integrations"
 
 Learn how to make Heroku, Express, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-heroku-express).
+
 ## Deploy to Heroku
 
 Add a Procfile to run your Express app.
@@ -129,7 +131,7 @@ Visit your Heroku Project's Environment Variables under settings of your heroku 
 
 ## Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and deploy to Heroku.
 

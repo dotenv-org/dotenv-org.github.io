@@ -144,7 +144,7 @@ $ RAILS_ENV=production DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vaul
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666270471/Screen_Shot_2022-10-20_at_6.21.43_PM_gl1bog.png" %}
 
 
-That's it! 
+That's it!
 
 Commit your changes to code and deploy your Docker image to your infrastructure.
 

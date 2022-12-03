@@ -16,6 +16,8 @@ redirect_from:
 
 Learn how to configure Travis CI with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-travis-ci-nodejs).
+
 ## Initial setup
 Create a `.travis.yml` file in your `root` folder to set your Travis CI settings. Add the language, its version and the appropriate commands you need executed at various build stages.
 
@@ -32,6 +34,7 @@ install:
   - npm install
   - npm run build
 ```
+[Example](https://github.com/dotenv-org/integration-example-travis-ci-nodejs/blob/master/.travis.yml).
 
 ## Package installation
 Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
@@ -46,11 +49,12 @@ Reference the Vault package as early in your `index.js` code as possible to skip
 
 ##### Node.js
 
-```java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-travis-ci-nodejs/blob/master/index.js).
 
 ## Build the Vault
 Confirm you are logged in and your Vault is synced locally by running `npx dotenv-vault pull ci`. Once ready, proceed by building your Vault with `npx dotenv-vault build`.

@@ -14,13 +14,15 @@ title: "Northflank with Node.js - Integrations"
 
 Learn how to make Northflank, Node.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-northflank-nodejs).
+
 ## Initial setup
 For a `Docker` build type, create a `Dockerfile` in the `root` folder to set your Northflank project settings.
 
 Add the following segment to run the `build` script in your `package.json` and expose port 80, which will be needed later.
 
 ##### Text
-```
+```plain
 // Dockerfile
 FROM node:12-alpine AS builder
 
@@ -33,6 +35,8 @@ EXPOSE 80
 CMD [ "npm", "run", "build" ]
 
 ```
+[Example](https://github.com/dotenv-org/integration-example-northflank-nodejs/blob/master/Dockerfile).
+
 
 If you are using a buildpack like Heroku for example instead of the default `Docker`, you can refer to [the Heroku integration guide](/docs/integrations/heroku/nodejs) for `Procfile` settings.
 
@@ -41,7 +45,7 @@ Create an `index.js` file, if you haven't done so already. Process the environme
 Reference the module, indicate the port, and add some dynamic HTML with an environment variable to confirm it works beyond local.
 
 ##### Node.js
-```Java
+```js
 // index.js
 const PORT = process.env.PORT || 80
 const http = require('http')
@@ -54,6 +58,8 @@ server.listen(PORT, () => {
   console.log(`Server running on port:${PORT}/`);
 });
 ```
+[Example](https://github.com/dotenv-org/integration-example-northflank-nodejs/blob/master/index.js).
+
 Remember to set an event listener running on the same port so your app knows when to serve its visitors. Commit that to code and push it to Northflank.
 
 Once it is deployed, your app will say `'Hello undefined'` as it doesn't have a way to access the environment variable from the HTML yet.
@@ -71,11 +77,12 @@ npm install dotenv-vault-core --save
 Reference the Vault package as early as possible in your `index.js` code to prevent possible conflicts.
 
 ##### Node.js
-```Java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-northflank-nodejs/blob/master/index.js).
 
 ## Vault setup
 Open your Vault project and insert the `HELLO` secret with value of your choice under `development` for local testing.

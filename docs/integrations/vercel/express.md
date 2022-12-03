@@ -17,6 +17,8 @@ redirect_from:
 
 Learn how to make Vercel, Express, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-vercel-express).
+
 ## 1. Set up Express for Vercel
 
 Set up your Express app to work with Vercel. Add `module.exports = app` to index.js.
@@ -112,7 +114,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 ## 6. Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and push to GitHub.
 

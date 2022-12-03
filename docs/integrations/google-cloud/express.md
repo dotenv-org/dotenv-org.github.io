@@ -14,6 +14,8 @@ title: "Google Cloud Build with Express - Integrations"
 
 Learn how to configure Google Cloud with Dotenv Vault in a simple Express web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-google-cloud-express).
+
 ## Initial setup
 Set a basic Express web app or use this sample template instead:
 
@@ -32,6 +34,7 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 ```
+[Example](https://github.com/dotenv-org/integration-example-google-cloud-express/blob/main/index.js).
 
 Create a `cloudbuild.yml` file in your `root` folder to set your Google Cloud Build settings. Add the name, entry point, and arguments for each step you want executed. To load your Dotenv Vault environment variables at a certain step, add a `env` item and reference the Substitution variable that will be set in your Google Cloud Build Triggers accordingly. Keep in mind that Google Cloud Build Substitution variables always start with an underscore, which makes this reference vital for your success. In our case, the `cloudbuild.yml` should look like this:
 
@@ -49,10 +52,10 @@ steps:
     - 'DOTENV_KEY=${_DOTENV_KEY}'
   args: ['run', 'build']
 ```
+[Example](https://github.com/dotenv-org/integration-example-google-cloud-express/blob/main/cloudbuid.yml).
 
 ## Package installation
 Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
-
 
 ##### CLI
 ```shell
@@ -68,6 +71,7 @@ Reference the Vault package as early in your `index.js` code as possible to skip
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-google-cloud-express/blob/main/index.js).
 
 ## Build the Vault
 Confirm you are logged in and your Vault is synced locally by running `npx dotenv-vault pull ci`. Once ready, proceed by building your Vault with `npx dotenv-vault build`.

@@ -14,6 +14,8 @@ title: "Render with Express - Integrations"
 
 In this tutorial, learn how to integrate Dotenv Vault with Render. This tutorial assumes you are familiar with Render or have gone through [one of their tutorials](https://render.com/docs/deploy-node-express-app).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-render-express).
+
 ## Install dotenv-vault
 
 Create your local `.env` file.
@@ -99,7 +101,7 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-Then in Render click Project Settings > Environment > Add Environment Variable. 
+Then in Render click Project Settings > Environment > Add Environment Variable.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666469257/screely-1666469242648_bdrnzn.png" %}
 

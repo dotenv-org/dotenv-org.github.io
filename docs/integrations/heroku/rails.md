@@ -16,6 +16,8 @@ redirect_from:
 
 Learn how to make Heroku, Rails, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-heroku-rails).
+
 ## Set up Rails with Heroku
 
 Set up your Rails app to work with Heroku.
@@ -77,7 +79,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 ## Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and deploy to Heroku.
 

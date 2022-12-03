@@ -16,6 +16,8 @@ redirect_from:
 
 In this tutorial, learn how to integrate Dotenv Vault with Docker and a Rails application.
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-docker-ruby).
+
 ## Dockerfile
 
 Create your Dockerfile in your rails application
@@ -118,7 +120,7 @@ $ docker build -t demo . && docker run -e DOTENV_KEY="dotenv://:key1234@dotenv.o
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666265694/Screen_Shot_2022-10-20_at_4.59.50_PM_idxvjy.png" %}
 
 
-That's it! 
+That's it!
 
 Commit your changes to code and deploy your Docker image to your infrastructure.
 

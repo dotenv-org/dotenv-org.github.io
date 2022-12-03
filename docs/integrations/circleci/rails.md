@@ -14,7 +14,9 @@ redirect_from:
 
 # Circle CI with Rails
 
-In this tutorial, learn how to integrate Dotenv Vault with Circle CI. Setup CI file to work with rails application. [example](https://github.com/dotenv-org/integration-example-circleci/blob/master/.circleci/config.yml) 
+In this tutorial, learn how to integrate Dotenv Vault with Circle CI. Setup CI file to work with rails application. [example](https://github.com/dotenv-org/integration-example-circleci/blob/master/.circleci/config.yml)
+
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-circleci).
 
 ## Install dotenv-vault
 
@@ -28,7 +30,7 @@ Add dotenv-vault-rails gem to Gemfile
 ```
 // Add 'dotenv-vault-rails' to Gemfile
 gem 'dotenv-vault-rails'
-``` 
+```
 
 Require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby) as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
 
@@ -80,8 +82,8 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ```
 
-Then in Circle CI click projects settings 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666358069/Screen_Shot_2022-10-21_at_6.43.47_PM_hvbpmr.png" %} and Add Environment Variable 
+Then in Circle CI click projects settings
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666358069/Screen_Shot_2022-10-21_at_6.43.47_PM_hvbpmr.png" %} and Add Environment Variable
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666356075/Screen_Shot_2022-10-21_at_6.08.47_PM_lwhnw9.png" %}
 
 That’s it!
