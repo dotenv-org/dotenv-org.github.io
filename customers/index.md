@@ -610,7 +610,24 @@ title: "Customers"
     </a>
     <h6 class="mt-0">Hitline</h6>
   </div>
-
+  <div>
+    <a href="https://www.gradual.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1670363684/Gradual-All-community-led-experiences-in-one-place_kudd6b.png">
+    </a>
+    <h6 class="mt-0">Gradual</h6>
+  </div>
+  <div>
+    <a href="https://datakitchen.io/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1670363869/DataOps-Observability-and-Automation-Software-DataKitchen_qibqqx.png">
+    </a>
+    <h6 class="mt-0">DataKitchen</h6>
+  </div>
+  <div>
+    <a href="https://ticketmaster.com/">
+      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1670364007/About-Ticketmaster-a-Live-Nation-Entertainment-Inc-company_nzueqt.png">
+    </a>
+    <h6 class="mt-0">Ticketmaster</h6>
+  </div>
 
 </div>
 
