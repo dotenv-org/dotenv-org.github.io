@@ -17,6 +17,8 @@ redirect_from:
 In this tutorial, learn how to integrate Dotenv Vault with Serverless.
 This tutorial assumes you are already familiar with the [Serverless README](https://github.com/serverless/serverless).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-serverless-express).
+
 ## Install dotenv-vault
 
 Create your local .env file.

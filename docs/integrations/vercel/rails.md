@@ -14,6 +14,8 @@ title: "Vercel with Rails - Integrations Quickstart"
 
 Learn how to make Vercel, Rails, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-vercel-rails).
+
 ## Package installation
 First, create a Gemfile for your Rails application, if you haven't done so already, by initializing it with `bundle init`. Declare the `gem 'dotenv-vault-rails'` in the Gemfile.
 ##### Rails
@@ -64,7 +66,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ## Set deployment
 Now that you have access to the keys for every environment, you will have to reference them as environment variables in your Vercel project's settings. To do that, navigate to your Project, then the Settings tab to reach the Environment Variable panel. Set as key **`DOTENV_KEY`** and as value the decryption key returned in the previous step **`dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production`**.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669189757/integrations/dotenv_vault_vercel_environment_variable_settings_igagy0.png" %} 
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669189757/integrations/dotenv_vault_vercel_environment_variable_settings_igagy0.png" %}
 
 ## Commit and push
 That's it!

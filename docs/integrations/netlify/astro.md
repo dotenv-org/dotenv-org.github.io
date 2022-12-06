@@ -16,6 +16,8 @@ redirect_from:
 
 Learn how to make Netlify, Astro, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-netlify-astro).
+
 ## 1. Install dotenv-vault-core
 
 Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
@@ -68,7 +70,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 ## 6. Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and push to GitHub.
 

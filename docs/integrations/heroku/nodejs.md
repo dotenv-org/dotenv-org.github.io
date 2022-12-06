@@ -14,17 +14,22 @@ title: "Heroku with Node.js - Integrations"
 
 Learn how to make Heroku, Node.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-heroku-nodejs).
+
 ## Initial setup
 Create a `Procfile` in the `root` folder to set your Heroku project settings. Add the `web` key, followed by the start command of your Node.js application as value.
 
 ##### Yaml
-```Java
+```yaml
+// Procfile
 web: npm run build
 ```
+[Example](https://github.com/dotenv-org/integration-example-heroku-nodejs/blob/master/Procfile)
+
 Create an `index.js` file, if you haven't done so already. Process the environment variables in it and proceed with a standard Node.js `http-server` setup. Reference the module, indicate the port, and add some dynamic HTML with an environment variable to confirm it works beyond local.
 
 ##### Node.js
-```Java
+```js
 // index.js
 const PORT = process.env.PORT || 5000
 const http = require('http')
@@ -38,6 +43,8 @@ server.listen(PORT, () => {
   console.log(`Server running on port:${PORT}/`);
 });
 ```
+[Example](https://github.com/dotenv-org/integration-example-heroku-nodejs/blob/master/index.js)
+
 Remember to set an event listener running on the same port so your app knows when to serve its visitors. Commit that to code and push it to Heroku.
 
 ##### CLI
@@ -60,11 +67,12 @@ npm install dotenv-vault-core --save
 Reference the Vault package as early as possible in your `index.js` code to prevent possible conflicts.
 
 ##### Node.js
-```Java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-heroku-nodejs/blob/master/index.js)
 
 ## Vault setup
 Open your Vault project and insert the `HELLO` secret with value of your choice under `development` for local testing. For this tutorial it is `"user, your local test worked perfectly"` to complete the static text in the HTML. Once you are ready and confirmed you're logged in, sync your Dotenv Vault locally with `npx dotenv-vault pull`. Then, run locally for testing.

@@ -14,6 +14,8 @@ title: "Heroku with Flask - Integrations"
 
 In this tutorial we'll show you how to integrate Dotenv Vault with a Flask app deployed to Heroku. This tutorial assumes you have already learned how to [sync a .env file](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-heroku-flask).
+
 ## Install Flask
 
 Install Flask and Gunicorn.
@@ -62,7 +64,7 @@ Install dotenv-vault.
 $ pip install python-dotenv-vault
 ```
 
-Require dotenv-vault at the top of your code in app.py, and 
+Require dotenv-vault at the top of your code in app.py, and
 
 ```
 # app.py
@@ -181,7 +183,7 @@ Visit your Heroku Project's Settings > Reveal Config Vars > Environment Variable
 
 ## Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and deploy to Heroku.
 

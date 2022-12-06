@@ -17,6 +17,8 @@ In this tutorial, learn how to integrate Dotenv Vault with GitLab CI/CD.
 
 This tutorial extends GitLab's [Get Started with GitLab CI/CD tutorial](https://docs.gitlab.com/ee/ci/quick_start/). We recommend you check that out first.
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-gitlab-ci-quickstart).
+
 ## Install dotenv-vault
 
 GitLab's CI/CD getting started guide doesn't include a program so let's add one.

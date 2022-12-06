@@ -16,6 +16,8 @@ redirect_from:
 
 Learn how to configure Vercel with Dotenv Vault for a Remix application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-vercel-remix).
+
 ## 1. Install & preload dotenv-vault
 
 Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
@@ -96,7 +98,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 ## 6. Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and push to GitHub.
 

@@ -16,6 +16,8 @@ redirect_from:
 
 Learn how to make Vercel, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-vercel-nodejs).
+
 ## 1. Set up Node.js for Vercel
 
 Set up your Node.js app to work with Vercel.
@@ -116,7 +118,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 ## 6. Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and push to Vercel.
 

@@ -14,39 +14,43 @@ title: "Netlify with Node.js - Integrations"
 
 Learn how to configure Netlify with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-netlify-nodejs).
+
 ## Initial setup
 Create a `netlify.toml` file in the `root` folder of your project to set your Netlify settings there. You can use several environment contexts to the deployment setup to load their corresponding secrets and commands. Instead of pulling Vault variables to local storage, you can access them directly by adding the `-m` parameter, followed by the unique `me_` identifier from your `.env.me` file.
 
-#### Toml
+##### Toml
 
 ```Toml
-# /netlify.toml
+// netlify.toml
 [build]
   command = "npm run build"
 ```
+[Example](https://github.com/dotenv-org/integration-example-netlify-nodejs/blob/master/netlify.toml).
 
 ## Package installation
 Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
 
-#### CLI
+##### CLI
 
 ```shell
 npm install dotenv-vault --save
 ```
 Make a reference to the Vault package as early as possible in your `index.js` code to steer clear from any plausible conflicts moving forward.
 
-#### Node.js
+##### Node.js
 
-```java
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
+[Example](https://github.com/dotenv-org/integration-example-netlify-nodejs/blob/master/index.js).
 
 ## Build the Vault
 Before you start, double check you are logged in and that your Vault is synced locally. If everything checks out, you can move forward and build your Vault using `npx dotenv-vault build`.
 
-#### CLI
+##### CLI
 
 ```shell
 npx dotenv-vault build

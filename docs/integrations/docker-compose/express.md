@@ -16,6 +16,8 @@ redirect_from:
 
 In this tutorial, learn how to integrate Dotenv Vault with Docker Compose and an Express application.
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-docker-compose-express).
+
 ## Dockerfile & docker-compose.yml
 
 Create your Dockerfile
@@ -147,7 +149,7 @@ $ NODE_ENV=production DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault
 Running on port 8080
 ```
 
-That's it! 
+That's it!
 
 Commit your changes to code.
 

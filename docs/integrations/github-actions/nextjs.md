@@ -1,24 +1,26 @@
 ---
 layout: docs
-title: "GitHub Actions with Remix - Integrations"
+title: "GitHub Actions with NextJS - Integrations"
 redirect_from:
-  - /docs/integrations/github-actions-remix
+  - /docs/integrations/github/actions-nextjs
 ---
 
 {% include helpers/reading_time.html %}
 
 {% include icons/github.html width="50" color="#181717" %}
-{% include icons/remix.html width="50" color="#000000" %}
+{% include icons/nextjs.html width="50" color="#000000" %}
 
 ##### Integrations
 
-# GitHub Actions with Remix
+# GitHub Actions with NextJS
 
-Learn how to configure GitHub Actions with Dotenv Vault for a Remix application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
+Learn how to configure GitHub Actions with Dotenv Vault for a NextJS application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
+
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-github-actions-nextjs).
 
 ## 1. Add GitHub Actions yaml file
 
-In your Remix project add the file .github/workflows/main.yml.
+In your NextJS project add the file .github/workflows/main.yml.
 
 ```
 {% raw %}# .github/workflow/main.yml
@@ -38,29 +40,27 @@ jobs:
         DOTENV_KEY: ${{ secrets.DOTENV_KEY }}{% endraw %}
 ```
 
-[example](https://github.com/dotenv-org/integration-example-github-actions-remix/blob/master/.github/workflows/main.yml)
+[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/.github/workflows/main.yml)
 
-## 2. Require dotenv-vault
+## 2. Preload dotenv-vault-core
 
-Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
-
-```
-$ npm install dotenv-vault --save
-```
-
-And add it to remix.config.js.
+Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core)
 
 ```
-// remix.config.js
-require('dotenv-vault').config()
-console.log(process.env) // for debugging purposes. remove when ready.
-
-module.exports = {
-  ...
-};
+$ npm install dotenv-vault-core --save
 ```
 
-[example](https://github.com/dotenv-org/integration-example-github-actions-remix/blob/master/remix.config.js#L2)
+Preload NextJS scripts using dotenv-vault-core. This will inject the environment variables ahead of NextJS.
+
+```
+"scripts": {
+  "dev": "node -r dotenv-vault-core/config ./node_modules/.bin/next dev",
+  "build": "node -r dotenv-vault-core/config ./node_modules/.bin/next build",
+  "start": "node -r dotenv-vault-core/config ./node_modules/.bin/next start",
+  "lint": "node -r dotenv-vault-core/config ./node_modules/.bin/next lint"
+},
+```
+[example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/package.json)
 
 ## 3. Run dotenv-vault build
 
@@ -70,7 +70,7 @@ Run npx dotenv-vault build to build your encrypted .env.vault file.
 $ npx dotenv-vault build
 ```
 
-## 4. Get DOTENV_KEY
+## 4. Set DOTENV_KEY
 
 Run npx dotenv-vault keys ci.
 
@@ -81,17 +81,15 @@ remote:   Listing .env.vault decryption keys... done
 dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ```
 
-## 5. Set DOTENV_KEY
-
 Visit your GitHub Project > Settings > Secrets > Actions and click 'New Repository Secret'.
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665956342/integrations-github-actions-secrets_df9kgo.gif" %}
 
-## 6. Commit and push
+## 5. Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and push to GitHub.
 
@@ -99,4 +97,4 @@ When the CI runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault fil
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665957597/Screen_Shot_2022-10-16_at_2.59.06_PM_y9n9sc.png" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1668185060/Screen_Shot_2022-11-11_at_8.43.36_AM_ceqv91.png" %}

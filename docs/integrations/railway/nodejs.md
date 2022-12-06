@@ -16,6 +16,8 @@ redirect_from:
 
 Learn how to make Railway, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-railway-nodejs).
+
 ## Set up Node.js for Railway
 
 Set up your Node.js app to work with Railway.
@@ -102,7 +104,7 @@ Set **DOTENV_KEY** to the value returned in step 4.
 
 ## Commit and push
 
-That's it! 
+That's it!
 
 Commit those changes safely to code and deploy to Railway.
 

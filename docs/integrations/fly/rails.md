@@ -16,6 +16,8 @@ redirect_from:
 
 In this tutorial, learn how to integrate Dotenv Vault with Fly.io and a Rails application.
 
+You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-fly-rails).
+
 ## Deploy to Fly.io
 
 Deploy your Rails app to fly.io.
@@ -114,7 +116,7 @@ $ flyctl secrets set RAILS_ENV=production DOTENV_KEY='dotenv://:key_1234@dotenv.
 
 WARNING: The single apostrophe is important. Otherwise, Fly.io will truncate the DOTENV_KEY incorrectly and decryption will not work.
 
-That's it! 
+That's it!
 
 Commit your changes to code and run:
 
