@@ -25,7 +25,7 @@ Most important of all, however, do set an `env` parameter to store your `DOTENV_
 
 ##### Yaml
 ```Yml
-// .github/workflows/main.yml
+{% raw %}// .github/workflows/main.yml
 name: npm run build
 on: [push]
 jobs:
