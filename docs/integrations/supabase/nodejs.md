@@ -37,7 +37,7 @@ Once ready, proceed by installing the [`dotenv-vault-core`](https://github.com/d
 
 ##### CLI
 ```shell
-npm install dotenv-vault --save
+npm install dotenv-vault-core --save
 ```
 
 Create an `index.js` file and reference the `Vault` package inside it as early as possible to skip on any conflicts that may arise.
