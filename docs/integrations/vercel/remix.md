@@ -23,7 +23,7 @@ You can find a complete [example repo here](https://github.com/dotenv-org/integr
 Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 
 ```
-$ npm install dotenv-vault --save
+$ npm install dotenv-vault-core --save
 ```
 
 Preload dotenv-vault-core. This will inject environment variables ahead of Remix.

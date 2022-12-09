@@ -21,7 +21,7 @@ First, install the `dotenv-vault-core` package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault --save
+npm install dotenv-vault-core --save
 ```
 
 ## Initial setup

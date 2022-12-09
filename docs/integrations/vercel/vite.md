@@ -54,7 +54,7 @@ With the `Vite` initialization out of the way, you can go ahead and install the 
 
 ##### CLI
 ```shell
-npm install dotenv-vault --save
+npm install dotenv-vault-core --save
 ```
 
 Once you are ready, create a `vite.config.js` file, which is where you will be calling the `dotenv-vault-core` package from.
