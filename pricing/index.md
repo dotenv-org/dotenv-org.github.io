@@ -58,7 +58,7 @@ title: "Pricing"
     <br/>
     <small><span class="text-green">✓</span> <small>Slack notifications</small></small>
     <br/>
-    <small><span class="text-green">✓</span> <small>External Share</small></small>
+    <small><span class="text-green">✓</span> <small>External share</small></small>
     <!--<small><span class="text-light">✓</span> <small>Audit log (2023)</small></small>-->
   </div>
   <div class="flex-1">
@@ -103,7 +103,7 @@ title: "Pricing"
     <br/>
     <small><span class="text-green">✓</span> <small>Slack notifications</small></small>
     <br/>
-    <small><span class="text-green">✓</span> <small>External Share</small></small>
+    <small><span class="text-green">✓</span> <small>External share</small></small>
     <br/>
     <small><span class="text-green">✓</span> <small>Webhooks (2023)</small></small>
     <br/>
