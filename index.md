@@ -12,6 +12,10 @@ title: "Sync .env files"
   </div>
 </div>
 
+<div class="screenshot">
+  <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1671740035/dotenv-screenshot_oahorv.png">
+</div>
+
 <article markdown="1">
 
 <h3 class="text-center mb-0">Why you'll love using Dotenv Vault</h3>
