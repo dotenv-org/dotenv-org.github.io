@@ -271,6 +271,20 @@ footer {
   }
 }
 
+.addon-item-grid {
+  display: grid;
+  grid-template-columns: auto 40px;
+
+  > div {
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(even) {
+      text-align: right;
+    }
+  }
+}
+
 .love-grid {
   display: grid;
   grid-template-columns: 50% 50%;
