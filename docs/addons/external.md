@@ -21,7 +21,7 @@ External Team support takes just a click and then sharing the [infrastructure to
 
 ##### Step1
 
-Navigate to the add-ons tab. Click External Share. Then click Connect to Add. Follow the prompts.
+Navigate to the add-ons tab. Click External Share. Then click Add. Follow the prompts.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1671899965/Dotenv_2_wvimjt.png" %}
 
