@@ -63,6 +63,10 @@ Lastly, set up the AWS Parameter Store config path and region.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672120611/development-Dotenv_19_mmgxnw.png" %}
 
+If successful, you'll have a keys and values in AWS Parameter Store that looks like the following:
+
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672120852/AWS-Systems-Manager-Parameter-Store_z4foxz.png" %}
+
 That's it! 🎉 Your secrets are now synced to AWS Parameter Store and will continue to stay in sync when you modify your secrets.
 
 Thank you for using Dotenv with AWS Parameter Store.
