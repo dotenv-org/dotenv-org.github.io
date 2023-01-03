@@ -35,6 +35,6 @@ Lastly, choose which project to sync to and click Finish Configuration.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1671901331/development-Dotenv_12_wspgzn.png" %}
 
-That's it! 🎉 Your secrets are now synced to Heroku and will continue to stay in sync when you modify your secrets.
+That's it! 🎉 Your secrets are now synced to Vercel and will continue to stay in sync when you modify your secrets.
 
 Thank you for using Dotenv with Vercel.
