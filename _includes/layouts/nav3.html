@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col col-auto d-flex align-items-center">
+      <div class="d-none d-md-block">
+        <ul class="list-inline text-dark">
+          <li class="list-inline-item me-4">
+            <a href="/faq" class="text-dark" style="font-size: 23px;">
+              FAQ
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/login" class="px-3 py-2 text-dark" style="border: 2px solid #000000; font-size: 23px; border-radius: 50px;">
+              Sign In
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-md-none">
+        <div class="text-right text-dark">
+          <a href="#show-mobile-menu" class="displayMobileMenu px-3 py-2 text-dark" style="border: 2px solid #000000; font-size: 23px; border-radius: 50px;">
+            Menu
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-none mobile-menu" style="border-top: 3px solid #ffbf00; top: 0; left: 0; position: fixed; background-color : rgba(26, 34, 169, 0.9); height: 100%; width: 100%; overflow: hidden; z-index: 101;">
+  <h1 class="text-right px-3 py-3 mt-4 mr-5" style="font-size: 50px;">
+    <a href="#hide-mobile-menu" class="hideMobileMenu text-dark">&times;</a>
+  </h1>
+
+  <div class="col justify-content-center align-items-center d-flex">
+    <div class="mt-4 ml-4" style="min-width: 220px; width: 500px;">
+      <h2 class="mb-4">
+        <a href="/" class="text-dark"><u>Home</u></a>
+      </h2>
+      <h2 class="mb-5">
+        <a href="/faq" class="text-dark"><u>FAQ</u></a>
+      </h2>
+      <h2 class="mb-5">
+        <a href="/signup" class="mt-4 px-4 py-3 text-dark" style="border: 2px solid #000000; border-radius: 50px;">Sign Up Now</a>
+      </h2>
+      <h2 class="mb-5">
+        <% if @account %>
+          <a href="/a" class="text-dark"><u>My vault</u></a>
+        <% else %>
+          <a href="/login" class="text-dark"><u>Log in</u></a>
+        <% end %>
+      </h2>
+    </div>
+  </div>
+</div>
+
+<script>
+  function hideMobileMenu() {
+    $('.mobile-menu').addClass('d-none')
+  }
+
+  function displayMobileMenu() {
+    $('.mobile-menu').removeClass('d-none')
+  }
+
+  $('.displayMobileMenu').click(function(e) {
+    e.preventDefault()
+
+    displayMobileMenu()
+
+    return false
+  })
+
+  $('.hideMobileMenu').click(function(e) {
+    e.preventDefault()
+
+    hideMobileMenu()
+
+    return false
+  })
+</script>

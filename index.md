@@ -1,106 +1,105 @@
 ---
-layout: default
+layout: default2
 title: "Sync .env files"
 ---
 
-<div class="hero">
-  <h1>Sync .env files</h1>
+{% include helpers/home_hero.html %}
 
-  <div>
-    <h4 class="font-weight-normal">Stop sharing them over insecure channels like Slack and email and never lose an important .env file again.</h4>
-    <p><a class="btn mr-05" href="/signup">Get Started with Dotenv Vault</a> <a href="/pricing">Pricing</a></p>
+<article>
+<div class="container-fluid pt-5 pb-5" style="background: #fcfcfc;">
+<div class="container pt-5 mb-5">
+  <div class="row">
+    <div class="col">
+      <h2 class="h1 text-black">How it works</h2>
+      <p class="d-block mb-4 pb-3 text-secondary">in 3 easy steps</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4">
+      <p class="rounded-circle font-weight-normal d-inline-block px-3 py-2 bg-dark text-white mt-3 text-monospace">1</p>
+      <h3 class="mb-3">Works with a single command</h3>
+      <p>You don't need to install anything. No error prone binaries to install, infrastructure to maintain, or custom code to write. It just works – with a single command.</p>
+      <p class="font-monospace text-success fw-bold">$ npx dotenv-vault push</p>
+      <p><a href="/docs/tutorials/sync">Syncing .env files »</a></p>
+    </div>
+    <div class="col-lg-4">
+      <p class="rounded-circle font-weight-normal d-inline-block px-3 py-2 bg-dark text-white mt-3 text-monospace">2</p>
+      <h3 class="mb-3">Manage multiple environments</h3>
+      <p>After you've pushed your .env file, you can manage your secrets across multiple environments. Open an environment to view and edit its environment variables.</p>
+      <p class="font-monospace text-success fw-bold">$ npx dotenv-vault open production</p>
+      <p><a href="/docs/tutorials/environments">Managing Environments »</a></p>
+    </div>
+    <div class="col-lg-4">
+      <p class="rounded-circle font-weight-normal d-inline-block px-3 py-2 bg-dark text-white mt-3 text-monospace">3</p>
+      <h3 class="mb-3">Deploy to production</h3>
+      <p>Ready to deploy your secrets to production? Run the build command to generate your encrypted <strong>.env.vault</strong> file, commit that safely to code, and deploy. There's nothing else like it.</p>
+      <p class="font-monospace text-success fw-bold">$ npx dotenv-vault build<br/>
+      $ git commit -am "Add .env.vault"<br/>
+      $ git push</p>
+      <p><a href="/docs/tutorials/integrations">Deploying to Production »</a></p>
+    </div>
   </div>
 </div>
-
-<div class="screenshot">
-  <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1671740035/dotenv-screenshot_oahorv.png">
 </div>
 
-<article markdown="1">
+<hr class="my-0 py-0"/>
 
-<h3 class="text-center mb-0">Why you'll love using Dotenv Vault</h3>
-
-<h6 class="mt-02 text-center"><a href="https://www.youtube.com/watch?v=z-lBjxfhWeY">Watch the 1 minute video</a></h6>
-
----
-<div class="love-grid">
-  <div>
-    <h4 class="mt-0 mb-03">Works with a single command</h4>
-    <p class="mt-0 mb-0">You don't need to install anything to use Dotenv Vault. No error prone binaries to install, infrastructure to maintain, or custom code to write. It just works – with a single command.</p>
-  </div>
-
-  <div markdown="1">
-
-```
-
-$ npx dotenv-vault push
-
-```
-
-<p class="mb-0"><a class="arrow" href="/docs/tutorials/sync">Syncing .env files</a></p>
-
-  </div>
-
-</div>
-
----
-
-<div class="love-grid">
-  <div>
-    <h4 class="mt-0 mb-03">Multiple Environments</h4>
-    <p class="mt-0">After you've pushed your .env file, you can manage your secrets across multiple environments. Open an environment to view and edit its environment variables.</p>
-    <p class="mt-0 text-monospace">$ npx dotenv-vault open production</p>
-    <p class=""><a class="arrow" href="/docs/tutorials/environments">Managing Environments</a></p>
-  </div>
-  <div>
-    <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1666569664/multiple-environments_gi3o9t.gif">
+<div class="container-fluid pt-5 pb-5">
+<div class="container pt-5 mb-5">
+  <div class="row">
+    <div class="col col-lg-6">
+      <h2 class="h1 text-black">Used by thousands of developers and companies</h2>
+      <p class="d-block text-secondary">Dotenv powers secrets for thousands of software teams across the world.</p>
+      <p class="d-block text-secondary">New developers and companies get started with it every day.</p>
+      <p class="d-block mb-4 pb-3"><a href="/customers">Dotenv Customers »</a></p>
+    </div>
+    <div class="col col-lg-6">
+      <a href="/customers">
+        <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666593866/Group_ukiica.png" width="400">
+      </a>
+    </div>
   </div>
 </div>
-
----
-
-<div class="love-grid">
-  <div>
-    <h4 class="mt-0 mb-03">Integrate Everywhere™</h4>
-    <p class="mt-0">Dotenv Vault integrates everywhere you already deploy your code. Run the build command to generate your encrypted .env.vault file, commit that safely to code, and deploy. There's nothing else like it.</p>
-  </div>
-  <div markdown="1">
-
-```
-$ npx dotenv-vault build
-$ git commit -am "Add .env.vault"
-$ git push
-```
-
-<p class=""><a class="arrow" href="/docs/tutorials/integrations">Integrate Everywhere™</a></p>
-
-  </div>
-  <div class="span2">
-    {% include helpers/integrations_grid.html %}
-  </div>
 </div>
 
----
+<hr class="my-0 py-0"/>
 
-<div class="love-grid">
-  <div>
-    <h4 class="mt-0 mb-03">Used by thousands of developers and companies</h4>
-    <p class="mt-0">Dotenv Vault powers secrets for thousands of software teams across the world. New developers and companies get started with Dotenv Vault every day.</p>
-    <p class=""><a class="arrow" href="/customers">Dotenv Customers</a></p>
+<div class="container-fluid pt-5 pb-5">
+<div class="container pt-5 mb-5">
+  <div class="row">
+    <div class="col">
+      <h2 class="h1 text-black">Works everywhere</h2>
+      <p class="d-block mb-4 pb-3 text-secondary">Integrates everywhere you already deploy your code</p>
+    </div>
   </div>
-  <div>
-    <a href="/customers">
-      <img src="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666593866/Group_ukiica.png" width="600" class="no-style">
-    </a>
+  <div class="row">
+    <div class="col">
+      <div class="">
+        {% include helpers/integrations_grid.html %}
+      </div>
+    </div>
   </div>
 </div>
-
----
-
-{:.text-center}
-#### From the same people that pioneered dotenv. Trusted by more than 2.5 million developers.
-
-{:.text-center}
-#### [Get Started with Dotenv Vault](/signup){:.btn}
+</div>
 
 </article>
+
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-lg-7 col-md-6">
+      <div class="mt-3 mb-4">
+        <div class="">
+          <h3 class="">From the same people that pioneered dotenv. Trusted by more than 2.5 million developers.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-3">
+      <div class="">
+        <a class="btn btn-danger px-5 py-3 mb-2 text-uppercase font-weight-bold" href="/signup" style="border-radius: 50px; background-image: radial-gradient(at left top, rgb(228, 115, 45) 0%, rgb(206, 41, 60) 100%);">
+          Sign Up Now »
+        </a>
+      </div>
+      <p class="mb-5 mt-2"><span class="text-dark fw-bold">Free to use.</span> See <a href="/pricing">additional pricing</a>.</p>
+    </div>
+  </div>
+</div>

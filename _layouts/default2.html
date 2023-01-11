@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    {% include layouts/meta2.html %}
+    {% include layouts/analytics.html %}
+    {% include layouts/github_button.html %}
+
+    <style>
+      html, body {
+        background: #FEFFFF;
+        color: #212b32;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        border-top: 3px solid #000000;
+      }
+
+      @media (max-width: 480px) {
+        html, body{font-size: 12px;}
+      }
+
+      @media (max-width: 767px) {
+        body{font-size: 16px;}
+      }
+
+      h1, h2, h3, h4, h5, h6, p, ol, li {
+        color: #212b32;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+      }
+
+      h1 {
+        font-size: 3.1rem;
+        letter-spacing: -0.05rem;
+        line-height: 4.2rem;
+      }
+
+      .gold {
+        color: #ffbf00;
+      }
+
+      * .fadeIn {
+        animation: 0.3s 0s fadeIn 1 linear;
+      }
+
+      * .fadeOut {
+        opacity: 0;
+        animation: 0.3s 0s fadeOut 1 linear;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="{{ page.background }}">
+    {{ content }}
+    {% include layouts/footer2.html %}
+  </body>
+</html>
