@@ -5,11 +5,15 @@
     {% include layouts/analytics.html %}
     {% include layouts/github_button.html %}
   </head>
-  <body class="{{ page.background }}">
-    <div class="wrapper">
-      {% include layouts/nav.html %}
-      {{ content }}
-      {% include layouts/footer.html %}
+  <body class="bg-body-tertiary {{ page.background }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          {% include layouts/nav.html %}
+          {{ content }}
+          {% include layouts/footer.html %}
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -3,26 +3,26 @@ layout: default
 title: "Sync .env files"
 ---
 
-<div class="hero">
-  <h1>Sync .env files</h1>
+{% include helpers/hero.html %}
 
-  <div>
-    <h4 class="font-weight-normal">Stop sharing them over insecure channels like Slack and email and never lose an important .env file again.</h4>
-    <p><a class="btn mr-05" href="/signup">Get Started with Dotenv Vault</a> <a href="/pricing">Pricing</a></p>
-  </div>
-</div>
-
-<div class="screenshot">
-  <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1671740035/dotenv-screenshot_oahorv.png">
-</div>
+<div class="container bg-white border border-dark-subtle shadow">
+  <div class="row p-5 px-3">
+    <div class="col">
 
 <article markdown="1">
 
-<h3 class="text-center mb-0">Why you'll love using Dotenv Vault</h3>
+<h2 class="text-center fw-bold">How It Works</h2>
+<h6 class="text-center fw-normal text-body-tertiary">in 3 easy steps</h6>
 
-<h6 class="mt-02 text-center"><a href="https://www.youtube.com/watch?v=z-lBjxfhWeY">Watch the 1 minute video</a></h6>
+<div class="row">
+  <div class="col">
+    <h3>Works with a single command</h3>
+  </div>
+  <div class="col">
+    <p class="mt-0 mb-0">You don't need to install anything to use Dotenv Vault. No error prone binaries to install, infrastructure to maintain, or custom code to write. It just works – with a single command.</p>
+  </div>
+</div>
 
----
 <div class="love-grid">
   <div>
     <h4 class="mt-0 mb-03">Works with a single command</h4>
@@ -100,7 +100,11 @@ $ git push
 {:.text-center}
 #### From the same people that pioneered dotenv. Trusted by more than 2.5 million developers.
 
-{:.text-center}
-#### [Get Started with Dotenv Vault](/signup){:.btn}
+<p class="text-center">
+  <a href="/signup" class="btn btn-primary">Get Started with Dotenv</a>
+</p>
 
 </article>
+    </div>
+  </div>
+</div>
