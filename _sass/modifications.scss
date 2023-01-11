@@ -6,3 +6,50 @@ $yellow: #ECD53F;
 .bg-yellow {
   background: $yellow !important;
 }
+
+//
+// shadows
+//
+.inset-shadow {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+//
+// components
+//
+.integrations-grid {
+  display: grid;
+  grid-gap: 0.3rem;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  text-align: left;
+  padding: 0rem;
+
+  > div {
+    padding: 0;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: top;
+  justify-content: top;
+
+  div {
+    &.flex-auto {
+      flex: none;
+    }
+    &.flex-0 {
+      flex: 0;
+    }
+    &.flex-1 {
+      flex: 1;
+    }
+    &.flex-2 {
+      flex: 2;
+    }
+    &.flex-3 {
+      flex: 3;
+    }
+  }
+}
