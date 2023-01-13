@@ -11,7 +11,7 @@ title: "Pricing"
       <h5 class="text-center">Free to use for individuals and small teams</h5>
       <div class="card-group mt-4">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header py-3">
             <h5 class="card-title h4 fw-bold">Free</h5>
             <p class="card-text small">Full-fledged security for individuals and small teams.</p>
             <p class="card-text"><span class="font-monosopace fw-semibold h5">$0</span> / forever</p>
@@ -45,7 +45,7 @@ title: "Pricing"
           </div>
         </div>
         <div class="card">
-          <div class="card-header">
+          <div class="card-header py-3">
             <h5 class="card-title h4 fw-bold">Team</h5>
             <p class="card-text small">Advanced collaboration and support for teams of all sizes</p>
             <p class="card-text"><span class="font-monosopace fw-semibold h5">$4 / month</span> per teammate</p>
@@ -97,7 +97,7 @@ title: "Pricing"
           </div>
         </div>
         <div class="card">
-          <div class="card-header">
+          <div class="card-header py-3">
             <h5 class="card-title h4 fw-bold">Enterprise</h5>
             <p class="card-text small">Compliance and deep integration with your internal network.</p>
             <p class="card-text"><span class="font-monosopace fw-semibold h5">$21 / month</span> per teammate</p>
