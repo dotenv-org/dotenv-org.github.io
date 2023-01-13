@@ -6,6 +6,25 @@ $yellow: #ECD53F;
 .bg-yellow {
   background: $yellow !important;
 }
+.bg-vault-image {
+  background-image: url(https://www.dotenv.org/assets/vault/bg-black2-75038b987fd2182de1fc5c2aeba7310f7ae5b8cc3a0d993e05b483b5fdb9fb5e.png) !important;
+  background-size: fit;
+  background-repeat: repeat;
+  background-position: center !important;
+}
+
+//
+// text
+//
+.text-yellow {
+  color: $yellow !important;
+}
+.text-underline-hover {
+ text-decoration: none;
+}
+.text-underline-hover:hover {
+  text-decoration: underline;
+}
 
 //
 // shadows
@@ -17,19 +36,6 @@ $yellow: #ECD53F;
 //
 // components
 //
-.integrations-grid {
-  display: grid;
-  grid-gap: 0.3rem;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-  text-align: left;
-  padding: 0rem;
-
-  > div {
-    padding: 0;
-  }
-}
-
 .flex {
   display: flex;
   align-items: top;
@@ -53,3 +59,38 @@ $yellow: #ECD53F;
     }
   }
 }
+.security-grid {
+  display: grid;
+  grid-gap: 0.8rem;
+  grid-template-columns: 5rem auto;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+
+  color: $secondary;
+
+  > div {
+    padding: 0;
+
+    &:nth-child(even) {
+      text-align: left;
+      margin-left: 30px;
+    }
+
+    &.align-items-top {
+      align-self: start !important;
+    }
+  }
+
+  p, li {
+    color: $secondary;
+  }
+
+  h5 {
+    color: $white;
+    font-weight: normal;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  }
+}
+
+
