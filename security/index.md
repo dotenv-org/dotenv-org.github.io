@@ -41,7 +41,7 @@ redirect_from:
     <div class="col">
       <div class="text-body-tertiary opacity-50"><hr/></div>
       <h4 class="fw-bold text-center py-4">
-        Keep your secrets safe&nbsp;&nbsp;–&nbsp;&nbsp;
+        Security for your .env files&nbsp;&nbsp;–&nbsp;&nbsp;
         <a class="btn btn-dark btn-sm" href="/signup">Get your Dotenv Account</a>
       </h4>
     </div>
