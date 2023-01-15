@@ -5,30 +5,21 @@
     {% include layouts/analytics.html %}
     {% include layouts/github_button.html %}
   </head>
-  <body>
-    <div class="bg-body-tertiary">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col col-lg-10 offset-lg-1">
-            {% include layouts/nav.html %}
+  <body class="bg-warning-subtle">
+    {% include layouts/nav.html %}
 
-            <div class="container bg-white rounded shadow-sm">
-              <div class="row">
-                <div class="col-lg-7 p-4 order-lg-2">
-                  {% include layouts/github_edit_link.html %}
-                  {{ content }}
-                </div>
-                <div class="col-lg-3 bg-body-secondary border-dark-subtle border-end rounded-top shadow-sm px-lg-3 pt-3 order-lg-1">
-                  {% include layouts/docs_nav.html %}
-                </div>
-
-              </div>
-            </div>
-
-            {% include layouts/footer.html %}
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 p-4 order-lg-2">
+          {% include layouts/github_edit_link.html %}
+          {{ content }}
+        </div>
+        <div class="col-lg-3 border-dark-subtle border-end px-lg-3 pt-3 order-lg-1">
+          {% include layouts/docs_nav.html %}
         </div>
       </div>
     </div>
+
+    {% include layouts/footer.html %}
   </body>
 </html>
