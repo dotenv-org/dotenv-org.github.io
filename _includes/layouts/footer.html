@@ -1,48 +1,64 @@
-<footer class="row mt-2">
-  <div class="col">
-    <ul class="list-inline">
-      <!--
-      <li class="list-inline-item">
-        <a href="https://twitter.com/dotenvorg" class="btn btn-link">
-          {% include icons/twitter.html width="14" %}
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a href="https://github.com/dotenv-org" class="btn btn-link">
-          {% include icons/github.html width="14" %}
-        </a>
-      </li>
-      -->
-      <li class="list-inline-item">
-        <a href="/support" class="text-underline-hover text-light-emphasis btn btn-link">Help</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="/changelog" class="text-underline-hover text-light-emphasis btn btn-link">Changelog</a>
-      </li>
-      <!--
-      <li class="list-inline-item">
-        <a href="/integrations" class="text-underline-hover text-light-emphasis btn btn-link">Integrations</a>
-      </li>
-      -->
-      <li class="list-inline-item">
-        <a href="https://status.dotenv.org" class="text-underline-hover text-light-emphasis btn btn-link">Status</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="https://health.dotenv.org" class="text-underline-hover text-light-emphasis btn btn-link">Health</a>
-      </li>
-      <li class="list-inline-item">
-        <a href="/legal" class="text-underline-hover text-light-emphasis btn btn-link">Legal</a>
-      </li>
-    </ul>
-  </div>
+<footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col col-lg-10 offset-lg-1">
+        <div class="row">
+          <div class="col">
+            {% include helpers/hr.html %}
+          </div>
+        </div>
 
-  <div class="col col-auto">
-    <ul class="list-inline">
-      <li class="list-inline-item">
-        <a href="/" class="text-underline-hover text-dark text-decoration-none btn btn-link">&copy; Dotenv</a>
-      </li>
-    </ul>
+        <div class="row">
+          <div class="col">
+
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/dotenvorg" class="btn btn-link px-0">
+                  {% include icons/twitter.html width="14" %}
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/dotenv-org" class="btn btn-link px-0">
+                  {% include icons/github.html width="14" %}
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/support" class="text-underline-hover text-dark btn btn-link">Help & Support</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/changelog" class="text-underline-hover text-dark btn btn-link">Changelog</a>
+              </li>
+              <!--
+              <li class="list-inline-item">
+                <a href="/integrations" class="text-underline-hover text-light-emphasis btn btn-link">Integrations</a>
+              </li>
+              -->
+              <li class="list-inline-item">
+                <a href="https://status.dotenv.org" class="text-underline-hover text-dark btn btn-link">Status</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://health.dotenv.org" class="text-underline-hover text-dark btn btn-link">Health</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/legal" class="text-underline-hover text-dark btn btn-link">Legal</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col col-auto">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="/" class="text-underline-hover text-dark text-decoration-none btn btn-link">&copy; Dotenv</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p class="mt-0 mb-1 text-center opacity-50"><a href="https://github.com/dotenv-org/www" class="btn btn-link small text-decoration-none text-body-tertiary"><small>Updated {{ site.time | date: "%A (%b %d)" }}</small></a></p>
+      </div>
+    </div>
   </div>
 </footer>
-
-<p class="my-2 text-center opacity-50"><a href="https://github.com/dotenv-org/www" class="btn btn-link small text-decoration-none text-body-tertiary"><small>Updated {{ site.time | date: "%A (%b %d)" }}</small></a></p>

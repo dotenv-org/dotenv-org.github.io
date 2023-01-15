@@ -6,23 +6,29 @@
     {% include layouts/github_button.html %}
   </head>
   <body>
-    <div class="docs-wrapper">
-      {% include layouts/nav.html %}
+    <div class="bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-lg-10 offset-lg-1">
+            {% include layouts/nav.html %}
 
-      <article markdown="1" class="docs">
-        <div class="docs-grid">
-          <div>
-            {% include layouts/docs_nav.html %}
-          </div>
-          <div>
-            {{ content }}
+            <div class="container bg-white rounded shadow-sm">
+              <div class="row">
+                <div class="col-lg-7 p-4 order-lg-2">
+                  {% include layouts/github_edit_link.html %}
+                  {{ content }}
+                </div>
+                <div class="col-lg-3 bg-body-secondary border-dark-subtle border-end rounded-top shadow-sm px-lg-3 pt-3 order-lg-1">
+                  {% include layouts/docs_nav.html %}
+                </div>
 
-            {% include layouts/github_edit_link.html %}
+              </div>
+            </div>
+
+            {% include layouts/footer.html %}
           </div>
         </div>
-      </article>
-
-      {% include layouts/footer.html %}
+      </div>
     </div>
   </body>
 </html>
