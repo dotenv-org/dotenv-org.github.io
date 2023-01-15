@@ -11,8 +11,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7 p-4 order-lg-2">
-          {% include layouts/github_edit_link.html %}
-          {{ content }}
+          {% include helpers/docs_metadata.html %}
+          <div class="docs-layout-content">{{ content }}</div>
         </div>
         <div class="col-lg-3 border-dark-subtle border-end px-lg-3 pt-3 order-lg-1">
           {% include layouts/docs_nav.html %}

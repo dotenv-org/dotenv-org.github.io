@@ -6,10 +6,6 @@ redirect_from:
   - /docs/tutorials/deploy
 ---
 
-{% include helpers/reading_time.html %}
-
-{% include icons/dotenv.html width="30" color="#ECD53F" %}
-
 ##### Tutorial
 
 # Integrate Everywhere™

@@ -7,10 +7,6 @@ redirect_from:
   - /get-started
 ---
 
-{% include helpers/reading_time.html %}
-
-{% include icons/dotenv.html width="30" color="#ECD53F" %}
-
 ##### Tutorial
 
 # Sync .env files
@@ -20,9 +16,9 @@ Sync environment variables securely with Dotenv Vault. Learn how in this tutoria
 ---
 
 <div style="width: 328px;" class="m-auto">
-<div class="rounded video border border-success bg-dark">
-  <iframe width="1108" height="625" src="https://www.youtube.com/embed/z-lBjxfhWeY" title="1 Minute Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+  <div class="rounded video border border-success bg-dark">
+    <iframe width="1108" height="625" src="https://www.youtube.com/embed/z-lBjxfhWeY" title="1 Minute Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </div>
 
 ---

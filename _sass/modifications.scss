@@ -1,6 +1,16 @@
 $yellow: #ECD53F;
 
 //
+// pages
+//
+
+.docs-layout-content {
+  p img {
+    width: 100%;
+  }
+}
+
+//
 // backgrounds
 //
 .bg-yellow {
@@ -36,6 +46,34 @@ $yellow: #ECD53F;
 //
 // components
 //
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.27659574468085%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+div.highlight {
+  padding: 0;
+  margin-bottom: 1rem;
+
+  pre.highlight {
+    padding: 1rem;
+    background: #fceec3 !important;
+    color: green;
+  }
+}
+
 .flex {
   display: flex;
   align-items: top;

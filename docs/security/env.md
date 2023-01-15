@@ -5,8 +5,6 @@ redirect_from:
   - /env
 ---
 
-{% include helpers/reading_time.html %}
-
 ##### Security
 
 # .env File

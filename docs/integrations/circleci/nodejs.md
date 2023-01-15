@@ -3,12 +3,8 @@ layout: docs
 title: "Circle CI with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/circleci.html width="50" color="#343434" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
-
-##### Integrations
 
 # __Circle CI with Node.js__
 

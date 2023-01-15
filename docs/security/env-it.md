@@ -5,8 +5,6 @@ redirect_from:
   - /env-it
 ---
 
-{% include helpers/reading_time.html %}
-
 ##### Security
 
 # Integration Tokens
