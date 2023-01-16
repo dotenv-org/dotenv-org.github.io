@@ -219,6 +219,14 @@ title: "Pricing"
         <cite title="Petar">Peipr</cite>
       </figcaption>
     </figure>
+    <figure class="text-center mb-4">
+      <blockquote class="blockquote">
+        <p>Great onboarding experience. I went from “not knowing what this even is” to “integrated into my project” within about 5 minutes. Having each cli command tell me the next step was super helpful. Keep up the good work!</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        <cite title="Petar">Anthony</cite>
+      </figcaption>
+    </figure>
   </div>
 </div>
 
