@@ -5,8 +5,6 @@ redirect_from:
   - /env-vault
 ---
 
-{% include helpers/reading_time.html %}
-
 ##### Security
 
 # .env.vault Identifier

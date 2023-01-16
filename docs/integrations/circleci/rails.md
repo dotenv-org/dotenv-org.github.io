@@ -5,12 +5,8 @@ redirect_from:
   - /docs/integrations/circle-ci-rails
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/circleci.html width="50" color="#343434" %}
 {% include icons/rails.html width="50" color="#CC0000" %}
-
-##### Integrations
 
 # Circle CI with Rails
 

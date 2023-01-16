@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include layouts/meta.html %}
+    {% include layouts/analytics.html %}
+    {% include layouts/github_button.html %}
+  </head>
+  <body class="bg-warning-subtle">
+    {% include layouts/nav.html %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-10 offset-lg-1">
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2 py-3 px-3 p-lg-5 bg-warning" style="--bs-bg-opacity: 0.1;">
+                {{ content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include layouts/footer.html %}
+  </body>
+</html>

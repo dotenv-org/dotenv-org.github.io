@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: "Privacy Policy"
 parent: Legal
 ---
-
-<article markdown="1">
 
 ###### The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer’s requirements.
 
@@ -44,5 +42,3 @@ Questions about this privacy policy? Please [get in touch](mailto:support@dotenv
 
 {:.text-center}
 ~
-
-</article>

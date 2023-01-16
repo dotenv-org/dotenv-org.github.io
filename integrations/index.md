@@ -3,22 +3,27 @@ layout: default
 title: "Integrations"
 ---
 
-<article markdown="1">
-<h1 class="text-center mb-0">Integrate Everywhere™</h1>
-<h6 class="mt-04 mb-08 font-weight-normal text-center">Dotenv Vault integrates everywhere you already deploy your code.</h6>
-
-{% include helpers/integrations_grid.html %}
-
----
-
-{:.text-center}
-##### `$ npx dotenv-vault build`
-
-<div class="text-center" markdown="1">
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665603984/npx-build_qqcbcb.gif" %}
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    <h1 class="text-center h5 text-secondary font-monospace mt-5 pb-0 mb-0 fw-normal">Integrations</h1>
+    <h3 class="text-center h1 fw-bold">Works Everywhere</h3>
+    <h5 class="text-center">Integrates everywhere you already write, test, and deploy your code.</h5>
+  </div>
 </div>
 
-{:.text-center}
-##### Follow the [tutorial](/docs/tutorials/integrations).
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    {% include helpers/integrations_grid2.html %}
+  </div>
+</div>
 
-</article>
+<div class="row mt-4">
+  <div class="col-lg-10 offset-lg-1">
+    <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1665603984/npx-build_qqcbcb.gif" class="w-100 border border-5 rounded"/>
+  </div>
+</div>
+
+<h4 class="text-center mt-3">
+  Begin integrating today.&nbsp;&nbsp;&nbsp;
+  <a href="/signup" class="btn btn-dark">Get Started with Dotenv</a>
+</h4>

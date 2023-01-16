@@ -6,10 +6,6 @@ redirect_from:
   - /docs/getting-started/with-adding-teammates
 ---
 
-{% include helpers/reading_time.html %}
-
-{% include icons/dotenv.html width="30" color="#ECD53F" %}
-
 ##### Tutorial
 
 # Adding Teammates

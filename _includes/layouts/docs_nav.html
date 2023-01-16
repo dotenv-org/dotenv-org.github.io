@@ -1,23 +1,23 @@
 <nav>
-  <p><a href="/docs">Documentation</a></p>
+  <p class="mt-2"><a href="/docs">Documentation</a></p>
 
   <h6>Getting Started</h6>
-  <ul>
+  <ul class="list-unstyled">
     <li><a href="/docs/tutorials/sync">Sync .env files</a></li>
     <li><a href="/docs/tutorials/environments">Managing Environments</a></li>
     <li><a href="/docs/tutorials/integrations">Integrate Everywhere™</a></li>
   </ul>
-  <hr/>
+  {% include helpers/hr.html %}
 
   <h6>Basics</h6>
-  <ul>
+  <ul class="list-unstyled">
     <li><a href="/docs/tutorials/teammates">Adding Teammates</a></li>
     <li><a href="/docs/tutorials/access">Managing Access</a></li>
   </ul>
-  <hr/>
+  {% include helpers/hr.html %}
 
   <h6>Security</h6>
-  <ul>
+  <ul class="list-unstyled">
     <li><a href="/docs/security">Overview</a></li>
     <li><a href="/docs/security/env">.env</a></li>
     <li><a href="/docs/security/env-vault">.env.vault</a></li>
@@ -26,10 +26,10 @@
     <li><a href="/docs/security/vault">Vault</a></li>
     <li><a href="/docs/security/dotenv-key">DOTENV_KEY</a></li>
   </ul>
-  <hr/>
+  {% include helpers/hr.html %}
 
   <h6>CLI <a href="https://github.com/dotenv-org/dotenv-vault" class="font-weight-normal" style="font-size: 80%;">dotenv-vault</a></h6>
-  <ul>
+  <ul class="list-unstyled">
     <li><a href="/docs/dotenv-vault/new">new</a></li>
     <li><a href="/docs/dotenv-vault/login">login</a></li>
     <li><a href="/docs/dotenv-vault/logout">logout</a></li>
@@ -44,9 +44,10 @@
     <li><a href="/docs/dotenv-vault/status">status</a></li>
     <li><a href="/docs/dotenv-vault/help">help</a></li>
   </ul>
-  <hr/>
+  {% include helpers/hr.html %}
+
   <h6>Integrations</h6>
-  <ul>
+  <ul class="list-unstyled">
     <li>
       {% include layouts/docs_nav_title_grid.html name="Bitbucket" icon="bitbucket" color="#0052CC" %}
     </li>
@@ -156,88 +157,86 @@
     <li><a href="/docs/integrations/vercel/remix">Remix</a></li>
     <li><a href="/docs/integrations/vercel/vite">Vite</a></li>
   </ul>
-  <hr/>
+  {% include helpers/hr.html %}
 
   <h6>Addons</h6>
-  <ul>
+  <ul class="list-unstyled">
     <li>
-      <div class="addon-item-grid">
-        <div>
+      <div class="row">
+        <div class="col">
           <a href="/docs/addons/github">GitHub</a>
         </div>
-        <div>
+        <div class="col col-auto">
           {% include icons/github.html width="20" color="#181717" %}
         </div>
       </div>
     </li>
     <li>
-      <div class="addon-item-grid">
-        <div>
+      <div class="row">
+        <div class="col">
           <a href="/docs/addons/slack">Slack</a>
         </div>
-        <div>
+        <div class="col col-auto">
           {% include icons/slack.html width="20" color="#4A154B" %}
         </div>
       </div>
     </li>
     <li>
-      <div class="addon-item-grid">
-        <div>
+      <div class="row">
+        <div class="col">
           <a href="/docs/addons/external">External Share</a>
         </div>
-        <div>
+        <div class="col col-auto">
           {% include icons/external.html width="20" color="#0B24FB" %}
         </div>
       </div>
     </li>
     <li>
-      <div class="addon-item-grid">
-        <div>
+      <div class="row">
+        <div class="col">
           <a href="/docs/addons/aws-secrets">AWS Secrets</a>
         </div>
-        <div>
+        <div class="col col-auto">
           {% include icons/aws.html width="20" color="#232F3E" %}
         </div>
       </div>
     </li>
     <li>
-      <div class="addon-item-grid">
-        <div>
+      <div class="row">
+        <div class="col">
           <a href="/docs/addons/aws-parameter-store">AWS Param Store</a>
         </div>
-        <div>
+        <div class="col col-auto">
           {% include icons/aws.html width="20" color="#232F3E" %}
         </div>
       </div>
     </li>
     <li>
-      <div class="addon-item-grid">
-        <div>
+      <div class="row">
+        <div class="col">
           <a href="/docs/addons/heroku">Heroku</a>
         </div>
-        <div>
+        <div class="col col-auto">
           {% include icons/heroku.html width="20" color="#430098" %}
         </div>
       </div>
     </li>
     <li>
-      <div class="addon-item-grid">
-        <div>
+      <div class="row">
+        <div class="col">
           <a href="/docs/addons/vercel">Vercel</a>
         </div>
-        <div>
+        <div class="col col-auto">
           {% include icons/vercel.html width="20" color="#000000" %}
         </div>
       </div>
     </li>
   </ul>
-  <hr/>
+  {% include helpers/hr.html %}
 
   <h6>Other Tools</h6>
-  <ul>
+  <ul class="list-unstyled mb-4">
     <li><a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault CLI</a></li>
     <li><a href="https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode">Dotenv for VSCode</a></li>
   </ul>
-  <hr/>
-
 </nav>

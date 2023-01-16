@@ -5,8 +5,6 @@ redirect_from:
   - /dotenv-key
 ---
 
-{% include helpers/reading_time.html %}
-
 ##### Security
 
 # DOTENV_KEY

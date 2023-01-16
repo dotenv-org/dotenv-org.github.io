@@ -5,8 +5,6 @@ redirect_from:
   - /docs/security/overview
 ---
 
-{% include helpers/reading_time.html %}
-
 ##### Security
 
 # Security Overview

@@ -8,7 +8,7 @@ Source code for www.dotenv.org
 bundle exec jekyll serve --livereload --verbose
 ```
 
-Use [simpleicons.org](https://simpleicons.org/) for svg icons.
+Use [iconify](http://icon-sets.iconify.design/simple-icons/) for icons or use [simpleicons.org](https://simpleicons.org/).
 
 Use Mac Preview to add arrows to screenshots.
 

@@ -5,12 +5,8 @@ redirect_from:
   - /docs/integrations/buddy-nodejs
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/buddy.html width="50" color="#1A86FD" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
-
-##### Integrations
 
 # __Buddy with Node.js__
 Learn how to configure Buddy with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).

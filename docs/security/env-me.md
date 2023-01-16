@@ -5,8 +5,6 @@ redirect_from:
   - /env-me
 ---
 
-{% include helpers/reading_time.html %}
-
 ##### Security
 
 # .env.me Credential

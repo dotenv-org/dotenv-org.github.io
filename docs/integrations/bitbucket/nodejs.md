@@ -3,12 +3,8 @@ layout: docs
 title: "Bitbucket with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/bitbucket.html width="50" color="#0052CC" %}
 {% include icons/nodejs.html width="50" color="#000000" %}
-
-##### Integrations
 
 # __Bitbucket with Node.js__
 
