@@ -14,7 +14,7 @@ redirect_from:
 </div>
 
 <div class="row">
-  <div class="col-lg-4">
+  <div class="col-lg-4 mb-2">
     <div class="card bg-warning" style="--bs-bg-opacity: 0.1;">
       <div class="card-body">
         <h6 class="fw-bold">Documentation</h6>
@@ -28,7 +28,7 @@ redirect_from:
       </div>
     </div>
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 mb-2">
     <div class="card bg-warning" style="--bs-bg-opacity: 0.1;">
       <div class="card-body">
         <h6 class="fw-bold">GitHub Issues</h6>
@@ -42,7 +42,7 @@ redirect_from:
       </div>
     </div>
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 mb-2">
     <div class="card bg-warning" style="--bs-bg-opacity: 0.1;">
       <div class="card-body">
         <h6 class="fw-bold">Email Support</h6>
