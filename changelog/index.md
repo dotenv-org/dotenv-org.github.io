@@ -7,7 +7,7 @@ title: "Changelog"
   <div class="col-lg-10 offset-lg-1">
     <h1 class="text-center h5 text-secondary font-monospace mt-5 pb-0 mb-0 fw-normal">Changelog</h1>
     <h3 class="text-center h1 fw-bold">What's new</h3>
-    <h5 class="text-center">Dotenv improves every month (or faster).</h5>
+    <h5 class="text-center">Dotenv improves every month – or faster.</h5>
   </div>
 </div>
 
