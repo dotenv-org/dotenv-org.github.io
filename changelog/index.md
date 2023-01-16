@@ -13,7 +13,7 @@ title: "Changelog"
 
 {% for changelog in site.categories.changelog %}
   <div class="row mb-5 changelog-item">
-    <div class="col col-lg-8 offset-lg-2 bg-warning p-lg-4" style="--bs-bg-opacity: 0.1;">
+    <div class="col col-lg-8 offset-lg-2 bg-warning py-4 px-lg-4" style="--bs-bg-opacity: 0.1;">
       <p>
         <a class="text-secondary text-underline-hover" href="{{ changelog.url }}">
           {{ changelog.date | date: "%b %d, %Y" }}
