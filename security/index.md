@@ -17,8 +17,7 @@ redirect_from:
   <div class="row">
     <div class="col">
       <h4 class="fw-bold text-center py-4 mt-4">
-        Security for your .env files.&nbsp;&nbsp;–&nbsp;&nbsp;
-        <a class="btn btn-dark btn-sm" href="/signup">Get your Dotenv Account</a>
+        Secure your .env files &nbsp;&nbsp;<a class="btn btn-dark btn-sm" href="/signup">Get your Dotenv Account</a>
       </h4>
     </div>
   </div>

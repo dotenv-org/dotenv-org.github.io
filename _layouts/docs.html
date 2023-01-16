@@ -10,11 +10,14 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 p-4 order-lg-2">
+        <div class="col-lg-7 p-4 order-lg-3">
           {% include helpers/docs_metadata.html %}
           <div class="docs-layout-content">{{ content }}</div>
         </div>
-        <div class="col-lg-3 border-dark-subtle border-end px-lg-3 pt-3 order-lg-1">
+        <div class="col col-auto order-lg-2 border-dark-subtle border-end border-opacity-10 d-lg-block d-none">
+        </div>
+        <div class="col-lg-3">
+          <div class="text-body-tertiary opacity-50 d-lg-none"><hr /></div>
           {% include layouts/docs_nav.html %}
         </div>
       </div>

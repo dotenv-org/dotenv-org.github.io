@@ -3,11 +3,19 @@ $yellow: #ECD53F;
 //
 // pages
 //
-
 .docs-layout-content {
   p img {
     width: 100%;
   }
+}
+
+//
+// other
+//
+.grayscale {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
 //
@@ -34,6 +42,13 @@ $yellow: #ECD53F;
 }
 .text-underline-hover:hover {
   text-decoration: underline;
+}
+
+//
+// border
+//
+.border-yellow {
+  border-color: $yellow !important;
 }
 
 //

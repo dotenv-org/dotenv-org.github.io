@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: page
 title: "Legal"
 ---
-
-<article markdown="1">
 
 # Legal
 
@@ -11,8 +9,3 @@ The fine print. We make all our policies as clear and readable as possible while
 
 * [Privacy Policy](/legal/privacy)
 * [Terms of Service](/legal/terms)
-
-<br/>
-<br/>
-
-</article>

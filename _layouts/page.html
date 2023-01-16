@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    {% include layouts/meta.html %}
+    {% include layouts/analytics.html %}
+    {% include layouts/github_button.html %}
+  </head>
+  <body class="bg-warning-subtle">
+    {% include layouts/nav.html %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-10 offset-lg-1">
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-lg-9 py-3 px-3 p-lg-5 bg-warning" style="--bs-bg-opacity: 0.1;">
+                {{ content }}
+              </div>
+              <div class="col-lg-3 ps-lg-4">
+                <nav>
+                  <p class="mt-2 text-body-tertiary mb-0 fw-semibold">Sitemap</p>
+                  <ul class="list-unstyled mt-0">
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                    <li>
+                      <a href="/pricing">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="/security">Security</a>
+                    </li>
+                    <li>
+                      <a href="/docs">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="/support">Help & Support</a>
+                    </li>
+                  </ul>
+
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="/signup">Sign Up</a>
+                    </li>
+                    <li>
+                      <a href="/login">Sign In</a>
+                    </li>
+                  </ul>
+
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="/changelog">Changelog</a>
+                    </li>
+                    <li>
+                      <a href="https://status.dotenv.org">Status</a>
+                    </li>
+                    <li>
+                      <a href="https://health.dotenv.org">Health</a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/dotenvorg">Twitter</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/dotenv-org">GitHub</a>
+                    </li>
+                  </ul>
+
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="/legal">Legal</a>
+                      <ul>
+                        <li>
+                          <a href="/legal/privacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                          <a href="/legal/terms">Terms of Service</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include layouts/footer.html %}
+  </body>
+</html>
