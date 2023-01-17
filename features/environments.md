@@ -1,6 +1,9 @@
 ---
 layout: default
 title: "Manage your .env files across multiple environments"
+redirect_from:
+  - /environments
+  - /multiple-environments
 ---
 
 <div class="row">

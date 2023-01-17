@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: "Slack - Add-ons"
+redirect_from:
+  - /integrations/slack
 ---
 
 {% include icons/slack.html width="50" color="#4A154B" %}

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Customize your environments"
+redirect_from:
+  - /custom-environments
 ---
 
 <div class="row">

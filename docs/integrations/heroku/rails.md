@@ -3,6 +3,7 @@ layout: docs
 title: "Heroku with Rails - Integrations"
 redirect_from:
   - /docs/integrations/heroku-rails
+  - /integrations/heroku
 ---
 
 {% include icons/heroku.html width="50" color="#430098" %}

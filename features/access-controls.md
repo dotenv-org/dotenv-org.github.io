@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Control read & write access per environment"
+redirect_from:
+  - /manage-acesss
 ---
 
 <div class="row">

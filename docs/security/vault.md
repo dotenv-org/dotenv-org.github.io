@@ -3,6 +3,7 @@ layout: docs
 title: "Vault - Security"
 redirect_from:
   - /docs/security/dotenv-vault
+  - /vault
 ---
 
 ##### Security

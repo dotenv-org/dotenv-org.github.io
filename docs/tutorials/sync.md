@@ -3,6 +3,8 @@ layout: docs
 title: "Sync .env files - Tutorial"
 parent: Docs
 redirect_from:
+  - /cli
+  - /sync
   - /docs/getting-started/with-dotenv-vault
   - /get-started
 ---

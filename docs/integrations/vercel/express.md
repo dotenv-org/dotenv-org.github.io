@@ -3,6 +3,10 @@ layout: docs
 title: "Vercel with Express - Integrations"
 redirect_from:
   - /docs/integrations/vercel-express
+  - /docs/how-to/use-dotenv-with-express
+  - /docs/how-to/use-dotenv-and-dotenv-vault-with-express
+  - /docs/how-to/use-dotenv-and-dotenv-vault-with-express-and-your-team
+  - /docs/how-to/use-dotenv-and-dotenv-vault-with-express-and-docker
 ---
 
 {% include icons/vercel.html width="50" color="#000000" %}

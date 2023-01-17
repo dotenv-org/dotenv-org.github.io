@@ -3,6 +3,7 @@ layout: docs
 title: "Vercel with Node.js - Integrations"
 redirect_from:
   - /docs/integrations/vercel-nodejs
+  - /integrations/vercel
 ---
 
 {% include icons/vercel.html width="50" color="#000000" %}

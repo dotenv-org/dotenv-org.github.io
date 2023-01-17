@@ -3,6 +3,7 @@ layout: docs
 title: "Docker with Rails - Integrations"
 redirect_from:
   - /docs/integrations/docker-rails
+  - /integrations/docker
 ---
 
 {% include icons/docker.html width="50" color="#2496ED" %}

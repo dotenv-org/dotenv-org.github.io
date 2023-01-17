@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: "Netlify with Node.js - Integrations"
+redirect_from:
+  - /integrations/netlify
 ---
 
 {% include icons/netlify.html width="50" color="#00C7B7" %}

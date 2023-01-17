@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Set personal environment variables that only you can see"
+redirect_from:
+  - /personal-environment-variables
 ---
 
 <div class="row">

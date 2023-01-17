@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "The worldwide standard for managing environment variables"
+redirect_from:
+  - /why
 ---
 
 {% include helpers/hero.html %}
