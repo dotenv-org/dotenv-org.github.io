@@ -5,8 +5,6 @@ title: "AWS Parameter Store - Add-ons"
 
 {% include icons/aws.html width="50" color="#232F3E" %}
 
-##### Add-ons
-
 # AWS Parameter Store
 
 Sync your secrets to AWS Parameter Store when an environment variable is changed.

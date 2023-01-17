@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/fly.html width="50" color="#7B3BE2" %}
 {% include icons/rails.html width="50" color="#CC0000" %}
 
-##### Integrations
-
 # Fly.io with Rails
 
 In this tutorial, learn how to integrate Dotenv Vault with Fly.io and a Rails application.

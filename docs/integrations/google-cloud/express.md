@@ -6,8 +6,6 @@ title: "Google Cloud Build with Express - Integrations"
 {% include icons/google-cloud.html width="50" color="#4285F4" %}
 {% include icons/express.html width="50" color="#000000" %}
 
-##### Integrations
-
 # __Google Cloud Build with Express__
 
 Learn how to configure Google Cloud with Dotenv Vault in a simple Express web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).

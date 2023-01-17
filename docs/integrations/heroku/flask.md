@@ -6,8 +6,6 @@ title: "Heroku with Flask - Integrations"
 {% include icons/heroku.html width="50" color="#430098" %}
 {% include icons/flask.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Heroku with Flask
 
 In this tutorial we'll show you how to integrate Dotenv Vault with a Flask app deployed to Heroku. This tutorial assumes you have already learned how to [sync a .env file](/docs/tutorials/sync).

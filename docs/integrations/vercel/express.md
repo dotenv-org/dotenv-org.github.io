@@ -8,9 +8,6 @@ redirect_from:
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/express.html width="50" color="#000000" %}
 
-
-##### Integrations
-
 # Vercel with Express
 
 Learn how to make Vercel, Express, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

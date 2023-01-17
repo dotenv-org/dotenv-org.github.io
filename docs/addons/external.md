@@ -5,8 +5,6 @@ title: "External Share - Add-ons"
 
 {% include icons/external.html width="50" color="#0B24FB" %}
 
-##### Add-ons
-
 # External Share
 
 Permit an external team or individual to access your project's environment variables.

@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 
-##### Integrations
-
 # Vercel with Node.js
 
 Learn how to make Vercel, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

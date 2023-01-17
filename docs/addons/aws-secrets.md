@@ -5,8 +5,6 @@ title: "AWS Secrets - Add-ons"
 
 {% include icons/aws.html width="50" color="#232F3E" %}
 
-##### Add-ons
-
 # AWS Secrets
 
 Sync your secrets to AWS Secrets when an environment variable is changed.

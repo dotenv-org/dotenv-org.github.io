@@ -5,8 +5,6 @@ title: "Vercel - Add-ons"
 
 {% include icons/vercel.html width="50" color="#000000" %}
 
-##### Add-ons
-
 # Vercel
 
 Sync your secrets to Vercel when an environment variable is changed.

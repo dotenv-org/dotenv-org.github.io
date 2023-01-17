@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/remix.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Vercel with Remix
 
 Learn how to configure Vercel with Dotenv Vault for a Remix application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

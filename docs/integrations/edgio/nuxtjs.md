@@ -6,8 +6,6 @@ title: "Edgio with Nuxt.js - Integrations Quickstart"
 {% include icons/edgio.html width="50" color="#000000" %}
 {% include icons/nuxt.html width="50" color="#00DC82" %}
 
-##### Integrations
-
 # **Edgio with Nuxt.js**
 
 Learn how to make Edgio, Nuxt.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).

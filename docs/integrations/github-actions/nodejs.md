@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/github.html width="50" color="#181717" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 
-##### Integrations
-
 # __GitHub Actions with Node.js__
 
 Learn how to configure GitHub Actions with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).

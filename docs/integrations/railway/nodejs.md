@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/railway.html width="50" color="#0B0D0E" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 
-##### Integrations
-
 # Railway with Node.js
 
 Learn how to make Railway, Node.js, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

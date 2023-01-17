@@ -6,8 +6,6 @@ title: "Vercel with Vite - Integrations Quickstart"
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/vite.html width="50" color="#646CFF" %}
 
-##### Integrations
-
 # __Vercel with Vite__
 
 Learn how to make Vercel, Vite, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).

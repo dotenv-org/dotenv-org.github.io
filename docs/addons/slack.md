@@ -5,8 +5,6 @@ title: "Slack - Add-ons"
 
 {% include icons/slack.html width="50" color="#4A154B" %}
 
-##### Add-ons
-
 # Slack
 
 Notify your team on Slack when an environment variable is changed.

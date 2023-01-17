@@ -5,8 +5,6 @@ title: "Heroku - Add-ons"
 
 {% include icons/heroku.html width="50" color="#430098" %}
 
-##### Add-ons
-
 # Heroku
 
 Sync your secrets to Heroku when an environment variable is changed.

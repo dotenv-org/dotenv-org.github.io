@@ -7,8 +7,6 @@ redirect_from:
 
 {% include icons/gitlab.html width="50" color="#FC6D26" %}
 
-##### Integrations
-
 # GitLab CI/CD Quickstart
 
 In this tutorial, learn how to integrate Dotenv Vault with GitLab CI/CD.

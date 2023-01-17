@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/heroku.html width="50" color="#430098" %}
 {% include icons/sinatra.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Heroku with Sinatra
 
 Learn how to make Heroku, Sinatra, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

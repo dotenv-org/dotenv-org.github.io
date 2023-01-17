@@ -5,8 +5,6 @@ title: "GitHub - Add-ons"
 
 {% include icons/github.html width="50" color="#181717" %}
 
-##### Add-ons
-
 # GitHub
 
 Auto-build encrypted .env.vault file. Generate a PR on GitHub when a development environment variable is changed.

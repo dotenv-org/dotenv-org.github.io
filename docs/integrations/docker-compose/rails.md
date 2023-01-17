@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/docker.html width="50" color="#2496ED" %}
 {% include icons/rails.html width="50" color="#CC0000" %}
 
-##### Integrations
-
 # Docker Compose with Rails
 
 In this tutorial, learn how to integrate Dotenv Vault with Docker Compose and a Rails application.

@@ -6,8 +6,6 @@ title: "Cloud 66 with Node.js - Integrations"
 {% include icons/cloud66.html width="50" color="#3C72B9" %}
 {% include icons/nodejs.html width="50" color="#000000" %}
 
-##### Integrations
-
 # __Cloud 66 with Node.js__
 
 Learn how to make Cloud 66, Node.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).

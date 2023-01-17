@@ -7,7 +7,7 @@ title: "Pulumi with Node.js - Integrations"
 {% include icons/nodejs.html width="50" color="#8A3391" %}
 
 # __Pulumi with Node.js__
-##### `Integrations`
+
 Learn how to configure Pulumi with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
 
 ## Initial setup

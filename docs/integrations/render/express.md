@@ -6,8 +6,6 @@ title: "Render with Express - Integrations"
 {% include icons/render.html width="50" color="#46E3B7" %}
 {% include icons/express.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Render with Express
 
 In this tutorial, learn how to integrate Dotenv Vault with Render. This tutorial assumes you are familiar with Render or have gone through [one of their tutorials](https://render.com/docs/deploy-node-express-app).

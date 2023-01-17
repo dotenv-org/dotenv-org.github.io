@@ -6,8 +6,6 @@ title: "Vercel with pnpm - Integrations"
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/pnpm.html width="50" color="#F69220" %}
 
-##### Integrations
-
 # Vercel with pnpm
 
 Are you receiving the following error when using pnpm and dotenv preloading?

@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/netlify.html width="50" color="#00C7B7" %}
 {% include icons/astro.html width="50" color="#FF5D01" %}
 
-##### Integrations
-
 # Netlify with Astro
 
 Learn how to make Netlify, Astro, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

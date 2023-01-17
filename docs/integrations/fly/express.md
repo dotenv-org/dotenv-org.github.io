@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/fly.html width="50" color="#7B3BE2" %}
 {% include icons/express.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Fly.io with Express
 
 In this tutorial, learn how to integrate Dotenv Vault with Fly.io and an Express application.

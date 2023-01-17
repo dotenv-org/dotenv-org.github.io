@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/heroku.html width="50" color="#430098" %}
 {% include icons/rails.html width="50" color="#CC0000" %}
 
-##### Integrations
-
 # Heroku with Rails
 
 Learn how to make Heroku, Rails, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

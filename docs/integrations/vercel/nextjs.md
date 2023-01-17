@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/nextjs.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Vercel with NextJS
 
 Learn how to make Vercel, NextJS, and Dotenv Vault work together. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

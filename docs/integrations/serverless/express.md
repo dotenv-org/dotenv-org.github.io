@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/serverless.html width="50" color="#FD5750" %}
 {% include icons/express.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Serverless with Express
 
 In this tutorial, learn how to integrate Dotenv Vault with Serverless.

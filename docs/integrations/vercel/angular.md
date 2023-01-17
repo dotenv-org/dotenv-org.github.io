@@ -6,7 +6,6 @@ title: "Vercel with Angular - Integrations"
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/angular.html width="50" color="#DD0031" %}
 
-##### Integrations
 # __Vercel with Angular__
 
 Learn how to make Vercel, Angular, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).

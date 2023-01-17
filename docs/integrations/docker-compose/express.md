@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/docker.html width="50" color="#2496ED" %}
 {% include icons/express.html width="50" color="#000000" %}
 
-##### Integrations
-
 # Docker Compose with Express
 
 In this tutorial, learn how to integrate Dotenv Vault with Docker Compose and an Express application.

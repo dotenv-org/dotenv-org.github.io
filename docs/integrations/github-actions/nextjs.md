@@ -8,8 +8,6 @@ redirect_from:
 {% include icons/github.html width="50" color="#181717" %}
 {% include icons/nextjs.html width="50" color="#000000" %}
 
-##### Integrations
-
 # GitHub Actions with NextJS
 
 Learn how to configure GitHub Actions with Dotenv Vault for a NextJS application. This tutorial assumes you have already created a `.env` file and [synced it](/docs/tutorials/sync).

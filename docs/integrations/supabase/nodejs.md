@@ -6,8 +6,6 @@ title: "Supabase with Node.js - Integrations"
 {% include icons/supabase.html width="50" color="#3ECF8E" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 
-##### `Integrations`
-
 # __Supabase with Node.js__
 
 Learn how to configure Supabase with Dotenv Vault in a simple Node.js web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
