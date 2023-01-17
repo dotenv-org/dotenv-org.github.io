@@ -3,8 +3,6 @@ layout: docs
 title: "Edgio with Nuxt.js - Integrations Quickstart"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/edgio.html width="50" color="#000000" %}
 {% include icons/nuxt.html width="50" color="#00DC82" %}
 
