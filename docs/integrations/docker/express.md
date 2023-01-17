@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/docker-express
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/docker.html width="50" color="#2496ED" %}
 {% include icons/express.html width="50" color="#000000" %}
 

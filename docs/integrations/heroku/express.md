@@ -3,8 +3,6 @@ layout: docs
 title: "Heroku with Express - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/heroku.html width="50" color="#430098" %}
 {% include icons/express.html width="50" color="#000000" %}
 

@@ -3,8 +3,6 @@ layout: docs
 title: "Supabase with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/supabase.html width="50" color="#3ECF8E" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

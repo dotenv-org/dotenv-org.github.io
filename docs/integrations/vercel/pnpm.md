@@ -3,8 +3,6 @@ layout: docs
 title: "Vercel with pnpm - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/pnpm.html width="50" color="#F69220" %}
 

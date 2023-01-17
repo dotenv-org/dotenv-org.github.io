@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/travis-ci-nodejs
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/travis-ci.html width="50" color="#3EAAAF" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

@@ -3,8 +3,6 @@ layout: docs
 title: "Cloud 66 with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/cloud66.html width="50" color="#3C72B9" %}
 {% include icons/nodejs.html width="50" color="#000000" %}
 

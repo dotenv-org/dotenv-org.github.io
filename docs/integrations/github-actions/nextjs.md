@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/github/actions-nextjs
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/github.html width="50" color="#181717" %}
 {% include icons/nextjs.html width="50" color="#000000" %}
 

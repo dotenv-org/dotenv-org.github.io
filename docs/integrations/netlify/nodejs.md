@@ -3,8 +3,6 @@ layout: docs
 title: "Netlify with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/netlify.html width="50" color="#00C7B7" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

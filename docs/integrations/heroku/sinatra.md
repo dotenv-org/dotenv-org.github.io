@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/heroku-sinatra
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/heroku.html width="50" color="#430098" %}
 {% include icons/sinatra.html width="50" color="#000000" %}
 

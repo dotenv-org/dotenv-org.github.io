@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/railway-nodejs
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/railway.html width="50" color="#0B0D0E" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

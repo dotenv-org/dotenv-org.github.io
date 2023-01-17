@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/gitlab-ci-quickstart
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/gitlab.html width="50" color="#FC6D26" %}
 
 ##### Integrations

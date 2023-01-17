@@ -5,8 +5,6 @@ redirect_from:
   - /docs/help/github_integration_missing_organization
 ---
 
-{% include helpers/reading_time.html %}
-
 ##### Help
 
 #### GitHub Integration Missing Organization

@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/dagger-nodejs
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/dagger.html width="50" color="#343434" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

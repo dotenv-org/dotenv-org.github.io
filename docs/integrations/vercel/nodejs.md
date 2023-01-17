@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/vercel-nodejs
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

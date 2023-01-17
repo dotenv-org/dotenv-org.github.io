@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/docker-compose-rails
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/docker.html width="50" color="#2496ED" %}
 {% include icons/rails.html width="50" color="#CC0000" %}
 

@@ -3,8 +3,6 @@ layout: docs
 title: "Northflank with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/northflank.html width="50" color="#01e3c5" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

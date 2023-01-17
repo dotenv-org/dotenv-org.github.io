@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/github/actions-nodejs
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/github.html width="50" color="#181717" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

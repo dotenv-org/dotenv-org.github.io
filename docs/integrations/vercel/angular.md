@@ -3,8 +3,6 @@ layout: docs
 title: "Vercel with Angular - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/angular.html width="50" color="#DD0031" %}
 

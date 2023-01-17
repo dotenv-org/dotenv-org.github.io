@@ -3,8 +3,6 @@ layout: docs
 title: "Google Cloud with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/google-cloud.html width="50" color="#4285F4" %}
 {% include icons/nodejs.html width="50" color="#339933" %}
 

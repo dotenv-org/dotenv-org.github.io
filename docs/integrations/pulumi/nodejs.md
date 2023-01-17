@@ -3,11 +3,8 @@ layout: docs
 title: "Pulumi with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/pulumi.html width="50" color="#4285F4" %}
 {% include icons/nodejs.html width="50" color="#8A3391" %}
-
 
 # __Pulumi with Node.js__
 ##### `Integrations`

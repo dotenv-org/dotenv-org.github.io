@@ -3,8 +3,6 @@ layout: docs
 title: "Digital Ocean with Node.js - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/digital-ocean.html width="50" color="#0080FF" %}
 {% include icons/nodejs.html width="50" color="#000000" %}
 

@@ -3,8 +3,6 @@ layout: docs
 title: "Slack - Add-ons"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/slack.html width="50" color="#4A154B" %}
 
 ##### Add-ons

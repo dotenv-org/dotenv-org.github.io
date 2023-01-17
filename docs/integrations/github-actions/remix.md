@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/github/actions-remix
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/github.html width="50" color="#181717" %}
 {% include icons/remix.html width="50" color="#000000" %}
 

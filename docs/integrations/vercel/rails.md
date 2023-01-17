@@ -3,8 +3,6 @@ layout: docs
 title: "Vercel with Rails - Integrations Quickstart"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/vercel.html width="50" color="#000000" %}
 {% include icons/rails.html width="50" color="#CC0000" %}
 

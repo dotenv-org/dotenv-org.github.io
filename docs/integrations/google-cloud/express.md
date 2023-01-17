@@ -3,8 +3,6 @@ layout: docs
 title: "Google Cloud Build with Express - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/google-cloud.html width="50" color="#4285F4" %}
 {% include icons/express.html width="50" color="#000000" %}
 

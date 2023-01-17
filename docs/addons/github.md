@@ -3,8 +3,6 @@ layout: docs
 title: "GitHub - Add-ons"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/github.html width="50" color="#181717" %}
 
 ##### Add-ons

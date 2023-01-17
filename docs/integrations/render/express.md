@@ -3,8 +3,6 @@ layout: docs
 title: "Render with Express - Integrations"
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/render.html width="50" color="#46E3B7" %}
 {% include icons/express.html width="50" color="#000000" %}
 

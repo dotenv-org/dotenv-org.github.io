@@ -5,8 +5,6 @@ redirect_from:
   - /docs/integrations/serverless-express
 ---
 
-{% include helpers/reading_time.html %}
-
 {% include icons/serverless.html width="50" color="#FD5750" %}
 {% include icons/express.html width="50" color="#000000" %}
 
