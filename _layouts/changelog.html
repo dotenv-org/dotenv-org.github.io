@@ -2,31 +2,26 @@
 layout: default
 ---
 
-<hr/>
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    <p class="text-center mt-5 pb-0 mb-3 fw-normal">
+			<a href="/changelog">
+				&larr; back to Changelog
+			</a>
+		</p>
+  </div>
+</div>
 
-<h6 class="text-center">
-	<a href="/changelog">
-		&larr; back to Changelog
-	</a>
-</h6>
-
-<article markdown="1" class="mt-1 mb-2">
-  <p class="text-secondary mb-0">
-    {{ page.date | date: "%b %d, %Y" }}
-  </p>
-
-  <h2 class="h4 mt-05">
-    {{ page.title }}
-  </h2>
-
-  {{ content }}
-
-</article>
-
-<h6 class="text-center">
-	<a href="/changelog">
-		&larr; back to Changelog
-	</a>
-</h6>
-
-<hr/>
+<div class="row mb-5 changelog-item">
+	<div class="col col-lg-8 offset-lg-2 bg-warning py-4 px-lg-4" style="--bs-bg-opacity: 0.1;">
+		<p>
+			<a class="text-secondary text-underline-hover" href="{{ page.url }}">
+				{{ page.date | date: "%b %d, %Y" }}
+			</a>
+		</p>
+		<h2 class="h4 fw-bold">
+			{{ page.title }}
+		</h2>
+		{{ content }}
+	</div>
+</div>
