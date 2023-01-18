@@ -3,6 +3,11 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Dotenv" # the name of your site, e.g. ACME Corp.
 logo: "https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg"
 
+# Change assets path - https://github.com/envygeeks/jekyll-assets/issues/161
+assets:
+  sources:
+    - assets-www
+
 # Footer "Edit this page on GitHub" link text
 github_edit_link: true # show or hide edit this page link
 github_edit_link_text: "View on GitHub"
