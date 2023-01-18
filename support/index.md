@@ -47,7 +47,7 @@ redirect_from:
       <div class="card-body">
         <h6 class="fw-bold">Email Support</h6>
         <p>Talk to a real person over email at <a href="mailto:support@dotenv.org">support@dotenv.org</a>. It's the fastest way to get help.</p>
-        <a class="btn btn-secondary btn-sm" href="https://github.com/dotenv-org/dotenv-vault/issues" target="_blank">
+        <a class="btn btn-secondary btn-sm" href="mailto:support@dotenv.org" target="_blank">
           <div class="d-flex align-items-center">
             <div class="me-1">Email Support</div>
             <iconify-icon icon="ph:envelope" style="color: #fcfcfc;" height="16"></iconify-icon>
