@@ -9,7 +9,7 @@ title: "Pricing"
     <h3 class="text-center h1 fw-bold">Invest in Your Security</h3>
     <h5 class="text-center">Free to use for individuals and small teams</h5>
     <div class="card-group mt-4">
-      <div class="card bg-warning" style="--bs-bg-opacity: 0.1;">
+      <div class="card bg-white">
         <div class="card-header py-3">
           <h5 class="card-title h4 fw-bold">Free</h5>
           <p class="card-text small">Full-fledged security for individuals and small teams.</p>
@@ -43,7 +43,7 @@ title: "Pricing"
           </div>
         </div>
       </div>
-      <div class="card bg-warning" style="--bs-bg-opacity: 0.1;">
+      <div class="card bg-white">
         <div class="card-header py-3">
           <h5 class="card-title h4 fw-bold">Team</h5>
           <p class="card-text small">Advanced collaboration and support for teams of all sizes.</p>
@@ -95,7 +95,7 @@ title: "Pricing"
           </div>
         </div>
       </div>
-      <div class="card bg-warning" style="--bs-bg-opacity: 0.1;">
+      <div class="card bg-white">
         <div class="card-header py-3">
           <h5 class="card-title h4 fw-bold">Enterprise</h5>
           <p class="card-text small">Compliance and deep integration with your internal network.</p>
