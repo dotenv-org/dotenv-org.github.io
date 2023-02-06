@@ -46,7 +46,7 @@ title: "Pricing"
       <div class="card bg-white">
         <div class="card-header py-3">
           <h5 class="card-title h4 fw-bold">Team</h5>
-          <p class="card-text small">Advanced collaboration and support for teams of all sizes.</p>
+          <p class="card-text small">Advanced security and more control for teams of all sizes.</p>
           <p class="card-text"><span class="font-monosopace fw-semibold h5">$4 / month</span> per teammate</p>
         </div>
         <div class="card-body p-0">
