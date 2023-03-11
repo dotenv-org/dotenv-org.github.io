@@ -15,7 +15,7 @@ Learn how to configure Dagger with Dotenv Vault in a simple Node.js web app. Thi
 You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-dagger-nodejs).
 
 ## Initial setup
-First, you will need a Dagger CI setup, so if you don't have one already go ahead and create it. You can find an [example Node.js setup in the Dagger repo here](https://github.com/dagger/examples/tree/main/templates/nodejs/npm/gosdk).
+First, you will need a Dagger CI setup, so if you don't have one already go ahead and create it. You can find an [example Node.js setup in the Dagger repo here](https://github.com/dagger/examples/blob/69b6f91804b33342bad6643f15378d6faac07c83/go/npm-build).
 
 ## Package installation
 Once ready, proceed by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
