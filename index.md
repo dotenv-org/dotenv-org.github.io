@@ -14,7 +14,6 @@ redirect_from:
 </div>
 {% include landing/problem.html %}
 {% include landing/costing_them.html %}
-
 {% include landing/our_solution.html %}
 
 ---
