@@ -5,7 +5,8 @@
     {% include layouts/analytics.html %}
     {% include layouts/github_button.html %}
   </head>
-  <body class="bg-warning-subtle">
+  <body class="">
+    <!--<body class="bg-warning-subtle">-->
     {% include layouts/nav.html %}
 
     <div class="container">
@@ -14,7 +15,8 @@
           {% include helpers/docs_metadata.html %}
           <div class="docs-layout-content">{{ content }}</div>
         </div>
-        <div class="col col-auto order-lg-2 border-dark-subtle border-end border-opacity-10 d-lg-block d-none">
+        <div class="col col-auto order-lg-2 d-lg-block d-none">
+          <!--<div class="col col-auto order-lg-2 border-dark-subtle border-end border-opacity-10 d-lg-block d-none">-->
         </div>
         <div class="col-lg-3">
           <div class="text-body-tertiary opacity-50 d-lg-none"><hr /></div>
