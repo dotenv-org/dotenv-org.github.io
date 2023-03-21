@@ -1,37 +1,37 @@
-<div class="bg-warning">
-<div class="container py-3 pb-5">
+<div class="container py-3 pb-5 bg-warning rounded">
   <div class="row pt-3 pt-lg-5">
-    <div class="col col-lg-8">
-      <h2 class="text-left fw-bold">Is this the best way to manage your secrets?</h2>
+    <div class="col col-lg-7 offset-lg-1">
+      <h2 class="display-5 text-left fw-bold">Is this the best new way to manage your secrets?</h2>
 
-      <p class="fw-normal"><span class="fw-semibold">dotenv-vault</span> replaces storing and setting your secrets across multiple platforms and tools with a cloud-agnostic vaulting mechanism keeping your secrets safe – off third-parties where they can leak.</p>
-
-      <!--
-      <a href="" class="btn btn-light shadow shadow-sm">See how <span class="fw-bold">dotenv-vault</span> works</a>
-      <a href="/" class="btn btn-link text-secondary ml-1">
+      <p class="lead"><span class="fw-bold">dotenv-vault</span> replaces storing and setting your secrets across multiple platforms and tools with a cloud-agnostic vaulting mechanism keeping your secrets safe and off third-parties where they can leak.</p>
+      <a href="" class="btn btn-dark shadow shadow-sm">See how <span class="fw-bold">dotenv-vault</span> works</a>
+      <a href="/" class="btn btn-link text-dark ml-1">
          or sign up now
       </a>
-      -->
     </div>
   </div>
-  <div class="row pt-3">
-    <div class="col-lg-5">
-      <h6 class="fw-bold lh-sm">Manually managing your secrets scatters them everywhere</h6>
-      <p class="small">Your developers manage secrets independently, exchanging .env files through insecure channels like email and Slack. Meanwhile, your DevOps team sets secrets through various different platforms and tools, resulting in secrets being spread across multiple locations. Your CSO has no visibility into any of this, leaving them unaware of which secrets are located where, as well as who has accessed them and when.</p>
-      <ul class="list-unstyled">
-        <li><span class="text-monospace text-danger">&times;</span> <span class="fw-bold">Insecure</span></li>
-        <li><span class="text-monospace text-danger">&times;</span> <span class="fw-bold">Manual management</span></li>
-        <li><span class="text-monospace text-danger">&times;</span> <span class="fw-bold">Lack of oversight</span></li>
-      </ul>
+  <div class="row pt-5">
+    <div class="col-lg-5 offset-lg-1">
+      <h3 class="fw-bold lh-sm">Manually managing your secrets scatters them everywhere</h3>
+      <p class="">Your developers manage secrets independently, exchanging .env files through insecure channels like email and Slack. Meanwhile, your DevOps team sets secrets through various different platforms and tools, resulting in secrets being spread across multiple locations.</p>
     </div>
-    <div class="col-lg-5">
-      <h6 class="fw-bold lh-sm">Alternative solutions have limitations and risks</h6>
-      <p class="small">For instance, HashiCorp Vault can lock you into an expensive solution by requiring your team to rewrite code. Similarly, solutions like AWS Secrets and GCP Secret Manager are also pricey and rely on frequent API calls to their services, driving up costs. On the other hand, solutions like Doppler and Infisical avoid the need for code rewrites, but they rely on <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="text-secondary">third-party integrations</a> that may increase your attack surface area, making it more likely for your secrets to leak.</p>
+    <div class="col-lg-3">
       <ul class="list-unstyled">
-        <li><span class="text-monospace text-danger">&times;</span> <span class="fw-bold">Expensive</span></li>
-        <li><span class="text-monospace text-danger">&times;</span> <span class="fw-bold">Risky third-party integrations</span></li>
+        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Insecure</span></li>
+        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Secrets everywhere</span></li>
       </ul>
     </div>
   </div>
-</div>
+  <div class="row pt-5">
+    <div class="col-lg-5 offset-lg-1">
+      <h3 class="fw-bold lh-sm">Alternative solutions have limitations and risks</h3>
+      <p class="">HashiCorp Vault can lock you into an expensive solution by requiring your team to rewrite code. Solutions like AWS Secrets and GCP Secret Manager are also pricey and rely on frequent API calls to their services, driving up costs. Solutions like Doppler and Infisical avoid the need for code rewrites, but they rely on <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="text-secondary">third-party integrations</a> that may increase your attack surface area, making it more likely for your secrets to leak.</p>
+    </div>
+    <div class="col-lg-3">
+      <ul class="list-unstyled">
+        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Expensive</span></li>
+        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Risky third-party integrations</span></li>
+      </ul>
+    </div>
+  </div>
 </div>

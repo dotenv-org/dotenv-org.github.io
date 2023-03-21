@@ -11,10 +11,11 @@ redirect_from:
 
 <div class="bg-black bg-vault-image pb-5" style="margin-top: -150px; padding-top: 150px !important;">
 {% include landing/companies_using.html %}
-</div>
 {% include landing/problem.html %}
+</div>
 {% include landing/costing_them.html %}
 {% include landing/our_solution.html %}
+{% include landing/companies_love.html %}
 
 ---
 
