@@ -1,37 +1,51 @@
-<div class="container py-3 pb-5 bg-warning rounded">
-  <div class="row pt-3 pt-lg-5">
-    <div class="col col-lg-7 offset-lg-1">
-      <h2 class="display-5 text-left fw-bold">Is this the best new way to manage your secrets?</h2>
-
-      <p class="lead"><span class="fw-bold">dotenv-vault</span> replaces storing and setting your secrets across multiple platforms and tools with a cloud-agnostic vaulting mechanism keeping your secrets safe and off third-parties where they can leak.</p>
-      <a href="" class="btn btn-dark shadow shadow-sm">See how <span class="fw-bold">dotenv-vault</span> works</a>
-      <a href="/" class="btn btn-link text-dark ml-1">
-         or sign up now
-      </a>
-    </div>
-  </div>
-  <div class="row pt-5">
-    <div class="col-lg-5 offset-lg-1">
-      <h3 class="fw-bold lh-sm">Manually managing your secrets scatters them everywhere</h3>
-      <p class="">Your developers manage secrets independently, exchanging .env files through insecure channels like email and Slack. Meanwhile, your DevOps team sets secrets through various different platforms and tools, resulting in secrets being spread across multiple locations.</p>
-    </div>
-    <div class="col-lg-3">
-      <ul class="list-unstyled">
-        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Insecure</span></li>
-        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Secrets everywhere</span></li>
-      </ul>
-    </div>
-  </div>
-  <div class="row pt-5">
-    <div class="col-lg-5 offset-lg-1">
-      <h3 class="fw-bold lh-sm">Alternative solutions have limitations and risks</h3>
-      <p class="">HashiCorp Vault can lock you into an expensive solution by requiring your team to rewrite code. Solutions like AWS Secrets and GCP Secret Manager are also pricey and rely on frequent API calls to their services, driving up costs. Solutions like Doppler and Infisical avoid the need for code rewrites, but they rely on <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="text-secondary">third-party integrations</a> that may increase your attack surface area, making it more likely for your secrets to leak.</p>
-    </div>
-    <div class="col-lg-3">
-      <ul class="list-unstyled">
-        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Expensive</span></li>
-        <li><span class="text-monospace h3 text-danger">&times;</span> <span class="fw-bold">Risky third-party integrations</span></li>
-      </ul>
+<div class="container py-3 pb-0" style="margin-bottom: -100px; padding-bottom: 100px;">
+  <div class="row">
+    <div class="col-lg-7 offset-lg-1 bg-warning-subtle rounded shadow shadow-sm py-4">
+      <div class="row pt-3 pt-lg-5">
+        <div class="col col-lg-10 offset-lg-1">
+          <h2 class="display-6 text-left fw-bold">Is this the best way to manage your secrets?</h2>
+          <p class="lead"><span class="fw-bold">dotenv-vault</span> combats scattered secrets with a single source of truth. It builds on top of the proven dotenv standard, adding syncing and encryption to .env files.</p>
+          <a href="" class="btn btn-dark shadow shadow-sm">See how <span class="fw-bold">dotenv-vault</span> works</a>
+          <a href="/signup" class="btn btn-link">
+             or sign up right now
+          </a>
+        </div>
+      </div>
+      <div class="row pt-3 pt-lg-5">
+        <div class="col-lg-10 offset-lg-1">
+          <h5 class="fw-bold lh-sm">Manually managing your secrets scatters them everywhere</h5>
+        </div>
+      </div>
+      <div class="row pt-0">
+        <div class="col-lg-6 offset-lg-1">
+          <p class="text-dark text-opacity-75">Your developers manage secrets independently, exchanging .env files over <a class="" href="https://www.reddit.com/r/devops/comments/tzufc9/how_do_you_share_and_sync_env_files_for_your_team/">insecure channels like email and Slack</a>. Meanwhile, your DevOps team sets secrets through various different platforms and tools, resulting in secrets being spread across multiple locations.</p>
+        </div>
+        <div class="col-lg-5">
+          <ul class="list-unstyled">
+            <li><span class="font-monospace h3 m-0 p-0 text-danger">&times;</span> <span class="fw-bold">Insecure</span></li>
+            <li><span class="font-monospace h3 m-0 p-0 text-danger">&times;</span> <span class="fw-bold">Secrets everywhere</span></li>
+            <li><span class="font-monospace h3 m-0 p-0 text-danger">&times;</span> <span class="fw-bold">No backups</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pt-3 pt-lg-5">
+        <div class="col-lg-10 offset-lg-1">
+          <h5 class="fw-bold lh-sm">Alternative solutions have limitations and risks</h5>
+        </div>
+      </div>
+      <div class="row pt-0 pb-5">
+        <div class="col-lg-6 offset-lg-1">
+          <p class="text-dark text-opacity-75"><a href="https://hashicorp.com/products/vault">HashiCorp Vault</a> can lock you into an expensive solution by requiring your team to rewrite code. Solutions like <a href="https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html">AWS Secrets</a> and <a href="https://cloud.google.com/secret-manager">GCP Secret Manager</a> are also pricey and rely on frequent API calls to their
+          services, driving up costs. <a href="https://doppler.com">Doppler</a> and <a href="https://infisical.com">Infisical</a> mostly avoid the need for code rewrites, but they rely on <a href="https://coderpad.io/blog/development/heroku-github-breach/">risky third-party integrations</a> that may increase your attack surface area, making it more likely for your secrets to leak.</p>
+        </div>
+        <div class="col-lg-5">
+          <ul class="list-unstyled">
+            <li><span class="font-monospace h3 m-0 p-0 text-danger">&times;</span> <span class="fw-bold">Expensive</span></li>
+            <li><span class="font-monospace h3 m-0 p-0 text-danger">&times;</span> <span class="fw-bold">Risky third-party integrations</span></li>
+            <li><span class="font-monospace h3 m-0 p-0 text-danger">&times;</span> <span class="fw-bold">Proprietary / Lock-in</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

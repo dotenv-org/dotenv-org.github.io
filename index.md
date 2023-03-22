@@ -16,13 +16,4 @@ redirect_from:
 {% include landing/costing_them.html %}
 {% include landing/our_solution.html %}
 {% include landing/companies_love.html %}
-
----
-
-{% include helpers/hero.html %}
-{% include helpers/how_it_works.html %}
-{% include helpers/watch_videos.html %}
-{% include helpers/hr.html %}
-{% include helpers/works_everywhere.html %}
-{% include helpers/hr.html %}
-{% include helpers/from_the_same_people.html %}
+{% include landing/vscode.html %}

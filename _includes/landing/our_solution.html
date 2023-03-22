@@ -1,80 +1,17 @@
-<div class="pb-5">
-<div class="container py-3 pb-5">
-  <div class="row pt-3 pt-lg-5">
+<div class="container py-5">
+  <div class="row pt-3 pt-lg-5 mb-5">
     <div class="col-lg-7 offset-lg-1">
-      <!--<h2 class="fw-bold lh-sm">Why you'll love using <span class="fw-bold">dotenv-vault</span></h2>-->
-      <!--<p class="lead fw-normal">Your development team can manage secrets in coordination with DevOps and your CSO gets complete oversight.</p>-->
-      <!--<p class="lead fw-normal">It simplifies management across teams, machines, and environments, it prevents your secrets from being scattered everywhere, and it combats your secrets from leaking.</p>-->
+      <h2 class="display-5 lh-sm"><span class="fw-bold">dotenv-vault</span> is the solution you've been looking for</h2>
+      <p class="lead"><span class="fw-bold">dotenv-vault</span> replaces storing and setting your secrets across multiple platforms and tools with a single source of truth. It builds on top of the proven dotenv standard, adding syncing and encryption to .env files.</p>
+      <p class="lead fw-semibold">You're steps away from fixing your secrets management problem for good.</p>
+      <a href="" class="btn btn-dark shadow shadow-sm">See how <span class="fw-bold">dotenv-vault</span> works</a>
+      <a href="/" class="btn btn-link ml-1">
+         or sign up now
+      </a>
+    </div>
+  </div>
 
-      <p class="mb-0 text-muted">How It Works</p>
-      <h2 class="display-5 lh-sm">Why you'll love using <span class="fw-bold">dotenv-vault</span></h2>
-
-      <p class="lead"><span class="fw-bold">dotenv-vault</span> replaces storing and setting your secrets across multiple platforms and tools with a cloud-agnostic vaulting mechanism keeping your secrets safe and off third-parties where they can leak.</p>
-    </div>
-  </div>
-  <div class="row py-3">
-    <div class="col-lg-4 d-flex align-items-center order-lg-2">
-      <div class="card text-bg-dark w-100 shadow shadow-lg">
-        <div class="card-body text-monospace lead">
-          <span class="text-secondary">$ cd ./your-project</span>
-          <br/>
-          <span class="text-secondary">$ npx dotenv-vault new</span>
-          <br/>
-          $ npx dotenv-vault push
-          <br/>
-          <span class="text-secondary">$ npx dotenv-vault pull</span>
-        </div>
-        <div class="card-footer text-end text-secondary fw-semibold"><small>cli</small></div>
-      </div>
-    </div>
-    <div class="col-lg-5 offset-lg-1 order-lg-1">
-      <p class="text-muted mb-0 mt-2">Step 1</p>
-      <h2 class="fw-bold">Works with a single command</h2>
-      <p>You don't need to install anything to use <span class="fw-bold">dotenv-vault</span>. No error prone binaries to install, infrastructure to maintain, or custom code to write. It just works – with a single command.</p>
-      <p><span class="lead fw-normal text-success text-monospace text-success">$ npx dotenv-vault push</span></p>
-    </div>
-  </div>
-  <div class="row py-3">
-    <div class="col-lg-4 d-flex align-items-center order-lg-2">
-      <div>
-        <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1666569664/multiple-environments_gi3o9t.gif" class="rounded w-100 border shadow shadow-sm">
-      </div>
-    </div>
-    <div class="col-lg-5 offset-lg-1 d-flex align-items-center order-lg-1">
-      <div>
-        <p class="text-muted mb-0 mt-2">Step 2</p>
-        <h2 class="fw-bold">Manage multiple environments</h2>
-        <p>After you've pushed your .env file, you can manage your secrets across multiple environments. Open an environment to view and edit its environment variables.</p>
-        <p><span class="lead fw-normal text-success text-monospace">$ npx dotenv-vault open production</span></p>
-      </div>
-    </div>
-  </div>
-  <div class="row py-3">
-    <div class="col-lg-4 d-flex align-items-center order-lg-2">
-      <div class="card text-bg-dark w-100 shadow shadow-lg">
-        <div class="card-body text-monospace lead">
-          <br/>
-          $ npx dotenv-vault build
-          <br/>
-          <span class="text-secondary">$ git commit -am "Add .env.vault"</span>
-          <br/>
-          <span class="text-secondary">$ git push</span>
-        </div>
-        <div class="card-footer text-end text-secondary fw-semibold"><small>cli</small></div>
-      </div>
-    </div>
-    <div class="col-lg-5 offset-lg-1 order-lg-1">
-      <p class="text-muted mb-0 mt-2">Step 3</p>
-      <h2 class="fw-bold">Deploy with your code</h2>
-      <p><span class="fw-bold">dotenv-vault</span> deploys everywhere you already deploy your code. Run the build command to generate your encrypted <span class="fw-bold">.env.vault</span> file, commit that safely to code, and deploy. There's nothing else like it.</p>
-      <p><span class="lead fw-normal text-success text-monospace">$ npx dotenv-vault build</span></p>
-    </div>
-    
-  </div>
-  <div class="row">
-    <div class="col-lg-10 offset-lg-1">
-      {% include helpers/integrations_grid2.html %}
-    </div>
-  </div>
-</div>
+  {% include landing/solution_step1.html %}
+  {% include landing/solution_step2.html %}
+  {% include landing/solution_step3.html %}
 </div>
