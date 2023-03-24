@@ -1,11 +1,10 @@
 ---
-layout: landing
+layout: default
 title: "Simplify Your Secrets"
 redirect_from:
   - /why
 ---
 
-{% include layouts/nav.html %}
 {% include landing/hero.html %}
 {% include landing/product_screenshot.html %}
 
