@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Billing Improvements - Changelog"
+title: "Billing Improvements"
 ---
 
 Billing teams will be happy. We've added:

@@ -1,37 +1,14 @@
-<footer>
+<footer class="border-top border-1 pt-4 bg-light">
   <div class="container">
     <div class="row">
       <div class="col col-lg-10 offset-lg-1">
         <div class="row">
-          <div class="col">
-            {% include helpers/hr.html %}
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col col-auto order-lg-2">
-            <ul class="list-unstyled">
-              <li class="fw-bold text-muted btn">Help</p>
-              <li>
-                <a href="/support" class="text-underline-hover text-dark btn btn-link">Help & Support</a>
-              </li>
-              <li>
-                <a href="/changelog" class="text-underline-hover text-dark btn btn-link">Changelog</a>
-              </li>
-              <li>
-                <a href="https://status.dotenv.org" class="text-underline-hover text-dark btn btn-link">System Status</a>
-              </li>
-              <li>
-                <a href="https://health.dotenv.org" class="text-underline-hover text-dark btn btn-link">Worldwide Health</a>
-              </li>
-              <li>
-                <a href="/legal" class="text-underline-hover text-dark btn btn-link">Legal</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col col-auto order-lg-3">
+          <div class="col col-auto px-lg-3 order-lg-2">
             <ul class="list-unstyled">
               <li class="fw-bold text-muted btn">Product</p>
+              <li>
+                <a href="/" class="text-underline-hover text-dark btn btn-link">Overview</a>
+              </li>
               <li>
                 <a href="/security" class="text-underline-hover text-dark btn btn-link">Security</a>
               </li>
@@ -39,21 +16,21 @@
                 <a href="/pricing" class="text-underline-hover text-dark btn btn-link">Pricing</a>
               </li>
               <li>
-                <a href="/docs" class="text-underline-hover text-dark btn btn-link">Documentation</a>
+                <a href="/support" class="text-underline-hover text-dark btn btn-link">Help & Support</a>
               </li>
-              <li>
-                <a href="/integrations" class="text-underline-hover text-dark btn btn-link">Integrations</a>
-              </li>
-              <li>
-                <a href="/libraries" class="text-underline-hover text-dark btn btn-link">Libraries</a>
-              </li>
-            </ul>
+             </ul>
           </div>
-          <div class="col col-auto order-lg-3">
+          <div class="col col-auto px-lg-3 order-lg-3">
             <ul class="list-unstyled">
-              <li class="fw-bold text-muted btn">Resources</p>
+              <li class="fw-bold text-muted btn">Developers</p>
               <li>
-                <a href="/blog" class="text-underline-hover text-dark btn btn-link">Blog</a>
+                <a href="/docs" class="text-underline-hover text-dark btn btn-link">Docs</a>
+              </li>
+                            <li>
+                <a href="/changelog" class="text-underline-hover text-dark btn btn-link">Changelog</a>
+              </li>
+              <li>
+                <a href="https://status.dotenv.org" class="text-underline-hover text-dark pe-1 btn btn-link">Status</a>/<a href="https://health.dotenv.org" class="ps-1 text-underline-hover text-dark btn btn-link">Health</a>
               </li>
             </ul>
           </div>
@@ -65,8 +42,19 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/dotenv-org" class="btn btn-link px-0">
+                <a href="https://github.com/motdotla/dotenv" class="btn btn-link px-1">
                   {% include icons/github.html width="16" %}
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://youtube.com/@dotenvorg" class="btn btn-link px-0">
+                  {% include icons/youtube.html width="16" %}
+                </a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode" class="btn btn-link px-0">
+                  {% include icons/vscode.html width="16" %}
                 </a>
               </li>
             </ul>
@@ -75,6 +63,10 @@
           </div>
           <div class="col col-auto order-lg-5">
             <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="/legal" class="text-underline-hover text-dark btn btn-link">Legal</a>
+              </li>
+
               <li class="list-inline-item">
                 <a href="/" class="text-underline-hover text-dark text-decoration-none btn btn-link">&copy; Dotenv</a>
               </li>

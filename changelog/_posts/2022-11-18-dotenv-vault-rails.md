@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "dotenv-vault-rails: Rotate DOTENV_KEY - Changelog"
+title: "dotenv-vault-rails: Rotate DOTENV_KEY"
 ---
 
 Added support for rotating <strong>DOTENV_KEY</strong> in [dotenv-vault-rails](https://github.com/dotenv-org/dotenv-vault-ruby).

@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Integrate Everywhere™ - Changelog"
+title: "Integrate Everywhere™"
 ---
 
 Integrate Everywhere™ is our new approach to integrations. It works everywhere you can deploy your code. No more brittle integrations coordinating API calls. Instead, build and encrypt your local .env.vault file, commit it to code, and deploy. There's nothing else like it.
@@ -12,4 +12,4 @@ $ git commit -am "Add .env.vault"
 $ git push
 ```
 
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666490854/screely-1666490843091_ygumti.png)
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666490854/screely-1666490843091_ygumti.png" %}

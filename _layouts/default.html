@@ -5,17 +5,9 @@
     {% include layouts/analytics.html %}
     {% include layouts/github_button.html %}
   </head>
-  <body class="bg-warning-subtle">
+  <body class="">
     {% include layouts/nav.html %}
-
-    <div class="container">
-      <div class="row">
-        <div class="col col-lg-10 offset-lg-1">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-
+    {{ content }}
     {% include layouts/footer.html %}
     {% include layouts/js.html %}
   </body>
