@@ -14,5 +14,10 @@ redirect_from:
 </div>
 {% include landing/costing_them.html %}
 {% include landing/our_solution.html %}
+<div class="bg-light pt-4">
 {% include landing/companies_love.html %}
+{% include landing/when_will_you.html %}
+</div>
+<div class="bg-warning" style="--bs-bg-opacity: 0.1;">
 {% include landing/vscode.html %}
+</div>

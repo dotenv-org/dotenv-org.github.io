@@ -7,7 +7,7 @@ $white: #FFFFFF;
 //
 .docs-layout-content {
   p img {
-    width: 100%;
+    width: 75%;
   }
 }
 .changelog-item {
@@ -157,4 +157,47 @@ div.highlight {
     font-weight: normal;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
+}
+
+// docs
+.bd-layout {
+  display: grid;
+  grid-template-areas: "sidebar main";
+  grid-template-columns: 1fr 5fr;
+  gap: 1.5rem;
+}
+
+.bd-sidebar {
+  grid-area: sidebar;
+  position: sticky;
+  top: 5rem;
+  display: block !important;
+  height: calc(100vh - 6rem);
+  padding-left: 0.25rem;
+  margin-left: -0.25rem;
+  overflow-y: auto;
+}
+
+.bd-main {
+  display: grid;
+  grid-area: main;
+  grid-template-areas:
+    "intro toc"
+    "content toc";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 4fr 1fr;
+}
+
+.bd-intro {
+  grid-area: intro;
+}
+
+.bd-content {
+  grid-area: content;
+  min-width: 1px;
+}
+
+.bd-lead {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
