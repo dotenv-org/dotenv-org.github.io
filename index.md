@@ -8,7 +8,7 @@ redirect_from:
 {% include landing/hero.html %}
 {% include landing/product_screenshot.html %}
 
-<div class="bg-black bg-vault-image pb-5" style="margin-top: -150px; padding-top: 150px !important;">
+<div class="bg-black bg-vault-image pb-5 border-top border-3 border-warning" style="margin-top: -150px; padding-top: 150px !important;">
 {% include landing/companies_using.html %}
 {% include landing/problem.html %}
 </div>

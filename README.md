@@ -5,7 +5,7 @@ Source code for www.dotenv.org
 ## Development
 
 ```
-bundle exec jekyll serve --livereload --verbose
+bundle exec jekyll serve --livereload --verbose --incremental
 ```
 
 Use [iconify](http://icon-sets.iconify.design/simple-icons/) for icons or use [simpleicons.org](https://simpleicons.org/).
