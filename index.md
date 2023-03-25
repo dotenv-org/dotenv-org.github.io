@@ -12,9 +12,14 @@ redirect_from:
 {% include landing/companies_using.html %}
 {% include landing/problem.html %}
 </div>
+<div class="bg-warning p-3">
 {% include landing/costing_them.html %}
+</div>
+<div class="bg-light pb-5">
 {% include landing/our_solution.html %}
-<div class="bg-light pt-4">
+{% include landing/source_of_truth.html %}
+</div>
+<div class="bg-white pt-4">
 {% include landing/companies_love.html %}
 {% include landing/when_will_you.html %}
 </div>

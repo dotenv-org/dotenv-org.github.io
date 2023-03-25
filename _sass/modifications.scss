@@ -50,6 +50,11 @@ $white: #FFFFFF;
 .text-yellow {
   color: $yellow !important;
 }
+.text-yellow-hover-star:hover {
+  .star {
+    color: $yellow !important;
+  }
+}
 .text-underline-hover {
  text-decoration: none;
 }

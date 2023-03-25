@@ -22,63 +22,13 @@ title: "Pricing"
 {% include landing/companies_using.html %}
 </div>
 
+<div class="bg-light">
 {% include landing/costing_them.html %}
+</div>
 <br/>
 {% include landing/companies_love.html %}
-
-<div class="row">
-  <div class="col col-lg-8 offset-lg-2">
-    <h3 class="display-5 fw-bold mt-4 mb-3 pt-4 text-center">What developers are saying</h3>
-    <figure class="text-center mb-4">
-      <blockquote class="blockquote">
-        <p>Dotenv-Vault is a great way to manage your environment variables for your team or for your many personal projects.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <a class="text-muted" href="https://twitter.com/KevLXu/status/1530754462758883328" target="_blank"><cite title="Kevin">Kevin</cite></a>
-      </figcaption>
-    </figure>
-    <figure class="text-center mb-4">
-      <blockquote class="blockquote">
-        <p>What a nice thing is 🔥 Dotenv Vault 🔥.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <a class="text-muted" href="https://twitter.com/jonatan_salas/status/1552292632554082305" target="_blank"><cite title="Jonatan">Jonatan</cite></a>
-      </figcaption>
-    </figure>
-    <figure class="text-center mb-4">
-      <blockquote class="blockquote">
-        <p>I gotta say that the introduction process and the entire vault workflow in general was absolutely divine to witness. Loved seeing every little step documented well with adequate feedback given every time. But the GitHub-like interface really put the cherry on top.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Petar">Petar</cite>
-      </figcaption>
-    </figure>
-    <figure class="text-center mb-4">
-      <blockquote class="blockquote">
-        <p>It works very well.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Petar">Hugo</cite>
-      </figcaption>
-    </figure>
-    <figure class="text-center mb-4">
-      <blockquote class="blockquote">
-        <p>Hearts out to the Dotenv team. Really great support. 10/10 would recommend.</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Petar">Peipr</cite>
-      </figcaption>
-    </figure>
-    <figure class="text-center mb-4">
-      <blockquote class="blockquote">
-        <p>Great onboarding experience. I went from “not knowing what this even is” to “integrated into my project” within about 5 minutes. Having each cli command tell me the next step was super helpful. Keep up the good work!</p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Petar">Anthony</cite>
-      </figcaption>
-    </figure>
-  </div>
-</div>
+{% include landing/developers_love.html %}
+{% include landing/source_of_truth.html %}
 
 <div class="row">
   <div class="col">
