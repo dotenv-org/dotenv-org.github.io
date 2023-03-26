@@ -1,13 +1,16 @@
 <header class="navbar navbar-expand-lg bd-navbar sticky-top bg-white {% if include.for_layout == "docs" %}shadow shadow-sm{% endif %}" style="--bs-bg-opacity: 0.98;">
   <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
-    <div class="bd-navbar-toggle">
-      {% if include.for_layout == "docs" %}
+    {% if include.for_layout == "docs" %}
+      <div class="bd-navbar-toggle">
         <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#docsSidebar" aria-controls="docsSidebar" aria-label="Toggle docs navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></svg>
           <span class="d-none fs-6 pe-1">Browse</span>
         </button>
-      {% endif %}
-    </div>
+      </div>
+    {% else %}
+      <div class="d-lg-none" style="width: 2.2rem;"></div>
+    {% endif %}
+
     <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Dotenv">
       <img src="/assets-www/img/dotenv.svg" alt="dotenv" width="44" class="rounded">
     </a>
