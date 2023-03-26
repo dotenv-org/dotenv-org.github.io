@@ -1,13 +1,12 @@
 ---
 layout: docs
-title: ".env.me Credential - Security"
+title: "Security ⋅ .env.me"
+lead: The .env.me file uniquely authorizes you to access a project's shared .env file. You can think of it like your unique SSH key at GitHub.
 redirect_from:
   - /env-me
 ---
 
-##### Security
-
-# .env.me Credential
+## About
 
 The .env.me file uniquely authorizes you to access a project's shared .env file. You can think of it like your unique SSH key at GitHub.
 
@@ -17,7 +16,7 @@ The .env.me credential authorizes your machine against a single project. In othe
 
 This is all by design. This way if an attacker somehow gets access to your .env.me credential (maybe you accidently committed it to source control), they are not getting access to all your secrets. You can then rotate your .env.me credential for that project only, manually rotate or auto-rotate (coming soon) that project's secrets, and be on your way. As a CTO, CSO, or startup founder this helps you mitigate the fallout from a security leak - setting you apart from others. In fact, your security hygiene will be better than most banks and fortune 500 companies in this regard.
 
-#### Example
+## Example
 
 Here's an example of what a .env.me file looks like:
 
@@ -29,6 +28,6 @@ The first thing you might notice is the formatting is the same as a .env file. T
 
 The DOTENV_ME key will be the only value this file contains. Keep it safe and out of source control - just like your .env file.
 
-#### Generating
+## Generating
 
 You can generate a .env.me file at [ui.dotenv.org](https://ui.dotenv.org/ui1/project/new) or using [dotenv-vault](https://github.com/dotenv-org/dotenv-vault). The authorization flow follows a similar pattern to world class authorization flows found in cli tools like [Heroku's cli](https://devcenter.heroku.com/articles/heroku-cli) and [Vercel's cli](https://vercel.com/cli). It is both secure and simple.

@@ -1,0 +1,6 @@
+{% assign link_url1 = include.url %}
+{% assign link_url2 = include.url | append: '/' %}
+{% assign link_url3 = include.url | append: '.html' %}
+<li>
+  <a href="{{ include.url }}" class="btn btn-sm text-start btn-outline-light text-secondary fw-normal py-1 px-2 rounded-3 border-0 {% if page.url == link_url1 or page.url == link_url2 or page.url == link_url3 %}active{% endif %}">{{ include.text }}</a>
+</li>

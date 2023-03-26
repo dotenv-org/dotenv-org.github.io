@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "Sync .env files - Tutorial"
+title: "Tutorial ⋅ Sync .env files"
 lead: "Sync environment variables securely with dotenv-vault."
 parent: Docs
 redirect_from:

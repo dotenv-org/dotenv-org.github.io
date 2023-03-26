@@ -1,28 +1,23 @@
 ---
 layout: docs
-title: "Managing Access - Tutorial"
+title: "Tutorial ⋅ Managing Access"
+lead: Manage who can access what. Limit your teammate's access to projects and environments.
 parent: Docs
 ---
 
-##### Tutorial
-
-# Managing Access
-
-Manage who can access what. Limit your teammate's access to projects and environments.
-
-#### 1. Click config icon
+# 1. Click config icon
 
 Visit the team page and click config next to your teammate's name.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1665554559/Screen_Shot_2022-10-11_at_10.57.30_PM_brcbuq.png" %}
 
-#### 2. Select environment
+## 2. Select environment
 
 Select the environment to limit access to.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1665554560/Screen_Shot_2022-10-11_at_10.58.02_PM_rlpbwl.png" %}
 
-#### 3. Configure permissions
+## 3. Configure permissions
 
 Configure your teammate's access.
 

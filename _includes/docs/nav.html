@@ -1,279 +1,269 @@
-<ul class="list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
-  <li class="py-2">
-    <strong>Getting Started</strong>
-    <ul class="list-unstyled fw-normal pb-2 small">
-      <li>
-        <a href="/docs/tutorials/sync">Sync .env files</a>
-      </li>
-      <li>
-        <a href="/docs/tutorials/environments">Managing Environments</a>
-      </li>
-      <li>
-        <a href="/docs/tutorials/integrations">Integrate Everywhere™</a>
-      </li>
-    </ul>
-  </li>
+<nav class="w-100">
+  <ul class="list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+    <li class="py-2">
+      {% include docs/nav_group.html text="Tutorials" %}
 
-  <li class="py-2">
-    <strong>Basics</strong>
-    <ul class="list-unstyled fw-normal pb-2 small">
-      <li><a href="/docs/tutorials/teammates">Adding Teammates</a></li>
-      <li><a href="/docs/tutorials/access">Managing Access</a></li>
-    </ul>
-  </li>
+      <ul class="list-unstyled fw-normal pb-2 small">
+        {% include docs/nav_link.html url="/docs/tutorials/sync" text="Sync .env files" %}
+        {% include docs/nav_link.html url="/docs/tutorials/environments" text="Managing Environments" %}
+        {% include docs/nav_link.html url="/docs/tutorials/integrations" text="Integrate Everywhere" %}
+        {% include docs/nav_link.html url="/docs/tutorials/teammates" text="Adding Teammates" %}
+        {% include docs/nav_link.html url="/docs/tutorials/access" text="Managing Access" %}
+      </ul>
+    </li>
 
-  <li class="py-2">
-    <strong>Security</strong>
-    <ul class="list-unstyled fw-normal pb-2 small">
-      <li><a href="/docs/security">Overview</a></li>
-      <li><a href="/docs/security/env">.env</a></li>
-      <li><a href="/docs/security/env-vault">.env.vault</a></li>
-      <li><a href="/docs/security/env-me">.env.me</a></li>
-      <li><a href="/docs/security/env-it">IT tokens</a></li>
-      <li><a href="/docs/security/vault">Vault</a></li>
-      <li><a href="/docs/security/dotenv-key">DOTENV_KEY</a></li>
-    </ul>
-  </li>
+    <li class="py-2">
+      {% include docs/nav_group.html text="Security" %}
+      <ul class="list-unstyled fw-normal pb-2 small">
+        {% include docs/nav_link.html url="/docs/security" text="Overview" %}
+        {% include docs/nav_link.html url="/docs/security/env" text=".env" %}
+        {% include docs/nav_link.html url="/docs/security/env-vault" text=".env.vault" %}
+        {% include docs/nav_link.html url="/docs/security/env-me" text=".env.me" %}
+        {% include docs/nav_link.html url="/docs/security/env-it" text="IT tokens" %}
+        {% include docs/nav_link.html url="/docs/security/vault" text="Vault" %}
+        {% include docs/nav_link.html url="/docs/security/dotenv-key" text="DOTENV_KEY" %}
+      </ul>
+    </li>
 
-  <li class="py-2">
-    <strong>CLI</strong>
-    <ul class="list-unstyled fw-normal pb-2 small">
-      <li><a href="/docs/dotenv-vault/new">new</a></li>
-      <li><a href="/docs/dotenv-vault/login">login</a></li>
-      <li><a href="/docs/dotenv-vault/logout">logout</a></li>
-      <li><a href="/docs/dotenv-vault/open">open</a></li>
-      <li><a href="/docs/dotenv-vault/push">push</a></li>
-      <li><a href="/docs/dotenv-vault/pull">pull</a></li>
-      <li><a href="/docs/dotenv-vault/build">build</a></li>
-      <li><a href="/docs/dotenv-vault/keys">keys</a></li>
-      <li><a href="/docs/dotenv-vault/rotatekey">rotatekey</a></li>
-      <li><a href="/docs/dotenv-vault/versions">versions</a></li>
-      <li><a href="/docs/dotenv-vault/whoami">whoami</a></li>
-      <li><a href="/docs/dotenv-vault/status">status</a></li>
-      <li><a href="/docs/dotenv-vault/help">help</a></li>
-    </ul>
-  </li>
+    <li class="py-2">
+      {% include docs/nav_group.html text="CLI" %}
+      <ul class="list-unstyled fw-normal pb-2 small">
+        {% include docs/nav_link.html url="/docs/dotenv-vault/new" text="new" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/login" text="login" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/logout" text="logout" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/open" text="open" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/push" text="push" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/pull" text="pull" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/build" text="build" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/keys" text="keys" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/rotatekey" text="rotatekey" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/versions" text="versions" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/whoami" text="whoami" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/status" text="status" %}
+        {% include docs/nav_link.html url="/docs/dotenv-vault/help" text="help" %}
+      </ul>
+    </li>
 
-  <li class="py-2">
-    <strong>Integrations</strong>
+    <li class="py-2">
+      {% include docs/nav_group.html text="Integrations" %}
+      <ul class="list-unstyled fw-normal pb-2 small">
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="AWS Beanstalk" icon="aws" color="#2A6A35" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/aws-beanstalk/express" text="Express" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="AWS Lambda" icon="aws-lambda" color="#FF9900" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/aws-lambda/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Bitbucket" icon="bitbucket" color="#0052CC" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/bitbucket/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Buddy" icon="buddy" color="#1A86FD" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/buddy/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Circle CI" icon="circleci" color="#343434" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/circleci/nodejs" text="Node.js" %}
+        {% include docs/nav_link.html url="/docs/integrations/circleci/rails" text="Rails" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Cloud66" icon="cloud66" color="#3C72B9" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/cloud66/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Dagger" icon="dagger" color="#343434" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/dagger/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Digital Ocean" icon="digital-ocean" color="#0080FF" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/digital-ocean/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Docker" icon="docker" color="#2496ED" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/docker/express" text="Express" %}
+        {% include docs/nav_link.html url="/docs/integrations/docker/rails" text="Rails" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Docker Compose" icon="docker" color="#2496ED" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/docker-compose/express" text="Express" %}
+        {% include docs/nav_link.html url="/docs/integrations/docker-compose/rails" text="Rails" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Edgio" icon="edgio" color="#000000" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/edgio/nuxtjs" text="Nuxt.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Fly.io" icon="fly" color="#7b3BE2" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/fly/express" text="Express" %}
+        {% include docs/nav_link.html url="/docs/integrations/fly/rails" text="Rails" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Gatsby" icon="gatsby" color="#663399" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/gatsby/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="GitHub Actions" icon="github" color="#181717" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/github-actions/nextjs" text="NextJS" %}
+        {% include docs/nav_link.html url="/docs/integrations/github-actions/nodejs" text="Node.js" %}
+        {% include docs/nav_link.html url="/docs/integrations/github-actions/remix" text="Remix" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="GitLab CI/CD" icon="gitlab" color="#FC6D26" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/gitlab/ci-quickstart" text="Quickstart" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Google Cloud" icon="google-cloud" color="#4285F4" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/google-cloud/express" text="Express" %}
+        {% include docs/nav_link.html url="/docs/integrations/google-cloud/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Heroku" icon="heroku" color="#430098" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/heroku/express" text="Express" %}
+        {% include docs/nav_link.html url="/docs/integrations/heroku/flask" text="Flask" %}
+        {% include docs/nav_link.html url="/docs/integrations/heroku/nodejs" text="Node.js" %}
+        {% include docs/nav_link.html url="/docs/integrations/heroku/rails" text="Rails" %}
+        {% include docs/nav_link.html url="/docs/integrations/heroku/sinatra" text="Sinatra" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Jenkins" icon="jenkins" color="#D24939" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/jenkins/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Netlify" icon="netlify" color="#00C7B7" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/netlify/astro" text="Astro" %}
+        {% include docs/nav_link.html url="/docs/integrations/netlify/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Northflank" icon="northflank" color="#01E3C5" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/northflank/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="OpenAI" icon="openai" color="#412991" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/openai/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Pulumi" icon="pulumi" color="#8A3391" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/pulumi/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Railway" icon="railway" color="#0B0D0E" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/railway/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Render" icon="render" color="#46E3B7" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/render/express" text="Express" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Serverless" icon="serverless" color="#FD5750" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/serverless/express" text="Express" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Supabase" icon="supabase" color="#3ECF8E" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/supabase/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Travis CI" icon="travis-ci" color="#3EAAAF" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/travis-ci/nodejs" text="Node.js" %}
+        <li>
+          {% include layouts/docs_nav_title_grid.html name="Vercel" icon="vercel" color="#000000" %}
+        </li>
+        {% include docs/nav_link.html url="/docs/integrations/vercel/angular" text="Angular" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/express" text="Express" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/nextjs" text="Next.js" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/nuxtjs" text="Nuxt.js" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/nodejs" text="Node.js" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/pnpm" text="Pnpm" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/rails" text="Rails" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/remix" text="Remix" %}
+        {% include docs/nav_link.html url="/docs/integrations/vercel/vite" text="Vite" %}
+      </ul>
+    </li>
 
-    <ul class="list-unstyled fw-normal pb-2 small">
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="AWS Beanstalk" icon="aws" color="#2A6A35" %}
-      </li>
-      <li><a href="/docs/integrations/aws-beanstalk/express">Express</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="AWS Lambda" icon="aws-lambda" color="#FF9900" %}
-      </li>
-      <li><a href="/docs/integrations/aws-lambda/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Bitbucket" icon="bitbucket" color="#0052CC" %}
-      </li>
-      <li><a href="/docs/integrations/bitbucket/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Buddy" icon="buddy" color="#1A86FD" %}
-      </li>
-      <li><a href="/docs/integrations/buddy/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Circle CI" icon="circleci" color="#343434" %}
-      </li>
-      <li><a href="/docs/integrations/circleci/rails">Rails</a></li>
-      <li><a href="/docs/integrations/circleci/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Cloud66" icon="cloud66" color="#3C72B9" %}
-      </li>
-      <li><a href="/docs/integrations/cloud66/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Dagger" icon="dagger" color="#343434" %}
-      </li>
-      <li><a href="/docs/integrations/dagger/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Digital Ocean" icon="digital-ocean" color="#0080FF" %}
-      </li>
-      <li><a href="/docs/integrations/digital-ocean/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Docker" icon="docker" color="#2496ED" %}
-      </li>
-      <li><a href="/docs/integrations/docker/express">Express</a></li>
-      <li><a href="/docs/integrations/docker/rails">Rails</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Docker Compose" icon="docker" color="#2496ED" %}
-      </li>
-      <li><a href="/docs/integrations/docker-compose/express">Express</a></li>
-      <li><a href="/docs/integrations/docker-compose/rails">Rails</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Edgio" icon="edgio" color="#000000" %}
-      </li>
-      <li><a href="/docs/integrations/edgio/nuxtjs">Nuxt.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Fly.io" icon="fly" color="#7b3BE2" %}
-      </li>
-      <li><a href="/docs/integrations/fly/express">Express</a></li>
-      <li><a href="/docs/integrations/fly/rails">Rails</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Gatsby" icon="gatsby" color="#663399" %}
-      </li>
-      <li><a href="/docs/integrations/gatsby/nodejs">Node.JS</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="GitHub Actions" icon="github" color="#181717" %}
-      </li>
-      <li><a href="/docs/integrations/github-actions/nextjs">NextJS</a></li>
-      <li><a href="/docs/integrations/github-actions/nodejs">Node.js</a></li>
-      <li><a href="/docs/integrations/github-actions/remix">Remix</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="GitLab CI/CD" icon="gitlab" color="#FC6D26" %}
-      </li>
-      <li><a href="/docs/integrations/gitlab/ci-quickstart">Quickstart</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Google Cloud" icon="google-cloud" color="#4285F4" %}
-      </li>
-      <li><a href="/docs/integrations/google-cloud/express">Express</a></li>
-      <li><a href="/docs/integrations/google-cloud/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Heroku" icon="heroku" color="#430098" %}
-      </li>
-      <li><a href="/docs/integrations/heroku/express">Express</a></li>
-      <li><a href="/docs/integrations/heroku/flask">Flask</a></li>
-      <li><a href="/docs/integrations/heroku/nodejs">Node.js</a></li>
-      <li><a href="/docs/integrations/heroku/rails">Rails</a></li>
-      <li><a href="/docs/integrations/heroku/sinatra">Sinatra</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Jenkins" icon="jenkins" color="#D24939" %}
-      </li>
-      <li><a href="/docs/integrations/jenkins/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Netlify" icon="netlify" color="#00C7B7" %}
-      </li>
-      <li><a href="/docs/integrations/netlify/astro">Astro</a></li>
-      <li><a href="/docs/integrations/netlify/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Northflank" icon="northflank" color="#01E3C5" %}
-      </li>
-      <li><a href="/docs/integrations/northflank/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="OpenAI" icon="openai" color="#412991" %}
-      </li>
-      <li><a href="/docs/integrations/openai/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Pulumi" icon="pulumi" color="#8A3391" %}
-      </li>
-      <li><a href="/docs/integrations/pulumi/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Railway" icon="railway" color="#0B0D0E" %}
-      </li>
-      <li><a href="/docs/integrations/railway/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Render" icon="render" color="#46E3B7" %}
-      </li>
-      <li><a href="/docs/integrations/render/express">Express</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Serverless" icon="serverless" color="#FD5750" %}
-      </li>
-      <li><a href="/docs/integrations/serverless/express">Express</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Supabase" icon="supabase" color="#3ECF8E" %}
-      </li>
-      <li><a href="/docs/integrations/supabase/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Travis CI" icon="travis-ci" color="#3EAAAF" %}
-      </li>
-      <li><a href="/docs/integrations/travis-ci/nodejs">Node.js</a></li>
-      <li>
-        {% include layouts/docs_nav_title_grid.html name="Vercel" icon="vercel" color="#000000" %}
-      </li>
-      <li><a href="/docs/integrations/vercel/angular">Angular</a></li>
-      <li><a href="/docs/integrations/vercel/express">Express</a></li>
-      <li><a href="/docs/integrations/vercel/nextjs">Next.js</a></li>
-      <li><a href="/docs/integrations/vercel/nuxtjs">Nuxt.js</a></li>
-      <li><a href="/docs/integrations/vercel/nodejs">Node.js</a></li>
-      <li><a href="/docs/integrations/vercel/pnpm">Pnpm</a></li>
-      <li><a href="/docs/integrations/vercel/rails">Rails</a></li>
-      <li><a href="/docs/integrations/vercel/remix">Remix</a></li>
-      <li><a href="/docs/integrations/vercel/vite">Vite</a></li>
-    </ul>
-  </li>
+    <li class="py-2">
+      {% include docs/nav_group.html text="Addons" %}
+      <ul class="list-unstyled fw-normal pb-2 small">
+        <li>
+          <div class="row">
+            <div class="col">
+              <a href="/docs/addons/github">GitHub</a>
+            </div>
+            <div class="col col-auto">
+              {% include icons/github.html width="20" color="#181717" %}
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col">
+              <a href="/docs/addons/slack">Slack</a>
+            </div>
+            <div class="col col-auto">
+              {% include icons/slack.html width="20" color="#4A154B" %}
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col">
+              <a href="/docs/addons/external">External Share</a>
+            </div>
+            <div class="col col-auto">
+              {% include icons/external.html width="20" color="#0B24FB" %}
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col">
+              <a href="/docs/addons/aws-secrets">AWS Secrets</a>
+            </div>
+            <div class="col col-auto">
+              {% include icons/aws.html width="20" color="#232F3E" %}
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col">
+              <a href="/docs/addons/aws-parameter-store">AWS Param Store</a>
+            </div>
+            <div class="col col-auto">
+              {% include icons/aws.html width="20" color="#232F3E" %}
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col">
+              <a href="/docs/addons/heroku">Heroku</a>
+            </div>
+            <div class="col col-auto">
+              {% include icons/heroku.html width="20" color="#430098" %}
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col">
+              <a href="/docs/addons/vercel">Vercel</a>
+            </div>
+            <div class="col col-auto">
+              {% include icons/vercel.html width="20" color="#000000" %}
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
 
-  <li class="py-2">
-    <strong>Addons</strong>
-    <ul class="list-unstyled fw-normal pb-2 small">
-      <li>
-        <div class="row">
-          <div class="col">
-            <a href="/docs/addons/github">GitHub</a>
-          </div>
-          <div class="col col-auto">
-            {% include icons/github.html width="20" color="#181717" %}
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="row">
-          <div class="col">
-            <a href="/docs/addons/slack">Slack</a>
-          </div>
-          <div class="col col-auto">
-            {% include icons/slack.html width="20" color="#4A154B" %}
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="row">
-          <div class="col">
-            <a href="/docs/addons/external">External Share</a>
-          </div>
-          <div class="col col-auto">
-            {% include icons/external.html width="20" color="#0B24FB" %}
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="row">
-          <div class="col">
-            <a href="/docs/addons/aws-secrets">AWS Secrets</a>
-          </div>
-          <div class="col col-auto">
-            {% include icons/aws.html width="20" color="#232F3E" %}
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="row">
-          <div class="col">
-            <a href="/docs/addons/aws-parameter-store">AWS Param Store</a>
-          </div>
-          <div class="col col-auto">
-            {% include icons/aws.html width="20" color="#232F3E" %}
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="row">
-          <div class="col">
-            <a href="/docs/addons/heroku">Heroku</a>
-          </div>
-          <div class="col col-auto">
-            {% include icons/heroku.html width="20" color="#430098" %}
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="row">
-          <div class="col">
-            <a href="/docs/addons/vercel">Vercel</a>
-          </div>
-          <div class="col col-auto">
-            {% include icons/vercel.html width="20" color="#000000" %}
-          </div>
-        </div>
-      </li>
-    </ul>
-  </li>
-
-  <li class="py-2">
-    <strong>Other Tools</strong>
-    <ul class="list-unstyled fw-normal pb-2 small">
-      <li><a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a></li>
-      <li><a href="https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode">dotenv-vscode</a></li>
-    </ul>
-  </li>
-</ul>
+    <li class="py-2">
+      {% include docs/nav_group.html text="Resources" %}
+      <ul class="list-unstyled fw-normal pb-2 small">
+        <li><a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a></li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode">dotenv-vscode</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>

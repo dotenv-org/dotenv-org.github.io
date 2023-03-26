@@ -1,18 +1,13 @@
 ---
 layout: docs
-title: "Managing Environments - Tutorial"
+title: "Tutorial ⋅ Managing Environments"
+lead: "Use dotenv-vault to manage your environment variables across multiple environments - like production and staging."
 parent: Docs
 redirect_from:
   - /docs/getting-started/with-multiple-environments
 ---
 
-##### Tutorial
-
-# Managing Environments
-
-Use dotenv-vault to manage your environment variables across multiple environments - like production and staging.
-
-#### Run dotenv-vault open
+## Run dotenv-vault open
 
 Open terminal, enter your project's root directory (where your .env.vault file is), and run dotenv-vault open.
 
@@ -24,13 +19,13 @@ $ npx dotenv-vault open
 
 <small>FYI: Not a developer? You can navigate to this page by visiting ui.dotenv.org.</small>
 
-#### Click Environment Dropdown Button
+## Click Environment Dropdown Button
 
 Click the environment dropdown button labeled 'development' and then click 'production'.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659628722/Screen_Shot_2022-08-04_at_8.53.16_AM_pukxin.png" %}
 
-#### Edit Your Production Environment Variables
+## Edit Your Production Environment Variables
 
 Click the edit icon next to the environment variable you want to edit.
 
@@ -38,13 +33,13 @@ Click the edit icon next to the environment variable you want to edit.
 
 <small>FYI: You'll notice that your production environment variable names are already setup but with blank values. This is by design. Each time you add an environment variable to your .env file it gets copied over to your other environments.</small>
 
-#### Set the Production Value
+## Set the Production Value
 
 Enter a value and click 'Save changes'.
 
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659630861/Screen_Shot_2022-08-04_at_9.24.43_AM_hqarvz.png" %}
 
-#### Pull .env.production
+## Pull .env.production
 
 Return to terminal and run dotenv-vault pull production.
 
@@ -55,7 +50,7 @@ remote:   Securely pulling production... done
 remote:   Securely pulled production (.env.production)
 ```
 
-#### View .env.production file
+## View .env.production file
 
 Run ls -al to view it.
 
@@ -72,7 +67,7 @@ Jul 28 17:54 .gitignore
 ```
 {% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659631492/Screen_Shot_2022-08-04_at_9.44.05_AM_fqavup.png" %}
 
-#### Push .env.production file (optional)
+## Push .env.production file (optional)
 
 Prefer to manage your non-development environments with the cli? Edit .env.production and run dotenv-vault push production.
 

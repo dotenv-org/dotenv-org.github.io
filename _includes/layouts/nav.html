@@ -1,46 +1,56 @@
-<!--
-<div class="github-grid">
-  <div class="star-on-github">
-    <a class="github-button" href="https://github.com/motdotla/dotenv" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star motdotla/dotenv on GitHub">Star</a>
-  </div>
-  <div class="star-on-github">
-    <a class="github-button" href="https://github.com/dotenv-org/dotenv-vault" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star dotenv-org/dotenv-vault on GitHub">Star</a>
-  </div>
-</div>
--->
-<nav class="navbar navbar-expand-lg sticky-top bg-white" style="--bs-bg-opacity: 0.9;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+<header class="navbar navbar-expand-lg bd-navbar sticky-top bg-white {% if include.for_layout == "docs" %}shadow shadow-sm{% endif %}" style="--bs-bg-opacity: 0.98;">
+  <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+    <div class="bd-navbar-toggle">
+      {% if include.for_layout == "docs" %}
+        <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#docsSidebar" aria-controls="docsSidebar" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path></svg>
+          <span class="d-none fs-6 pe-1">Browse</span>
+        </button>
+      {% endif %}
+    </div>
+    <a class="navbar-brand p-0 me-0 me-lg-2" href="/" aria-label="Dotenv">
       <img src="/assets-www/img/dotenv.svg" alt="dotenv" width="44" class="rounded">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="/security">Security</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/docs">Docs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/pricing">Pricing</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav d-flex">
-        <li class="nav-item me-lg-3">
-          <a class="btn btn-link btn-sm text-secondary text-decoration-none text-yellow-hover-star" href="https://github.com/motdotla/dotenv"><span class="star">☆</span> Star us on GitHub ⋅ 16.9k stars</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="btn btn-link nav-link px-4" href="/login">Log In</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-dark rounded-5 px-3 fw-bold" href="/signup">Sign Up Free</a>
-        </li>
-      </ul>
+    <div class="d-flex">
+      <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
+      </button>
     </div>
-  </div>
-</nav>
+    <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+      <div class="offcanvas-header px-4 pb-0">
+        <h5 class="offcanvas-title text-dark" id="bdNavbarOffcanvasLabel">Dotenv</h5>
+        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+      </div>
+      <div class="offcanvas-body p-4 pt-0 p-lg-0">
+        <hr class="d-lg-none text-dark-50">
+        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="/security">Security</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="/docs">Docs</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2" href="/pricing">Pricing</a>
+          </li>
+                  </ul>
+        <hr class="d-lg-none text-dark-50">
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <li class="nav-item col-12 col-lg-auto text-center">
+            <a class="nav-link text-secondary text-decoration-none text-yellow-hover-star me-lg-3 mb-2 mb-lg-0" href="https://github.com/motdotla/dotenv"><small><span class="star">☆</span> Star us on GitHub ⋅ 16.9k stars</small></a>
+          </li>
+          <li class="nav-item col-12 col-lg-auto">
+            <div class="d-grid">
+              <a class="btn btn-outline-dark rounded-5 py-2 px-lg-3 me-lg-2 mb-2 mb-lg-0" href="/login">Log In</a>
+            </div>
+          </li>
+          <li class="nav-item col-12 col-lg-auto">
+            <div class="d-grid">
+              <a class="btn btn-dark rounded-5 text-white fw-bold py-2 px-lg-3" href="/signup">Sign Up Free</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

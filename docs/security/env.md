@@ -1,13 +1,12 @@
 ---
 layout: docs
-title: ".env File - Security"
+title: "Security ⋅ .env"
+lead: The .env file format starts where the developer starts - in development. It is added to each project but NOT committed to source control. This gives the developer a single secure place to store sensitive application secrets.
 redirect_from:
   - /env
 ---
 
-##### Security
-
-# .env File
+## About
 
 The .env file format is central to good DSX and has been since it was [introduced by Heroku](https://12factor.net/) in 2012 and popularized by our [dotenv node module](https://www.npmjs.com/package/dotenv) (and other libraries) in 2013.
 
@@ -15,7 +14,7 @@ The .env file format starts where the developer starts - in development. It is a
 
 Can you believe that prior to introducing the .env file, almost all developers stored their secrets as hardcoded strings in source control. That was only 10 years ago!
 
-#### Example
+## Example
 
 Here's an example of what a .env file looks like:
 
@@ -31,7 +30,7 @@ You can read more about how it works [here](https://github.com/motdotla/dotenv) 
 
 But the world has changed and developers manage secrets at far greater scale than a decade ago. Today it's difficult to securely share .env files between machines, environments, and team members. As a result, developers often share secrets over Slack, email, text message, and post-it notes. It's not scaleable and fraught with security risks. For a CTO or CSO it is a risk they should not take.
 
-#### Extending .env
+## Extending .env
 
 Luckily, that is changing. We have been extending the .env file format to support secure sharing.
 

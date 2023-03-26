@@ -1,15 +1,10 @@
 ---
 layout: docs
-title: "Overview - Security"
+title: "Security ⋅ Overview"
+lead: Security is an evermoving target - an arms race. But that doesn't mean it should be hard to use. Good design can make complex things simple, and that is what we are after at Dotenv.
 redirect_from:
   - /docs/security/overview
 ---
-
-##### Security
-
-# Security Overview
-
-Security is an evermoving target - an arms race. But that doesn't mean it should be hard to use. Good design can make complex things simple, and that is what we are after at Dotenv.
 
 Dotenv is a security tool. It has been since it was first developed in 2013. We saw developers struggling to keep their secrets safe so we pioneered the .env file format standard. The design led to better DSX - which led to safer secrets for millions of developers. Today, we are taking that to the next logical step.
 
