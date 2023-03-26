@@ -1,6 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (7.0.4.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
@@ -13,6 +18,10 @@ GEM
     execjs (2.8.1)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
+    gemoji (4.0.1)
+    html-pipeline (2.14.3)
+      activesupport (>= 2)
+      nokogiri (>= 1.4)
     htmlcompressor (0.4.0)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
@@ -59,6 +68,10 @@ GEM
       mini_i18n (>= 0.8.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jemoji (0.13.0)
+      gemoji (>= 3, < 5)
+      html-pipeline (~> 2.2)
+      jekyll (>= 3.0, < 5.0)
     json (2.6.2)
     json-minify (0.0.3)
       json (> 0)
@@ -79,6 +92,7 @@ GEM
     mini_i18n (0.8.0)
     mini_magick (4.11.0)
     mini_portile2 (2.8.0)
+    minitest (5.18.0)
     nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -96,6 +110,8 @@ GEM
       ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.8.0)
@@ -114,6 +130,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-target-blank
   jekyll-timeago
+  jemoji
   liquid_pluralize
   liquid_reading_time
   webrick

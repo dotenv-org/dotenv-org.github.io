@@ -150,10 +150,6 @@ $white: #FFFFFF;
   }
 }
 
-// .aside-width {
-//   width: 0 !important;
-// }
-
 @media (min-width: 992px) {
   .docs-sidebar {
     position: sticky;
@@ -163,20 +159,15 @@ $white: #FFFFFF;
     margin-left: -0.25rem;
     overflow-y: auto;
   }
-
-  // .aside-width {
-  //   width: 260px !important;
-  // }
 }
 
-// div.highlight {
-//   padding: 0;
-//   margin-bottom: 1rem;
-// 
-//   pre.highlight {
-//     padding: 1rem;
-//     background: #fceec3 !important;
-//     color: green;
-//     overflow: scroll;
-//   }
-// }
+div.highlight {
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+
+  pre.highlight {
+    padding: 1rem;
+    overflow: scroll;
+  }
+}

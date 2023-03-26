@@ -18,13 +18,13 @@ You can find a complete [example repo here](https://github.com/dotenv-org/integr
 
 Deploy your Express app to fly.io.
 
-```
+```bash
 flyctl launch
 ```
 
 Here's an example of a simple Hello World Express app that runs on Fly.io.
 
-```
+```javascript
 // index.js
 const PORT = process.env.PORT || 5000
 const express = require('express')
@@ -52,13 +52,13 @@ HELLO="Development"
 
 Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 
-```
+```bash
 $ npm install dotenv-vault-core --save
 ```
 
 Require it as early as possible in your Express application.
 
-```
+```js
 // index.js
 require('dotenv-vault-core').config()
 console.log(process.env) // for debugging purposes. remove when ready.
@@ -72,7 +72,7 @@ const app = express()
 
 Test that it is working locally.
 
-```
+```bash
 $ node index.js
 {
   HELLO: 'Development'

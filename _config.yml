@@ -45,6 +45,13 @@ exclude:
   - .DS_Store
   - README.md
 
+markdown: kramdown
+kramdown:
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
 plugins:
   - jekyll-target-blank
   - jekyll-redirect-from
@@ -55,4 +62,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-favicon
   - jekyll-feed
+  - jemoji
 

@@ -14,6 +14,14 @@ Use Mac Preview to add arrows to screenshots.
 
 Use [screely.com](https://www.screely.com/) to make aesthetic screenshots.
 
+To change the kramdown rouge theme:
+
+```
+gem install rouge
+rougify help style
+rougify style monokai > _sass/rouge-theme.scss
+```
+
 ## Build
 
 ```
