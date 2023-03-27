@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: "Tutorial ⋅ Managing Environments"
-lead: "Use dotenv-vault to manage your environment variables across multiple environments - like production and staging."
+section: "Tutorials"
+title: "Managing Environments"
+description: "Use dotenv-vault to manage your environment variables across multiple environments - like production and staging."
 parent: Docs
 redirect_from:
   - /docs/getting-started/with-multiple-environments

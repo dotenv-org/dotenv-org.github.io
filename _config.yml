@@ -2,6 +2,7 @@ url: "https://www.dotenv.org" # the base hostname & protocol for your site, e.g.
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Dotenv" # the name of your site, e.g. ACME Corp.
 logo: "https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg"
+description: "Simplify your secrets"
 
 # Change assets path - https://github.com/envygeeks/jekyll-assets/issues/161
 assets:
@@ -64,3 +65,4 @@ plugins:
   - jekyll-feed
   - jemoji
 
+plugins_dir: ./_local_plugins

@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: "Tutorial ⋅ Adding Teammates"
-lead: Use dotenv-vault to add teammates - so they can securely push and pull changes to your .env file. No more sharing .env files over insecure channels like Slack and email.
+section: "Tutorials"
+title: "Adding Teammates"
+description: Use dotenv-vault to add teammates - so they can securely push and pull changes to your .env file. No more sharing .env files over insecure channels like Slack and email.
 parent: Docs
 redirect_from:
   - /docs/getting-started/with-adding-teammates

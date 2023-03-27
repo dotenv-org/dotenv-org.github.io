@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: "Tutorial ⋅ Integrate Everywhere"
-lead: "Integrate everywhere you deploy your code, with dotenv-vault."
+section: "Tutorials"
+title: "Integrate Everywhere"
+description: "Integrate everywhere you deploy your code, with dotenv-vault."
 parent: Docs
 redirect_from:
   - /docs/tutorials/deploy

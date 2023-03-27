@@ -1,15 +1,11 @@
 ---
 layout: docs
-title: "Integration Tokens - Security"
+section: "Security"
+title: "Integration Tokens"
+description: "Integration tokens, also known as IT tokens, are limited access tokens."
 redirect_from:
   - /env-it
 ---
-
-##### Security
-
-# Integration Tokens
-
-Integration tokens, also known as IT tokens, are limited access tokens.
 
 While a .env.me credential permits [push](/docs/dotenv-vault/push) and [pull](/docs/dotenv-vault/pull) across ALL environments, an IT token does not. IT tokens can ONLY pull and only for a single environment.
 

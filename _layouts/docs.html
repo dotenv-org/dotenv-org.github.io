@@ -10,7 +10,7 @@
 
     <div class="container-xxl">
       <div class="row">
-        <aside class="col col-lg-2-5 col-lg-2 docs-sidebar">
+        <aside class="col-lg-3 col-xl-2-5 col-xl-2 docs-sidebar">
           <div class="affix">
             <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="docsSidebar" aria-labelledby="docsSidebarOffcanvasLabel">
               <div class="offcanvas-header border-bottom">
@@ -23,28 +23,39 @@
             </div>
           </div>
         </aside>
-        <main class="col-lg-7">
-          <div class="pb-4 mt-4">
-            <h1 class="display-5 fw-semibold py-0 my-0">{{ page.title }}</h1>
-            <p class="lead fw-light">{{ page.lead }}</p>
+        <main class="col-lg-7 pe-lg-4 col-xl-7 pe-xl-4">
+          <div class="row pt-2 mt-3">
+            <div class="col">
+              <div class="fw-semibold mb-0 text-dark">{{ page.section }}</div>
+              <h1 class="fw-extrabold py-0 my-0">{{ page.title }}</h1>
+            </div>
+            <div class="col col-auto d-flex align-items-top">
+              <div>
+                {% if site.github_edit_link %}
+                  <a href="{{ site.github_edit_repository }}/{{ site.github_edit_view_mode }}/{{ site.github_edit_branch }}{% if site.github_edit_source %}/{{ site.github_edit_source }}{% endif %}/{{ page.path }}" class="btn btn-sm btn-outline-light link-secondary rounded border-0" id="edit-this-page" data-bs-toggle="tooltip" title="Edit this page on GitHub">
+                    {% include icons/pencil.html %}
+                  </a>
+                {% endif %}
+
+                <a href="https://github.com/dotenv-org/www/issues/new?title=Unclear%20information%20on%20docs&body=Path:%20{{ page.url }}" class="btn btn-sm btn-outline-light link-secondary rounded border-0" id="issue-this-page" title="Report something unclear on this page" data-bs-toggle="tooltip">
+                  {% include icons/question-diamond.html %}
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="pb-2">
-            <div class="docs-layout-content">{{ content }}</div>
-          </div>
-        </main>
-        <aside class="col col-lg-2-5 col-lg-2">
-          <div class="py-4">
-          {% if site.github_edit_link %}
-            <a href="{{ site.github_edit_repository }}/{{ site.github_edit_view_mode }}/{{ site.github_edit_branch }}{% if site.github_edit_source %}/{{ site.github_edit_source }}{% endif %}/{{ page.path }}" class="btn btn-sm btn-outline-secondary fw-light rounded-2" id="edit-this-page" title="View and edit this file on GitHub">{{ site.github_edit_link_text }}</a>
+          {% if page.description %}
+            <p class="lead fw-light pb-4">{{ page.description }}</p>
           {% endif %}
-          </div>
+
+          <div class="docs-layout-content pb-2">{{ content }}</div>
+        </main>
+        <aside class="col-xl-2-5 col-xl-2 col-12">
+          {% include docs/nav_page.html %}
         </aside>
       </div>
     </div>
 
-    <!--
     {% include layouts/footer.html %}
-    -->
     {% include layouts/js.html %}
   </body>
 </html>

@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: "Security ⋅ .env"
-lead: The .env file format starts where the developer starts - in development. It is added to each project but NOT committed to source control. This gives the developer a single secure place to store sensitive application secrets.
+section: Security
+title: ".env"
+description: The .env file format starts where the developer starts - in development. It is added to each project but NOT committed to source control. This gives the developer a single secure place to store sensitive application secrets.
 redirect_from:
   - /env
 ---

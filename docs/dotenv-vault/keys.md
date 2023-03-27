@@ -1,6 +1,8 @@
 ---
 layout: docs
+section: CLI
 title: "dotenv-vault keys"
+description: ""
 parent: Docs
 ---
 

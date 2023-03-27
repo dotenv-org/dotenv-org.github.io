@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: "Tutorial ⋅ Managing Access"
-lead: Manage who can access what. Limit your teammate's access to projects and environments.
+section: "Tutorials"
+title: "Managing Access"
+description: Manage who can access what. Limit your teammate's access to projects and environments.
 parent: Docs
 ---
 

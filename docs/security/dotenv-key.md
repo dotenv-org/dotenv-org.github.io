@@ -1,15 +1,11 @@
 ---
 layout: docs
-title: "DOTENV_KEY - Security"
+section: Security
+title: "DOTENV_KEY"
+description: "The DOTENV_KEY unlocks your encrypted environment variables."
 redirect_from:
   - /dotenv-key
 ---
-
-##### Security
-
-# DOTENV_KEY
-
-The **DOTENV_KEY** unlocks your encrypted environment variables.
 
 You can view it with **npx dotenv-vault keys**. Set it on your server's environment variables after running **npx dotenv-vault build**.
 

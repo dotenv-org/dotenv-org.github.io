@@ -1,16 +1,12 @@
 ---
 layout: docs
-title: "Vault - Security"
+section: "Security"
+title: "Vault"
+description: Vault stores your secrets securely. Here's how it works and how it is built.
 redirect_from:
   - /docs/security/dotenv-vault
   - /vault
 ---
-
-##### Security
-
-# Vault
-
-Vault stores your secrets securely. Here's how it works and how it is built.
 
 {% include vault/step1.html %}
 
