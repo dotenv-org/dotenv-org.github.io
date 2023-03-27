@@ -1,8 +1,10 @@
-<div class="row mt-2">
-  <div class="col">
-    <span class="">{{include.name}}</span>
+<li>
+  <div class="row mt-2">
+    <div class="col">
+      <span class="">{{include.name}}</span>
+    </div>
+    <div class="col col-auto">
+      {% include icons/{{include.icon}}.html width="20" color=include.color %}
+    </div>
   </div>
-  <div class="col col-auto">
-    {% include icons/{{include.icon}}.html width="20" color=include.color %}
-  </div>
-</div>
+</li>

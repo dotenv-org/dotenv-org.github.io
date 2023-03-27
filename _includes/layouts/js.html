@@ -7,4 +7,25 @@
   $(function() {
     var clipboard = new ClipboardJS('.clipboard-btn')
   })
+
+  // watch nav
+  var topNav = document.getElementById('top-nav')
+  if (topNav) {
+    var scrolledABit = false
+    window.addEventListener('scroll', function() {
+      let scroll = window.scrollY
+
+      if (scroll > 3) {
+        if (scrolledABit == false) {
+          topNav.style = '--bs-bg-opacity: 0.97;'
+        }
+        scrolledABit = true
+      } else {
+        if (scrolledABit == true) {
+          topNav.style = '--bs-bg-opacity: 0;'
+        }
+        scrolledABit = false
+      }
+    })
+  }
 </script>

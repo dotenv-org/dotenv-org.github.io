@@ -5,24 +5,26 @@
     {% include layouts/analytics.html %}
     {% include layouts/github_button.html %}
   </head>
-  <body>
+  <body class="bg-still-gradient">
     {% include layouts/nav.html for_layout="docs" %}
 
     <div class="container-xxl">
-      <div class="row mb-lg-4">
-        <aside class="col col-lg-2 aside-width docs-sidebar ps-3 pt-3">
-          <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="docsSidebar" aria-labelledby="docsSidebarOffcanvasLabel">
-            <div class="offcanvas-header border-bottom">
-              <h5 class="offcanvas-title" id="docsSidebarOffcanvasLabel">Browse docs</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#docsSidebar"></button>
-            </div>
-            <div class="offcanvas-body">
-              {% include docs/nav.html %}
+      <div class="row">
+        <aside class="col col-lg-2-5 col-lg-2 docs-sidebar">
+          <div class="affix">
+            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="docsSidebar" aria-labelledby="docsSidebarOffcanvasLabel">
+              <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="docsSidebarOffcanvasLabel">Browse docs</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#docsSidebar"></button>
+              </div>
+              <div class="offcanvas-body">
+                {% include docs/nav.html %}
+              </div>
             </div>
           </div>
         </aside>
-        <main class="col-lg-8 px-lg-5 px-md-5 px-sm-5 px-4">
-          <div class="py-4">
+        <main class="col-lg-7">
+          <div class="pb-4 mt-4">
             <h1 class="display-5 fw-semibold py-0 my-0">{{ page.title }}</h1>
             <p class="lead fw-light">{{ page.lead }}</p>
           </div>
@@ -30,7 +32,7 @@
             <div class="docs-layout-content">{{ content }}</div>
           </div>
         </main>
-        <aside class="col col-lg-2 px-lg-2 px-md-5 px-sm-5 px-4 aside-width">
+        <aside class="col col-lg-2-5 col-lg-2">
           <div class="py-4">
           {% if site.github_edit_link %}
             <a href="{{ site.github_edit_repository }}/{{ site.github_edit_view_mode }}/{{ site.github_edit_branch }}{% if site.github_edit_source %}/{{ site.github_edit_source }}{% endif %}/{{ page.path }}" class="btn btn-sm btn-outline-secondary fw-light rounded-2" id="edit-this-page" title="View and edit this file on GitHub">{{ site.github_edit_link_text }}</a>
@@ -40,7 +42,9 @@
       </div>
     </div>
 
+    <!--
     {% include layouts/footer.html %}
+    -->
     {% include layouts/js.html %}
   </body>
 </html>

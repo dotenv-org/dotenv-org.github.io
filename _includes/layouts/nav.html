@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-lg bd-navbar sticky-top bg-white {% if include.for_layout == "docs" %}border-bottom border-secondary-subtle{% endif %}" style="--bs-bg-opacity: 0.98;">
+<header id="top-nav" class="navbar navbar-expand-lg bd-navbar sticky-top bg-white {% if include.for_layout == "docs" %}border-bottom border-secondary-subtle{% endif %}" style="--bs-bg-opacity: 0;">
   <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
     {% if include.for_layout == "docs" %}
       <div class="bd-navbar-toggle">
@@ -44,7 +44,7 @@
           </li>
           <li class="nav-item col-12 col-lg-auto">
             <div class="d-grid">
-              <a class="btn btn-outline-dark rounded-5 py-2 px-lg-3 me-lg-2 mb-2 mb-lg-0" href="/login">Log In</a>
+              <a class="btn btn-link link-secondary text-decoration-none rounded-5 py-2 px-lg-3 me-lg-2 mb-2 mb-lg-0" href="/login">Log In</a>
             </div>
           </li>
           <li class="nav-item col-12 col-lg-auto">

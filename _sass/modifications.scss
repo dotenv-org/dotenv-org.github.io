@@ -36,9 +36,48 @@ $white: #FFFFFF;
 }
 .bg-vault-image-white {
   background-image: url(/assets-www/img/bg-white3.png) !important;
-  background-size: fit;
-  background-repeat: repeat;
-  background-position: center !important;
+  // background-size: fit;
+  // background-repeat: repeat;
+  // background-position: center !important;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+}
+.bg-still-gradient {
+  background: linear-gradient(58deg, #ffffff, #ffffff, #ffffff, #FAF4CF, #F5EA9F, #ffffff);
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-size: 200% 150%;
+  animation: sizingGradient 15s ease infinite;
+  background-repeat: no-repeat;
+}
+@keyframes sizingGradient {
+  0% {
+    background-size: 200% 150%;
+  }
+  50% {
+    background-size: 150% 150%;
+  }
+  100% {
+    background-size: 200% 150%;
+  }
+}
+.bg-moving-gradient {
+  background: linear-gradient(-45deg, #F5EA9F, #ffffff, #ffffff, #F5EA9F);
+  background-size: 400% 400%;
+  animation: moveingGradient 5s ease infinite;
+  height: 100vh;
+}
+@keyframes movingGradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 30% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 //
@@ -155,9 +194,10 @@ $white: #FFFFFF;
 
 @media (min-width: 992px) {
   .docs-sidebar {
+    top: 4rem;
     position: sticky;
     display: block !important;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 5rem);
     padding-left: 0.25rem;
     margin-left: -0.25rem;
     overflow-y: auto;
@@ -174,3 +214,17 @@ div.highlight {
     overflow: scroll;
   }
 }
+
+.col-lg-1-5 { width: 12.5%; } // = 8,3333 + 4,16667
+.col-lg-2-5 { width: 20.83333%; } // = 16,6666 + 4,16667
+.col-lg-3-5 { width: 29.16667%; } // = 25 + 4,16667
+.col-lg-4-5 { width: 37.5%; } // = 33,3333 + 4,16667
+.col-lg-5-5 { width: 45.83333%; } // = 41,6667 + 4,16667
+.col-lg-6-5 { width: 54.16667%; } // = 50 + 4,16667
+.col-lg-7-5 { width: 62.5%; } // = 58,3333 + 4,16667
+.col-lg-8-5 { width: 70.83333%; } // = 66,6666 + 4,16667
+.col-lg-9-5 { width: 79.16667%; } // = 75 + 4,16667
+.col-lg-10-5 { width: 87.5%; } // = 83,3333 + 4,16667
+.col-lg-11-5 { width: 95.8333%; } // = 91,6666 + 4,16667
+
+
