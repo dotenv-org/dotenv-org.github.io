@@ -6,6 +6,9 @@ $white: #FFFFFF;
 // pages
 //
 .docs-layout-content {
+  p img {
+    max-width: 100%;
+  }
 }
 .changelog-item {
   p img {

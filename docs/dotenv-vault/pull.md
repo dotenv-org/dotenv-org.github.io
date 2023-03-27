@@ -35,7 +35,7 @@ Jul 28 18:09 .env.vault
 Jul 28 17:54 .gitignore
 ...
 ```
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659632493/Screen_Shot_2022-08-04_at_10.00.34_AM_jg9dzq.png)
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659632493/Screen_Shot_2022-08-04_at_10.00.34_AM_jg9dzq.png" %}
 
 That's it!
 
