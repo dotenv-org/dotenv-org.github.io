@@ -82,9 +82,9 @@ $white: #FFFFFF;
 .bg-still-gradient {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  width: 70%;
+  height: 70%;
 
   background: linear-gradient(58deg, #ffffff, #ffffff, #ffffff, #FAF4CF, #F5EA9F, #ffffff);
   background-position: bottom left;
@@ -102,23 +102,6 @@ $white: #FFFFFF;
   }
   100% {
     background-size: 200% 150%;
-  }
-}
-.bg-moving-gradient {
-  background: linear-gradient(-45deg, #F5EA9F, #ffffff, #ffffff, #F5EA9F);
-  background-size: 400% 400%;
-  animation: moveingGradient 5s ease infinite;
-  height: 100vh;
-}
-@keyframes movingGradient {
-  0% {
-    background-position: 100% 50%;
-  }
-  50% {
-    background-position: 30% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
   }
 }
 
@@ -308,6 +291,6 @@ div.highlight {
 }
 
 #page-nav .active {
-  color: #000 !important;
   font-weight: normal !important;
+  border-left: 1px solid #6e757c !important;
 }

@@ -13,7 +13,7 @@ module Jekyll
       end
       list_items = nav_items.map do |nav_item|
         if nav_item[:id]
-          "<li><a class=\"btn btn-sm btn-link link-secondary text-decoration-none fw-light border-0 ps-0 text-start\" href=\"##{nav_item[:id]}\">#{nav_item[:text]}</a></li>"
+          "<li class=\"py-1\"><a class=\"btn btn-sm btn-link link-secondary text-decoration-none fw-light rounded-0 border-0 py-0 text-start\" href=\"##{nav_item[:id]}\">#{nav_item[:text]}</a></li>"
           # "<li><a class=\"btn btn-sm btn-link link-secondary text-decoration-none fw-light border-0 ps-0 text-start\" href=\"##{nav_item[:id]}\">#{nav_item[:text]}</a></li>"
         else
           # do nothing - only include what is clickable
