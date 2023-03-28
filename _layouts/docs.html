@@ -12,20 +12,11 @@
 
     <div class="container-xxl">
       <div class="row">
-        <aside class="col-lg-3 col-xl-2-5 col-xl-2 docs-sidebar">
-          <div class="affix">
-            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="docsSidebar" aria-labelledby="docsSidebarOffcanvasLabel">
-              <div class="offcanvas-header border-bottom">
-                <h5 class="offcanvas-title" id="docsSidebarOffcanvasLabel">Browse docs</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#docsSidebar"></button>
-              </div>
-              <div class="offcanvas-body">
-                {% include docs/nav.html %}
-              </div>
-            </div>
-          </div>
-        </aside>
-        <main class="col-lg-7 pe-lg-4 col-xl-7 pe-xl-4">
+        <div class="col-lg-2-5 col-lg-2 col-xl-2-5 col-xl-2 order-lg-3 px-md-5 ps-lg-2 pe-lg-1 docs-page-nav">
+          {% include docs/nav_page.html %}
+        </div>
+        
+        <main class="col-lg-7 col-xl-7 order-lg-2 px-md-5 px-lg-0 pe-lg-4 pe-xl-4">
           <div class="row pt-2 mt-3">
             <div class="col">
               <div class="fw-semibold mb-0 text-dark">{{ page.section }}</div>
@@ -34,26 +25,40 @@
             <div class="col col-auto d-flex align-items-top">
               <div>
                 {% if site.github_edit_link %}
-                  <a href="{{ site.github_edit_repository }}/{{ site.github_edit_view_mode }}/{{ site.github_edit_branch }}{% if site.github_edit_source %}/{{ site.github_edit_source }}{% endif %}/{{ page.path }}" class="btn btn-sm btn-outline-light link-secondary rounded border-0" id="edit-this-page" data-bs-toggle="tooltip" title="Edit this page on GitHub">
+                  <a href="{{ site.github_edit_repository }}/{{ site.github_edit_view_mode }}/{{ site.github_edit_branch }}{% if site.github_edit_source %}/{{ site.github_edit_source }}{% endif %}/{{ page.path }}" class="btn btn-sm btn-outline-light bg-transparent link-secondary rounded border-0" id="edit-this-page" data-bs-toggle="tooltip" title="Edit this page on GitHub">
                     {% include icons/pencil.html %}
                   </a>
                 {% endif %}
 
-                <a href="https://github.com/dotenv-org/www/issues/new?title=Unclear%20information%20on%20docs&body=Path:%20{{ page.url }}" class="btn btn-sm btn-outline-light link-secondary rounded border-0" id="issue-this-page" title="Report something unclear on this page" data-bs-toggle="tooltip">
+                <a href="https://github.com/dotenv-org/www/issues/new?title=Unclear%20information%20on%20docs&body=Path:%20{{ page.url }}" class="btn btn-sm btn-outline-light bg-transparent link-secondary rounded border-0" id="issue-this-page" title="Report something unclear on this page" data-bs-toggle="tooltip">
                   {% include icons/question-diamond.html %}
                 </a>
               </div>
             </div>
           </div>
           {% if page.description %}
-            <p class="lead fw-light pb-4">{{ page.description }}</p>
+            <p class="lead fw-light pb-2">{{ page.description }}</p>
           {% endif %}
 
-          <div class="docs-layout-content pb-2">{{ content }}</div>
+          <div class="docs-layout-content pb-2" data-bs-spy="scroll" data-bs-target="#page-nav" data-bs-smooth-scroll="true" tabindex="0">{{ content }}</div>
         </main>
-        <aside class="col-xl-2-5 col-xl-2 col-12">
-          {% include docs/nav_page.html %}
+
+        <aside class="col-lg-2-5 col-lg-2 col-xl-2-5 col-xl-2 docs-sidebar order-lg-1">
+          <div class="affix">
+            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="docsSidebar" aria-labelledby="docsSidebarOffcanvasLabel">
+              <div class="offcanvas-header border-bottom">
+                <a href="/docs" class="nav-link">
+                  <h5 class="offcanvas-title" id="docsSidebarOffcanvasLabel">Browse docs</h5>
+                </a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#docsSidebar"></button>
+              </div>
+              <div class="offcanvas-body">
+                {% include docs/nav.html %}
+              </div>
+            </div>
+          </div>
         </aside>
+
       </div>
     </div>
 
