@@ -9,10 +9,8 @@ redirect_from:
 {% include landing/product_screenshot.html %}
 {% include landing/trust_companies.html %}
 {% include landing/problem.html %}
-
-{% include landing/costing_them.html %}
-
-{% include landing/our_solution.html %}
+{% include landing/cost.html %}
+{% include landing/solution.html %}
 {% include landing/source_of_truth.html %}
 
 {% include landing/companies_love.html %}

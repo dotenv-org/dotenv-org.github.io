@@ -23,7 +23,7 @@ title: "Pricing"
 </div>
 
 <div class="bg-light">
-{% include landing/costing_them.html %}
+{% include landing/cost.html %}
 </div>
 <br/>
 {% include landing/companies_love.html %}
