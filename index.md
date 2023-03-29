@@ -8,7 +8,6 @@ redirect_from:
 {% include landing/hero.html %}
 {% include landing/product_screenshot.html %}
 {% include landing/trust_companies.html %}
-
 {% include landing/problem.html %}
 
 {% include landing/costing_them.html %}
