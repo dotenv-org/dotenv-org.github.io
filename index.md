@@ -13,6 +13,18 @@ redirect_from:
 {% include landing/solution2.html %}
 {% include landing/source_of_truth.html %}
 {% include landing/companies_love.html %}
-{% include landing/when_will_you.html %}
+<div class="bg-black bg-vault-image pb-2 border-top border-bottom border-5 border-warning" style="margin-top: -400px; padding-top: 400px !important;">
+{% include landing/from_the_same_people.html %}
+</div>
 
-{% include landing/vscode.html %}
+<div class="bg-light">
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <h4 class="display-6 fw-bold text-center py-4 mt-4">
+        Simplify your secrets today.&nbsp;&nbsp;&nbsp;<a class="btn btn-lg btn-dark fw-bold rounded-5 px-4" href="/signup">Sign Up Free</a>
+      </h4>
+    </div>
+  </div>
+</div>
+</div>

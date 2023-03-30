@@ -22,10 +22,6 @@ title: "Pricing"
 {% include landing/companies_using.html %}
 </div>
 
-<div class="bg-light">
-{% include landing/cost.html %}
-</div>
-<br/>
 {% include landing/companies_love.html %}
 {% include landing/developers_love.html %}
 {% include landing/source_of_truth.html %}
