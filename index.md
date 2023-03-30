@@ -10,9 +10,8 @@ redirect_from:
 {% include landing/trust_companies.html %}
 {% include landing/problem.html %}
 {% include landing/cost.html %}
-{% include landing/solution.html %}
+{% include landing/solution2.html %}
 {% include landing/source_of_truth.html %}
-
 {% include landing/companies_love.html %}
 {% include landing/when_will_you.html %}
 
