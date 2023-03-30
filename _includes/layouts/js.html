@@ -10,6 +10,29 @@
     // initialize tooltips - https://getbootstrap.com/docs/5.3/components/tooltips/
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    $('input[name="how-radio"]').change(function() {
+      var value = $('input[name="how-radio"]:checked').val()
+      if (value == '2') {
+        $('.how-step').removeClass('d-block')
+        $('.how-step').addClass('d-none')
+
+        $('#step2').removeClass('d-none')
+        $('#step2').addClass('d-block')
+      } else if (value == '3') {
+        $('.how-step').removeClass('d-block')
+        $('.how-step').addClass('d-none')
+
+        $('#step3').removeClass('d-none')
+        $('#step3').addClass('d-block')
+      } else {
+        $('.how-step').removeClass('d-block')
+        $('.how-step').addClass('d-none')
+
+        $('#step1').removeClass('d-none')
+        $('#step1').addClass('d-block')
+      }
+    })
   })
 
   // watch nav

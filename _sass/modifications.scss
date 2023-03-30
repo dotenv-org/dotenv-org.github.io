@@ -167,6 +167,34 @@ $white: #FFFFFF;
   }
 }
 
+// for mp4 videos - not youtubes
+.video-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  video {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// override collapsing transitions
+.collapsing-no-transitions {
+  transition: none !important;
+}
+
+// how-btn
+.how-btn {
+  &:hover {
+    background-color: #F8F9FA !important;
+  }
+}
+
+input[name="how-radio"]:checked+label{ 
+  border-color: #316CF4 !important;
+} 
+
 .flex {
   display: flex;
   align-items: top;
