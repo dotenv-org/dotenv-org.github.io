@@ -1,5 +1,9 @@
 <div class="screenshot mb-4">
   <a href="{{include.url}}" target="_blank">
-    <img src="{{include.url}}" width="500" class="border w-100 rounded">
+    {% if include.class %}
+    <img src="{{include.url}}" width="500" class="border rounded {{include.class}}">
+    {% else %}
+    <img src="{{include.url}}" width="500" class="border rounded w-100">
+    {% endif %}
   </a>
 </div>
