@@ -1,7 +1,7 @@
 ---
 layout: docs
 section: Overview
-title: "Quickstart"
+title: "Quickstart ⚡️"
 description: The complete quickstart guide to manage your secrets with dotenv-vault. Learn and understand how to use dotenv-vault with your application – in about 5 minutes.
 ---
 
@@ -9,7 +9,7 @@ In this guide, we'll deploy an application with secrets to Heroku. We'll create 
 
 We're using Heroku for this quickstart because it is the easiest to demo (in the least amount of your time), but any hosting platform will work.
 
-## Create the app
+## 🌱 Create our app
 
 We'll create a Node application for this guide, but you can follow along with your own application in any language or framework.
 
@@ -59,7 +59,7 @@ Visit [localhost:3000](http://localhost:3000) and you will see "Hello World".
 
 Next, let's use [dotenv](https://github.com/motdotla/dotenv) to customize the port and greeting.
 
-## Require dotenv in our app
+## 🟨 Require dotenv
 
 We'll add dotenv to our app next, but if your app already has dotenv you can skip ahead to [Sync .env file](#sync-env-file).
 
@@ -109,7 +109,7 @@ $ node index.js
 
 Now it says 'Bonjour World'. Cool! We're ready to backup and sync our `.env` file.
 
-## Sync .env file
+## 🏆 Sync .env file
 
 Once we have a .env file, we are ready to start syncing it with [dotenv-vault](https://github.com/dotenv-org/dotenv-vault#usage). For this quickstart we'll jus demonstrate doing this for ourselves but you can also sync across your team and your other machines.
 
@@ -136,7 +136,7 @@ That's it! We synced our .env file.
 
 {% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680364471/dotenv-vault-sync-video_yutprj.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680364471/dotenv-vault-sync-video_yutprj.webm" %}
 
-## Manage environments
+## 🌴 Manage environments
 
 After we pushed our .env file, we can manage our secrets across multiple environments. Let's open the production environment to view and edit its environment variables. There is a fully built-in UI with dotenv-vault.
 
@@ -148,11 +148,11 @@ In the UI, we are going to delete the `PORT` environment variable. We will rely 
 
 {% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.webm" %}
 
-## Deploy
+## 🚀 Deploy .env.vault
 
 Build our project's encrypted .env.vault file. It securely encrypts our secrets in a cloud-agnostic payload.
 
-#### 1. Build encrypted .env.vault
+#### 🔒 Build encrypted .env.vault
 
 ```
 $ npx dotenv-vault build
@@ -166,7 +166,7 @@ $ git add .env.vault
 $ git commit -am "Build encrypted .env.vault file for deploy"
 ```
 
-#### 2. Set DOTENV_KEY
+#### 🔑 Set DOTENV_KEY
 
 Let's fetch the production decryption key - the `DOTENV_KEY`.
 
@@ -183,7 +183,7 @@ $ heroku create
 $ heroku config:set DOTENV_KEY='dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production'
 ```
 
-#### 3. Import dotenv-vault-core
+#### 🔐 Import dotenv-vault-core
 
 We need to swap out `dotenv` for `dotenv-vault-core` so that we can decrypt the .env.vault payload on deploy. Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 
@@ -213,7 +213,7 @@ Also let's edit our `package.json` to have a start script so that Heroku can boo
 }
 ```
 
-#### 4. Deploy to Heroku
+#### 🟣 Deploy to Heroku
 
 We're ready to deploy to heroku. Let's do it.
 

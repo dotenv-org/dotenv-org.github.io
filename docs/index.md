@@ -14,7 +14,7 @@ If you already use .env files you can benefit from dotenv-vault in just a few se
     <a href="/docs/quickstart" class="text-decoration-none link-dark">
       <div class="card h-100">
         <div class="card-body">
-          {% include icons/flag.html %}
+          ⚡️
           <p class="fw-bold mb-0">Quickstart</p>
           <p class="mb-0">Learn everything in 5 minutes.</p>
         </div>
