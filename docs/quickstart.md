@@ -2,12 +2,14 @@
 layout: docs
 section: Overview
 title: "Quickstart"
-description: The complete quickstart guide to manage your secrets with dotenv-vault.
+description: The complete quickstart guide to manage your secrets with dotenv-vault. Learn and understand how to use dotenv-vault with your application – in about 5 minutes.
 ---
 
-In this guide, we'll deploy an application to Vercel, the dotenv way. We'll create the app, load and sync its secrets, and deploy it to Vercel. A quick skim over this tutorial, and you'll understand all the foundational concepts of using dotenv-vault.
+In this guide, we'll deploy an application with secrets to Heroku. We'll create the app, load and sync its secrets, and deploy it using the .env.vault file. A quick skim over this tutorial, and you'll understand all the foundational concepts of using dotenv-vault.
 
-## Create our app
+We're using Heroku for this quickstart because it is the easiest to demo (in the least amount of your time), but any hosting platform will work.
+
+## Create the app
 
 We'll create a Node application for this guide, but you can follow along with your own application in any language or framework.
 
@@ -59,6 +61,8 @@ Next, let's use [dotenv](https://github.com/motdotla/dotenv) to customize the po
 
 ## Require dotenv in our app
 
+We'll add dotenv to our app next, but if your app already has dotenv you can skip ahead to [Sync .env file](#sync-env-file).
+
 Install dotenv. [source](https://github.com/motdotla/dotenv#install)
 
 ```
@@ -107,7 +111,7 @@ Now it says 'Bonjour World'. Cool! We're ready to backup and sync our `.env` fil
 
 ## Sync .env file
 
-We're ready to use dotenv-vault to sync our .env file! [source](https://github.com/dotenv-org/dotenv-vault#usage)
+Once we have a .env file, we are ready to start syncing it with [dotenv-vault](https://github.com/dotenv-org/dotenv-vault#usage). For this quickstart we'll jus demonstrate doing this for ourselves but you can also sync across your team and your other machines.
 
 Usage is similar to git. Run the command:
 
@@ -134,13 +138,13 @@ That's it! We synced our .env file.
 
 ## Manage environments
 
-After we pushed our .env file, we can manage our secrets across multiple environments. Let's open the production environment to view and edit its environment variables.
+After we pushed our .env file, we can manage our secrets across multiple environments. Let's open the production environment to view and edit its environment variables. There is a fully built-in UI with dotenv-vault.
 
 ```
 $ npx dotenv-vault open production
 ```
 
-In the UI, we are going to delete the `PORT` environment variable. We will rely on Vercel's platform to fill that in on deploy. We'll edit the `GREETING` environment variable to "Hello Production" so that we can recognize it on deploy.
+In the UI, we are going to delete the `PORT` environment variable. We will rely on Heroku to fill that on deploy. We'll edit the `GREETING` environment variable to "Hello Production" so that we can recognize it on deploy.
 
 {% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.webm" %}
 
@@ -209,20 +213,20 @@ Also let's edit our `package.json` to have a start script so that Heroku can boo
 }
 ```
 
-Ok, we're ready to deploy to heroku. Create our project on heroku.
-
 #### 4. Deploy to Heroku
+
+We're ready to deploy to heroku. Let's do it.
 
 ```
 $ git push heroku
 ```
 
-If it is successful you'll see a line in the logs like this.
+When the deploy completes, we'll see this line in the logs.
 
 ```
 [dotenv-vault-core@0.7.0][INFO] Loading env from encrypted .env.vault
 ```
 
-That's it! The `DOTENV_KEY` will securely decrypt our .env.vault file at runtime and inject our secret environment variables just in time. Say goodbye to risky third-party integrations and get complete control over your secrets from a single source of truth. It's the best of both worlds.
+That's it! The `DOTENV_KEY` securely decrypts our .env.vault file at runtime and injects our secret environment variables – just in time. This is safer than syncing our secrets to third-parties where they could leak. Plus we get a single source of truth. Make a change in the UI, run the build command, and redeploy. It's that easy now to manage your secrets.
 
 {% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.webm" %}
