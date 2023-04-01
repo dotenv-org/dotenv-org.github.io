@@ -227,6 +227,8 @@ When the deploy completes, we'll see this line in the logs.
 [dotenv-vault-core@0.7.0][INFO] Loading env from encrypted .env.vault
 ```
 
-That's it! The `DOTENV_KEY` securely decrypts our .env.vault file at runtime and injects our secret environment variables – just in time. This is safer than syncing our secrets to third-parties where they could leak. Plus we get a single source of truth. Make a change in the UI, run the build command, and redeploy. It's that easy now to manage your secrets.
+That's it! The `DOTENV_KEY` securely decrypts our .env.vault file at runtime and injects our secret environment variables – just in time.
+
+This is safer than syncing our secrets to third-parties where they could leak. Plus we get a single source of truth. Make a change in the UI, run the build command, and redeploy. It's that simple to manage your secrets with dotenv-vault.
 
 {% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.webm" %}
