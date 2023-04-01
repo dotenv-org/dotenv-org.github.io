@@ -13,7 +13,7 @@ redirect_from:
 {% include landing/solution2.html %}
 {% include landing/source_of_truth.html %}
 {% include landing/companies_love.html %}
-<div class="bg-black bg-vault-image pb-2 border-top border-bottom border-5 border-warning" style="margin-top: -400px; padding-top: 400px !important;">
+<div class="bg-black bg-vault-image pb-2 border-top border-bottom border-5 border-warning" style="margin-top: -300px; padding-top: 300px !important;">
 {% include landing/from_the_same_people.html %}
 </div>
 
