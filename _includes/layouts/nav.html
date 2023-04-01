@@ -15,6 +15,18 @@
       <img src="/assets-www/img/dotenv.svg" alt="dotenv" width="44" class="rounded">
     </a>
     <div class="d-flex">
+      {% if page.url == '/' %}
+      <div class="bd-from d-none d-lg-block">
+        <div class="alert alert-warning alert-dismissible fade show px-2 py-1" role="alert">
+          <a class="text-secondary text-dark-hover-star text-decoration-none" href="https://github.com/motdotla/dotenv">
+            <small>From the pioneers of dotenv ⋅ <span class="star">☆</span>16.9k</small>
+          </a>
+
+          <button type="button" class="btn-close py-2 px-2" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+      {% endif %}
+
       <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi" fill="currentColor" viewBox="0 0 16 16"><path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path></svg>
       </button>
@@ -45,7 +57,10 @@
         <hr class="d-lg-none text-dark-50">
         <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
           <li class="nav-item col-12 col-lg-auto text-center">
-            <a class="nav-link text-secondary text-decoration-none text-yellow-hover-star me-lg-3 mb-2 mb-lg-0" href="https://github.com/motdotla/dotenv"><small><span class="star">☆</span> Star us on GitHub ⋅ 16.9k stars</small></a>
+
+<!--
+  <a class="nav-link text-secondary text-decoration-none text-yellow-hover-star me-lg-3 mb-2 mb-lg-0" href="https://github.com/motdotla/dotenv"><small> From the pioneers of dotenv ⋅ <span class="star">☆</span> 16.9k</small></a>
+-->
           </li>
           <li class="nav-item col-12 col-lg-auto">
             <div class="d-grid">

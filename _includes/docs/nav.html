@@ -1,6 +1,32 @@
 <nav class="w-100 ps-1 pe-2 pt-3">
   <ul class="list-unstyled">
     <li class="py-2">
+      {% include docs/nav_group.html text="Overview" %}
+      <ul class="list-unstyled fw-normal ps-1 pb-2 small">
+        {% include docs/nav_link.html url="/docs" text="Introduction" %}
+        {% include docs/nav_link.html url="/docs/overview/quickstart" text="Quickstart" %}
+      </ul>
+    </li>
+    <li class="py-2">
+      {% include docs/nav_group.html text="Sync" %}
+      <ul class="list-unstyled fw-normal ps-1 pb-2 small">
+        {% include docs/nav_link.html url="/docs" text="Basics" %}
+      </ul>
+    </li>
+    <li class="py-2">
+      {% include docs/nav_group.html text="Manage" %}
+      <ul class="list-unstyled fw-normal ps-1 pb-2 small">
+        {% include docs/nav_link.html url="/docs" text="Basics" %}
+      </ul>
+    </li>
+    <li class="py-2">
+      {% include docs/nav_group.html text="Deploy" %}
+      <ul class="list-unstyled fw-normal ps-1 pb-2 small">
+        {% include docs/nav_link.html url="/docs" text="Basics" %}
+      </ul>
+    </li>
+
+    <li class="py-2">
       {% include docs/nav_group.html text="Tutorials" %}
       <ul class="list-unstyled fw-normal ps-1 pb-2 small">
         {% include docs/nav_link.html url="/docs/tutorials/sync" text="Sync .env files" %}

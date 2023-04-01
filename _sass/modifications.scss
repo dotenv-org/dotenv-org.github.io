@@ -42,6 +42,10 @@ $white: #FFFFFF;
   .h6, h6 {
     font-size: 0.9rem;
   }
+
+  a .card:hover {
+    border-color: #222529 !important;
+  }
 }
 .changelog-item {
   p img {
@@ -114,6 +118,11 @@ $white: #FFFFFF;
 .text-yellow-hover-star:hover {
   .star {
     color: $yellow !important;
+  }
+}
+.text-dark-hover-star:hover {
+  .star {
+    color: #000000 !important;
   }
 }
 .text-underline-hover {
@@ -321,4 +330,12 @@ div.highlight {
 #page-nav .active {
   font-weight: normal !important;
   border-left: 1px solid #6e757c !important;
+}
+
+.bd-from {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
 }
