@@ -55,7 +55,7 @@ $ node index.js
 
 Visit [localhost:3000](http://localhost:3000) and you will see "Hello World".
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_1200/v1680360955/Screenshot_2023-04-01_at_7.55.10_AM_wyu6en.png" class="w-75" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_1200/v1680360955/Screenshot_2023-04-01_at_7.55.10_AM_wyu6en.png" %}
 
 Next, let's use [dotenv](https://github.com/motdotla/dotenv) to customize the port and greeting.
 
@@ -77,7 +77,7 @@ PORT="3000"
 GREETING="Bonjour World"
 ```
 
-Modify `index.js` to use dotenv.
+Modify index.js to use `require('dotenv').config()` and `process.env` environment variables.
 
 ```javascript
 // index.js
@@ -105,7 +105,7 @@ Restart our web server.
 $ node index.js
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_1200/v1680362148/Screenshot_2023-04-01_at_8.15.30_AM_tjdju0.png" class="w-75" %}
+{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_1200/v1680362148/Screenshot_2023-04-01_at_8.15.30_AM_tjdju0.png" %}
 
 Now it says 'Bonjour World'. Cool! We're ready to backup and sync our `.env` file.
 

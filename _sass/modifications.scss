@@ -200,9 +200,44 @@ $white: #FFFFFF;
   }
 }
 
+// how radios
 input[name="how-radio"]:checked+label{ 
   border-color: #222529 !important;
-} 
+}
+
+// screenshot
+.screenshot img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .screenshot img {
+    width: 75% !important;
+  }
+}
+
+// videoplayer
+.videoplayer video {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .videoplayer video {
+    width: 75% !important;
+  }
+}
+
+// code higlight
+div.highlight {
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+
+  pre.highlight {
+    padding: 1rem;
+    overflow: scroll;
+  }
+}
+
+
 
 .flex {
   display: flex;
@@ -285,17 +320,6 @@ input[name="how-radio"]:checked+label{
     .collapse.collapse-reverse:not(.show) {
       display: block !important;
     }
-  }
-}
-
-div.highlight {
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-
-  pre.highlight {
-    padding: 1rem;
-    overflow: scroll;
   }
 }
 
