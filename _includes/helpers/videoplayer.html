@@ -1,5 +1,5 @@
 <div class="videoplayer mb-4">
-  <video controls poster="" class="border border-dark border-3 rounded shadow">
+  <video controls poster="{{include.poster}}" class="border border-dark border-3 rounded shadow">
     {% if include.mp4 %}
       <source src="{{include.mp4}}" type="video/mp4">
     {% endif %}

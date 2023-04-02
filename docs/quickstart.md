@@ -134,7 +134,7 @@ $ npx dotenv-vault pull
 
 That's it! We synced our .env file.
 
-{% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680364471/dotenv-vault-sync-video_yutprj.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680364471/dotenv-vault-sync-video_yutprj.webm" %}
+{% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680364471/dotenv-vault-sync-video_yutprj.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680364471/dotenv-vault-sync-video_yutprj.webm" poster="https://res.cloudinary.com/dotenv-org/video/upload/c_scale,dl_2000,vs_2s,w_500,e_loop/v1680364471/dotenv-vault-sync-video_yutprj.gif" %}
 
 ## 🌴 Manage environments
 
@@ -146,7 +146,7 @@ $ npx dotenv-vault open production
 
 In the UI, we are going to delete the `PORT` environment variable. We will rely on Heroku to fill that on deploy. We'll edit the `GREETING` environment variable to "Hello Production" so that we can recognize it on deploy.
 
-{% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.webm" %}
+{% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680366837/npx-dotenv-vault-open_h70feb.webm" poster="https://res.cloudinary.com/dotenv-org/video/upload/c_scale,dl_2000,vs_2s,w_800,e_loop/v1680366837/npx-dotenv-vault-open_h70feb.gif" %}
 
 ## 🚀 Deploy .env.vault
 
@@ -231,4 +231,4 @@ That's it! The `DOTENV_KEY` securely decrypts our .env.vault file at runtime and
 
 This is safer than syncing our secrets to third-parties where they could leak. Plus we get a single source of truth. Make a change in the UI, run the build command, and redeploy. It's that simple to manage your secrets with dotenv-vault.
 
-{% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.webm" %}
+{% include helpers/videoplayer.html mp4="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.mp4" webm="https://res.cloudinary.com/dotenv-org/video/upload/v1680372369/deploy-encrypted-vault_shdiav.webm" poster="https://res.cloudinary.com/dotenv-org/video/upload/c_scale,dl_2000,vs_2s,w_500,e_loop/v1680372369/deploy-encrypted-vault_shdiav.gif" %}
