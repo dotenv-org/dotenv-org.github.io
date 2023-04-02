@@ -9,7 +9,6 @@ redirect_from:
 {% include landing/product_screenshot.html %}
 {% include landing/trust_companies.html %}
 {% include landing/problem.html %}
-{% include landing/cost.html %}
 {% include landing/solution2.html %}
 {% include landing/source_of_truth.html %}
 {% include landing/companies_love.html %}
@@ -22,7 +21,7 @@ redirect_from:
   <div class="row">
     <div class="col">
       <h4 class="display-6 fw-bold text-center py-4 mt-4">
-        Simplify your secrets today.&nbsp;&nbsp;&nbsp;<a class="btn btn-lg btn-dark fw-bold rounded-5 px-4" href="/signup">Sign Up Free</a>
+        Simplify your secrets today.&nbsp;&nbsp;&nbsp;<a class="btn btn-lg btn-success fw-semibold rounded-pill px-4" href="/pricing">Sign up for free</a>
       </h4>
     </div>
   </div>

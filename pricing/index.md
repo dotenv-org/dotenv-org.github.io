@@ -4,22 +4,39 @@ title: "Pricing"
 ---
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-10 offset-lg-1">
-      <h1 class="text-center h5 text-secondary font-monospace mt-5 pb-0 mb-0 fw-normal">Pricing</h1>
-      <h3 class="text-center h1 fw-bold">Invest in Your Security</h3>
-      <h5 class="text-center">Free to use for individuals and small teams</h5>
-      <div class="card-group mt-4 shadow shadow-lg">
-        {% include pricing/free.html %}
-        {% include pricing/team.html %}
-        {% include pricing/enterprise.html %}
+  <div class="row text-center mb-3">
+    <div class="col">
+      <h1 class="display-1 fw-bold mt-5 lh-1">Invest in Your Security</h1>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <p class="h2 fw-light mt-1">Free to use for individuals and small teams.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <div class="row g-3">
+    <div class="col-md-12 col-lg-4">
+      {% include pricing/free.html %}
+    </div>
+    <div class="col-md-12 col-lg-4">
+      {% include pricing/team.html %}
+    </div>
+    <div class="col-md-12 col-lg-4">
+      {% include pricing/enterprise.html %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      {% include pricing/whats_free.html %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <h2 class="text-center h1 fw-extrabold mt-5">Let dotenv-vault take your headache away</h2>
+      <p class="lead fw-normal text-center">The average cost of a secrets leak is <span class="fw-bold text-danger">$1.2 million dollars</span>. You need a secrets manager that simplifies your secrets and prevents them from being scattered across multiple third-parties.</p>
+    </div>
+  </div>
 
-<div class="bg-black bg-vault-image pb-2 border-top border-5 border-warning" style="margin-top: -500px; padding-top: 500px !important;">
-{% include landing/companies_using.html %}
 </div>
 
 {% include landing/companies_love.html %}
