@@ -32,7 +32,7 @@ title: "Pricing"
   </div>
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
-      <h2 class="text-center h1 fw-extrabold mt-5">Let dotenv-vault take your headache away</h2>
+      <h2 class="text-center h1 fw-extrabold mt-5">Save $$$ with dotenv-vault</h2>
       <p class="lead fw-normal text-center">The average cost of a secrets leak is <span class="fw-bold text-danger">$1.2 million dollars</span>. You need a secrets manager that simplifies your secrets and prevents them from being scattered across multiple third-parties.</p>
     </div>
   </div>
