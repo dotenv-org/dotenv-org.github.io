@@ -7,9 +7,5 @@ title: "Pricing"
 {% include pricing/plans.html %}
 {% include pricing/whats_free.html %}
 {% include pricing/save_money.html %}
-{% include landing/source_of_truth.html %}
-
-<!--
-{% include landing/companies_love.html %}
-{% include landing/developers_love.html %}
--->
+{% include pricing/faq.html %}
+{% include pricing/quotes.html %}
