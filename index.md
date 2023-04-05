@@ -12,11 +12,6 @@ redirect_from:
 {% include landing/solution.html %}
 {% include landing/works_everywhere.html %}
 {% include landing/companies.html %}
-
-<div class="container">
-  <div class="row">
-    <div class="col text-center mb-5">
-      <a class="btn btn-lg btn-success fw-semibold rounded-pill px-4" href="/pricing">Pricing + Sign up</a>
-    </div>
-  </div>
-</div>
+{% include landing/quote.html %}
+{% include landing/5minutes.html %}
+{% include landing/faq.html %}
