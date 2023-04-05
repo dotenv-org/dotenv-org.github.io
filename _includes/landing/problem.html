@@ -1,71 +1,29 @@
-<div class="container mt-5 pt-5">
+<div class="container my-5 py-5">
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
-      <!--<h2 class="h1 fw-extrabold text-center">Still managing your secrets across multiple platforms and tools?</h2>-->
       <h2 class="h1 fw-extrabold text-center">Looking for a better way to manage your secrets?</h2>
-      <p class="lead fw-normal text-center mb-5">We took a hard look at the state of developer secrets management, and it wasn't simple.</p>
+      <p class="lead fw-normal text-center">We took a hard look at the state of developer secrets management, and we think it should be better AND simpler.</p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-lg-10 offset-lg-1">
-      <div class="row g-2">
+      <div class="row g-3">
         <div class="col-lg-6">
-          <div class="card bg-transparent rounded-4 border-0">
-            <div class="card-body px-3 px-lg-4 px-xl-5 py-4">
-              <h3 class="fw-extrabold text-center">Sharing .env files by hand doesn't scale</h3>
-              <div class="py-3 text-center">{% include icons/hand-thumbs-down.html width="50" %}</div>
-              <div class="fs-5 text-start fw-light px-3 px-lg-5">
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">sharing over Slack</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">.env files out of sync</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">copy/pasting to other environments</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">no backups</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">no version history</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">no access controls</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% include landing/problem_card1.html %}
         </div>
         <div class="col-lg-6">
-          <div class="card bg-light rounded-4 border-0">
-            <div class="card-body px-3 px-lg-4 px-xl-5 py-4">
-              <h3 class="fw-extrabold text-center">Other solutions make you abandon .env files</h3>
-              <div class="py-3 text-center">{% include icons/heartbreak.html width="50" %}</div>
-              <div class="fs-5 text-start fw-light px-3 px-lg-5">
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">proprietary</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">can't use .env files</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">forced to rewrite code</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">expensive</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">lock-in</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">risky third-party integrations*</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="text-start text-secondary small px-2 px-lg-4 mt-2">*Most of these solutions sync your secrets over <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="link-secondary">third-party integrations</a>, increasing your attack surface area and making it more likely your secrets leak someday.</p>
+          {% include landing/problem_card2.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <div class="row">
+        <div class="col-lg-6">
+        </div>
+        <div class="col-lg-6">
+          <p class="card-body text-start small fw-semibold px-2 px-lg-4 mt-2"><span class="bg-warning-subtle">*Syncing your secrets over <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="link-dark">third-party integrations</a> actually increases your attack surface area by scattering them in more places, making it more likely your secrets leak someday. Read on to see how <span class="fw-bold">dotenv-vault</span> removes this risk.</span></p>
         </div>
       </div>
     </div>

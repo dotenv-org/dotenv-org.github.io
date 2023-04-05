@@ -25,7 +25,7 @@ If you already use .env files you can benefit from dotenv-vault in just a few se
   <div class="col-lg-4">
     <div class="card h-100">
       <div class="card-body">
-        <div class="text-success">{% include icons/sync.html %}</div>
+        <div class="text-success">{% include icons/sync.html width="16" %}</div>
         <p class="fw-bold mb-0">Sync</p>
         <p class="mb-0">Sync .env files</p>
       </div>
