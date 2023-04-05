@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
       <!--<h2 class="h1 fw-extrabold text-center">Still managing your secrets across multiple platforms and tools?</h2>-->
-      <h2 class="h1 fw-extrabold text-center">Is this the best way to manage secrets across teams, machines, and environments?</h2>
-      <p class="lead fw-normal text-center mb-5">We took a hard look at the state of developer secrets management, and well, it's not the greatest.</p>
+      <h2 class="h1 fw-extrabold text-center">Looking for a better way to manage your secrets?</h2>
+      <p class="lead fw-normal text-center mb-5">We took a hard look at the state of developer secrets management, and it wasn't simple.</p>
     </div>
   </div>
 
@@ -11,12 +11,11 @@
     <div class="col-lg-10 offset-lg-1">
       <div class="row g-2">
         <div class="col-lg-6">
-          <div class="card bg-transparent rounded-4 border-0 p-lg-3 p-md-3 pb-0 h-100">
-            <div class="card-body pb-0 mb-0">
-              <h3 class="fw-extrabold text-center">Managing .env files by hand doesn't scale</h3>
-              <div class="py-4 text-center">{% include icons/hand-thumbs-down.html width="50" %}</div>
-
-              <div class="fs-5 text-start fw-light px-5">
+          <div class="card bg-transparent rounded-4 border-0">
+            <div class="card-body px-3 px-lg-4 px-xl-5 py-4">
+              <h3 class="fw-extrabold text-center">Sharing .env files by hand doesn't scale</h3>
+              <div class="py-3 text-center">{% include icons/hand-thumbs-down.html width="50" %}</div>
+              <div class="fs-5 text-start fw-light px-3 px-lg-5">
                 <div class="d-flex align-items-center">
                   <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">sharing over Slack</span>
                 </div>
@@ -37,18 +36,19 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="card bg-light rounded-4 border-0 p-lg-3 p-md-3 mb-2 pb-0 h-100">
-            <div class="card-body pb-0 mb-0">
+          <div class="card bg-light rounded-4 border-0">
+            <div class="card-body px-3 px-lg-4 px-xl-5 py-4">
               <h3 class="fw-extrabold text-center">Other solutions make you abandon .env files</h3>
-              <div class="py-4 text-center">{% include icons/heartbreak.html width="50" %}</div>
-
-              <div class="fs-5 text-start fw-light px-5">
+              <div class="py-3 text-center">{% include icons/heartbreak.html width="50" %}</div>
+              <div class="fs-5 text-start fw-light px-3 px-lg-5">
                 <div class="d-flex align-items-center">
                   <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">proprietary</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">can't use .env files</span>
                 </div>
                 <div class="d-flex align-items-center">
                   <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">forced to rewrite code</span>
@@ -57,56 +57,15 @@
                   <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">expensive</span>
                 </div>
                 <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">no backups</span>
+                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">lock-in</span>
                 </div>
                 <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">no version history</span>
-                </div>
-                <div class="d-flex align-items-center">
-                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">no access controls</span>
+                  <span class="font-monospace text-danger fs-2 lh-1 me-1">&times;</span> <span class="">risky third-party integrations*</span>
                 </div>
               </div>
-
-              <div class="fs-5 text-start fw-light px-5">
-                <div class="">
-                  <span class="font-monospace text-danger">&times;</span> <span class="fw-bold">Proprietary</span>
-                </div>
-                <div class="">
-                  <span class="font-monospace text-danger">&times;</span> <span class="fw-bold">Out of sync .env files</span>
-                </div>
-                <div class="">
-                  <span class="font-monospace text-danger">&times;</span> <span class="fw-bold">Copy/pasting to other environments</span>
-                </div>
-                <div class="">
-                  <span class="font-monospace text-danger">&times;</span> <span class="fw-bold">No backups</span>
-                </div>
-                <div class="">
-                  <span class="font-monospace text-danger">&times;</span> <span class="fw-bold">No version history</span>
-                </div>
-                <div class="">
-                  <span class="font-monospace text-danger">&times;</span> <span class="fw-bold">No access controls</span>
-                </div>
-              </div>
-
-
-              <div class="d-none d-md-block d-lg-block">
-                <p>HashiCorp Vault locks you into an expensive solution by requiring your team to rewrite code.</p>
-                <p>AWS Secrets and GCP Secret Manager are also pricey and rely on frequent API calls to their services, driving up costs.</p>
-                <p>Solutions like Doppler and Infisical are also pretty pricey and sync your secrets over <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="link-secondary">risky third-party integrations</a> that increase your attack surface area, making it more likely your secrets leak someday.</p>
-              </div>
-              <ul class="list-unstyled pb-0">
-                <li class="d-flex align-items-center">
-                  <span class="font-monospace fs-3 lh-1 m-0 p-0 me-1 text-danger">&times;</span> <span class="fw-bold">Expensive</span>
-                </li>
-                <li class="d-flex align-items-center">
-                  <span class="font-monospace fs-3 lh-1 m-0 p-0 me-1 text-danger">&times;</span> <span class="fw-bold">Lock-in</span>
-                </li>
-                <li class="d-flex align-items-center">
-                  <span class="font-monospace fs-3 lh-1 m-0 p-0 me-1 text-danger">&times;</span> <span class="fw-bold">Risky third-party integrations</span>
-                </li>
-              </ul>
             </div>
           </div>
+          <p class="text-start text-secondary small px-2 px-lg-4 mt-2">*Most of these solutions sync your secrets over <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="link-secondary">third-party integrations</a>, increasing your attack surface area and making it more likely your secrets leak someday.</p>
         </div>
       </div>
     </div>
