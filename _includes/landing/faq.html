@@ -1,50 +1,128 @@
 <div class="container mt-5 pt-5">
   <div class="row">
     <div class="col-lg-3 offset-lg-1">
-      <h2 class="display-3 fw-extrabold">FAQ</h2>
+      <h2 class="display-3 fw-extrabold text-center text-lg-start mb-1">FAQ</h2>
+      <p class="text-secondary text-center text-lg-start">Frequently Asked Questions</p>
     </div>
     <div class="col-lg-8">
-      <div class="question mb-4">
-        <h4 class="fw-bold">Why choose dotenv-vault over other secrets managers?</h4>
-        <p class=""><span class="fw-bold">dotenv-vault</span> is the only secrets manager that works with .env files instead of against them. Other secrets managers make you replace your .env files with remote API calls. This means you spend costly time rewriting code, locking yourself into proprietary software, and possibly introducing new attack vectors. (It's generally easier for attackers to snoop on web traffic than it is to gain access to your file system.)</p>
-      </div>
-      <div class="question mb-4">
-        <h4 class="fw-bold">Are my secrets safe?</h4>
-        <p class="">Your secrets go through a ten-step process to split their parts, encrypt, and tokenize them into the <span class="fw-bold">Dotenv Vault Store</span>. This includes using <span class="fw-bold">AES-GCM</span> - trusted by governments to transport top secret information. Read more about the ten-step process on the <a href="/security">security page</a>.</p>
-      </div>
-      <div class="question mb-4">
-        <h4 class="fw-bold">How does the .env.vault file work?</h4>
-        <p class="">The <span class="fw-bold">.env.vault</span> file is an encrypted version of your .env file. It is paired with a decryption key called the <span class="fw-bold">DOTENV_KEY</span>. The DOTENV_KEY is set on your server or cloud hosting provider and the .env.vault file is committed to code.</p>
-        <p class="">When you deploy your app, on application boot, the dotenv library decrypts the contents of the .env.vault file and injects them as environment variables just-in-time.</p>
-      </div>
-      <div class="question mb-4">
-        <h4 class="fw-bold">Is it safe to commit the .env.vault file to code?</h4>
-        <p class="">Yes. <span class="fw-bold">AES-256 GCM encryption</span> was developed for the needs of US Government agencies like the CIA. AES-256 takes billions of years to crack using current computing technology. Your secrets are much more likely to be leaked by a third-party. This is why we are so committed to this technology while everyone else is focused on syncing secrets to third-party integrations. They are taking a risk with your secrets.</p>
-      </div>
+      <div class="accordion accordion-flush" id="accordionFaq">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+              <h4 class="fw-bold my-0 py-0">Why choose dotenv-vault over other secrets managers?</h4>
+            </button>
+          </div>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              <span class="fw-bold">dotenv-vault</span> is the only secrets manager that works with .env files instead of against them. Other secrets managers make you replace your .env files with remote API calls. This means you spend costly time rewriting code, locking yourself into proprietary software, and possibly introducing new attack vectors. (It's generally easier for attackers to snoop on web traffic than it is to gain access to your file system.)
+            </div>
+          </div>
+        </div>
 
-      <div class="question mb-4">
-        <h4 class="fw-bold">How does it protect me from third-party breaches like CircleCI?</h4>
-        <p class="">In the CircleCI breach the attacker accessed environment variables only. They could not access codebases. To steal your encrypted <span class="fw-bold">.env.vault</span> secrets they would need both – the decryption key (stored as an environment variable), AND the codebase's encrypted .env.vault file.</p>
-      </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              <h4 class="fw-bold my-0 py-0">Are my secrets safe?</h4>
+            </button>
+          </div>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              Your secrets go through a ten-step process to split their parts, encrypt, and tokenize them into the <span class="fw-bold">Dotenv Vault Store</span>. This includes using <span class="fw-bold">AES-GCM</span> - trusted by governments to transport top secret information. Read more about the ten-step process on the <a href="/security">security page</a>.
+            </div>
+          </div>
+        </div>
 
-      <div class="question mb-4">
-        <h4 class="fw-bold">Is the .env.vault file format a new standard?</h4>
-        <p class="">Not officially, but our goal is towards that. We're building things in a way that a cloud service is not necessary. As long as you can generate a <span class="fw-bold">.env.vault</span> file you can use the technology. It is open to all.</p>
-      </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              <h4 class="fw-bold my-0 py-0">How does the .env.vault file work?</h4>
+            </button>
+          </div>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              The <span class="fw-bold">.env.vault</span> file is an encrypted version of your .env file. It is paired with a decryption key called the <span class="fw-bold">DOTENV_KEY</span>. The DOTENV_KEY is set on your server or cloud hosting provider and the .env.vault file is committed to code.
+            </div>
+          </div>
+        </div>
 
-      <div class="question mb-4">
-        <h4 class="fw-bold">What languages are supported?</h4>
-        <p class=""><span class="fw-bold">dotenv-vault</span> works with <a href="https://github.com/dotenv-org/dotenv-vault-core">node</a>, <a href="https://github.com/dotenv-org/dotenv-vault-ruby">ruby</a>, <a href="https://github.com/dotenv-org/python-dotenv-vault">python</a>, and <a href="https://github.com/dotenv-org/phpdotenv-vault">php</a> so far. If you like the <span class="fw-bold">.env.vault</span> concept and know a language well, consider creating the library for it in that language. Your library could be used by millions of developers someday!</p>
-      </div>
-      <div class="question mb-4">
-        <h4 class="fw-bold">Will dotenv get first class support for decrypting <span class="fw-bold">.env.vault</span> files?</h4>
-        <p class="">Yes, that's <a href="https://github.com/motdotla/dotenv/pull/730">under development</a>. Until then, our docs instruct you to use <a href="https://github.com/dotenv-org/dotenv-vault-core">dotenv-vault-core</a>.</p>
-      </div>
-      <div class="question mb-4">
-        <h4 class="fw-bold">What is the npx command prefacing dotenv-vault?</h4>
-        <p class="">npx is an npm package runner. It let's you run a node executable. This way there are no error prone libraries to install, infrastructure to maintain, or custom code to run. Just have <a href="https://nodejs.org/en/download">node installed</a>, run <span class="fw-bold">npx dotenv-vault push</span>, and you're off to the races. If you would prefer to use dotenv-vault without node, email us at <a href="mailto:support@dotenv.org">support@dotenv.org</a> and we can provide you an installable binary.</p>
-      </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+              <h4 class="fw-bold my-0 py-0">Is it safe to commit the .env.vault file to code?</h4>
+            </button>
+          </div>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              Yes. <span class="fw-bold">AES-256 GCM encryption</span> was developed for the needs of US Government agencies like the CIA. AES-256 takes billions of years to crack using current computing technology. Your secrets are much more likely to be leaked by a third-party. This is why we are so committed to this technology while everyone else is focused on syncing secrets to third-party integrations. They are taking a risk with your secrets.
+            </div>
+          </div>
+        </div>
 
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+              <h4 class="fw-bold my-0 py-0">How does it protect me from third-party breaches like CircleCI?</h4>
+            </button>
+          </div>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              In the CircleCI breach the attacker accessed environment variables only. They could not access codebases. To steal your encrypted <span class="fw-bold">.env.vault</span> secrets they would need both – the decryption key (stored as an environment variable), AND the codebase's encrypted .env.vault file.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+              <h4 class="fw-bold my-0 py-0">Is the .env.vault file format a new standard?</h4>
+            </button>
+          </div>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              Not officially, but our goal is towards that. We're building things in a way that a cloud service is not necessary. As long as you can generate a <span class="fw-bold">.env.vault</span> file you can use the technology. It is open to all.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+              <h4 class="fw-bold my-0 py-0">What languages are supported?</h4>
+            </button>
+          </div>
+          <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              <span class="fw-bold">dotenv-vault</span> works with <a href="https://github.com/dotenv-org/dotenv-vault-core">node</a>, <a href="https://github.com/dotenv-org/dotenv-vault-ruby">ruby</a>, <a href="https://github.com/dotenv-org/python-dotenv-vault">python</a>, and <a href="https://github.com/dotenv-org/phpdotenv-vault">php</a> so far. If you like the <span class="fw-bold">.env.vault</span> concept and know a language well, consider creating the library for it in that language. Your library could be used by millions of developers someday!
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+              <h4 class="fw-bold my-0 py-0">Will dotenv get first class support for decrypting <span class="fw-bold">.env.vault</span> files?</h4>
+            </button>
+          </div>
+          <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              Yes, that's <a href="https://github.com/motdotla/dotenv/pull/730">under development</a>. Until then, our docs instruct you to use <a href="https://github.com/dotenv-org/dotenv-vault-core">dotenv-vault-core</a>.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+              <h4 class="fw-bold my-0 py-0">What is the npx command prefacing dotenv-vault?</h4>
+            </button>
+          </div>
+          <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+            <div class="accordion-body">
+              npx is an npm package runner. It let's you run a node executable. This way there are no error prone libraries to install, infrastructure to maintain, or custom code to run. Just have <a href="https://nodejs.org/en/download">node installed</a>, run <span class="fw-bold">npx dotenv-vault push</span>, and you're off to the races. If you would prefer to use dotenv-vault without node, email us at <a href="mailto:support@dotenv.org">support@dotenv.org</a> and we can provide you an installable binary.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
