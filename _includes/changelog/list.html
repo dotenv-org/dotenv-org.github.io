@@ -1,0 +1,22 @@
+<div class="container mb-5">
+  <div class="row mb-3">
+    <div class="col-lg-8 offset-lg-2">
+      <ul class="list-unstyled fs-5">
+      {% for changelog in site.categories.changelog %}
+        <li class="font-monospace fs-6">
+          <div class="row g-3">
+            <div class="col col-auto">
+              <span class="">{{ changelog.date | date: "%b %d,%Y" }}</span>
+            </div>
+            <div class="col">
+              <a href="{{ changelog.url }}">
+                {{ changelog.title }}
+              </a>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

@@ -6,34 +6,9 @@
     {% include layouts/github_button.html %}
   </head>
   <body class="">
+    <div class="bg-still-gradient"></div>
     {% include layouts/nav.html %}
-    <div class="container py-lg-5 py-3">
-      <div class="row py-3 py-lg-5">
-        <div class="col-lg-8">
-          <p class="mt-3 mb-0">
-            <a class="text-secondary text-underline-hover" href="{{ page.url }}">
-              {{ page.date | date: "%b %d, %Y" }}
-            </a>
-          </p>
-          <h1 class="display-5 fw-bold mt-0">{{ page.title }}</h1>
-          {{ content }}
-
-          <hr/>
-        </div>
-        <div class="col-lg-4">
-          <p class="mt-3 mb-0 fw-bold text-secondary ps-3">Recent in Changelog</p>
-          <div class="list-group list-group-flush">
-          {% for changelog in site.categories.changelog %}
-            <a class="list-group-item list-group-item-action" href="{{ changelog.url }}">
-              <small class="text-secondary">{{ changelog.date | date: "%b %d, %Y" }}</small>
-              <br/>
-              {{ changelog.title }}
-            </a>
-          {% endfor %}
-          </div>
-        </div>
-      </div>
-    </div>
+    {% include changelog/single.html %}
     {% include layouts/footer.html %}
     {% include layouts/js.html %}
   </body>

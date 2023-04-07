@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "New WWW Site"
+title: "Changed the landing page to better describe dotenv-vault's key benefits"
 ---
 
 We've redesigned the www site to better describe the benefits of using **dotenv-vault**.

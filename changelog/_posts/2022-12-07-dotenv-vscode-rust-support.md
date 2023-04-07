@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "dotenv-vscode: Added Rust support"
+title: "Added Rust support to dotenv-vscode for auto-completion"
 ---
 
 Added [Rust](https://www.rust-lang.org/) support to [dotenv-vscode](https://github.com/dotenv-org/dotenv-vscode).

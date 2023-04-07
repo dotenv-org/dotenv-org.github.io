@@ -209,21 +209,21 @@ input[name="how-radio"]:checked+label{
 .screenshot img {
   width: 100%;
 }
-@media (min-width: 992px) {
-  .screenshot img {
-    width: 75% !important;
-  }
-}
+// @media (min-width: 992px) {
+//   .screenshot img {
+//     width: 75% !important;
+//   }
+// }
 
 // videoplayer
 .videoplayer video {
   width: 100%;
 }
-@media (min-width: 992px) {
-  .videoplayer video {
-    width: 75% !important;
-  }
-}
+// @media (min-width: 992px) {
+//   .videoplayer video {
+//     width: 75% !important;
+//   }
+// }
 
 // code higlight
 div.highlight {

@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Sign Up Confetti"
+title: "Added confetti on a new signup"
 ---
 
 Something fun – confetti when you sign up.

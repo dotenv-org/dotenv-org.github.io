@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "python-dotenv-vault"
+title: "Added .env.vault decryption support to python dotenv"
 ---
 
 Decryption support for .env.vault files has been added to Python. If you're using [Flask](https://flask.palletsprojects.com/), [Django](https://www.djangoproject.com/), [FastAPI](https://fastapi.tiangolo.com/), or plain ol' Python, you can use Dotenv Vault with it.

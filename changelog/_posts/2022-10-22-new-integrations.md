@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "New Integrations"
+title: "Added documentation for more integrations"
 ---
 
 We added a handful of new integrations. What should we add next?

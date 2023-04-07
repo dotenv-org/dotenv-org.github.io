@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Smarter Encrypted Builds"
+title: "Changed how the build command works to minimize nonce collisions"
 ---
 
 Now, `npx dotenv-vault build` regenerates itself only if there are changes.

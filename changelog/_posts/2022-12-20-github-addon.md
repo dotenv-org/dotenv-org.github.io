@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "GitHub Add-on"
+title: "Added a GitHub Add-on to auto-build your encrypted .env.vault file on secret changes"
 ---
 
 Auto-build your encrypted .env.vault file on each environment change.
