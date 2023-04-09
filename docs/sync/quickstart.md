@@ -1,0 +1,36 @@
+---
+layout: docs
+section: "Sync"
+title: "Quickstart"
+description: In this quickstart guide learn how to sync and back up your .env file.
+---
+
+<div class="alert alert-info">ⓘ You should already have a .env file. <a href="https://github.com/motdotla/dotenv">Learn more</a></div>
+
+In this guide, we'll create a dotenv-vault project and push secrets to it.
+
+Usage is similar to git. Run the command:
+
+```
+$ npx dotenv-vault new
+```
+
+Follow those instructions and then run:
+
+```
+$ npx dotenv-vault login
+```
+
+Then run push and pull:
+
+```
+$ npx dotenv-vault push
+$ npx dotenv-vault pull
+```
+
+That's it! You synced your .env file.
+
+Visit [docs/quickstart](/docs/quickstart) for the complete ⚡️ quickstart guide.
+
+
+
