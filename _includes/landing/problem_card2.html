@@ -1,26 +1,20 @@
-<div class="card bg-danger-subtle rounded-4 border-0 h-100">
-  <div class="card-body px-3 px-lg-4 px-xl-5 py-4">
-    <div class="py-3 text-center text-lg-start lh-1">{% include icons/heartbreak.html width="24" %}</div>
-    <h4 class="fw-extrabold text-center text-lg-start">Other solutions make you abandon .env files</h4>
-    <div class="fs-5 text-start fw-light">
-      <div class="d-flex align-items-center">
-        <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">proprietary</span>
+<div class="row">
+  <div class="col-lg-6 order-1 order-lg-2">
+    <img src="/assets-www/img/other-solutions-secrets-management.png" alt="Other Secrets Management Solutions" class="w-100 p-4 rounded" />
+  </div>
+  <div class="col-lg-6 order-2 order-lg-1 d-flex align-items-center">
+    <div>
+      <h2 class="fw-extrabold text-center text-lg-start">Other solutions make you abandon .env files</h2>
+      <p>Proprietary solutions require a lot from you - code rewrites, lock-in, and third-party integrations that might leak your secrets – it's risky.</p>
+      <div class="fs-5 text-start fw-light">
+        <div class="d-flex align-items-center">
+          <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">Proprietary</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">Risky Third-party Integrations*</span>
+        </div>
       </div>
-      <div class="d-flex align-items-center">
-        <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">can't use .env files</span>
-      </div>
-      <div class="d-flex align-items-center">
-        <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">forced to rewrite code</span>
-      </div>
-      <div class="d-flex align-items-center">
-        <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">expensive</span>
-      </div>
-      <div class="d-flex align-items-center">
-        <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">lock-in</span>
-      </div>
-      <div class="d-flex align-items-center">
-        <span class="font-monospace text-danger fs-5 lh-1 me-1">&times;</span> <span class="">risky third-party integrations*</span>
-      </div>
+      <p class="text-start small fw-light text-secondary px-2 mt-3 pt-0"><span class="">*Syncing your secrets over <a href="https://coderpad.io/blog/development/heroku-github-breach/">third-party integrations</a> increases your attack surface area by scattering them in more places, making it more likely your secrets leak. Look what happened to <a href="https://techcrunch.com/2023/01/05/circleci-breach/">CircleCI</a>. <span class="fw-bold">dotenv-vault</span> removes this risk.</span></p>
     </div>
   </div>
 </div>

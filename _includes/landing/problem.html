@@ -1,23 +1,16 @@
-<div class="container my-5 py-5">
+<div class="container mt-5 pt-5">
   <div class="row">
     <div class="col-lg-8 offset-lg-2">
-      <h2 class="h1 fw-extrabold text-center">Looking for a better way to manage your secrets?</h2>
-      <p class="lead fw-normal text-center">We took a hard look at the state of developer secrets management, and we think it should be better AND simpler.</p>
+      <h2 class="display-5 fw-extrabold text-center">Managing your secrets sucks</h2>
+      <p class="lead fw-normal text-center mb-0">We took a look at the state of secrets management, and it should be better!</p>
     </div>
   </div>
+  <!-- these are the reasons why! -->
   <div class="row">
     <div class="col-lg-10 offset-lg-1">
-      <div class="row g-2 gx-5">
-        <div class="col-lg-6 order-1 order-lg-1">
-          {% include landing/problem_card1.html %}
-        </div>
-        <div class="col-lg-6 order-2 order-lg-2">
-          {% include landing/problem_card2.html %}
-        </div>
-        <div class="col-lg-6 offset-lg-6 order-3 order-lg-3">
-          <p class="d-none d-lg-block d-md-block text-start small fw-light text-secondary px-2 mt-0 pt-0"><span class="">*Syncing your secrets over <a href="https://coderpad.io/blog/development/heroku-github-breach/" class="link-dark">third-party integrations</a> actually increases your attack surface area by scattering them in more places, making it more likely your secrets leak someday. Look what happened to CircleCI. Read on to see how <span class="fw-bold">dotenv-vault</span> removes this risk.</span></p>
-        </div>
-      </div>
+      {% include landing/problem_card1.html %}
+      <br/>
+      {% include landing/problem_card2.html %}
     </div>
   </div>
 </div>

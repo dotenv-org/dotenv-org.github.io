@@ -9,7 +9,7 @@ redirect_from:
 {% include landing/product_screenshot.html %}
 {% include landing/trust_companies.html %}
 {% include landing/problem.html %}
-{% include landing/solution.html %}
+{% include landing/solution_3_steps.html %}
 {% include landing/works_everywhere.html %}
 {% include landing/companies.html %}
 {% include landing/quote.html %}
