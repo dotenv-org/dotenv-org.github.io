@@ -63,9 +63,6 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-target-blank (2.0.0)
-      jekyll (>= 3.0, < 5.0)
-      nokogiri (~> 1.10)
     jekyll-timeago (0.15.0)
       mini_i18n (>= 0.8.0)
     jekyll-watch (2.2.1)
@@ -132,7 +129,6 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
-  jekyll-target-blank
   jekyll-timeago
   jemoji
   liquid_pluralize

@@ -54,7 +54,6 @@ kramdown:
       line_numbers: true
 
 plugins:
-  - jekyll-target-blank
   - jekyll-redirect-from
   - liquid_pluralize
   - liquid_reading_time
