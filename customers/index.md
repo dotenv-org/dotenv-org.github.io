@@ -623,4 +623,4 @@ title: "Customers"
 
 {% include helpers/hr.html %}
 
-<h5 class="text-center mt-5 mb-4">Trusted by more than 2.5 million developers.&nbsp;&nbsp;&nbsp;<a class="btn btn-dark" href="/signup">Get Started with Dotenv</a></h5>
+<h5 class="text-center mt-5 mb-4">Trusted by more than 2.5 million developers.&nbsp;&nbsp;&nbsp;<a class="btn btn-dark" href="https://vault.dotenv.org/signup">Get Started with Dotenv</a></h5>

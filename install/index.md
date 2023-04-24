@@ -27,7 +27,7 @@ Generates a **.env.vault** file.
 $ npx dotenv-vault login
 ```
 
-Don't have an account? [Sign Up](/signup)
+Don't have an account? [Sign Up](https://vault.dotenv.org/signup)
 
 ---
 
