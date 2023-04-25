@@ -120,7 +120,7 @@ $ npx dotenv-vault keys
 
 Set the production `DOTENV_KEY` on your server, recommit your `.env.vault` file to code, and deploy. That's it!
 
-## FAQ
+## ❓ FAQ
 
 #### What happens if `DOTENV_KEY` is not set?
 
