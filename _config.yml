@@ -35,7 +35,8 @@ defaults:
   - scope:
       path: ""
     values:
-      image: "https://res.cloudinary.com/dotenv-org/image/upload/v1666566686/og-image_g0llrh.png"
+      image: "/assets-www/img/default-cover-image.png"
+      # image: "https://res.cloudinary.com/dotenv-org/image/upload/v1666566686/og-image_g0llrh.png"
 
 # For Favicon Plugin
 favicon:
