@@ -1,6 +1,6 @@
 ---
 layout: docs
-section: "Languages"
+section: "Language Guides"
 title: "Go"
 description: Load environment variables from .env files and encrypted .env.vault files using Golang.
 ---
