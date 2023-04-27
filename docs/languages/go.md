@@ -9,7 +9,7 @@ description: Load environment variables from encrypted .env.vault files, with Go
 
 ## 🌱 Install
 
-```
+```shell
 go get github.com/dotenv-org/godotenvvault
 ```
 
@@ -17,7 +17,7 @@ go get github.com/dotenv-org/godotenvvault
 
 Create a `.env` file in the root of your project:
 
-```
+```shell
 # .env
 S3_BUCKET="YOURS3BUCKET"
 SECRET_KEY="YOURSECRETKEYGOESHERE"
@@ -25,7 +25,7 @@ SECRET_KEY="YOURSECRETKEYGOESHERE"
 
 As early as possible in your application, import and configure godotenvvault:
 
-```
+```go
 package main
 
 import (
@@ -94,7 +94,7 @@ Set the production `DOTENV_KEY` on your server, recommit your `.env.vault` file 
 
 #### 🔐 Vault Managed
 
-Sync your .env file. Run the push command and follow the instructions. It works a lot like git. [learn more](/docs/sync/quickstart)
+Sync your .env file. Run the push command and follow the instructions. [learn more](/docs/sync/quickstart)
 
 ```
 $ npx dotenv-vault push

@@ -58,7 +58,9 @@ heroku config:set DOTENV_KEY=<key string from .env.keys>
 
 Commit your .env.vault file safely to code and deploy. Your .env.vault fill be decrypted on boot, its environment variables injected, and your app work as expected.
 
-Note that when the `DOTENV_KEY` environment variable is set, environment settings will *always* be loaded from the `.env.vault` file in the project root. For development use, you can leave the `DOTENV_KEY` environment variable unset and fall back on the `dotenv` behaviour of loading from `.env` or a specified set of files (see [here in the `dotenv` README](https://github.com/bkeepers/dotenv#usage) for the details).
+<div class="alert alert-warning" markdown="1">
+ⓘ When the `DOTENV_KEY` environment variable is set, environment settings will *always* be loaded from the `.env.vault` file in the project root. For development use, you can leave the `DOTENV_KEY` environment variable unset and fall back on the `dotenv` behaviour of loading from `.env`.
+</div>
 
 ## 🌴 Manage Multiple Environments
 
@@ -118,7 +120,7 @@ Set the production `DOTENV_KEY` on your server, recommit your `.env.vault` file 
 
 #### What happens if `DOTENV_KEY` is not set?
 
-[python-dotenv-vault](https://github.com/dotenv-org/python-dotenv-vault) gracefully falls back to [python-dotenv](https://github.com/) when `DOTENV_KEY` is not set. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
+[python-dotenv-vault](https://github.com/dotenv-org/python-dotenv-vault) gracefully falls back to [python-dotenv](https://github.com/theskumar/python-dotenv) when `DOTENV_KEY` is not set. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
 
 #### Should I commit my `.env` file?
 
