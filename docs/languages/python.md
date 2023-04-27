@@ -1,47 +1,32 @@
 ---
 layout: docs
 section: "Language Guides"
-title: "Ruby"
-description: Load environment variables from encrypted .env.vault files, with Ruby 💎.
+title: "Python"
+description: Load environment variables from encrypted .env.vault files, with Python 🐍.
 ---
 
-<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/bkeepers/dotenv">dotenv</a></div>
+<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/theskumar/python-dotenv">python-dotenv</a></div>
 
 ## 🌱 Install
 
-#### 🚂 Rails
-
-Add this line to the top of your application's Gemfile:
-
-```ruby
-gem "dotenv-vault-rails"
+```shell
+pip install python-dotenv-vault
 ```
 
-And then execute:
+As early as possible in your application bootstrap process, load .env:
 
-```
-$ bundle
-```
+```python
+from dotenv_vault import load_dotenv
 
-#### 💎 Sinatra or Plain ol' Ruby
+load_dotenv()  # take environment variables from .env.
 
-```
-$ gem install dotenv-vault
-```
-
-As early as possible in your application bootstrap process, load `.env`:
-
-```ruby
-require 'dotenv-vault/load'
-
-# or
-require 'dotenv-vault'
-DotenvVault.load
+# Code of your application, which uses environment variables (e.g. from `os.environ` or
+# `os.getenv`) as if they came from the actual environment.
 ```
 
 ## 🏗️ Usage (.env)
 
-Development usage works just like [dotenv](https://github.com/bkeepers/dotenv).
+Development usage works just like [python-dotenv](https://github.com/theskumar/python-dotenv).
 
 Add your application configuration to your `.env` file in the root of your project:
 
@@ -50,10 +35,11 @@ S3_BUCKET=YOURS3BUCKET
 SECRET_KEY=YOURSECRETKEYGOESHERE
 ```
 
-When your application loads, these variables will be available in `ENV`:
+When your application loads, these variables will be available in `os.environ` or `os.getenv`:
 
-```ruby
-config.fog_directory  = ENV['S3_BUCKET']
+```python
+s3_bucket = os.getenv("S3_BUCKET")
+print(s3_bucket)
 ```
 
 ## 🚀 Deploying (.env.vault)
@@ -69,6 +55,10 @@ This will create an encrypted `.env.vault` file along with a `.env.keys` file co
 ```shell
 heroku config:set DOTENV_KEY=<key string from .env.keys>
 ```
+
+Commit your .env.vault file safely to code and deploy. Your .env.vault fill be decrypted on boot, its environment variables injected, and your app work as expected.
+
+Note that when the `DOTENV_KEY` environment variable is set, environment settings will *always* be loaded from the `.env.vault` file in the project root. For development use, you can leave the `DOTENV_KEY` environment variable unset and fall back on the `dotenv` behaviour of loading from `.env` or a specified set of files (see [here in the `dotenv` README](https://github.com/bkeepers/dotenv#usage) for the details).
 
 ## 🌴 Manage Multiple Environments
 
@@ -128,7 +118,7 @@ Set the production `DOTENV_KEY` on your server, recommit your `.env.vault` file 
 
 #### What happens if `DOTENV_KEY` is not set?
 
-[dotenv-vault-ruby](https://github.com/dotenv-org/dotenv-vault-ruby) gracefully falls back to [dotenv](https://github.com/bkeepers/dotenv) when `DOTENV_KEY` is not set. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
+[python-dotenv-vault](https://github.com/dotenv-org/python-dotenv-vault) gracefully falls back to [python-dotenv](https://github.com/) when `DOTENV_KEY` is not set. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
 
 #### Should I commit my `.env` file?
 

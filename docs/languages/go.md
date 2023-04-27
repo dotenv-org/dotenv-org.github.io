@@ -2,7 +2,7 @@
 layout: docs
 section: "Language Guides"
 title: "Go"
-description: Load environment variables from .env files and encrypted .env.vault files using Golang.
+description: Load environment variables from encrypted .env.vault files, with Golang.
 ---
 
 <div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/joho/godotenv">godotenv</a></div>
