@@ -44,7 +44,7 @@ print(s3_bucket)
 
 ## 🚀 Deploying (.env.vault)
 
-Encrypt your environment settings by doing:
+Encrypt your environment variables by doing:
 
 ```shell
 npx dotenv-vault local build
