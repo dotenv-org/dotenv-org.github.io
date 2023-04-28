@@ -16,7 +16,7 @@ npm install dotenv --save
 
 Create a `.env` file in the root of your project:
 
-```dosini
+```shell
 S3_BUCKET="YOURS3BUCKET"
 SECRET_KEY="YOURSECRETKEYGOESHERE"
 ```
