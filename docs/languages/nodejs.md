@@ -1,59 +1,49 @@
 ---
 layout: docs
 section: "Language Guides"
-title: "Ruby"
-description: Load environment variables from encrypted .env.vault files, with Ruby 💎.
+title: "NodeJS"
+description: Load environment variables from encrypted .env.vault files, with NodeJS 🚀.
 ---
-
-<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/bkeepers/dotenv">dotenv</a></div>
 
 ## 🌱 Install
 
-#### 🚂 Rails
-
-Add this line to the top of your application's Gemfile:
-
 ```ruby
-gem "dotenv-vault-rails"
-```
-
-And then execute:
-
-```
-$ bundle
-```
-
-#### 💎 Sinatra or Plain ol' Ruby
-
-```
-$ gem install dotenv-vault
-```
-
-As early as possible in your application bootstrap process, load `.env`:
-
-```ruby
-require 'dotenv-vault/load'
-
-# or
-require 'dotenv-vault'
-DotenvVault.load
+# install locally (recommended)
+npm install dotenv --save
 ```
 
 ## 🏗️ Usage (.env)
 
-Development usage works just like [dotenv](https://github.com/bkeepers/dotenv).
+Create a `.env` file in the root of your project:
 
-Add your application configuration to your `.env` file in the root of your project:
-
-```shell
-S3_BUCKET=YOURS3BUCKET
-SECRET_KEY=YOURSECRETKEYGOESHERE
+```dosini
+S3_BUCKET="YOURS3BUCKET"
+SECRET_KEY="YOURSECRETKEYGOESHERE"
 ```
 
-When your application loads, these variables will be available in `ENV`:
+As early as possible in your application, import and configure dotenv:
 
-```ruby
-config.fog_directory  = ENV['S3_BUCKET']
+```javascript
+require('dotenv').config()
+console.log(process.env) // remove this after you've confirmed it is working
+```
+
+.. or using ES6?
+
+```javascript
+import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+dotenv.config()
+import express from 'express'
+```
+
+That's it. `process.env` now has the keys and values you defined in your `.env` file:
+
+```javascript
+require('dotenv').config()
+
+...
+
+s3.getBucketCors({Bucket: process.env.S3_BUCKET}, function(err, data) {})
 ```
 
 ## 🚀 Deploying (.env.vault)
@@ -70,7 +60,7 @@ This will create an encrypted `.env.vault` file along with a `.env.keys` file co
 heroku config:set DOTENV_KEY=<key string from .env.keys>
 ```
 
-Commit your .env.vault file safely to code and deploy. Your .env.vault fill be decrypted on boot, its environment variables injected, and your app work as expected.
+Commit your .env.vault file safely to code and deploy. Your .env.vault fill be decrypted on boot, it’s environment variables injected, and your app work as expected.
 
 ## 🌴 Manage Multiple Environments
 
@@ -130,7 +120,7 @@ Set the production `DOTENV_KEY` on your server, recommit your `.env.vault` file 
 
 #### What happens if `DOTENV_KEY` is not set?
 
-[dotenv-vault-ruby](https://github.com/dotenv-org/dotenv-vault-ruby) gracefully falls back to [dotenv](https://github.com/bkeepers/dotenv) when `DOTENV_KEY` is not set. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
+It gracefully falls back to loading from your `.env` file. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
 
 #### Should I commit my `.env` file?
 
