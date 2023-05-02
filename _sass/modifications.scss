@@ -83,31 +83,6 @@ $white: #FFFFFF;
   background-position: top left;
   background-attachment: fixed;
 }
-.bg-still-gradient {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 70%;
-  height: 70%;
-
-  background: linear-gradient(58deg, #ffffff, #ffffff, #ffffff, #FAF4CF, #F5EA9F, #ffffff);
-  background-position: bottom left;
-  background-size: 200% 150%;
-  animation: sizingGradient 15s ease infinite;
-  background-repeat: no-repeat;
-  z-index: -1000;
-}
-@keyframes sizingGradient {
-  0% {
-    background-size: 200% 150%;
-  }
-  50% {
-    background-size: 150% 150%;
-  }
-  100% {
-    background-size: 200% 150%;
-  }
-}
 
 //
 // text
