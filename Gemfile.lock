@@ -8,6 +8,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.2)
       public_suffix (>= 2.0.2, < 6.0)
+    brotli (0.2.3)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
     cssminify2 (2.0.1)
@@ -43,6 +44,9 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-brotli (2.3.0)
+      brotli (~> 0.2.0)
+      jekyll (>= 3.0, < 5.0)
     jekyll-favicon (1.1.0)
       jekyll (>= 3.0, < 5.0)
       mini_magick (~> 4.11)
@@ -125,6 +129,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-brotli
   jekyll-favicon
   jekyll-feed
   jekyll-gzip
