@@ -100,7 +100,7 @@ First set a production value for when we deploy. I set it to **HELLO=Production*
 $ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666194964/Screen_Shot_2022-10-19_at_8.55.13_AM_ej1bk5.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-19_at_8.55.13_AM_ej1bk5.png" %}
 
 Then build your localized encrypted .env.vault file.
 
@@ -139,4 +139,4 @@ When Docker runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault fil
 
 It worked if you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666199740/Screen_Shot_2022-10-19_at_10.14.18_AM_zsnosk.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-19_at_10.14.18_AM_zsnosk.png" %}

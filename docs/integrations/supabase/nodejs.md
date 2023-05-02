@@ -84,7 +84,7 @@ supabase secrets set DOTENV_KEY=dotenv://:key_828fe6f34bf06d690ca21eab3c0d5556a8
 
 Once you've set your decryption key as a `Supabase` secret you can start interacting with it.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669975011/integrations/dotenv_vault_supabase_environment_variable_settings_iipewk.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_supabase_environment_variable_settings_iipewk.png" %}
 
 
 To do that, however, you will need to add the appropriate references for the `Supabase` client within your `index.js` file.
@@ -113,4 +113,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see the `Supabase` instance information displayed in your `CLI` logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669975011/integrations/dotenv_vault_supabase_logs_encrypted_loading_env_vault_ot0qan.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_supabase_logs_encrypted_loading_env_vault_ot0qan.png" %}

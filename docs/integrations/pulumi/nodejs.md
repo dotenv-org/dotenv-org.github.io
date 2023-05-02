@@ -117,7 +117,7 @@ Create a new trigger, if you don't have one yet and under the Configuration sect
 
 Under the Advanced section you will find the `Substitution variables` where you can list `_DOTENV_KEY` as the key and the decryption key you obtained earlier as the value field.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668584031/integrations/dotenv_vault_google_cloud_environment_variable_settings_wrgklc.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_google_cloud_environment_variable_settings_wrgklc.png" %}
 
 ## Commit and push
 
@@ -131,4 +131,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your `Google Cloud Build` logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669869508/integrations/dotenv_vault_pulumi_logs_encrypted_loading_env_vault_jjjtdn.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_pulumi_logs_encrypted_loading_env_vault_jjjtdn.png" %}

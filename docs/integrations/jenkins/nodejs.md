@@ -107,7 +107,7 @@ You can set it in a build step via the `Blue Ocean interface`, or the `Jenkinsfi
 
 Once you've chosen a preferred location, put `DOTENV_KEY` as the key and save the decryption key you obtained earlier for the value field.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1670994982/integrations/dotenv_vault_jenkins_environment_variable_settings_jndesv.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_jenkins_environment_variable_settings_jndesv.png" %}
 
 ## Commit and push
 
@@ -121,4 +121,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Jenkins logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1670994982/integrations/dotenv_vault_jenkins_logs_encrypted_loading_env_vault_pl1pqj.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_jenkins_logs_encrypted_loading_env_vault_pl1pqj.png" %}

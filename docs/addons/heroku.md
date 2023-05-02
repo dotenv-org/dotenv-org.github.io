@@ -15,7 +15,7 @@ Sync your secrets to Heroku when an environment variable is changed.
 
 Navigate to the add-ons page. Click Heroku. Then click Connect Heroku.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672117009/development-Dotenv_13_zmhxmk.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_13_zmhxmk.png" %}
 
 ##### Step2
 
@@ -27,7 +27,7 @@ That completes the steps to authorize Dotenv with Vercel.
 
 The last step is to select an app from the drop down. Choose the app and click Finish Configuration.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672117008/development-Dotenv_14_pwrnhc.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_14_pwrnhc.png" %}
 
 That's it! 🎉 Your secrets are now synced to Heroku and will continue to stay in sync when you modify your secrets.
 

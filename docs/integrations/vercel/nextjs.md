@@ -62,7 +62,7 @@ Visit your Vercel Project > Settings > Environment Variables.
 
 Set **DOTENV_KEY** to the value returned above.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666027615/integrations-vercel-envs_y43bwi.gif" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/integrations-vercel-envs_y43bwi.gif" %}
 
 ## 5. Commit and push
 
@@ -74,4 +74,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_fit,h_600,w_800/v1668184178/Screen_Shot_2022-11-11_at_8.28.40_AM_svdlil.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-11-11_at_8.28.40_AM_svdlil.png" %}

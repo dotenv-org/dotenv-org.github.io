@@ -8,4 +8,4 @@ Decryption support for .env.vault files has been added to Python. If you're usin
 
 Check it out at [python-dotenv-vault](https://github.com/dotenv-org/python-dotenv-vault) and tell your Python friends.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1667156804/Screen_Shot_2022-10-30_at_12.06.32_PM_yqfcwx.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-30_at_12.06.32_PM_yqfcwx.png" %}

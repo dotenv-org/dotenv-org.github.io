@@ -109,7 +109,7 @@ Visit your Vercel Project > Settings > Environment Variables.
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666027615/integrations-vercel-envs_y43bwi.gif" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/integrations-vercel-envs_y43bwi.gif" %}
 
 ## 6. Commit and push
 

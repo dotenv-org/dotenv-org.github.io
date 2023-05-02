@@ -77,7 +77,7 @@ ProTip: Note the ruby version. GitLab defaults to 2.5 but we need 2.6 or greater
 
 Commit those changes and push to GitLab. The CI will run and display 'Hello '.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666293919/Screen_Shot_2022-10-20_at_12.22.56_PM_wjv1db.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_12.22.56_PM_wjv1db.png" %}
 
 Next, we need to build our encrypted .env.vault file.
 
@@ -89,7 +89,7 @@ First set a CI value. Run **dotenv-vault open** to edit CI values.
 $ npx dotenv-vault open ci
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666294278/Screen_Shot_2022-10-20_at_12.30.24_PM_mxkz56.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_12.30.24_PM_mxkz56.png" %}
 
 Then build your localized encrypted .env.vault file.
 
@@ -114,7 +114,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 
 Then in GitLab, go to your project’s Settings > CI/CD and expand the Variables section. Then click 'Add variable'. [More details](https://docs.gitlab.com/ee/ci/variables/#add-a-cicd-variable-to-a-project)
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666303626/Screen_Shot_2022-10-20_at_3.05.38_PM_sdfeax.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_3.05.38_PM_sdfeax.png" %}
 <small>ProTip: Uncheck 'Protect variable' if you intend to use this on unprotected branches (the common case for CI/CD).</small>
 
 One last step, GitLab requires you additionally assign the variable. Update your .gitlab-ci.yml to the following.
@@ -140,4 +140,4 @@ When the build runs, it will recognize the DOTENV_KEY, decrypt the .env.vault fi
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666304043/Screen_Shot_2022-10-20_at_3.13.20_PM_cfylzk.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_3.13.20_PM_cfylzk.png" %}

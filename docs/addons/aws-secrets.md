@@ -15,19 +15,19 @@ Sync your secrets to AWS Secrets when an environment variable is changed.
 
 Navigate to the add-ons page. Click AWS Secrets. Then click Connect AWS Secrets.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672119659/development-Dotenv_15_mg2ty6.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_15_mg2ty6.png" %}
 
 ##### Step2
 
 On the next page, generate your [AWS IAM User](https://us-east-1.console.aws.amazon.com/iamv2/home#/users) and paste in the credentials.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672119659/development-Dotenv_16_vbnmf5.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_16_vbnmf5.png" %}
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672119659/IAM-Management-Console_rkcvqe.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/IAM-Management-Console_rkcvqe.png" %}
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672119659/IAM-Management-Console_1_ntzh25.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/IAM-Management-Console_1_ntzh25.png" %}
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672119659/IAM-Management-Console_2_coxt9d.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/IAM-Management-Console_2_coxt9d.png" %}
 
 Important: The AWS IAM user must have correct permissions. Below is an example. Modify for your security needs.
 
@@ -72,7 +72,7 @@ Important: The AWS IAM user must have correct permissions. Below is an example. 
 
 Lastly, set up the AWS Secrets config path and region.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1672119658/development-Dotenv_17_pmxu4z.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_17_pmxu4z.png" %}
 
 That's it! 🎉 Your secrets are now synced to AWS Secrets and will continue to stay in sync when you modify your secrets.
 
