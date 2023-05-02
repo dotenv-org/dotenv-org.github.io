@@ -1,4 +1,4 @@
-# www
+# dotenv-org.github.io
 
 Source code for www.dotenv.org
 
