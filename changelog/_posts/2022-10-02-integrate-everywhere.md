@@ -12,4 +12,4 @@ $ git commit -am "Add .env.vault"
 $ git push
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666490854/screely-1666490843091_ygumti.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/screely-1666490843091_ygumti.png" %}

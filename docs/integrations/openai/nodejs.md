@@ -85,7 +85,7 @@ DOTENV_KEY=dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=developmen
 set DOTENV_KEY=dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=development
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1670998701/integrations/dotenv_vault_openai_environment_variable_settings_avvv5p.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_openai_environment_variable_settings_avvv5p.png" %}
 
 ## Commit and push
 
@@ -99,4 +99,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see the OpenAI environment context printed in your CLI.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1670998701/integrations/dotenv_vault_openai_logs_encrypted_loading_env_vault_xpohma.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_openai_logs_encrypted_loading_env_vault_xpohma.png" %}

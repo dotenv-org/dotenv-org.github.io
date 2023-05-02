@@ -96,7 +96,7 @@ With the decryption key safely in your possession, it is time to navigate to you
 
 Under the Advanced section you will find Substitution variables where you can list `_DOTENV_KEY` as the key and the decryption key you obtained earlier as the value field.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668584031/integrations/dotenv_vault_google_cloud_environment_variable_settings_wrgklc.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_google_cloud_environment_variable_settings_wrgklc.png" %}
 
 ## Commit and push
 
@@ -108,4 +108,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Google Cloud Build logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669411688/integrations/dotenv_vault_google_cloud_express_logs_encrypted_loading_env_vault_yxh9gb.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_google_cloud_express_logs_encrypted_loading_env_vault_yxh9gb.png" %}

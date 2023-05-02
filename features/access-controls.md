@@ -14,6 +14,6 @@ redirect_from:
 
 <div class="row mb-5">
   <div class="col-lg-6 offset-lg-3">
-    <img src="https://res.cloudinary.com/dotenv-org/image/upload/v1673976249/manage-access-6d2809d78b5887b6d92be6bb584d5cf0a91e807b9160cb585fbf69570645e8ac_tqkjkr.gif" class="w-100 border border-4 rounded" />
+    <img src="/assets-www/img/cloudinary/manage-access-6d2809d78b5887b6d92be6bb584d5cf0a91e807b9160cb585fbf69570645e8ac_tqkjkr.gif" class="w-100 border border-4 rounded" />
   </div>
 </div>

@@ -17,7 +17,7 @@ $ npx dotenv-vault status
 local:    Press y (or any key) to open up the browser to view the dotenv-vault status page or q to exit: y
 local:    Opening status page... ⡿
 ```
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659328498/Screen_Shot_2022-07-31_at_9.34.36_PM_nteg84.png)
+![](/assets-www/img/cloudinary/Screen_Shot_2022-07-31_at_9.34.36_PM_nteg84.png)
 
 That's it!
 

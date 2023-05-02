@@ -150,7 +150,7 @@ Set a production value for when we deploy. I set it to HELLO=Production. Run dot
 $ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_800/v1666719268/Screen_Shot_2022-10-25_at_10.34.11_AM_vnz5fw.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-25_at_10.34.11_AM_vnz5fw.png" %}
 
 Then build your localized encrypted .env.vault file.
 
@@ -175,7 +175,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 
 Visit your Heroku Project's Settings > Reveal Config Vars > Environment Variables. Set DOTENV_KEY.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666175727/Screen_Shot_2022-10-19_at_4.01.32_PM_ibbdwq.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-19_at_4.01.32_PM_ibbdwq.png" %}
 
 ## Commit and push
 
@@ -187,4 +187,4 @@ When the app boots, it will recognize the `DOTENV_KEY`, decrypt the .env.vault f
 
 You'll know things worked correctly if you see the message 'Loading env from encrypted .env.vault' in your heroku logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666564831/Screen_Shot_2022-10-23_at_3.39.19_PM_pftocm.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-23_at_3.39.19_PM_pftocm.png" %}

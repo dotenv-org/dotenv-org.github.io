@@ -70,7 +70,7 @@ $ rails s
 
 It says **Hello Rails on fly** at [http://localhost:3000](http://localhost:3000).
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666257784/Screen_Shot_2022-10-20_at_2.52.41_PM_v2ovxx.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_2.52.41_PM_v2ovxx.png" %}
 
 
 ## Build .env.vault
@@ -81,7 +81,7 @@ First set a production value for when we deploy. I set it to **HELLO=Production*
 $ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666258002/Screen_Shot_2022-10-20_at_2.54.46_PM_zgadob.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_2.54.46_PM_zgadob.png" %}
 
 Then build your localized encrypted .env.vault file.
 

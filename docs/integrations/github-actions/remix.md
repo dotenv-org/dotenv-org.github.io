@@ -85,7 +85,7 @@ Visit your GitHub Project > Settings > Secrets > Actions and click 'New Reposito
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665956342/integrations-github-actions-secrets_df9kgo.gif" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/integrations-github-actions-secrets_df9kgo.gif" %}
 
 ## 6. Commit and push
 
@@ -97,4 +97,4 @@ When the CI runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault fil
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1665957597/Screen_Shot_2022-10-16_at_2.59.06_PM_y9n9sc.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-16_at_2.59.06_PM_y9n9sc.png" %}

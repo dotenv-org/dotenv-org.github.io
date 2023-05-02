@@ -107,7 +107,7 @@ To do that, navigate to your Project, then the Settings tab to reach the Environ
 
 Set as key `DOTENV_KEY` and as value the decryption key returned in the previous step `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production`.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669189757/integrations/dotenv_vault_vercel_environment_variable_settings_igagy0.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_vercel_environment_variable_settings_igagy0.png" %}
 
 ## Commit and push
 That's it!
@@ -120,4 +120,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your `Vercel` logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669995688/integrations/dotenv_vault_vite_logs_encrypted_loading_env_vault_fxf8sx.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_vite_logs_encrypted_loading_env_vault_fxf8sx.png" %}

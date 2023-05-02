@@ -12,5 +12,5 @@ It improves security by minimizing the chance of a nonce collision - which would
 
 It improves DX because it follows the principle of least surprise. You will see your .env.vault file change only after you've changed your values.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1668125581/smarter-build_kglslt.gif" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/smarter-build_kglslt.gif" %}
 

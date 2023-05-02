@@ -72,7 +72,7 @@ To do that, navigate to your Project, then the Site Settings tab to reach the En
 
 Set as key `DOTENV_KEY` and as value the decryption key returned in the previous step `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production`.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1669975011/integrations/dotenv_vault_gatsby_environment_variable_settings_dzihkx.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_gatsby_environment_variable_settings_dzihkx.png" %}
 
 ## Commit and push
 That's it!
@@ -85,4 +85,4 @@ If a `DOTENV_KEY` is not set when developing on `local` machine, for example, it
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your `Gatsby` logs.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1670974859/integrations/dotenv_vault_gatsby_logs_encrypted_loading_env_vault_ygpqf5.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_gatsby_logs_encrypted_loading_env_vault_ygpqf5.png" %}

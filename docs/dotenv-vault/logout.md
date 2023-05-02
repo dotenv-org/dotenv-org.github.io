@@ -24,8 +24,8 @@ local:    Waiting for logout and credential (.env.me) to be revoked... ⡿
 
 On the next screen, click 'Revoke'.
 
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659309637/Screen_Shot_2022-07-31_at_3.47.08_PM_rrrslv.png)
-![](https://res.cloudinary.com/dotenv-org/image/upload/c_scale,w_900/v1659307985/Screen_Shot_2022-07-31_at_3.48.41_PM_to1cwr.png)
+![](/assets-www/img/cloudinary/Screen_Shot_2022-07-31_at_3.47.08_PM_rrrslv.png)
+![](/assets-www/img/cloudinary/Screen_Shot_2022-07-31_at_3.48.41_PM_to1cwr.png)
 
 That's it!
 

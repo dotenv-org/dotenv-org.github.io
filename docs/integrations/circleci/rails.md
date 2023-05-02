@@ -55,7 +55,7 @@ First set a CI value. Run **dotenv-vault open** to edit CI values.
 $ npx dotenv-vault open ci
 ```
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666358400/Screen_Shot_2022-10-21_at_6.47.12_PM_fxfrzd.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-21_at_6.47.12_PM_fxfrzd.png" %}
 
 Then build your localized encrypted .env.vault file.
 
@@ -79,8 +79,8 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ```
 
 Then in Circle CI click projects settings
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666358069/Screen_Shot_2022-10-21_at_6.43.47_PM_hvbpmr.png" %} and Add Environment Variable
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666356075/Screen_Shot_2022-10-21_at_6.08.47_PM_lwhnw9.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-21_at_6.43.47_PM_hvbpmr.png" %} and Add Environment Variable
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-21_at_6.08.47_PM_lwhnw9.png" %}
 
 That’s it!
 
@@ -90,4 +90,4 @@ When the build runs, it will recognize the DOTENV_KEY, decrypt the .env.vault fi
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://res.cloudinary.com/dotenv-org/image/upload/v1666359120/Screen_Shot_2022-10-21_at_6.58.57_PM_fuz0zv.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-21_at_6.58.57_PM_fuz0zv.png" %}
