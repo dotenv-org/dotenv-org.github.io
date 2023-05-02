@@ -49,6 +49,8 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-gzip (2.5.1)
+      jekyll (>= 3.0, < 5.0)
     jekyll-minifier (0.1.10)
       cssminify2 (~> 2.0)
       htmlcompressor (~> 0.4)
@@ -125,6 +127,7 @@ DEPENDENCIES
   jekyll
   jekyll-favicon
   jekyll-feed
+  jekyll-gzip
   jekyll-minifier
   jekyll-redirect-from
   jekyll-seo-tag

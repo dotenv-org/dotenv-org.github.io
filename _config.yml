@@ -64,5 +64,6 @@ plugins:
   - jekyll-favicon
   - jekyll-feed
   - jemoji
+  - jekyll-gzip
 
 plugins_dir: ./_local_plugins
