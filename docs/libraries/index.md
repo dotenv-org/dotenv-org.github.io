@@ -109,7 +109,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="26" src="https://www.dotenv.org/assets/languages/rust-grayscale-973e1323015505af508f3a34a964f8e495917cba0091b9425e44c9feceb00eb2.png">
+        <img height="26" src="/assets-www/img/misc/rust.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/dotenv-rs/dotenv">https://github.com/dotenv-rs/dotenv</a>

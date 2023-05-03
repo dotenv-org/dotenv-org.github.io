@@ -60,7 +60,7 @@ Visit your Vercel Project > Settings > Environment Variables.
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
-{% include helpers/screenshot.html url="https://user-images.githubusercontent.com/46300090/221270962-670778f0-8cf2-4997-9d83-802e0b4d2f9b.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/misc/221270962-670778f0-8cf2-4997-9d83-802e0b4d2f9b.png" %}
 
 ## 6. Commit and push
 
@@ -72,4 +72,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 It worked if you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="https://user-images.githubusercontent.com/46300090/221258650-e5991d39-91cf-4ccf-a9cd-30ddd271918b.png" %}
+{% include helpers/screenshot.html url="/assets-www/img/misc/221258650-e5991d39-91cf-4ccf-a9cd-30ddd271918b.png" %}
