@@ -9,8 +9,10 @@ description: Load environment variables from encrypted .env.vault files, with No
 
 ```ruby
 # install locally (recommended)
-npm install dotenv --save
+npm install dotenv@16.1.0-rc1 --save
 ```
+
+(dotenv >=16.1 will include the ability to decrypt .env.vault files. Currently in rc1 candidate status)
 
 ## 🏗️ Usage (.env)
 
