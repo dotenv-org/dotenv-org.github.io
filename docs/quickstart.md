@@ -63,7 +63,7 @@ Next, let's use [dotenv](https://github.com/motdotla/dotenv) to customize the po
 
 We'll add dotenv to our app next, but if your app already has dotenv you can skip ahead to [Sync .env file](#sync-env-file).
 
-Install dotenv. [source](https://github.com/motdotla/dotenv#install)
+Install dotenv. [source](https://github.com/motdotla/dotenv#-install)
 
 ```
 # install locally (recommended)
@@ -188,7 +188,7 @@ $ heroku config:set DOTENV_KEY='dotenv://:key_1234@dotenv.org/vault/.env.vault?e
 We need to swap out `dotenv` for `dotenv-vault-core` so that we can decrypt the .env.vault payload on deploy. Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm env-vault-core --save
 ```
 
 And replace `require('dotenv')` with `require('dotenv-vault-core')`
