@@ -16,7 +16,7 @@ Open terminal, enter your project's root directory (where your .env.vault file i
 $ npx dotenv-vault open
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_8.53.10_AM_cgkgkk.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_8.53.10_AM_cgkgkk.png" %}
 
 <small>FYI: Not a developer? You can navigate to this page by visiting ui.dotenv.org.</small>
 
@@ -24,26 +24,26 @@ $ npx dotenv-vault open
 
 Click the 'Team' dropdown button and then click 'Manage access'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_2.10.17_PM_bdiezm.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_2.10.17_PM_bdiezm.png" %}
 
 ## Click Add Teammate
 
 On the next page, click 'Add Teammate'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_2.13.27_PM_rxvyll.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_2.13.27_PM_rxvyll.png" %}
 
 ## Enter Teammate's Email Address
 
 Enter your teammate's email address and click 'Add teammate'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_2.15.11_PM_l9rzrl.png" %}
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_4.58.59_PM_exusnj.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_2.15.11_PM_l9rzrl.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_4.58.59_PM_exusnj.png" %}
 
 ## Tell Your Teammate to Check Their Email
 
 They will receive an email with instructions to run dotenv-vault pull. They can also choose to log in.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_2.17.49_PM_djym8s.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_2.17.49_PM_djym8s.png" %}
 
 ## Teammate: Run dotenv-vault login
 
@@ -74,7 +74,7 @@ Jul 27 14:49 index.js
 ...
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv-me_bsffi2.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-me_bsffi2.png" %}
 
 ## Teammate: Run dotenv-vault pull
 
@@ -87,7 +87,7 @@ remote:   Securely pulling... done
 remote:   Securely pulled development (.env)
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/teammate-pull_zlk3hr.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/teammate-pull_zlk3hr.gif" %}
 
 ## Teammate: Run dotenv-vault push (optional)
 
@@ -99,7 +99,7 @@ $ npx dotenv-vault push
 remote:   Securely pushing (.env)... done
 remote:   Securely pulled development (.env)
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/teammate-push_m2r46u.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/teammate-push_m2r46u.gif" %}
 
 ## You: Run dotenv-vault pull (optional)
 
@@ -111,6 +111,6 @@ $ npx dotenv-vault pull
 remote:   Securely pulling... done
 remote:   Securely pulled development (.env)
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/teammate-pull_g5o4px.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/teammate-pull_g5o4px.gif" %}
 
 That's it! Thanks for using dotenv-vault with your teammates and friends.

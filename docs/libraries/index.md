@@ -109,7 +109,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="26" src="/assets-www/img/misc/rust.svg">
+        <img height="26" src="/assets/img/misc/rust.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/dotenv-rs/dotenv">https://github.com/dotenv-rs/dotenv</a>

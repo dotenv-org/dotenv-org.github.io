@@ -24,7 +24,7 @@ local:    Waiting for project vault (.env.vault) to be created... ⡿
 
 On the page that opens, name your project (typically prefilled for you), and enter your email address.
 
-![](/assets-www/img/cloudinary/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png)
+![](/assets/img/cloudinary/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png)
 
 #### 3. View .env.vault (optional)
 
@@ -41,7 +41,7 @@ Jul 28 18:09 .env.vault
 Jul 28 17:54 .gitignore
 ...
 ```
-![](/assets-www/img/cloudinary/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png)
+![](/assets/img/cloudinary/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png)
 
 That's it!
 

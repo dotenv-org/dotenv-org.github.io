@@ -83,7 +83,7 @@ container = container.WithEnvVariable("DOTENV_KEY", os.Getenv("DOTENV_KEY"))
 ```
 [Example](https://github.com/dotenv-org/integration-example-dagger-nodejs/blob/main/main.go).
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_dagger_environment_variable_settings_nbt7wi.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_dagger_environment_variable_settings_nbt7wi.png" %}
 
 ## Commit and push
 
@@ -97,4 +97,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Dagger logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_dagger_logs_encrypted_loading_env_vault_qjfjcm.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_dagger_logs_encrypted_loading_env_vault_qjfjcm.png" %}

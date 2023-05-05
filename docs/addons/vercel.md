@@ -15,21 +15,21 @@ Sync your secrets to Vercel when an environment variable is changed.
 
 Navigate to the add-ons page. Cick Add Vercel. Then click Connect Vercel.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Dotenv_2_wvimjt.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Dotenv_2_wvimjt.png" %}
 
 ##### Step2
 
 On the next page, generate your [Vercel API token](https://vercel.com/account/tokens) and paste it in.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_10_pgtiiz.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_10_pgtiiz.png" %}
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Tokens-_-Account-_-Dashboard-_-Vercel_1_e9nov2.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Tokens-_-Account-_-Dashboard-_-Vercel_1_e9nov2.png" %}
 
 #### Step3
 
 Lastly, choose which project to sync to and click Finish Configuration.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_12_wspgzn.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_12_wspgzn.png" %}
 
 That's it! 🎉 Your secrets are now synced to Vercel and will continue to stay in sync when you modify your secrets.
 

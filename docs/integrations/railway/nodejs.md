@@ -96,7 +96,7 @@ Visit your Railway Project's Environment Variables.
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/integrations-railway-nodejs_rwo40w.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/integrations-railway-nodejs_rwo40w.gif" %}
 
 ## Commit and push
 

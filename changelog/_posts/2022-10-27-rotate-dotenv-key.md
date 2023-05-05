@@ -10,7 +10,7 @@ Rotate your <strong>DOTENV_KEY</strong> with the following command:
 $ npx dotenv-vault rotatekey production
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/rotatekeys_axduqs.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/rotatekeys_axduqs.gif" %}
 
 Then:
 

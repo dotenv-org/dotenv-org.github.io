@@ -35,7 +35,7 @@ Jul 28 18:09 .env.vault
 Jul 28 17:54 .gitignore
 ...
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_10.00.34_AM_jg9dzq.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_10.00.34_AM_jg9dzq.png" %}
 
 That's it!
 

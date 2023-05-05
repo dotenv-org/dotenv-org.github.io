@@ -55,7 +55,7 @@ This will inject your environment variables before any real rendering is done by
 },
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_vercel_angular_build_command_overrides_pdpkze.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_vercel_angular_build_command_overrides_pdpkze.png" %}
 
 ## Build the Vault
 Make sure you are [logged in and in sync](/docs/tutorials/sync) with your Vault first then run `npx dotenv-vault build` from CLI in your project root.
@@ -89,7 +89,7 @@ To do that, navigate to your Project, then the Settings tab to reach the Environ
 
 Set as key `DOTENV_KEY` and as value the decryption key returned in the previous step `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production`.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_vercel_environment_variable_settings_igagy0.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_vercel_environment_variable_settings_igagy0.png" %}
 
 ## Commit and push
 That's it!
@@ -102,4 +102,4 @@ If a `DOTENV_KEY` is not set when developing on `local` machine, for example, it
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your `Vercel` logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_vercel_angular_logs_encrypted_loading_env_vault_mxygem.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_vercel_angular_logs_encrypted_loading_env_vault_mxygem.png" %}

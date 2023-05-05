@@ -19,7 +19,7 @@ local:    Press y (or any key) to open up the browser to view your project or q 
 local:    Opening project page... ⡿
 ```
 
-![](/assets-www/img/cloudinary/Screen_Shot_2022-07-31_at_5.28.08_PM_ms9hzz.png)
+![](/assets/img/cloudinary/Screen_Shot_2022-07-31_at_5.28.08_PM_ms9hzz.png)
 
 That's it!
 

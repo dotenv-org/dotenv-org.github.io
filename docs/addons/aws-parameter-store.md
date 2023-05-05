@@ -15,19 +15,19 @@ Sync your secrets to AWS Parameter Store when an environment variable is changed
 
 Navigate to the add-ons page. Click AWS Parameter Store. Then click Connect AWS Secrets.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_18_evhrln.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_18_evhrln.png" %}
 
 ##### Step2
 
 On the next page, generate your [AWS IAM User](https://us-east-1.console.aws.amazon.com/iamv2/home#/users) and paste in the credentials.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_16_vbnmf5.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_16_vbnmf5.png" %}
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/IAM-Management-Console_rkcvqe.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/IAM-Management-Console_rkcvqe.png" %}
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/IAM-Management-Console_1_ntzh25.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/IAM-Management-Console_1_ntzh25.png" %}
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/IAM-Management-Console_2_coxt9d.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/IAM-Management-Console_2_coxt9d.png" %}
 
 Important: The AWS IAM user must have correct permissions. Below is an example. Modify for your security needs.
 
@@ -57,11 +57,11 @@ Important: The AWS IAM user must have correct permissions. Below is an example. 
 
 Lastly, set up the AWS Parameter Store config path and region.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_19_mmgxnw.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_19_mmgxnw.png" %}
 
 If successful, you'll have a keys and values in AWS Parameter Store that looks like the following:
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/AWS-Systems-Manager-Parameter-Store_z4foxz.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/AWS-Systems-Manager-Parameter-Store_z4foxz.png" %}
 
 That's it! 🎉 Your secrets are now synced to AWS Parameter Store and will continue to stay in sync when you modify your secrets.
 

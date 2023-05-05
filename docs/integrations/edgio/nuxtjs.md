@@ -110,7 +110,7 @@ To do that, navigate to your Project, then the Environments tab, select `default
 
 Set as key `DOTENV_KEY` and as value the decryption key returned in the previous step `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production`.
 
-{% include helpers/screenshot.html url="/assets-www/img/misc/loggedinss.png" %}
+{% include helpers/screenshot.html url="/assets/img/misc/loggedinss.png" %}
 
 ## Commit and push
 
@@ -124,4 +124,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your `Edgio` logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/misc/build-nuxtjs-edgio.png" %}
+{% include helpers/screenshot.html url="/assets/img/misc/build-nuxtjs-edgio.png" %}

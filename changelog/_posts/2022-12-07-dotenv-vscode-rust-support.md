@@ -19,5 +19,5 @@ Dotenv VSCode now has syntax, auto-cloaking, auto-completion, and in-code secret
 * C#
 * Rust
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv-vscode_wvfyxn.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-vscode_wvfyxn.png" %}
 

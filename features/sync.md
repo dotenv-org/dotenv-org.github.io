@@ -12,6 +12,6 @@ title: "Sync your .env file securely between teammates"
 
 <div class="row mb-5">
   <div class="col-lg-6 offset-lg-3">
-    <img src="/assets-www/img/cloudinary/sync-c608d43eadd25bb8a017a136123673971500cb13ce9381fe397548f0dec8d7a0_kw0rwh.gif" class="w-100 border border-4 rounded" />
+    <img src="/assets/img/cloudinary/sync-c608d43eadd25bb8a017a136123673971500cb13ce9381fe397548f0dec8d7a0_kw0rwh.gif" class="w-100 border border-4 rounded" />
   </div>
 </div>

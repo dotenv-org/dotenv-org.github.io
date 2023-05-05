@@ -98,7 +98,7 @@ From there seek the Variables, Keys & Assets section and click the Add button un
 
 Put `DOTENV_KEY` as the key and save the decryption key you obtained earlier for the value field.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_buddy_environment_variable_settings_trkw18.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_buddy_environment_variable_settings_trkw18.png" %}
 
 ## Commit and push
 
@@ -112,4 +112,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Buddy logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_buddy_logs_encrypted_loading_env_vault_k2qxow.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_buddy_logs_encrypted_loading_env_vault_k2qxow.png" %}

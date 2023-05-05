@@ -14,6 +14,6 @@ redirect_from:
 
 <div class="row mb-5">
   <div class="col-lg-6 offset-lg-3">
-    <img src="/assets-www/img/cloudinary/personal-environment-variables-815d3000a2866922c53a45f4b83465f0e3571eaf49189e827127eb3cdc805c49_oiejhp.gif" class="w-100 border border-4 rounded" />
+    <img src="/assets/img/cloudinary/personal-environment-variables-815d3000a2866922c53a45f4b83465f0e3571eaf49189e827127eb3cdc805c49_oiejhp.gif" class="w-100 border border-4 rounded" />
   </div>
 </div>

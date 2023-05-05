@@ -74,7 +74,7 @@ Test that it is working locally.
 ```
 $ docker run -p 3000:3000 demo
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_4.42.53_PM_eacjcf.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-20_at_4.42.53_PM_eacjcf.png" %}
 
 It says **Hello Rails on docker** at [http://localhost:3000](http://localhost:3000).
 
@@ -86,7 +86,7 @@ First set a production value for when we deploy. I set it to **HELLO=Production*
 $ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-19_at_8.55.13_AM_ej1bk5.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-19_at_8.55.13_AM_ej1bk5.png" %}
 
 Then build your localized encrypted .env.vault file.
 
@@ -114,7 +114,7 @@ Set it for Docker run. The important part here is the `-e` flag.
 ```
 $ docker build -t demo . && docker run -e DOTENV_KEY="dotenv://:key1234@dotenv.org/vault/.env.vault?environment=production" -p 3000:3000 --init demo
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_4.59.50_PM_idxvjy.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-20_at_4.59.50_PM_idxvjy.png" %}
 
 
 That's it!
@@ -125,4 +125,4 @@ When Docker runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault fil
 
 It worked if you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_5.06.44_PM_xwrwj8.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-20_at_5.06.44_PM_xwrwj8.png" %}
