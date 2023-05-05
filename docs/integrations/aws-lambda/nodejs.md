@@ -122,7 +122,7 @@ Underneath the `Compute radio` selection, you will find the `Environment variabl
 
 Lastly, pick `Plaintext` as `type` and confirm your settings by pressing the `Update environment` button.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_aws_lambda_environment_variable_settings_mjy96l.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_aws_lambda_environment_variable_settings_mjy96l.png" %}
 
 ## Commit and push
 
@@ -136,4 +136,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your AWS Lambda logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_aws_lambda_logs_encrypted_loading_env_vault_zh1n5i.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_aws_lambda_logs_encrypted_loading_env_vault_zh1n5i.png" %}

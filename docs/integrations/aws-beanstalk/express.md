@@ -95,7 +95,7 @@ Once the `Edit action` is displayed, locate the `Environment variables` section,
 
 Select `Plaintext` as type and confirm your changes with the `Done` button at the bottom right corner of the panel.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_aws_beanstalk_environment_variable_settings_gvvty4.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_aws_beanstalk_environment_variable_settings_gvvty4.png" %}
 
 ## Commit and push
 
@@ -109,4 +109,4 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `Loading .env from encrypted .env.vault` in your AWS Beanstalk logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_aws_beanstalk_logs_encrypted_loading_env_vault_kfl2xv.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_aws_beanstalk_logs_encrypted_loading_env_vault_kfl2xv.png" %}

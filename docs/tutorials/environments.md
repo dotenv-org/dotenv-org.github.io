@@ -16,7 +16,7 @@ Open terminal, enter your project's root directory (where your .env.vault file i
 $ npx dotenv-vault open
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_8.53.10_AM_cgkgkk.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_8.53.10_AM_cgkgkk.png" %}
 
 <small>FYI: Not a developer? You can navigate to this page by visiting ui.dotenv.org.</small>
 
@@ -24,13 +24,13 @@ $ npx dotenv-vault open
 
 Click the environment dropdown button labeled 'development' and then click 'production'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_8.53.16_AM_pukxin.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_8.53.16_AM_pukxin.png" %}
 
 ## Edit Your Production Environment Variables
 
 Click the edit icon next to the environment variable you want to edit.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_9.01.21_AM_vcrkkd.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_9.01.21_AM_vcrkkd.png" %}
 
 <small>FYI: You'll notice that your production environment variable names are already setup but with blank values. This is by design. Each time you add an environment variable to your .env file it gets copied over to your other environments.</small>
 
@@ -38,7 +38,7 @@ Click the edit icon next to the environment variable you want to edit.
 
 Enter a value and click 'Save changes'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_9.24.43_AM_hqarvz.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_9.24.43_AM_hqarvz.png" %}
 
 ## Pull .env.production
 
@@ -66,7 +66,7 @@ Jul 28 18:09 .env.production
 Jul 28 17:54 .gitignore
 ...
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_9.44.05_AM_fqavup.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_9.44.05_AM_fqavup.png" %}
 
 ## Push .env.production file (optional)
 
@@ -78,7 +78,7 @@ $ npx dotenv-vault push production
 remote:   Securely pushing production (.env.production)... done
 remote:   Securely pushed production (.env.production)
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/push-production_gdegey.gif" %}
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-08-04_at_10.11.25_AM_llgwx9.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/push-production_gdegey.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-08-04_at_10.11.25_AM_llgwx9.png" %}
 
 That's it! Thanks for using dotenv-vault with multiple environments.

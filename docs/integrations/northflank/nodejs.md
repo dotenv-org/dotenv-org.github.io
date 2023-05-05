@@ -115,7 +115,7 @@ Run `npx dotenv-vault open production` so you can start editing production value
 ```Java
 npx dotenv-vault open production
 ```
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_environment_variable_interface_production_nh0bop.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_environment_variable_interface_production_nh0bop.png" %}
 
 When you are done tinkering, pull the latest Vault version and build your encrypted local `.env.vault` file by running `npx dotenv-vault build`.
 
@@ -142,7 +142,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 
 Copy over the key and jump to your Northflank project. Hop on to the Settings panel and then set `DOTENV_KEY` as key and your decryption key as value `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production` as value.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_northflank_environment_variable_settings_mrfduj.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_northflank_environment_variable_settings_mrfduj.png" %}
 
 ## Commit and push
 
@@ -156,5 +156,5 @@ If a `DOTENV_KEY` is not set when developing on local machine, for example, it w
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Northflank logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_northflank_logs_encrypted_loading_env_vault_rrmyjv.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_northflank_logs_encrypted_loading_env_vault_rrmyjv.png" %}
 ---

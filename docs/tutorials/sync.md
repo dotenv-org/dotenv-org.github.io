@@ -31,7 +31,7 @@ $ npx dotenv-vault new
 
 On the page that opens, name your project (typically prefilled for you), and enter your email address.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png" %}
 
 ## View .env.vault file (optional)
 
@@ -53,7 +53,7 @@ Jul 27 14:48 package-lock.json
 Jul 27 14:12 package.json
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png" %}
 
 ## Run dotenv-vault login
 
@@ -67,7 +67,7 @@ $ npx dotenv-vault login
 
 On the next screen, follow the login process and click 'Log in'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv-vault-login-2_vdb9sq.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-vault-login-2_vdb9sq.png" %}
 
 ## View .env.me file (optional)
 
@@ -89,7 +89,7 @@ Jul 27 14:48 package-lock.json
 Jul 27 14:12 package.json
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv-me_bsffi2.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-me_bsffi2.png" %}
 
 ## Run dotenv-vault push
 
@@ -118,6 +118,6 @@ Let's check out the UI. Run dotenv-vault open.
 $ npx dotenv-vault open
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv-vault-ui_ep5nrs.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-vault-ui_ep5nrs.png" %}
 
 That's it! Thanks for using dotenv-vault.

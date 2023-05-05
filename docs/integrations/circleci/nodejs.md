@@ -82,7 +82,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 
 With the decryption key safely in your possession, it is time for you to head over to the CircleCI project settings. From there seek the Environment Variables section and click the Add Environment Variable button to begin the process. Put `DOTENV_KEY` as the key and save the decryption key you obtained earlier for the value field.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_circleci_environment_variable_settings_uu4bex.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_circleci_environment_variable_settings_uu4bex.png" %}
 
 ## Commit and push
 
@@ -94,4 +94,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your CircleCI logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_circleci_encrypted_loading_env_vault_ouevqi.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_circleci_encrypted_loading_env_vault_ouevqi.png" %}

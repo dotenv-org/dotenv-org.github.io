@@ -27,7 +27,7 @@ Example:
 DOTENV_KEY='dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production,dotenv://:key_5678@dotenv.org/vault/.env.vault?environment=production'
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/rotatekeys_axduqs.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/rotatekeys_axduqs.gif" %}
 
 #### 2. Append the new DOTENV_KEY
 

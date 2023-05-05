@@ -16,7 +16,7 @@ Open terminal, enter your project's root directory (where your .env.vault file i
 $ npx dotenv-vault build
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/npx-build_qqcbcb.gif" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/npx-build_qqcbcb.gif" %}
 
 Your `.env.vault` file should now look something like this.
 

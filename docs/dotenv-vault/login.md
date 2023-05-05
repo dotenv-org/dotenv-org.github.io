@@ -24,7 +24,7 @@ local:    Waiting for login and credential (.env.me) to be generated... ⡿
 
 On the next screen, follow the login process and click 'Log in'.
 
-![](/assets-www/img/cloudinary/dotenv-vault-login-2_vdb9sq.png)
+![](/assets/img/cloudinary/dotenv-vault-login-2_vdb9sq.png)
 
 #### 3. View .env.me (optional)
 
@@ -42,7 +42,7 @@ Jul 28 18:09 .env.vault
 Jul 28 17:54 .gitignore
 ...
 ```
-![](/assets-www/img/cloudinary/dotenv-me_bsffi2.png)
+![](/assets/img/cloudinary/dotenv-me_bsffi2.png)
 
 That's it!
 

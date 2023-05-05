@@ -73,7 +73,7 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=ci
 ## Set deployment
 Keep the key you obtained in the previous step safe for now and navigate to your Bitbucket project in the mean time. Once you are there move to Repository settings, then Repository variables at the bottom. In the Repository variables panel, add `DOTENV_KEY` in the key field and the decryption key you stored earlier as its value.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_bitbucket_environment_variable_settings_c4ofat.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_bitbucket_environment_variable_settings_c4ofat.png" %}
 
 ## Commit and push
 
@@ -85,4 +85,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Bitbucket logs.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/dotenv_vault_bitbucket_logs_encrypted_loading_env_vault_hzdez2.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_bitbucket_logs_encrypted_loading_env_vault_hzdez2.png" %}

@@ -17,7 +17,7 @@ It can become a chore to run `npx dotenv-vault build` each time you are ready to
 
 Navigate to the add-ons tab. Click GitHub. Then click Add and follow the prompts.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_3_omsmdq.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_3_omsmdq.png" %}
 
 ##### Step2
 
@@ -25,7 +25,7 @@ You will be redirect to GitHub's website. Follow the OAuth flow.
 
 That completes the steps to authorize Dotenv with GitHub.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_4_rcd5d9.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_4_rcd5d9.png" %}
 
 ##### Step3
 
@@ -33,12 +33,12 @@ The last step is to select the organization and repository. Choose your organiza
 
 Then set the base branch. In most cases, this is **master** or **main**.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_5_kwwspz.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_5_kwwspz.png" %}
 
 Once that is complete, you will receive a generated pull request on that repository. It will look something like this:
 
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-12-23_at_2.11.29_PM_gr1cwu.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-12-23_at_2.11.29_PM_gr1cwu.png" %}
 
 That's it!
 

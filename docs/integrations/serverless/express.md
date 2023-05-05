@@ -79,7 +79,7 @@ Set a production value for when we deploy. I set it to HELLO=Production. Run **d
 $ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-20_at_2.54.46_PM_zgadob.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-20_at_2.54.46_PM_zgadob.png" %}
 
 Then build your localized encrypted .env.vault file.
 

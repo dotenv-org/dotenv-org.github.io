@@ -19,7 +19,7 @@ Connecting Dotenv to Slack takes just a couple clicks, instantly notifying your 
 
 Navigate to the add-ons tab. Click Slack. Then click Connect to Slack and follow the prompts.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_cnnle8.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_cnnle8.png" %}
 
 ##### Step2
 
@@ -27,7 +27,7 @@ You will be redirected to Slack's website. Select your organization (top right) 
 
 That completes the steps to authorize Dotenv with Slack.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Dotenv-development-is-requesting-permission-to-access-the-dotenv-Slack-workspace-dotenv-Slack_vwbe0v.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Dotenv-development-is-requesting-permission-to-access-the-dotenv-Slack-workspace-dotenv-Slack_vwbe0v.png" %}
 
 ##### Step3
 
@@ -37,7 +37,7 @@ The last step is to select a channel. Enter your Channel ID and then click Finis
 
 You should receive a notification in your Slack that Dotenv is configured 🎉.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/development-Dotenv_2_bnb5uv.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/development-Dotenv_2_bnb5uv.png" %}
 
 **ProTip:** If you do not receive the notification that Slack is configured correctly, you might need to additionally add the Dotenv app to your Slack. Type /add app in your Slack channel and then search for Dotenv and add it.
 

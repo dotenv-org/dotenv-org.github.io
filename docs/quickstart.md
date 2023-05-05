@@ -55,7 +55,7 @@ $ node index.js
 
 Visit [localhost:3000](http://localhost:3000) and you will see "Hello World".
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screenshot_2023-04-01_at_7.55.10_AM_wyu6en.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screenshot_2023-04-01_at_7.55.10_AM_wyu6en.png" %}
 
 Next, let's use [dotenv](https://github.com/motdotla/dotenv) to customize the port and greeting.
 
@@ -105,7 +105,7 @@ Restart our web server.
 $ node index.js
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screenshot_2023-04-01_at_8.15.30_AM_tjdju0.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screenshot_2023-04-01_at_8.15.30_AM_tjdju0.png" %}
 
 Now it says 'Bonjour World'. Cool! We're ready to backup and sync our `.env` file.
 
@@ -134,7 +134,7 @@ $ npx dotenv-vault pull
 
 That's it! We synced our .env file.
 
-{% include helpers/videoplayer.html mp4="/assets-www/img/cloudinary/dotenv-vault-sync-video_yutprj.mp4" webm="/assets-www/img/cloudinary/dotenv-vault-sync-video_yutprj.webm" poster="/assets-www/img/cloudinary/dotenv-vault-sync-video_yutprj.gif" %}
+{% include helpers/videoplayer.html mp4="/assets/img/cloudinary/dotenv-vault-sync-video_yutprj.mp4" webm="/assets/img/cloudinary/dotenv-vault-sync-video_yutprj.webm" poster="/assets/img/cloudinary/dotenv-vault-sync-video_yutprj.gif" %}
 
 ## 🌴 Manage environments
 
@@ -146,7 +146,7 @@ $ npx dotenv-vault open production
 
 In the UI, we are going to delete the `PORT` environment variable. We will rely on Heroku to fill that on deploy. We'll edit the `GREETING` environment variable to "Hello Production" so that we can recognize it on deploy.
 
-{% include helpers/videoplayer.html mp4="/assets-www/img/cloudinary/npx-dotenv-vault-open_h70feb.mp4" webm="/assets-www/img/cloudinary/npx-dotenv-vault-open_h70feb.webm" poster="/assets-www/img/cloudinary/npx-dotenv-vault-open_h70feb.gif" %}
+{% include helpers/videoplayer.html mp4="/assets/img/cloudinary/npx-dotenv-vault-open_h70feb.mp4" webm="/assets/img/cloudinary/npx-dotenv-vault-open_h70feb.webm" poster="/assets/img/cloudinary/npx-dotenv-vault-open_h70feb.gif" %}
 
 ## 🚀 Deploy .env.vault
 
@@ -231,4 +231,4 @@ That's it! The `DOTENV_KEY` securely decrypts our .env.vault file at runtime and
 
 This is safer than syncing our secrets to third-parties where they could leak. Plus we get a single source of truth. Make a change in the UI, run the build command, and redeploy. It's that simple to manage your secrets with dotenv-vault.
 
-{% include helpers/videoplayer.html mp4="/assets-www/img/cloudinary/deploy-encrypted-vault_shdiav.mp4" webm="/assets-www/img/cloudinary/deploy-encrypted-vault_shdiav.webm" poster="/assets-www/img/cloudinary/deploy-encrypted-vault_shdiav.gif" %}
+{% include helpers/videoplayer.html mp4="/assets/img/cloudinary/deploy-encrypted-vault_shdiav.mp4" webm="/assets/img/cloudinary/deploy-encrypted-vault_shdiav.webm" poster="/assets/img/cloudinary/deploy-encrypted-vault_shdiav.gif" %}

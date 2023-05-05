@@ -10,5 +10,5 @@ Update to <strong>0.10.0</strong> or greater to support key rotation in Ruby and
 
 [Pull Request](https://github.com/dotenv-org/dotenv-vault-ruby/pull/2)
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-11-18_at_10.12.52_AM_cobxaf.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-11-18_at_10.12.52_AM_cobxaf.png" %}
 

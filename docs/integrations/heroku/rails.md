@@ -72,7 +72,7 @@ Visit your Heroku Project's Environment Variables under settings of your heroku 
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-19_at_4.01.32_PM_ibbdwq.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-19_at_4.01.32_PM_ibbdwq.png" %}
 
 ## Commit and push
 

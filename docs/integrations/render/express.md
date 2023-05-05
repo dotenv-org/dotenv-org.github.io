@@ -62,7 +62,7 @@ $ node app.js
 Example app listening on port 3001!
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/screely-1666468252631_nzhntw.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/screely-1666468252631_nzhntw.png" %}
 
 Next, we need to build our encrypted .env.vault file.
 
@@ -74,7 +74,7 @@ First set a production value. Run **dotenv-vault open** to edit production value
 $ npx dotenv-vault open production
 ```
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-22_at_12.54.00_PM_drxdvn.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-22_at_12.54.00_PM_drxdvn.png" %}
 
 Then build your localized encrypted .env.vault file.
 
@@ -99,11 +99,11 @@ dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 
 Then in Render click Project Settings > Environment > Add Environment Variable.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/screely-1666469242648_bdrnzn.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/screely-1666469242648_bdrnzn.png" %}
 
 Enter your DOTENV_KEY and save changes.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-22_at_1.09.50_PM_r4nhpl.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-22_at_1.09.50_PM_r4nhpl.png" %}
 
 That’s it!
 
@@ -113,4 +113,4 @@ When the build runs, it will recognize the DOTENV_KEY, decrypt the .env.vault fi
 
 You will know it worked when you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-22_at_1.26.32_PM_qpt22h.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-22_at_1.26.32_PM_qpt22h.png" %}

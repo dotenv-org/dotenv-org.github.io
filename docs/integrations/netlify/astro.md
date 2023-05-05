@@ -62,7 +62,7 @@ Visit your Netlify Project > Settings > Build & Deploy > Environment.
 
 Set **DOTENV_KEY** to the value returned in step 4.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-17_at_10.10.46_PM_hwrkoq.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-17_at_10.10.46_PM_hwrkoq.png" %}
 
 ## 6. Commit and push
 
@@ -74,4 +74,4 @@ When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault 
 
 It worked if you see the message 'Loading env from encrypted .env.vault'.
 
-{% include helpers/screenshot.html url="/assets-www/img/cloudinary/Screen_Shot_2022-10-17_at_10.11.33_PM_yka8rn.png" %}
+{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-10-17_at_10.11.33_PM_yka8rn.png" %}
