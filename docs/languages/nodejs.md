@@ -62,7 +62,7 @@ This will create an encrypted `.env.vault` file along with a `.env.keys` file co
 heroku config:set DOTENV_KEY=<key string from .env.keys>
 ```
 
-Commit your .env.vault file safely to code and deploy. Your .env.vault fill be decrypted on boot, it’s environment variables injected, and your app work as expected.
+Commit your .env.vault file safely to code and deploy. Your .env.vault fill be decrypted on boot, its environment variables injected, and your app work as expected.
 
 ## 🌴 Manage Multiple Environments
 
