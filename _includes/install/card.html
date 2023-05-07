@@ -12,6 +12,13 @@
         </a>
       </li>
       <li class="nav-item">
+        <a class="nav-link link-dark text-center rounded-0 border-0" id="list-windows-list" data-bs-toggle="list" href="#list-windows" role="tab" aria-controls="list-windows">
+          {% include icons/windows.html width="30" %}
+          <div class="d-block pt-2">Windows</div>
+        </a>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link link-dark text-center rounded-0 border-0" id="list-nodejs-list" data-bs-toggle="list" href="#list-nodejs" role="tab" aria-controls="list-nodejs">
           {% include icons/nodejs.html width="30" %}
           <div class="d-block pt-2">NodeJS</div>
@@ -33,7 +40,28 @@
             {% include icons/clipboard.html width="20" %}
           </button>
         </div>
+      </div>
 
+      <div class="tab-pane show" id="list-windows" role="tabpanel" aria-labelledby="list-windows-list">
+        <p class="text-center">Download the appropriate installer for your Windows installation.</p>
+
+        <div class="row mb-3">
+          <div class="col">
+            <div class="d-grid">
+              <a href="https://dotenv-vault-assets.dotenv.org/channels/stable/dotenv-vault-x86.exe" class="btn btn-info btn-lg">
+                <span class="fw-semibold">32-bit installer</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="d-grid">
+              <a href="https://dotenv-vault-assets.dotenv.org/channels/stable/dotenv-vault-x64.exe" class="btn btn-info btn-lg">
+                <span class="fw-semibold">64-bit installer</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="tab-pane" id="list-nodejs" role="tabpanel" aria-labelledby="list-nodejs-list">
