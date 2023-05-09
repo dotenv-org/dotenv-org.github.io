@@ -60,5 +60,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-gzip
+  - jekyll-loading-lazy
 
 plugins_dir: ./_local_plugins
