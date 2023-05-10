@@ -15,7 +15,15 @@ Usage:
 {% endcapture %}
 
 {% if loading == nil or loading == ''  %}
-<img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
+  {% if width == nil or width == '' %}
+    <img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
+  {% else %}
+    <img src="/{{ path }}" width="{{ width }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
+  {% endif %}
 {% else %}
-<img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
+  {% if width == nil or width == '' %}
+    <img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
+  {% else %}
+    <img src="/{{ path }}" width="{{ width }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
+  {% endif %}
 {% endif %}
