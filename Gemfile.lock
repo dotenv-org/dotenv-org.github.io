@@ -66,6 +66,9 @@ GEM
       uglifier (~> 4.1)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
+    jekyll-responsive-image (1.6.0)
+      jekyll (>= 2.0, < 5.0)
+      rmagick (>= 2.0, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
     jekyll-seo-tag (2.8.0)
@@ -113,6 +116,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
+    rmagick (4.3.0)
     rouge (4.1.0)
     safe_yaml (1.0.5)
     sass-embedded (1.60.0)
@@ -139,6 +143,7 @@ DEPENDENCIES
   jekyll-loading-lazy
   jekyll-minifier
   jekyll-redirect-from
+  jekyll-responsive-image
   jekyll-seo-tag
   jekyll-sitemap
   jekyll-timeago
