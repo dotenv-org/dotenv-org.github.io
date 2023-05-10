@@ -15,7 +15,7 @@ Usage:
 {% endcapture %}
 
 {% if loading == nil or loading == ''  %}
-<img src="/{{ path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
+<img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
 {% else %}
-<img src="/{{ path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
+<img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
 {% endif %}
