@@ -17,13 +17,17 @@ Usage:
 {% if loading == nil or loading == ''  %}
   {% if width == nil or width == '' %}
     <img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
-  {% else %}
+  {% elsif height == nil or height == '' %}
     <img src="/{{ path }}" width="{{ width }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
+  {% else %}
+    <img src="/{{ path }}" width="{{ width }}" height="{{ height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="lazy">
   {% endif %}
 {% else %}
   {% if width == nil or width == '' %}
     <img src="/{{ path }}" width="{{ original.width }}" height="{{ original.height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
-  {% else %}
+  {% elsif height == nil or height == '' %}
     <img src="/{{ path }}" width="{{ width }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
+  {% else %}
+    <img src="/{{ path }}" width="{{ width }}" height="{{ height }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" class="{{ class }}" loading="{{ loading }}">
   {% endif %}
 {% endif %}
