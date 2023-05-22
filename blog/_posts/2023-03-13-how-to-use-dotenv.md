@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: blog
 author: mot
 title: "How to use dotenv"
 excerpt: "Learn dotenv in 2 minutes. You can learn the basics of dotenv in just 2 minutes. It really is that straightforward."
 ---
 
-We are going to kick off our very first blog post with the very basics – how to use dotenv.
+We are going to kick off our first blog post with the basics – how to use dotenv.
 
 ## Create your project
 
