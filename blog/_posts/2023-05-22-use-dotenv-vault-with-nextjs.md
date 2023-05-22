@@ -42,6 +42,8 @@ Create a `.env` file in the root of the project.
 NEXT_PUBLIC_EDGE_HELLO="Universe"
 ```
 
+<div class="alert alert-info">ⓘ Note that the environment variable is prefaced with NEXT_PUBLIC_. Vercel's infrastructure requires this for injected secrets at build time.</div>
+
 Replace `pages/api/location.js` with the following code.
 
 ```
@@ -72,6 +74,9 @@ Build your `.env.vault` file from your `.env` file.
 ```
 $ dotenv-vault local build
 ```
+<div class="alert alert-info">ⓘ Note that we are using the local commands here. You can also use the cloud commands by removing the local command. For example: dotenv-vault build</div>
+
+## Run with DOTENV_KEY
 
 That created a `.env.vault` file and `.env.keys` file. Commit `.env.vault` safely to code. Do NOT commit `.env.keys` to code.
 
@@ -81,7 +86,7 @@ Inspect your `.env.keys` and use the value to run your application with your `.e
 $ DOTENV_KEY="dotenv://:key_388c9837f8dac11aa5907e2f62e51838d1951cf0641b6e8690c7e1fdba8d7291@dotenv.local/vault/.env.vault?environment=development" npm run dev
 ```
 
-Run `npm run dev` and visit [localhost:3000](http://localhost:3000). It should still say "Hello, Universe" but now it is loading from your `.env.vault`.
+Visit [localhost:3000](http://localhost:3000). It should still say "Hello, Universe" but now it is loading from your encrypted `.env.vault`.
 
 ## Set up production
 
