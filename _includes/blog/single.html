@@ -1,21 +1,30 @@
-<div class="container mb-5 pb-5">
-  <div class="row mt-3 mb-5">
-    <div class="col-lg-8 offset-lg-2 text-center">
-      <a class="link-offset-3" href="/blog">&larr; back to blog</a>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-lg-8 offset-lg-2 text-start">
+      <a class="link-offset-3 ps-3" href="/blog">&larr; back to blog</a>
     </div>
   </div>
   <div class="row mb-3">
     <div class="col-lg-8 offset-lg-2">
-      <p class="font-monospace fs-6 mb-1 text-center">
-        {{ page.date | date: "%b %d,%Y" }}
-      </p>
-      <h1 class="font-monospace fw-bold fs-4 my-2 text-center">
-        {{ page.title }}
-      </h1>
-
-      <div class="row">
-        <div class="col-lg-10 offset-lg-1">
-          {{ content }}
+      <h1 class="display-4 px-3 fw-extrabold my-4 lh-1">{{ page.title }}</h1>
+      <img src="{{ page.cover }}" class="img-fluid rounded-5 my-4" width="1200" height="672" alt="cover image">
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-lg-8 offset-lg-2">
+      <article class="px-lg-5">
+        {{ content }}
+      </article>
+      <div class="mt-5 px-lg-5">
+        <div class="row">
+          <div class="col col-auto">
+            <p class="fw-semibold text-secondary">
+              {{ page.date | date: "%b %d, %Y" }}
+            </p>
+          </div>
+          <div class="col">
+            <hr/>
+          </div>
         </div>
       </div>
     </div>
