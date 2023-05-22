@@ -2,6 +2,7 @@
 layout: blog
 author: mot
 title: "How to use dotenv"
+cover: "/assets/img/blog/blog-1.png"
 excerpt: "Learn dotenv in 2 minutes. You can learn the basics of dotenv in just 2 minutes. It really is that straightforward."
 ---
 

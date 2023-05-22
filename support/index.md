@@ -8,8 +8,9 @@ redirect_from:
 <div class="container">
   <div class="row">
     <div class="col-lg-10 offset-lg-1">
-      <h3 class="text-center h1 mt-5 fw-bold">Get Support</h3>
-      <h5 class="text-center text-secondary mb-3">Documentation, Issues, and Email Support (fastest)</h5>
+      <h1 class="display-1 fw-extrabold mt-5 lh-1">Help & Support</h1>
+      <p class="lead fw-medium mt-1">Documentation, Issues, and Email Support (fastest)</p>
+
       <div class="card-group">
       <div class="card">
         <div class="card-body">
