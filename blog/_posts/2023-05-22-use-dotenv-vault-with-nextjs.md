@@ -25,14 +25,12 @@ $ npm install dotenv@16.1.0-rc2 --save
 Modify your scripts in `package.json`
 
 ```json
-// package.json
-...
-  "scripts": {
-    "dev": "node -r dotenv/config ./node_modules/.bin/next dev",
-    "build": "node -r dotenv/config ./node_modules/.bin/next build",
-    "start": "node -r dotenv/config ./node_modules/.bin/next start",
-    "lint": "node -r dotenv/config ./node_modules/.bin/next lint"
-  },
+"scripts": {
+  "dev": "node -r dotenv/config ./node_modules/.bin/next dev",
+  "build": "node -r dotenv/config ./node_modules/.bin/next build",
+  "start": "node -r dotenv/config ./node_modules/.bin/next start",
+  "lint": "node -r dotenv/config ./node_modules/.bin/next lint"
+},
 ```
 
 Create a `.env` file in the root of the project.
