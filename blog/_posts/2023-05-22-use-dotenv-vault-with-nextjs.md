@@ -2,7 +2,7 @@
 layout: blog
 author: mot
 title: "Use dotenv-vault with Vercel Edge"
-cover: "/assets/img/blog/blog-2.png"
+image: "/assets/img/blog/blog-2.png"
 excerpt: "Learn how to use encrypted .env.vault files with Vercel Edge"
 ---
 

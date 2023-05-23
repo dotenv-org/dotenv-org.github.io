@@ -2,7 +2,7 @@
 layout: blog
 author: mot
 title: "Dotenv Vault vs Doppler: A head-to-head comparison"
-cover: "/assets/img/blog/vault-vs-doppler/dotenv-vault-vs-doppler-cover.png"
+image: "/assets/img/blog/vault-vs-doppler/dotenv-vault-vs-doppler-cover.png"
 excerpt: "Make an informed choice by examining the core aspects of Dotenv Vault and Doppler in our in-depth review of how they fare against each other."
 ---
 

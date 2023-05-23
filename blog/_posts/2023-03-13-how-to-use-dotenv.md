@@ -2,7 +2,7 @@
 layout: blog
 author: mot
 title: "How to use dotenv"
-cover: "/assets/img/blog/blog-1.png"
+image: "/assets/img/blog/blog-1.png"
 excerpt: "Learn the very basics of dotenv in 2 minutes."
 ---
 
