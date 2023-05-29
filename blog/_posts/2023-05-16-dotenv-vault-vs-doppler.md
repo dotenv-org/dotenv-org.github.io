@@ -1,14 +1,14 @@
 ---
 layout: blog
 author: mot
-title: "Dotenv Vault vs Doppler: A head-to-head comparison"
+title: "Dotenv Vault vs Doppler: Head-to-head review"
 image: "/assets/img/blog/vault-vs-doppler/dotenv-vault-vs-doppler-cover.png"
 excerpt: "Make an informed choice by examining the core aspects of Dotenv Vault and Doppler in our in-depth review of how they fare against each other."
 ---
 
 {% include helpers/reading_time.html %}
 
-Dotenv Vault vs Doppler: A head-to-head comparison
+Dotenv Vault vs Doppler: Head-to-head review
 ======
 
 As a developer, you are probably aware of the importance of keeping your confidential information safe. After all, if your solution is hacked, not only could your business be at risk, but your customers' information could be compromised just as well.
@@ -24,13 +24,13 @@ Doppler, on the other hand, is a more enterprise-oriented solution that focuses 
 
 To help you see why we're so confident in Dotenv Vault, we'll compare both tools in seven key areas:
 
-- Core Features
-- Developer Experience
-- Supported Integrations
-- Deployment Options
-- GitHub Activity
-- Pricing Options
-- Support Availability
+1. [Core features](#dotenv-vault-vs-doppler-core-features)
+2. [Developer experience](#dotenv-vault-vs-doppler-developer-experience)
+3. [Supported integrations](#dotenv-vault-vs-doppler-supported-integrations)
+4. [Deployment options](#dotenv-vault-vs-doppler-deployment-options)
+5. [GitHub activity](#dotenv-vault-vs-doppler-github-activity)
+6. [Pricing and support](#dotenv-vault-vs-doppler-pricing-and-support)
+7. [Verdict](#dotenv-vault-vs-doppler-verdict)
 
 ## Dotenv Vault vs Doppler: Core features 
 We're excited to dive into the core features and showcase how our solution compares to Doppler. It's no surprise that both tools share common ground in core offerings since they typically define a secret manager tool.
@@ -52,6 +52,28 @@ This environment is a Godsend when writing tutorials or providing clear guidance
 We take pride in Dotenv Vault's simplicity when it comes to `CLI` interactions. Unlike Doppler, which demands setting up its `CLI` package and dependencies, our solution requires no such hassle. Running Dotenv Vault is as simple as using `npx`, leaving only the `.env.vault` file to store your secrets for local use.
 
 Our seamless and intuitive approach to Vault operation ensures syncing your `.env` files on any device is a breeze. The `dotenv-vault@1.19.0` update further streamlined secret management without relying on dotenv.org. Plus, improvements to the `build` command minimize nonce collisions and enhance the overall developer experience.
+
+### From zero to hero
+Dotenv Vault sets a new standard for simplicity, providing an incredibly straightforward setup process. With just two lines of `CLI` input, you can effortlessly configure Dotenv Vault for your project:
+
+```shell
+# Dotenv Vault CLI initialization
+npx dotenv-vault new
+npx dotenv-vault login
+```
+
+The streamlined setup of Dotenv Vault, condensed into two commands, prioritizes a fast and hassle-free experience. It is an excellent choice for developers seeking a seamless setup that enables them to quickly get started with their projects.
+
+On the flip side, Doppler too offers a streamlined setup process that aims to facilitate a smooth and efficient start. Still, it does require an additional step in the `CLI`, resulting in a total of three steps before initiating a fresh project:
+
+```shell
+# Doppler CLI initialization
+brew install dopplerhq/cli/doppler
+doppler login
+doppler setup
+```
+
+When compared to Dotenv Vault, the three-step setup of Doppler is just as clear-cut. However, Vault does has a distinct advantage that sets it apart. Unlike Doppler, Vault doesn't require any installation beforehand. Instead, you can effortlessly execute the package remotely using `npx`. This unique approach ensures a lightning-fast fresh start, making it a tempting alternative for developers who prioritize both time efficiency and streamlined code implementation.
 
 ### Dynamic secrets and rotation
 Both Doppler and Dotenv Vault cater to developers' security needs. Doppler offers dynamic secrets and proxied rotation, while our own take in Dotenv Vault lets you rotate the `DOTENV_KEY` for secure access.
@@ -97,7 +119,7 @@ Even though we strive to provide valuable feedback to our users, there may be ti
 
 Comparing Dotenv Vault and Doppler, both solutions perform well in this aspect. When it comes to tutorials, you'll find descriptive guides for using each platform's features, with Doppler slightly ahead due to its walkthrough articles for specific use cases. However, our documentation is more accessible to both seasoned developers and rookies alike, giving us an edge in this area.
 
-### Changelogs, readme files, and source
+### Changelogs, readme, and source
 Doppler's focus on experienced users is apparent in its approach to changelogs and readme files. While we at Dotenv Vault believe in providing descriptive, easy-to-understand breakdowns, Doppler tends to use more technical language.
 
 This can be a barrier for developers looking to examine the code base for better understanding or for security researchers conducting audits. Doppler's mostly proprietary solution doesn't help either, as it limits the potential for community engagement and security audits. In contrast, our open-source approach at Dotenv Vault encourages collaboration, vulnerability discovery, and contributions from the wider community.
