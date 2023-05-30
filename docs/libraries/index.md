@@ -27,7 +27,7 @@ redirect_from:
         <a class="small" href="https://github.com/motdotla/dotenv">github.com/motdotla/dotenv</a>
       </td>
       <td class="align-middle text-center small">
-        {% include icons/star.html %} 17k
+        {% include icons/star.html %} 17.2k
       </td>
       <td class="align-middle text-center small">
         <span class="text-success">✓</span>
