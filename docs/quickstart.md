@@ -185,10 +185,10 @@ $ heroku config:set DOTENV_KEY='dotenv://:key_1234@dotenv.org/vault/.env.vault?e
 
 #### 🔐 Upgrade dotenv
 
-We need to use the latest version of `dotenv` so that we can decrypt the .env.vault payload on deploy. Install [dotenv@16.1.0-rc1](https://github.com/motdotla/dotenv/tree/v16.1.0-rc1).
+We need to use the latest version of `dotenv` so that we can decrypt the .env.vault payload on deploy. Install [dotenv >= 16.1.0](https://github.com/motdotla/dotenv).
 
 ```
-$ npm dotenv@16.1.0-rc1 --save
+$ npm dotenv --save
 ```
 
 ```
@@ -205,7 +205,7 @@ Also let's edit our `package.json` to have a start script so that Heroku can boo
     "start": "node index.js"
   },
   "dependencies": {
-    "dotenv": "16.1.0-rc1"
+    "dotenv": "16.1.0"
   }
 }
 ```
@@ -221,7 +221,7 @@ $ git push heroku
 When the deploy completes, we'll see this line in the logs.
 
 ```
-[dotenv@16.1.0-rc1][INFO] Loading env from encrypted .env.vault
+[dotenv@16.1.0][INFO] Loading env from encrypted .env.vault
 ```
 
 That's it! The `DOTENV_KEY` securely decrypts our .env.vault file at runtime and injects our secret environment variables – just in time.

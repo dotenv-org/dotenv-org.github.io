@@ -19,7 +19,7 @@ $ npx create-next-app@latest hello-edge --use-npm --example https://github.com/v
 ## Set up .env
 
 ```shell
-$ npm install dotenv@16.1.0-rc2 --save
+$ npm install dotenv --save
 ```
 
 Modify your scripts in `package.json`
