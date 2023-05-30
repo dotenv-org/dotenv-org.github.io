@@ -1,14 +1,14 @@
 ---
 layout: blog
 author: mot
-title: "Dotenv Vault vs HCP Vault: A secrets manager face-off"
+title: "Dotenv Vault vs HCP Vault: Secret manager face-off"
 image: "/assets/img/blog/vault-vs-hcp/dotenv-vault-vs-hcp-cover.png"
 excerpt: "Dive into the features, experience, and other key factors to find your best fit in our comprehensive comparison of Dotenv Vault and HCP Vault."
 ---
 
 {% include helpers/reading_time.html %}
 
-Dotenv Vault vs HCP Vault: A secrets manager face-off
+Dotenv Vault vs HCP Vault: Secret manager face-off
 ======
 
 As developers dealing with various kinds of data and information, we understand the importance of security in keeping our systems safe. With many things that can go wrong during data breaches (both for our business and our customers), it's vital to prevent them from happening in the first place.
@@ -24,13 +24,13 @@ On the other hand, Hashicorp Vault presents a more enterprise-focused solution t
 
 So, which one stands out as the top alternative? To provide a better answer to this question, we will examine seven core factors that significantly influence the success of each tool:
 
-- Core Features
-- Developer Experience
-- Supported Integrations
-- Deployment Options
-- GitHub Activity
-- Pricing Options
-- Support Availability
+1. [Core features](#dotenv-vault-vs-hcp-vault-core-features)
+2. [Developer experience](#dotenv-vault-vs-hcp-vault-developer-experience)
+3. [Supported integrations](#dotenv-vault-vs-hcp-vault-supported-integrations)
+4. [Deployment options](#dotenv-vault-vs-hcp-vault-deployment-options)
+5. [GitHub activity](#dotenv-vault-vs-hcp-vault-github-activity)
+6. [Pricing and support](#dotenv-vault-vs-hcp-vault-pricing-and-support)
+7. [Verdict](#dotenv-vault-vs-hcp-vault-verdict)
 
 ## Dotenv Vault vs HCP Vault: Core features
 As the team behind Dotenv Vault, we're excited to compare the core features of our solution with those of Hashicorp Vault. While there are similarities between the two, such as Versioning, Access Controls, Permissions, IP Management, and Logging, there are also key differences in each solution's approach to structuring secrets, storage of secrets, and the presence of API limits.
@@ -52,6 +52,28 @@ Our Dotenv Vault also offers an `example` environment, which is handy for creati
 We're proud of how simple our Dotenv Vault CLI interactions are. With our package, you can run it without installation using `npx`, whereas the Hashicorp Vault CLI requires a download and setup before use. This results in better productivity and a smooth experience for dev teams.
 
 Our recent `dotenv-vault@1.19.0` update introduced local `build`, `decrypt`, and `keys` commands, enabling developers to manage secrets independently of dotenv.org. This update also refined the `build` command, reducing nonce collisions and improving the overall developer experience.
+
+### From zero to hero
+Dotenv Vault redefines simplicity, offering an incredibly straightforward setup process. With just two command-line inputs, configuring Dotenv Vault for your project is a breeze:
+
+```shell
+# Dotenv Vault CLI initialization
+npx dotenv-vault new
+npx dotenv-vault login
+```
+The streamlined setup of Dotenv Vault, condensed into two commands, prioritizes a fast and hassle-free experience. It is an excellent choice for developers seeking a seamless setup that enables them to quickly dive into their projects.
+
+While HCP Vault also aims to provide a streamlined setup process for a smooth and efficient start, it does require two extra lines in your CLI to install required packages. This results in a total of four steps before initiating a fresh project:
+
+```shell
+# HCP Vault CLI initialization
+brew tap hashicorp/tap
+brew install hashicorp/tap/vault
+vault login
+vault operator init
+```
+
+When comparing the four-step setup of HCP Vault to Dotenv Vault, the process is generally just as unambiguous. However, Dotenv Vault holds a distinct advantage that sets it apart. Unlike HCP Vault, Dotenv Vault doesn't necessitate any installation beforehand. Instead, you can effortlessly execute the package remotely using `npx`. This unique approach ensures a turbo-charged fresh start, making Dotenv Vault an enticing alternative for developers that have time and code efficiency as top priority.
 
 ### Dynamic secrets and rotation
 Both HCP Vault and Dotenv Vault offer valuable security features. HCP Vault provides dynamic secrets and proxied rotation capabilities, while Dotenv Vault enables rotation of the `DOTENV_KEY` for secure access. HCP Vault's dynamic secrets generate secret values on-demand, preventing human errors related to app secrets. Its proxied rotation enforces automatic rotation within a specified timeframe, keeping services hidden from the public internet.
