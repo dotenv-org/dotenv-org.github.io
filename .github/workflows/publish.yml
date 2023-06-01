@@ -1,0 +1,26 @@
+name: publish
+on:
+  push:
+    branches: [master]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Publish to dev.to
+      uses: sinedied/publish-devto@v2
+      id: publish_devto
+      with:
+        # Your dev.to personal API key to publish and update articles.
+        # See https://docs.dev.to/api/#section/Authentication/api_key
+        devto_key: ${{ secrets.DEVTO_TOKEN }}
+        # (Optional) The files to publish. Default is "posts/**/*.md"
+        files: 'blog/_posts/*.md'
+        # (Optional) The git branch to use. Default is 'main'.
+        branch: master
+        # (Optional) Use conventional commit messages. Default is false.
+        # See https://www.conventionalcommits.org. 
+        conventional_commits: true
+        # (Optional) Do not make actual changes on dev.to if it's a pull request.
+        dry_run: ${{ github.event_name == 'pull_request' }}
