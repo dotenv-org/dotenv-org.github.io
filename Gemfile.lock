@@ -47,6 +47,7 @@ GEM
     jekyll-brotli (2.3.0)
       brotli (~> 0.2.0)
       jekyll (>= 3.0, < 5.0)
+    jekyll-crosspost-to-medium (0.1.14)
     jekyll-favicon (1.1.0)
       jekyll (>= 3.0, < 5.0)
       mini_magick (~> 4.11)
@@ -137,6 +138,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-brotli
+  jekyll-crosspost-to-medium
   jekyll-favicon
   jekyll-feed
   jekyll-gzip
