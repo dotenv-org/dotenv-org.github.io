@@ -47,6 +47,7 @@ jobs:
   # Publish to dev.to
   publish_devto:
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - uses: actions/checkout@v2
     - name: Publish to dev.to
