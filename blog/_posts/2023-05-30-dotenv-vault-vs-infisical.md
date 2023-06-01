@@ -1,9 +1,10 @@
 ---
 layout: blog
 author: mot
-title: "Dotenv Vault vs Infisical – Face-to-face comparison"
+title: "Dotenv Vault vs Infisical: Face-to-face comparison"
 image: "/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-cover.png"
 excerpt: "Discover the ultimate matchup between Dotenv Vault and Infisical as we compare features, experience, integrations, and other key factors face-to-face."
+published: true
 ---
 
 {% include helpers/reading_time.html %}

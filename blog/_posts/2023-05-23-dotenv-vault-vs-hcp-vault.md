@@ -4,6 +4,7 @@ author: mot
 title: "Dotenv Vault vs HCP Vault: Secret manager face-off"
 image: "/assets/img/blog/vault-vs-hcp/dotenv-vault-vs-hcp-cover.png"
 excerpt: "Dive into the features, experience, and other key factors to find your best fit in our comprehensive comparison of Dotenv Vault and HCP Vault."
+published: true
 ---
 
 {% include helpers/reading_time.html %}
