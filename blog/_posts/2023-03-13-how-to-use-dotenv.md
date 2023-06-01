@@ -4,6 +4,7 @@ author: mot
 title: "How to use dotenv"
 image: "/assets/img/blog/blog-1.png"
 excerpt: "Learn the very basics of dotenv in 2 minutes."
+published: true
 ---
 
 We are going to kick off our first blog post with the basics – how to use dotenv.
