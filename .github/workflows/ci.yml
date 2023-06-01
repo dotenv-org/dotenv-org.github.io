@@ -51,7 +51,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Publish to dev.to
-      uses: sinedied/publish-devto@v2
+      uses: sinedied/publish-devto@30728bf
       id: publish_devto
       with:
         # Your dev.to personal API key to publish and update articles.
@@ -63,6 +63,7 @@ jobs:
         branch: master
         # (Optional) Do not make actual changes on dev.to if it's a pull request.
         dry_run: ${{ github.event_name == 'pull_request' }}
+        conventional_commits: true
 
   # Deployment job
   deploy:
