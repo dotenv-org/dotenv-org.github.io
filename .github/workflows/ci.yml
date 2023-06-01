@@ -1,13 +1,6 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
 
@@ -50,6 +43,25 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
+
+  # Publish to dev.to
+  publish_devto:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Publish to dev.to
+      uses: sinedied/publish-devto@v2
+      id: publish_devto
+      with:
+        # Your dev.to personal API key to publish and update articles.
+        # See https://docs.dev.to/api/#section/Authentication/api_key
+        devto_key: ${{ secrets.DEVTO_TOKEN }}
+        # (Optional) The files to publish. Default is "posts/**/*.md"
+        files: 'blog/_posts/*.md'
+        # (Optional) The git branch to use. Default is 'main'.
+        branch: master
+        # (Optional) Do not make actual changes on dev.to if it's a pull request.
+        dry_run: ${{ github.event_name == 'pull_request' }}
 
   # Deployment job
   deploy:
