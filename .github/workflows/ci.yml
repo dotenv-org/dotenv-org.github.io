@@ -44,27 +44,6 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
 
-  # Publish to dev.to
-  publish_devto:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - uses: actions/checkout@v2
-    - name: Publish to dev.to
-      uses: sinedied/publish-devto@30728bf375a0d24f91e18ae83ecdd219e5ac1878
-      id: publish_devto
-      with:
-        # Your dev.to personal API key to publish and update articles.
-        # See https://docs.dev.to/api/#section/Authentication/api_key
-        devto_key: ${{ secrets.DEVTO_TOKEN }}
-        # (Optional) The files to publish. Default is "posts/**/*.md"
-        files: 'blog/_posts/*.md'
-        # (Optional) The git branch to use. Default is 'main'.
-        branch: master
-        # (Optional) Do not make actual changes on dev.to if it's a pull request.
-        dry_run: ${{ github.event_name == 'pull_request' }}
-        conventional_commits: true
-
   # Deployment job
   deploy:
     environment:
