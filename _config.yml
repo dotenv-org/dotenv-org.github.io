@@ -62,7 +62,6 @@ plugins:
   - jekyll-gzip
   - jekyll-loading-lazy
   - jekyll-responsive-image
-  - jekyll-crosspost-to-medium
 
 responsive_image:
   # [Required]
