@@ -127,7 +127,7 @@ Set it for Docker run. The important part here is the `-e` flag.
 
 ```
 $ docker build -t docker-express . && docker run -e DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production" --rm -it -p 8080:8080 --init docker-express
-[dotenv@0.3.0][INFO] Loading env from encrypted .env.vault
+[dotenv@16.1.0][INFO] Loading env from encrypted .env.vault
 Running on port 8080
 ```
 

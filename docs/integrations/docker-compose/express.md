@@ -141,7 +141,7 @@ Set it for docker-compose up.
 
 ```
 $ NODE_ENV=production DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production" docker-compose up
-[dotenv@0.3.0][INFO] Loading env from encrypted .env.vault
+[dotenv@16.1.0][INFO] Loading env from encrypted .env.vault
 Running on port 8080
 ```
 
