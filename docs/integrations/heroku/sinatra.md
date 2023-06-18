@@ -25,14 +25,14 @@ get '/' do
   "Welcome to #{ENV["HELLO"]}"
 end
 ```
-Example shows using environment variable [example](https://github.com/motdotla/dotenv_sinatra/blob/master/server.rb)
+Example shows using environment variable [example](https://github.com/dotenv-org/dotenv_sinatra/blob/master/server.rb)
 
 ```
 // Add 'dotenv-vault-rails' to Gemfile
 gem 'dotenv-vault-rails'
 ```
 
-[example](https://github.com/motdotla/dotenv_sinatra/blob/master/Gemfile)
+[example](https://github.com/dotenv-org/dotenv_sinatra/blob/master/Gemfile)
 
 Run bundle install.
 
