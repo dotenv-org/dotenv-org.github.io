@@ -68,7 +68,7 @@ Commit your .env.vault file safely to code and deploy. Your .env.vault fill be d
 
 ## 🌴 Manage Multiple Environments
 
-You have two options for managing multiple environments - locally managed or vault managed - both use <a href="https://github.com/motdotla/dotenv-vault">dotenv-vault</a>.
+You have two options for managing multiple environments - locally managed or vault managed - both use <a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a>.
 
 Locally managed never makes a remote API call. It is completely managed on your machine. Vault managed adds conveniences like backing up your .env file, secure sharing across your team, access permissions, and version history. Choose what works best for you.
 

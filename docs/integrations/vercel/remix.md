@@ -16,7 +16,7 @@ You can find a complete [example repo here](https://github.com/dotenv-org/integr
 
 ## 1. Install & preload dotenv-vault
 
-Install [dotenv-vault](https://github.com/motdotla/dotenv-vault)
+Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 
 ```
 $ npm install dotenv --save

@@ -32,7 +32,7 @@ redirect_from:
           <p>Have an issue or bug that you've found? Let us know on GitHub issues. This can be feature requests too.</p>
         </div>
         <div class="card-footer">
-          <a class="btn btn-secondary btn-sm" href="https://github.com/motdotla/dotenv-vault/issues" target="_blank">
+          <a class="btn btn-secondary btn-sm" href="https://github.com/dotenv-org/dotenv-vault/issues" target="_blank">
             <div class="d-flex align-items-center">
               <div class="me-1">Go to Issues</div>
               <iconify-icon icon="simple-icons:github" style="color: #fcfcfc;" height="16"></iconify-icon>

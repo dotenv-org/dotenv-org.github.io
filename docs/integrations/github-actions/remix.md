@@ -40,7 +40,7 @@ jobs:
 
 ## 2. Require dotenv-vault
 
-Install [dotenv-vault](https://github.com/motdotla/dotenv-vault)
+Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 
 ```
 $ npm install dotenv --save

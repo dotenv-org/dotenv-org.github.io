@@ -7,7 +7,7 @@ description: "Simplify your secrets"
 # Footer "Edit this page on GitHub" link text
 github_edit_link: true # show or hide edit this page link
 github_edit_link_text: "View on GitHub"
-github_edit_repository: "https://github.com/motdotla/dotenv-org.github.io" # the github URL for your repo
+github_edit_repository: "https://github.com/dotenv-org/dotenv-org.github.io" # the github URL for your repo
 github_edit_branch: "master" # the branch that your docs is served from
 github_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 

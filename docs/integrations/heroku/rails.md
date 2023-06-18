@@ -36,7 +36,7 @@ $ bundle install
 
 ## Require dotenv-vault
 
-Require [dotenv-vault](https://github.com/motdotla/dotenv-vault-ruby).
+Require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby).
 
 Require it as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
 

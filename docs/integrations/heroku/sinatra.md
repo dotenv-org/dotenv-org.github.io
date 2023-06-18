@@ -14,7 +14,7 @@ Learn how to make Heroku, Sinatra, and Dotenv Vault work together. This tutorial
 
 ## Set up Sinatra and require dotenv-vault
 
-Set up your Sinatra app to work with Heroku and require [dotenv-vault](https://github.com/motdotla/dotenv-vault-ruby). Require it as early as possible in your sinatra application. 
+Set up your Sinatra app to work with Heroku and require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby). Require it as early as possible in your sinatra application. 
 
 ```
 # server.rb

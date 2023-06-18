@@ -52,7 +52,7 @@ redirect_from:
         <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg">
       </td>
       <td class="align-middle">
-        <a class="small" href="https://github.com/motdotla/dotenv-vault-ruby">github.com/motdotla/dotenv-vault-ruby</a>
+        <a class="small" href="https://github.com/dotenv-org/dotenv-vault-ruby">github.com/dotenv-org/dotenv-vault-ruby</a>
       </td>
       <td class="align-middle text-center small">
         {% include icons/star.html %} 3
@@ -94,7 +94,7 @@ redirect_from:
         <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
       </td>
       <td class="align-middle">
-        <a class="small" href="https://github.com/motdotla/dotenv-vault-kotlin">github.com/motdotla/dotenv-vault-kotlin</a>
+        <a class="small" href="https://github.com/dotenv-org/dotenv-vault-kotlin">github.com/dotenv-org/dotenv-vault-kotlin</a>
       </td>
       <td class="align-middle text-center small">
         {% include icons/star.html %} 2

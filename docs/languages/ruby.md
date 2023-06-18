@@ -74,7 +74,7 @@ Commit your .env.vault file safely to code and deploy. Your .env.vault fill be d
 
 ## 🌴 Manage Multiple Environments
 
-You have two options for managing multiple environments - locally managed or vault managed - both use <a href="https://github.com/motdotla/dotenv-vault">dotenv-vault</a>.
+You have two options for managing multiple environments - locally managed or vault managed - both use <a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a>.
 
 Locally managed never makes a remote API call. It is completely managed on your machine. Vault managed adds conveniences like backing up your .env file, secure sharing across your team, access permissions, and version history. Choose what works best for you.
 
@@ -130,7 +130,7 @@ Set the production `DOTENV_KEY` on your server, recommit your `.env.vault` file 
 
 #### What happens if `DOTENV_KEY` is not set?
 
-[dotenv-vault-ruby](https://github.com/motdotla/dotenv-vault-ruby) gracefully falls back to [dotenv](https://github.com/bkeepers/dotenv) when `DOTENV_KEY` is not set. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
+[dotenv-vault-ruby](https://github.com/dotenv-org/dotenv-vault-ruby) gracefully falls back to [dotenv](https://github.com/bkeepers/dotenv) when `DOTENV_KEY` is not set. This is the default for development so that you can focus on editing your `.env` file and save the `build` command until you are ready to deploy those environment variables changes.
 
 #### Should I commit my `.env` file?
 

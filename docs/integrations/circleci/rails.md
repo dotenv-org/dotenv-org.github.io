@@ -28,7 +28,7 @@ Add dotenv-vault-rails gem to Gemfile
 gem 'dotenv-vault-rails'
 ```
 
-Require [dotenv-vault](https://github.com/motdotla/dotenv-vault-ruby) as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
+Require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby) as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
 
 ```
 // config/application.rb
