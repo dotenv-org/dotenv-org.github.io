@@ -22,24 +22,24 @@ Pnpm has a [quirk](https://github.com/pnpm/pnpm/issues/4782) when it comes to [n
 
 This tutorial shows you how to get around that quirk (see step 3). Otherwise, it is the same as the [Vercel with NextJS tutorial](/docs/integrations/vercel/nextjs).
 
-## 1. Install dotenv-vault-core
+## 1. Install dotenv
 
-Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Install [dotenv](https://github.com/motdotla/dotenv).
 
 ```
-$ pnpm install dotenv-vault-core
+$ pnpm install dotenv
 ```
 
-## 2. Preload dotenv-vault-core
+## 2. Preload dotenv
 
-Preload NextJS scripts using dotenv-vault-core. This will inject the environment variables ahead of NextJS.
+Preload NextJS scripts using dotenv. This will inject the environment variables ahead of NextJS.
 
 ```
 "scripts": {
-  "dev": "node -r dotenv-vault-core/config ./node_modules/.bin/next dev",
-  "build": "node -r dotenv-vault-core/config ./node_modules/.bin/next build",
-  "start": "node -r dotenv-vault-core/config ./node_modules/.bin/next start",
-  "lint": "node -r dotenv-vault-core/config ./node_modules/.bin/next lint"
+  "dev": "node -r dotenv/config ./node_modules/.bin/next dev",
+  "build": "node -r dotenv/config ./node_modules/.bin/next build",
+  "start": "node -r dotenv/config ./node_modules/.bin/next start",
+  "lint": "node -r dotenv/config ./node_modules/.bin/next lint"
 },
 ```
 [example](https://github.com/dotenv-org/integration-example-vercel-nextjs/blob/master/package.json)

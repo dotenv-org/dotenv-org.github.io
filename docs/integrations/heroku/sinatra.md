@@ -14,7 +14,7 @@ Learn how to make Heroku, Sinatra, and Dotenv Vault work together. This tutorial
 
 ## Set up Sinatra and require dotenv-vault
 
-Set up your Sinatra app to work with Heroku and require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby). Require it as early as possible in your sinatra application. 
+Set up your Sinatra app to work with Heroku and require [dotenv-vault](https://github.com/motdotla/dotenv-vault-ruby). Require it as early as possible in your sinatra application. 
 
 ```
 # server.rb
@@ -25,14 +25,14 @@ get '/' do
   "Welcome to #{ENV["HELLO"]}"
 end
 ```
-Example shows using environment variable [example](https://github.com/dotenv-org/dotenv_sinatra/blob/master/server.rb)
+Example shows using environment variable [example](https://github.com/motdotla/dotenv_sinatra/blob/master/server.rb)
 
 ```
 // Add 'dotenv-vault-rails' to Gemfile
 gem 'dotenv-vault-rails'
 ```
 
-[example](https://github.com/dotenv-org/dotenv_sinatra/blob/master/Gemfile)
+[example](https://github.com/motdotla/dotenv_sinatra/blob/master/Gemfile)
 
 Run bundle install.
 

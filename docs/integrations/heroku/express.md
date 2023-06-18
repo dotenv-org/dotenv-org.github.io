@@ -49,19 +49,19 @@ Your app will say 'Hello undefined'.
 
 Nice. Next, let's configure our environment variables using Dotenv Vault.
 
-## Require dotenv-vault-core
+## Require dotenv
 
-Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Install [dotenv](https://github.com/motdotla/dotenv).
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
 Then require it as early as possible in your code.
 
 ```
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
 const PORT = process.env.PORT || 5000

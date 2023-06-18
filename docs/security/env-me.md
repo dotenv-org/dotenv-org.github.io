@@ -31,4 +31,4 @@ The DOTENV_ME key will be the only value this file contains. Keep it safe and ou
 
 ## Generating
 
-You can generate a .env.me file at [ui.dotenv.org](https://ui.dotenv.org/ui1/project/new) or using [dotenv-vault](https://github.com/dotenv-org/dotenv-vault). The authorization flow follows a similar pattern to world class authorization flows found in cli tools like [Heroku's cli](https://devcenter.heroku.com/articles/heroku-cli) and [Vercel's cli](https://vercel.com/cli). It is both secure and simple.
+You can generate a .env.me file at [ui.dotenv.org](https://ui.dotenv.org/ui1/project/new) or using [dotenv-vault](https://github.com/motdotla/dotenv-vault). The authorization flow follows a similar pattern to world class authorization flows found in cli tools like [Heroku's cli](https://devcenter.heroku.com/articles/heroku-cli) and [Vercel's cli](https://vercel.com/cli). It is both secure and simple.

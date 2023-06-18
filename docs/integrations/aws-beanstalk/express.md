@@ -45,20 +45,20 @@ phases:
 Once ready, proceed by creating a basic pipeline setup using `AWS CodePipeline` and connect it with your AWS Beanstalk project accordingly.
 
 ## Package installation
-With the AWS settings taken care of, you can proceed by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+With the AWS settings taken care of, you can proceed by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
-Create an `app.js` file in your `root` folder, if you don't have one already then reference the `dotenv-vault-core` package as early in the code as possible to avoid possible conflicts.
+Create an `app.js` file in your `root` folder, if you don't have one already then reference the `dotenv` package as early in the code as possible to avoid possible conflicts.
 
 ##### Express
 
 ```js
 // app.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
 

@@ -51,7 +51,7 @@ Note that when the `DOTENV_KEY` environment variable is set, environment setting
 
 ## 🌴 Manage Multiple Environments
 
-You have two options for managing multiple environments - locally managed or vault managed - both use [dotenv-vault](https://github.com/dotenv-org/dotenv-vault).
+You have two options for managing multiple environments - locally managed or vault managed - both use [dotenv-vault](https://github.com/motdotla/dotenv-vault).
 
 Locally managed never makes a remote API call. It is completely managed on your machine. Vault managed adds conveniences like backing up your .env file, secure sharing across your team, access permissions, and version history. Choose what works best for you.
 

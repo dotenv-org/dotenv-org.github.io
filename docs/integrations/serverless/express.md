@@ -23,17 +23,17 @@ Create your local .env file.
 HELLO="World"
 ```
 
-Add [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core) to package.json.
+Add [dotenv](https://github.com/motdotla/dotenv) to package.json.
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
-In handler.js, as early as possible, require dotenv-vault-core.
+In handler.js, as early as possible, require dotenv.
 
 ```
 // handler.js
-require("dotenv-vault-core").config()
+require("dotenv").config()
 
 const serverless = require("serverless-http");
 const express = require("express");

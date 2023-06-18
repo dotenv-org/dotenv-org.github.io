@@ -48,12 +48,12 @@ Don't forget to specify what Buddy needs to run after it has finished building, 
 [Example](https://github.com/dotenv-org/integration-example-buddy-nodejs/blob/main/buddy.yaml).
 
 ## Package installation
-Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+Start by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 Reference the Vault package as early in your `index.js` code as possible to skip any conflicts that may arise.
@@ -62,7 +62,7 @@ Reference the Vault package as early in your `index.js` code as possible to skip
 
 ```java
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
 [Example](https://github.com/dotenv-org/integration-example-buddy-nodejs/blob/main/index.js).

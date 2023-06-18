@@ -57,7 +57,7 @@ gem 'dotenv-vault-rails'
 
 [example](https://github.com/dotenv-org/integration-example-fly-rails/blob/8fdcf12cbd6b17adec2e6dfd5875bccf7e7d28a3/Gemfile#L5)
 
-Require [dotenv-vault](https://github.com/dotenv-org/dotenv-vault-ruby) as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
+Require [dotenv-vault](https://github.com/motdotla/dotenv-vault-ruby) as early as possible in your Rails application. For a Rails application require dotenv-vault/load in application.rb
 
 ```
 // config/application.rb

@@ -27,4 +27,4 @@ The DOTENV_VAULT key is important. It is required. It is that value that identif
 
 ## Generating
 
-You can generate a .env.vault file at [ui.dotenv.org](https://ui.dotenv.org/ui1/project/new) or through [dotenv-vault](https://github.com/dotenv-org/dotenv-vault). The process is similar to creating and cloning your very first git repo on GitHub.
+You can generate a .env.vault file at [ui.dotenv.org](https://ui.dotenv.org/ui1/project/new) or through [dotenv-vault](https://github.com/motdotla/dotenv-vault). The process is similar to creating and cloning your very first git repo on GitHub.

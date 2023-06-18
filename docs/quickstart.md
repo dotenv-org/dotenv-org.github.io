@@ -111,7 +111,7 @@ Now it says 'Bonjour World'. Cool! We're ready to backup and sync our `.env` fil
 
 ## 🏆 Sync .env file
 
-Once we have a .env file, we are ready to start syncing it with [dotenv-vault](https://github.com/dotenv-org/dotenv-vault#usage). For this quickstart we'll demonstrate doing this for ourselves, but you can also sync across your team and your other machines.
+Once we have a .env file, we are ready to start syncing it with [dotenv-vault](https://github.com/motdotla/dotenv-vault#usage). For this quickstart we'll demonstrate doing this for ourselves, but you can also sync across your team and your other machines.
 
 Usage is similar to git. Run the command:
 

@@ -18,4 +18,4 @@ Then:
 2. Rebuild and deploy your .env.vault file
 3. Update DOTENV_KEY by removing the old value
 
-[See docs](/docs/dotenv-vault/rotatekey) for more information. Supported for [NodeJS](https://github.com/dotenv-org/dotenv-vault-core) library. [Ruby](https://github.com/dotenv-org/dotenv-vault-ruby) and [Python](https://github.com/dotenv-org/dotenv-vault-python) support coming soon.
+[See docs](/docs/dotenv-vault/rotatekey) for more information. Supported for [NodeJS](https://github.com/motdotla/dotenv) library. [Ruby](https://github.com/motdotla/dotenv-vault-ruby) and [Python](https://github.com/motdotla/dotenv-vault-python) support coming soon.

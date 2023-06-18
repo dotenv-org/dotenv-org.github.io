@@ -19,19 +19,19 @@ You can find a complete [example repo here](https://github.com/dotenv-org/integr
 Start with an existing Gatsby setup or use one of the site templates available on the platform.
 
 ## Package installation
-Move forward by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+Move forward by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
-Add a reference for the `dotenv-vault-core` package as early as possible within the `gatsby-config.js` file, just before the `module_exports` call.
+Add a reference for the `dotenv` package as early as possible within the `gatsby-config.js` file, just before the `module_exports` call.
 
 ##### React
 ```js
 // gatsby-config.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
 module.exports = {

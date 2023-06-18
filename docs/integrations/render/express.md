@@ -20,17 +20,17 @@ Create your local `.env` file.
 HELLO="World"
 ```
 
-Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Install [dotenv](https://github.com/motdotla/dotenv).
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
 Require it as early as possible in your Express application.
 
 ```
 // app.js
-require('dotenv-vault-core').config();
+require('dotenv').config();
 console.log(process.env) // for debugging purposes. remove when ready.
 
 const express = require("express");
