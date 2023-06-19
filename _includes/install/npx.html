@@ -8,8 +8,9 @@
       {% include icons/npm2.html width="100" %}
     </div>
 
-    <p class="text-center">The easiest (and recommended) way to use dotenv-vault is via <a href="https://docs.npmjs.com/cli/v7/commands/npx">npx</a>.</p>
+    <p class="text-center">The recommended (and fastest) way to use dotenv-vault is via <a href="https://docs.npmjs.com/cli/v7/commands/npx">npx</a>.</p>
 
+    <!--
     <div class="input-group mb-3">
       <span class="input-group-text fs-6 text-success pe-0 font-monospace">$</span>
       <input id="npm-cmd-1" type="text" class="border-start-0 ps-2 form-control form-control-lg bg-light font-monospace fs-6" value="npx dotenv-vault@latest new">
@@ -17,13 +18,24 @@
         {% include icons/clipboard.html width="20" %}
       </button>
     </div>
-    <div class="input-group mb-3">
-      <span class="input-group-text fs-6 text-success pe-0 font-monospace">$</span>
-      <input id="npm-cmd-2" type="text" class="border-start-0 ps-2 form-control form-control-lg bg-light font-monospace fs-6" value="npx dotenv-vault@latest push">
+    -->
+    <div class="input-group mb-0">
+      <span class="input-group-text fs-6 text-success pe-0 font-monospace border-bottom-0 rounded-bottom-0">$</span>
+      <input id="npm-cmd-2" type="text" class="border-start-0 ps-2 form-control form-control-lg bg-light font-monospace fs-6 border-bottom-0" value="npx dotenv-vault@latest push">
       <button class="btn btn-light border ms-2 clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#npm-cmd-2">
         {% include icons/clipboard.html width="20" %}
       </button>
     </div>
+
+    <div class="input-group mb-3">
+      <textarea class="form-control form-control-lg bg-light font-monospace fs-6 border-top-0 rounded-top-0" rows="4">remote:   Securely pushing (.env)... done
+remote:   Securely pushed development (.env)
+remote:   Securely built vault (.env.vault)</textarea>
+      <button class="btn btn-link border ms-2 clipboard-btn opacity-0" data-clipboard-action="copy" data-clipboard-target="#npm-cmd-2">
+        {% include icons/clipboard.html width="20" %}
+      </button>
+    </div>
+    <!--
     <div class="input-group mb-3">
       <span class="input-group-text fs-6 text-success pe-0 font-monospace">$</span>
       <input id="npm-cmd-3" type="text" class="border-start-0 ps-2 form-control form-control-lg bg-light font-monospace fs-6" value="npx dotenv-vault@latest pull">
@@ -31,6 +43,7 @@
         {% include icons/clipboard.html width="20" %}
       </button>
     </div>
+    -->
   </div>
 </div>
 
