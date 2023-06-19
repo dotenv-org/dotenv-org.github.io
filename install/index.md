@@ -6,4 +6,5 @@ redirect_from:
 ---
 
 {% include install/hero.html %}
+{% include install/npx.html %}
 {% include install/card.html %}

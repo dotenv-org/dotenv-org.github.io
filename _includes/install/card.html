@@ -2,6 +2,8 @@
   <div class="row mb-5 pb-5">
     <div class="col col-lg-8 offset-lg-2">
 
+      <p class="fw-bold">Other Ways to Install</p>
+
 <div class="card">
   <div class="card-header p-0 border-bottom-0">
     <ul class="nav nav-tabs nav-fill card-header-tabs m-0" id="list-tab" role="tablist">
@@ -21,12 +23,6 @@
         <a class="nav-link link-dark text-center rounded-0 border-0" id="list-docker-list" data-bs-toggle="list" href="#list-docker" role="tab" aria-controls="list-docker">
           {% include icons/docker.html width="30" %}
           <div class="d-block pt-2">Docker</div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link link-dark text-center rounded-start-0 border-0" id="list-nodejs-list" data-bs-toggle="list" href="#list-nodejs" role="tab" aria-controls="list-nodejs">
-          {% include icons/nodejs.html width="30" %}
-          <div class="d-block pt-2">NodeJS</div>
         </a>
       </li>
     </ul>
@@ -75,18 +71,6 @@
         <div class="input-group mb-3">
           <span class="input-group-text fs-6 text-success pe-0 font-monospace">$</span>
           <input id="nodejs-cmd" type="text" class="border-start-0 ps-2 form-control form-control-lg bg-light font-monospace fs-6" value="docker run -w $(pwd) -v $(pwd):$(pwd) -it dotenv/dotenv-vault help">
-          <button class="btn btn-light border ms-2 clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#nodejs-cmd">
-            {% include icons/clipboard.html width="20" %}
-          </button>
-        </div>
-      </div>
-
-      <div class="tab-pane" id="list-nodejs" role="tabpanel" aria-labelledby="list-nodejs-list">
-        <p>Install dotenv-vault and run commands via npx</p>
-
-        <div class="input-group mb-3">
-          <span class="input-group-text fs-6 text-success pe-0 font-monospace">$</span>
-          <input id="nodejs-cmd" type="text" class="border-start-0 ps-2 form-control form-control-lg bg-light font-monospace fs-6" value="npx dotenv-vault help">
           <button class="btn btn-light border ms-2 clipboard-btn" data-clipboard-action="copy" data-clipboard-target="#nodejs-cmd">
             {% include icons/clipboard.html width="20" %}
           </button>
