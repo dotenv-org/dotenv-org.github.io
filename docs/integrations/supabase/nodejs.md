@@ -29,11 +29,11 @@ supabase link --project-ref YourSupabaseProjectRefHere
 ```
 
 ## Package installation
-Once ready, proceed by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+Once ready, proceed by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 Create an `index.js` file and reference the `Vault` package inside it as early as possible to skip on any conflicts that may arise.
@@ -42,7 +42,7 @@ Create an `index.js` file and reference the `Vault` package inside it as early a
 
 ```js
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
 

@@ -20,11 +20,11 @@ You can find a complete [example repo here](https://github.com/dotenv-org/integr
 First, you will need an OpenAI setup, so if you don't have one already go ahead and create it from scratch or one of the platform's templates.
 
 ## Package installation
-Once ready, proceed by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+Once ready, proceed by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 Reference the Vault package as early in your `index.js` code as possible to skip any conflicts that may arise.
@@ -33,7 +33,7 @@ Reference the Vault package as early in your `index.js` code as possible to skip
 
 ```js
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
 const { Configuration, OpenAIApi } = require("openai");

@@ -15,24 +15,24 @@ Learn how to make Vercel, NextJS, and Dotenv Vault work together. This tutorial 
 
 You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-vercel-nextjs).
 
-## 1. Install dotenv-vault-core
+## 1. Install dotenv
 
-Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Install [dotenv](https://github.com/motdotla/dotenv).
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
-## 2. Preload dotenv-vault-core
+## 2. Preload dotenv
 
-Preload NextJS scripts using dotenv-vault-core. This will inject the environment variables ahead of NextJS.
+Preload NextJS scripts using dotenv. This will inject the environment variables ahead of NextJS.
 
 ```
 "scripts": {
-  "dev": "node -r dotenv-vault-core/config ./node_modules/.bin/next dev",
-  "build": "node -r dotenv-vault-core/config ./node_modules/.bin/next build",
-  "start": "node -r dotenv-vault-core/config ./node_modules/.bin/next start",
-  "lint": "node -r dotenv-vault-core/config ./node_modules/.bin/next lint"
+  "dev": "node -r dotenv/config ./node_modules/.bin/next dev",
+  "build": "node -r dotenv/config ./node_modules/.bin/next build",
+  "start": "node -r dotenv/config ./node_modules/.bin/next start",
+  "lint": "node -r dotenv/config ./node_modules/.bin/next lint"
 },
 ```
 [example](https://github.com/dotenv-org/integration-example-vercel-nextjs/blob/master/package.json)

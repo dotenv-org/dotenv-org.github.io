@@ -62,17 +62,17 @@ Create your local `.env` file.
 HELLO="Development"
 ```
 
-Then install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Then install [dotenv](https://github.com/motdotla/dotenv).
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
 Require it as early as possible in your Express application.
 
 ```
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
 const PORT = process.env.PORT || 8080
@@ -127,7 +127,7 @@ Set it for Docker run. The important part here is the `-e` flag.
 
 ```
 $ docker build -t docker-express . && docker run -e DOTENV_KEY="dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production" --rm -it -p 8080:8080 --init docker-express
-[dotenv-vault-core@0.3.0][INFO] Loading env from encrypted .env.vault
+[dotenv@16.1.0][INFO] Loading env from encrypted .env.vault
 Running on port 8080
 ```
 

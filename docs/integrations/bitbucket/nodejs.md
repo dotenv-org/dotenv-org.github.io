@@ -30,11 +30,11 @@ pipelines:
 
 
 ## Package installation
-Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+Start by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 Reference the Vault module as early as possible in your `index.js` code to avoid potential conflicts.
@@ -43,7 +43,7 @@ Reference the Vault module as early as possible in your `index.js` code to avoid
 
 ```js
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
 [Example](https://github.com/dotenv-org/integration-example-bitbucket-nodejs/blob/main/index.js).

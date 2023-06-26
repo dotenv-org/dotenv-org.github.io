@@ -71,21 +71,21 @@ Resources:
 ```
 
 ## Package installation
-With the `AWS` settings taken care of, you can proceed by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+With the `AWS` settings taken care of, you can proceed by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
-Create an `index.js` file in your `root` folder then reference the `dotenv-vault-core` package as early in the code as possible to avoid possible conflicts.
+Create an `index.js` file in your `root` folder then reference the `dotenv` package as early in the code as possible to avoid possible conflicts.
 
 ##### Node.js
 
 ```js
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
 

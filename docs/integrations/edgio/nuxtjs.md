@@ -14,12 +14,12 @@ You can find a complete [example repo here](https://github.com/dotenv-org/integr
 
 ## Package installation
 
-First, install the `dotenv-vault-core` package with `npm`.
+First, install the `dotenv` package with `npm`.
 
 ##### CLI
 
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 ## Initial setup
@@ -29,7 +29,7 @@ Inside your `nuxt.config.js` file of your `Nuxt.js` application in the project `
 ```js
 // Filename: nuxt.config.js
 
-require("dotenv-vault-core").config()
+require("dotenv").config()
 
 export default {
   // Rest of your config

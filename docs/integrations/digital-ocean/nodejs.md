@@ -38,11 +38,11 @@ Remember to set an event listener running on the same port so your app knows whe
 Once it is deployed, your app will say `'Hello undefined'` as it doesn't have a way to access the environment variable from the HTML yet. That is why the next step for you to take is to connect them dynamically.
 
 ## Package installation
-Start by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+Start by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 Reference the Vault package as early as possible in your `index.js` code to prevent possible conflicts.
@@ -50,12 +50,12 @@ Reference the Vault package as early as possible in your `index.js` code to prev
 ##### Node.js
 ```js
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 ```
 [Example](https://github.com/dotenv-org/integration-example-digital-ocean-nodejs/blob/main/index.js).
 
-With the `dotenv-vault-core` package successfully taken care of, move forward by installing the `pm2` package. `pm2` replaces the functionality of the default `http-server` Node.js module and will help your app run successfully on Digital Ocean.
+With the `dotenv` package successfully taken care of, move forward by installing the `pm2` package. `pm2` replaces the functionality of the default `http-server` Node.js module and will help your app run successfully on Digital Ocean.
 
 Don't forget to call `pm2` in your `package.json` file to run the `index.js` app by entering `pm2 start index.js` as your build command.
 

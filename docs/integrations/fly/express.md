@@ -50,17 +50,17 @@ Create your local `.env` file.
 HELLO="Development"
 ```
 
-Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Install [dotenv](https://github.com/motdotla/dotenv).
 
 ```bash
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
 Require it as early as possible in your Express application.
 
 ```js
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
 const PORT = process.env.PORT || 5000

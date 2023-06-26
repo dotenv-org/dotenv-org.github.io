@@ -13,17 +13,17 @@ Learn how to make Vercel, Nuxt.js 2, and Dotenv Vault work together in a simple 
 You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-vercel-nuxtjs).
 
 ## Package installation
-First, install the `dotenv-vault-core` package with `npm`.
+First, install the `dotenv` package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 ## Initial setup
 Create an `app.vue` file for your `Nuxt.js` application in the project `root` and add a basic page template to it.
 
-Insert a `script` segment after the template and import the `dotenv-vault-core` package within it. Don't forget to call the `config` method:
+Insert a `script` segment after the template and import the `dotenv` package within it. Don't forget to call the `config` method:
 
 ##### Vue.js
 ```js
@@ -36,7 +36,7 @@ Insert a `script` segment after the template and import the `dotenv-vault-core` 
 </template>
 
 <script>
-import dotenv from 'dotenv-vault-core'
+import dotenv from 'dotenv'
 dotenv.config()
 console.log(process.env)
 </script>
@@ -50,7 +50,7 @@ Create a `nuxt.config.js` file in your project `root` and call the `module.expor
 // nuxt.config.js
 
 module.exports = {
-require('dotenv-vault-core').config(),
+require('dotenv').config(),
   {
     build: {
       publicPath: 'public/'
@@ -60,7 +60,7 @@ require('dotenv-vault-core').config(),
 ```
 [Example](https://github.com/dotenv-org/integration-example-vercel-nuxtjs/blob/master/nuxt.config.js).
 
-This will allow you to expand the `Nuxt.js` generate function, so you can call the `dotenv-vault-core` package from any location in your project.
+This will allow you to expand the `Nuxt.js` generate function, so you can call the `dotenv` package from any location in your project.
 
 When ready, include a reference to the expanded function by inserting the following within your `package.json` file:
 

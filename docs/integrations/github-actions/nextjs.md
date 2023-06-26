@@ -38,22 +38,22 @@ jobs:
 
 [example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/.github/workflows/main.yml)
 
-## 2. Preload dotenv-vault-core
+## 2. Preload dotenv
 
-Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core)
+Install [dotenv](https://github.com/motdotla/dotenv)
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
-Preload NextJS scripts using dotenv-vault-core. This will inject the environment variables ahead of NextJS.
+Preload NextJS scripts using dotenv. This will inject the environment variables ahead of NextJS.
 
 ```
 "scripts": {
-  "dev": "node -r dotenv-vault-core/config ./node_modules/.bin/next dev",
-  "build": "node -r dotenv-vault-core/config ./node_modules/.bin/next build",
-  "start": "node -r dotenv-vault-core/config ./node_modules/.bin/next start",
-  "lint": "node -r dotenv-vault-core/config ./node_modules/.bin/next lint"
+  "dev": "node -r dotenv/config ./node_modules/.bin/next dev",
+  "build": "node -r dotenv/config ./node_modules/.bin/next build",
+  "start": "node -r dotenv/config ./node_modules/.bin/next start",
+  "lint": "node -r dotenv/config ./node_modules/.bin/next lint"
 },
 ```
 [example](https://github.com/dotenv-org/integration-example-github-actions-nextjs/blob/master/package.json)

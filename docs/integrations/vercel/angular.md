@@ -21,11 +21,11 @@ ng new
 You won't need to make further changes to the codebase to complete this tutorial.
 
 ## Package installation
-Move forward by installing the [`dotenv-vault-core`](https://github.com/dotenv-org/dotenv-vault-core) package with `npm`.
+Move forward by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 Don't forget to install the `@vercel/node` runtime, as it offers `TypeScript` support for the  compile and serve functionalities during deployment.
@@ -35,9 +35,9 @@ Don't forget to install the `@vercel/node` runtime, as it offers `TypeScript` su
 npm install @vercel/node
 ```
 
-## Preload dotenv-vault-core
+## Preload dotenv
 
-The `dotenv-vault-core` package allows you to make full use of all `Vault` capabilities, without the need to commit a single line of code inside your scripts.
+The `dotenv` package allows you to make full use of all `Vault` capabilities, without the need to commit a single line of code inside your scripts.
 
 Instead, you can preload the package by inserting it within the build and development commands with a simple `-r` require flag.
 
@@ -48,10 +48,10 @@ This will inject your environment variables before any real rendering is done by
 // package.json or as Vercel overrides
 "scripts": {
   "ng": "ng",
-  "start": "node -r ./node_modules/dotenv-vault-core/config ./node_modules/@angular/cli/bin/ng serve",
-  "build": "node -r ./node_modules/dotenv-vault-core/config ./node_modules/@angular/cli/bin/ng build",
-  "watch": "node -r ./node_modules/dotenv-vault-core/config ./node_modules/@angular/cli/bin/ng build --watch --configuration development",
-  "test": "node -r ./node_modules/dotenv-vault-core/config ./node_modules/@angular/cli/bin/ng test"
+  "start": "node -r ./node_modules/dotenv/config ./node_modules/@angular/cli/bin/ng serve",
+  "build": "node -r ./node_modules/dotenv/config ./node_modules/@angular/cli/bin/ng build",
+  "watch": "node -r ./node_modules/dotenv/config ./node_modules/@angular/cli/bin/ng build --watch --configuration development",
+  "test": "node -r ./node_modules/dotenv/config ./node_modules/@angular/cli/bin/ng test"
 },
 ```
 

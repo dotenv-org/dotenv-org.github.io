@@ -46,18 +46,18 @@ Lastly, create an `index.html` file from where you will call the `index.js` scri
 ```
 
 ## Package installation
-With the `Vite` initialization out of the way, you can go ahead and install the `dotenv-vault-core` package with `npm`.
+With the `Vite` initialization out of the way, you can go ahead and install the `dotenv` package with `npm`.
 
 ##### CLI
 ```shell
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
-Once you are ready, create a `vite.config.js` file, which is where you will be calling the `dotenv-vault-core` package from.
+Once you are ready, create a `vite.config.js` file, which is where you will be calling the `dotenv` package from.
 
-Import the `defineConfig` method from the `vite` module, the `vue` plugin from the `@vitejs/plugin-vue` module and then `dotenv` from the `dotenv-vault-core` package.
+Import the `defineConfig` method from the `vite` module, the `vue` plugin from the `@vitejs/plugin-vue` module and then `dotenv` from the `dotenv` package.
 
-You will still need to access the `dotenv-vault-core` config script, so go ahead and call it afterwards, followed by a quick `.env` processing to make sure it works.
+You will still need to access the `dotenv` config script, so go ahead and call it afterwards, followed by a quick `.env` processing to make sure it works.
 
 Together, all these element form a custom module that you can use to execute core `Vault` functionalities from any location.
 
@@ -67,7 +67,7 @@ But to make it work, you will first need to `export` the module, while adding a 
 ```js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import dotenv from 'dotenv-vault-core'
+import dotenv from 'dotenv'
 
 dotenv.config();
 console.log(process.env)

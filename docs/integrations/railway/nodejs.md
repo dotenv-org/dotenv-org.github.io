@@ -41,19 +41,19 @@ Run railway up.
 $ railway up
 ```
 
-## Require dotenv-vault-core
+## Require dotenv
 
-Install [dotenv-vault-core](https://github.com/dotenv-org/dotenv-vault-core).
+Install [dotenv](https://github.com/motdotla/dotenv).
 
 ```
-npm install dotenv-vault-core --save
+npm install dotenv --save
 ```
 
 Require it as early as possible in your Node.js application.
 
 ```
 // index.js
-require('dotenv-vault-core').config()
+require('dotenv').config()
 console.log(process.env) // for debugging purposes. remove when ready.
 
 const http = require('http')

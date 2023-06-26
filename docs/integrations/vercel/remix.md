@@ -19,14 +19,14 @@ You can find a complete [example repo here](https://github.com/dotenv-org/integr
 Install [dotenv-vault](https://github.com/dotenv-org/dotenv-vault)
 
 ```
-$ npm install dotenv-vault-core --save
+$ npm install dotenv --save
 ```
 
-Preload dotenv-vault-core. This will inject environment variables ahead of Remix.
+Preload dotenv. This will inject environment variables ahead of Remix.
 
 ```
 "scripts": {
-  "build": "node -r dotenv-vault-core/config node_modules/.bin/remix build",
+  "build": "node -r dotenv/config node_modules/.bin/remix build",
   config node_modules/.bin/remix dev"
 },
 ```
@@ -36,7 +36,7 @@ Preload dotenv-vault-core. This will inject environment variables ahead of Remix
 
 Do the following for any endpoints that use environment variables.
 
-* Require dotenv-vault-core
+* Require dotenv
 * Add a loader that exposes process.env as data
 
 Here's a hello world example in the app/routes/index.tsx file.
@@ -45,7 +45,7 @@ Here's a hello world example in the app/routes/index.tsx file.
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
-require('dotenv-vault-core').config()
+require('dotenv').config()
 
 export async function loader() {
   return json({
