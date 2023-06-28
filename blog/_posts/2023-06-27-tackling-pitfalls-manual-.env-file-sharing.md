@@ -190,7 +190,7 @@ Dotenv Vault boasts an extensive list of perks and advantages designed to revolu
 7. **Comprehensive documentation:** Understandable and clear documentation is an essential aspect of any software solution. Dotenv Vault provides comprehensive guides, tutorials, and documentation, empowering teams to adopt the platform with ease and confidence. 
 
 <div style="background: #507a91; padding: 1rem; color: white;">ℹ Click below to find an in-depth look into the many advantages of Dotenv Vault 👇</div>
-[<img src="/assets/img/blog/secrets-dotenv-vault/unlocking-secrets-dotenv-vault-cover.png" style="padding-bottom: 1rem" width="100%"/>](https://www.dotenv.org/blog/2023/06/17/unlocking-secrets-dotenv-vault.html)
+[<img src="/assets/img/blog/secrets-dotenv-vault/unlocking-secrets-dotenv-vault-cover.png" style="padding-bottom: 1rem" width="100%"/>](https://www.dotenv.org/blog/2023/06/20/unlocking-secrets-dotenv-vault.html)
 
 ## Bringing it all together
 
