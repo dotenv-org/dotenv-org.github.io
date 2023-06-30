@@ -1,8 +1,8 @@
 ---
 layout: docs
 section: "Language Guides"
-title: "Kotline"
-description: Load environment variables from encrypted .env.vault files, with Kotlin 🧡.
+title: "Kotlin"
+description: Load environment variables from encrypted .env.vault files, with Kotlin 💜.
 ---
 
 <div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/cdimascio/dotenv-kotlin">dotenv-kotlin</a>. It extends it with <a href="https://github.com/dotenv-org/dotenv-vault-kotlin">dotenv-vault-kotlin</a>.</div>
