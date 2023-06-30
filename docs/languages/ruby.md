@@ -5,7 +5,7 @@ title: "Ruby"
 description: Load environment variables from encrypted .env.vault files, with Ruby 💎.
 ---
 
-<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/bkeepers/dotenv">dotenv</a></div>
+<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/bkeepers/dotenv">dotenv</a>. It extends it with <a href="https://github.com/dotenv-org/dotenv-vault-ruby">dotenv-vault-rails</a>.</div>
 
 ## 🌱 Install
 

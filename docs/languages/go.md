@@ -5,7 +5,7 @@ title: "Go"
 description: Load environment variables from encrypted .env.vault files, with Golang 🐹.
 ---
 
-<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/joho/godotenv">godotenv</a></div>
+<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/joho/godotenv">godotenv</a>. It extends it with <a href="https://github.com/dotenv-org/godotenvvault">godotenvvault</a>.</div>
 
 ## 🌱 Install
 

@@ -5,7 +5,7 @@ title: "PHP"
 description: Load environment variables from encrypted .env.vault files, with PHP 🐘.
 ---
 
-<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/vlucas/phpdotenv">phpdotenv</a></div>
+<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/vlucas/phpdotenv">phpdotenv</a>. It extends it with <a href="https://github.com/dotenv-org/phpdotenv-vault">phpdotenv-vault</a>.</div>
 
 ## 🌱 Install
 
