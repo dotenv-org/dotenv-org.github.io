@@ -21,10 +21,8 @@
       </li>
 
       {% include pricing/features/multiple_environments.html %}
+      {% include pricing/features/compare_environments.html %}
 
-      <li class="list-group-item small bg-transparent">
-        <span class="text-success">✓</span> Compare environments
-      </li>
       <li class="list-group-item small bg-transparent">
         <span class="text-success">✓</span> Encrypted deploys
       </li>
@@ -40,9 +38,9 @@
       <li class="list-group-item small bg-transparent">
         <span class="text-success">✓</span> Personal secrets
       </li>
-      <li class="list-group-item small bg-transparent">
-        <span class="text-success">✓</span> Custom environments
-      </li>
+
+      {% include pricing/features/custom_environments.html %}
+
       <li class="list-group-item small bg-transparent">
         <span class="text-success">✓</span> Slack notifications
       </li>

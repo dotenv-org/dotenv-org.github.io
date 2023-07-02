@@ -1,19 +1,30 @@
 ---
 layout: default
-title: "Customize your environments"
+title: "Custom Environments"
 redirect_from:
   - /custom-environments
 ---
 
-<div class="row">
-  <div class="col-lg-8 offset-lg-2">
-    <h1 class="text-center h5 text-secondary font-monospace mt-5 pb-0 mb-0 fw-normal">Custom Environments</h1>
-    <h3 class="text-center h2 fw-bold">Customize your environments</h3>
+<div class="container">
+  <div class="row text-center mb-3">
+    <div class="col">
+      <h1 class="display-1 fw-extrabold mt-5 lh-1">Custom Environments</h1>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <p class="h2 fw-light mt-1">Customize environments per project and at the organizational level</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="row mb-5">
-  <div class="col-lg-6 offset-lg-3">
-    <img src="/assets/img/cloudinary/multiple-environments-dd9fb70b646a091813ec5be6b67f0e524be605b31467985f96dcafc5bc9a30e3_rtsye7.gif" class="w-100 border border-4 rounded" />
+  <div class="col-lg-8 offset-lg-2">
+    {% include helpers/screenshot.html url="/assets/img/changelog/custom-environments.png" %}
+    <ul>
+      <li>Customize your environments per project</li>
+      <li>Change the default organizational environments</li>
+      <li>Add and remove environments as needed</li>
+    </ul>
   </div>
 </div>
