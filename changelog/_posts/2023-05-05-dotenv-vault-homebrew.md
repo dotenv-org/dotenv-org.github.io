@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Install dotenv-vault via homebrew"
+title: "Homebrew Binary"
 ---
 
 Prefer to install dotenv-vault with homebrew, rather than npx? Now you can.

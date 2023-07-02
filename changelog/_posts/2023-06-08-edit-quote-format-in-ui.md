@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Edit quote format in UI"
+title: "Edit Quote Format"
 ---
 
 Edit an environment variable's quote format in the UI.

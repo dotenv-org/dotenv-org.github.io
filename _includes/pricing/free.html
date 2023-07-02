@@ -10,21 +10,18 @@
   </div>
   <div class="card-body p-0">
     <ul class="list-group list-group-flush">
-      <li class="list-group-item small bg-transparent">
-        <span class="text-success">✓</span> Sync .env files
-      </li>
-      <li class="list-group-item small bg-transparent">
-        <span class="text-success">✓</span> Unlimited projects
-      </li>
+      {% include pricing/features/sync.html %}
+      {% include pricing/features/unlimited_projects.html %}
+
       <li class="list-group-item small bg-transparent">
         <span class="text-success">✓</span> Up to 3 teammates
       </li>
       <li class="list-group-item small bg-transparent">
         <span class="text-success">✓</span> Email support
       </li>
-      <li class="list-group-item small bg-transparent">
-        <span class="text-success">✓</span> Multiple environments
-      </li>
+
+      {% include pricing/features/multiple_environments.html %}
+
       <li class="list-group-item small bg-transparent">
         <span class="text-success">✓</span> Compare environments
       </li>

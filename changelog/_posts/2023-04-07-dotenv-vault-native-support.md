@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Added native support for .env.vault files to dotenv@v16.1.0-rc1"
+title: "NodeJS .env.vault support"
 ---
 
 [dotenv](https://github.com/motdotla/dotenv/tree/v16.1.0-rc1) is getting first-class native support for decrypting .env.vault files.

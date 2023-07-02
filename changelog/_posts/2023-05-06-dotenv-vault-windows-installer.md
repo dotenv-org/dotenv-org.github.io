@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Install dotenv-vault on Windows"
+title: "Windows Installer"
 ---
 
 Prefer to install dotenv-vault as an executable on Windows, rather than npx? Now you can.

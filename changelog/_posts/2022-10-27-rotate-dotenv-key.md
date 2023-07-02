@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Added the ability to rotate your DOTENV_KEY"
+title: "Rotate DOTENV_KEY"
 ---
 
 Rotate your <strong>DOTENV_KEY</strong> with the following command:

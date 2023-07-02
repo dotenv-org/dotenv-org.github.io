@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Added better spam protection with Turnstile"
+title: "Spam Protection"
 ---
 
 We swapped our honeypot spam protection mechanism for [Cloudflare Turnstile](https://blog.cloudflare.com/turnstile-private-captcha-alternative/). It is more reliable at catching spam and the experience is still good – no annoying captchas identifying traffic signs. 

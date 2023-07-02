@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Added extended support to python-dotenv-vault"
+title: "python-dotenv-vault further extended"
 ---
 
 [python-dotenv-vault](https://github.com/dotenv-org/python-dotenv-vault) has extended support for:

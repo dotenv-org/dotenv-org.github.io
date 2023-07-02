@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "Added attached PDF invoice to billing emails"
+title: "Billing Improvements"
 ---
 
 Billing teams will be happy. We've added:

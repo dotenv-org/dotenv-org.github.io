@@ -1,7 +1,7 @@
 ---
 layout: changelog
 author: mot
-title: "dotenv Spanish language README"
+title: "Spanish language README"
 ---
 
 We added a README in Español. Thank you to Francisco Hernandez for this contribution.
