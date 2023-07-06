@@ -158,7 +158,7 @@ Or use Heroku's UI.
 ##### UI
 {% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_heroku_environment_variable_settings_sk6fkj.png" %}
 
-## Commit and push
+## Deploy
 
 Commit those changes safely to code and deploy.
 
