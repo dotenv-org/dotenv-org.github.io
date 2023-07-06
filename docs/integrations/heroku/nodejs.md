@@ -1,33 +1,30 @@
 ---
 layout: docs
-title: "Heroku with Node.js - Integrations"
+section: "Integration Guides"
+title: "Heroku with NodeJS"
+description: Deploy a NodeJS app to Heroku. Use an encrypted .env.vault file to secure and deploy your secrets to Heroku.
 ---
 
-{% include icons/heroku.html width="50" color="#430098" %}
-{% include icons/nodejs.html width="50" color="#339933" %}
+<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/motdotla/dotenv">dotenv</a> and have <a href="/docs/tutorials/sync">synced your secrets</a> with <a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a>.</div>
 
-# __Heroku with Node.js__
-
-Learn how to make Heroku, Node.js, and Dotenv Vault work together in a simple web app. This tutorial assumes you are already familiar with `.env` files and know [how to sync them](/docs/tutorials/sync).
-
-You can find a complete [example repo here](https://github.com/dotenv-org/integration-example-heroku-nodejs).
+You can find a complete [example here](https://github.com/dotenv-org/examples/tree/master/heroku-nodejs).
 
 ## Initial setup
-Create a `Procfile` in the `root` folder to set your Heroku project settings. Add the `web` key, followed by the start command of your Node.js application as value.
 
-##### Yaml
+Add a `Procfile` to run your NodeJS app.
+
+##### Procfile
 ```yaml
-// Procfile
-web: npm run build
+web: node index.js
 ```
-[Example](https://github.com/dotenv-org/integration-example-heroku-nodejs/blob/master/Procfile)
+[Example](https://github.com/dotenv-org/examples/blob/master/heroku-nodejs/Procfile)
 
-Create an `index.js` file, if you haven't done so already. Process the environment variables in it and proceed with a standard Node.js `http-server` setup. Reference the module, indicate the port, and add some dynamic HTML with an environment variable to confirm it works beyond local.
+Your `index.js` file should look something like this.
 
-##### Node.js
+##### index.js
 ```js
 // index.js
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 3000
 const http = require('http')
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
@@ -39,9 +36,9 @@ server.listen(PORT, () => {
   console.log(`Server running on port:${PORT}/`);
 });
 ```
-[Example](https://github.com/dotenv-org/integration-example-heroku-nodejs/blob/master/index.js)
+[Example](https://github.com/dotenv-org/examples/blob/master/heroku-nodejs/index.js)
 
-Remember to set an event listener running on the same port so your app knows when to serve its visitors. Commit that to code and push it to Heroku.
+Commit that to code and push it to Heroku.
 
 ##### CLI
 
@@ -50,88 +47,126 @@ heroku create
 git push heroku
 ```
 
-Once it is deployed, your app will say `'Hello undefined'` as it doesn't have a way to access the environment variable from the HTML yet. That is why the next step for you to take is to connect them dynamically.
+Once deployed, your app will say `'Hello undefined'` as it doesn't have a way to access the environment variable yet. Let's do that next.
 
-## Package installation
-Start by installing the [`dotenv`](https://github.com/motdotla/dotenv) package with `npm`.
+## Install dotenv
+
+Install [`dotenv`](https://github.com/motdotla/dotenv).
 
 ##### CLI
 ```shell
 npm install dotenv --save
 ```
 
-Reference the Vault package as early as possible in your `index.js` code to prevent possible conflicts.
+Create a `.env` file in the root of your project.
 
-##### Node.js
+##### .env
+```shell
+# .env
+HELLO="World"
+```
+
+As early as possible in your application, import and configure dotenv.
+
+##### index.js
 ```js
 // index.js
 require('dotenv').config()
-console.log(process.env) // for debugging purposes. remove when ready.
+console.log(process.env) // remove this after you've confirmed it is working
+
+const PORT = process.env.PORT || 3000
+const http = require('http')
+...
 ```
-[Example](https://github.com/dotenv-org/integration-example-heroku-nodejs/blob/master/index.js)
+[Example](https://github.com/dotenv-org/examples/blob/master/heroku-nodejs/index.js#L2)
 
-## Vault setup
-Open your Vault project and insert the `HELLO` secret with value of your choice under `development` for local testing. For this tutorial it is `"user, your local test worked perfectly"` to complete the static text in the HTML. Once you are ready and confirmed you're logged in, sync your Dotenv Vault locally with `npx dotenv-vault pull`. Then, run locally for testing.
+Try running it locally.
 
-#### Shell
+##### CLI
 ```shell
-# .env
-HELLO="user, your local test worked perfectly."
-```
-
-
-#### Node.js
-```Java
 node index.js
 {
-  HELLO: 'user, your local test worked perfectly.'
+  ...
+  HELLO: 'World'
 }
-Running on port 5000
+Server running on port:3000/
 ```
 
-If you've set everything correctly, you will be faced with the message `"Hello user, your local test worked perfectly"` at [http://localhost:5000](http://localhost:5000).
+Perfect. `process.env` now has the keys and values you defined in your `.env` file.
 
-## Build the Vault
-Now that the local test is completed successfully, it is time for you to set a production value for when you deploy. Following the previous fashion, it is set to `HELLO="user, your production test worked perfectly."` Run `npx dotenv-vault open production` so you can start editing production values with the Vault interface.
+That covers local development. Let's solve for Heroku production next.
 
-#### CLI
-```Java
-npx dotenv-vault open production
-```
+## Build .env.vault
 
-{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_environment_variable_interface_production_nh0bop.png" %}
+Push your latest `.env` file changes and edit your production secrets. [Learn more](/docs/tutorials/sync)
 
-When you are done tinkering, pull the latest Vault version and build your encrypted local `.env.vault` file by running `npx dotenv-vault build`. Commit your `.env.vault` file to code without stress knowing it is both safe and necessary to do so, unlike `.env` files.
-
-#### CLI
+##### CLI
 ```shell
-npx dotenv-vault build
+npx dotenv-vault@latest push
+npx dotenv-vault@latest open production
 ```
 
-## Set deployment
+Use the UI to configure those secrets per environment.
 
-There is one last step to complete before you are ready - you must set the decryption `DOTENV_KEY` on Heroku. To do that, first fetch your Vault production key by running `npx dotenv-vault keys production`.
+##### UI
+{% include helpers/screenshot.html url="/assets/img/docs/edit-production-value.gif" %}
 
-#### CLI
+Then build your encrypted `.env.vault` file.
+
+##### CLI
 ```shell
-npx dotenv-vault keys production
-remote:   Listing .env.vault decryption keys... done
-
-dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
+npx dotenv-vault@latest build
 ```
 
-Copy over the key and jump to your Heroku project. Hop on to the Settings panel and then set `DOTENV_KEY` as key and your decryption key as value `dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production` as value.
+Its contents should look something like this.
 
+##### .env.vault
+```shell
+#/-------------------.env.vault---------------------/
+#/         cloud-agnostic vaulting standard         /
+#/   [how it works](https://dotenv.org/env-vault)   /
+#/--------------------------------------------------/
+
+# development
+DOTENV_VAULT_DEVELOPMENT="/HqNgQWsf6Oh6XB9pI/CGkdgCe6d4/vWZHgP50RRoDTzkzPQk/xOaQs="
+DOTENV_VAULT_DEVELOPMENT_VERSION=2
+
+# production
+DOTENV_VAULT_PRODUCTION="x26PuIKQ/xZ5eKrYomKngM+dO/9v1vxhwslE/zjHdg3l+H6q6PheB5GVDVIbZg=="
+DOTENV_VAULT_PRODUCTION_VERSION=2
+```
+
+## Set DOTENV_KEY
+
+Fetch your production `DOTENV_KEY`.
+
+##### CLI
+```shell
+npx dotenv-vault@latest keys production
+# outputs: dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
+```
+
+Set `DOTENV_KEY` on Heroku using the CLI.
+
+##### CLI
+```shell
+heroku config:set DOTENV_KEY=dotenv://:key_1234…@dotenv.org/vault/.env.vault?environment=production
+```
+
+Or use Heroku's UI.
+
+##### UI
 {% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_heroku_environment_variable_settings_sk6fkj.png" %}
 
 ## Commit and push
 
-That's it!
+Commit those changes safely to code and deploy.
 
-Commit those changes safely to code and deploy to Heroku.
+That's it! On deploy, your `.env.vault` file will be decrypted and its production secrets injected as environment variables – just in time.
 
-When the build runs, it will recognize the `DOTENV_KEY`, decrypt the .env.vault file, and load the `production` environment variables to `ENV`. If a `DOTENV_KEY` is not set when developing on local machine, for example, it will fall back to standard Dotenv functionality.
-
-You'll know things worked correctly when you see `'Loading .env from encrypted .env.vault'` in your Heroku logs.
+You'll know things worked correctly when you see `'Loading env from encrypted .env.vault'` in your logs.
 
 {% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_heroku_logs_encrypted_loading_env_vault_qbwich.png" %}
+
+Additional Note: If a `DOTENV_KEY` is not set (for example when developing on your local machine) it will fall back to standard [dotenv](https://github.com/motdotla/dotenv) functionality.
+

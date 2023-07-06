@@ -2,12 +2,12 @@
 layout: docs
 section: Overview
 title: "Introduction"
-description: In these pages you'll find tutorials that will teach you how to use dotenv-vault, and reference documentation for all the moving parts.
+description: The secrets manager for .env files – from the same people that pioneered dotenv.
 ---
 
-**dotenv-vault** is a secrets manager built on top of dotenv. It lets you sync and deploy your .env files across machines, teams, and environments – simply and securely.
+Sync your `.env` files with a single command, deploy them with an encrypted `.env.vault` file, and say goodbye to scattered secrets across multiple platforms and tools.
 
-If you already use .env files you can benefit from dotenv-vault in just a few seconds of your time. Try it right now.
+If you already use .env files you can benefit from dotenv-vault in just a few seconds of your time. It works with a single command: **npx dotenv-vault@latest push**.
 
 <div class="row row-cols-2 g-2">
   <div class="col-lg-12">

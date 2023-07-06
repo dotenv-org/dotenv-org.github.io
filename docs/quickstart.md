@@ -2,7 +2,7 @@
 layout: docs
 section: Overview
 title: "Quickstart ⚡️"
-description: The complete quickstart guide to manage your secrets with dotenv-vault. Learn and understand how to use dotenv-vault with your application – in about 5 minutes.
+description: Manage your secrets with dotenv-vault. Learn and understand how to use dotenv-vault with your application – in about 5 minutes.
 ---
 
 In this guide, we'll deploy an application with secrets to Heroku. We'll create the app, load and sync its secrets, and deploy it using the .env.vault file. A quick skim over this tutorial, and you'll understand all the foundational concepts of using dotenv-vault.

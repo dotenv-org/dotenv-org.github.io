@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Simplify Your Secrets"
+title: "The secrets manager for .env files"
 redirect_from:
   - /why
 ---
