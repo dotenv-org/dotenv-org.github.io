@@ -5,7 +5,7 @@ title: "Heroku with NodeJS"
 description: Deploy a NodeJS app to Heroku. Use an encrypted .env.vault file to secure and deploy your secrets to Heroku.
 ---
 
-<div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/motdotla/dotenv">dotenv</a> and have <a href="/docs/tutorials/sync">synced your secrets</a> with <a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a>.</div>
+<div class="alert alert-info"><strong>Heads up!</strong> This guide assumes you are already familiar with <a href="https://github.com/motdotla/dotenv">dotenv</a> and have <a href="/docs/tutorials/sync">synced your secrets</a> with <a href="https://github.com/dotenv-org/dotenv-vault">dotenv-vault</a>.</div>
 
 You can find a complete [example here](https://github.com/dotenv-org/examples/tree/master/heroku-nodejs).
 
@@ -55,7 +55,7 @@ Install [`dotenv`](https://github.com/motdotla/dotenv).
 
 ##### CLI
 ```shell
-npm install dotenv --save
+npm install dotenv --save # Requires dotenv >= 16.1.0
 ```
 
 Create a `.env` file in the root of your project.
@@ -109,7 +109,7 @@ npx dotenv-vault@latest open production
 Use the UI to configure those secrets per environment.
 
 ##### UI
-{% include helpers/screenshot.html url="/assets/img/docs/edit-production-value.gif" %}
+{% include helpers/screenshot_browser.html url="/assets/img/docs/edit-production-value.gif" www="dotenv.org" %}
 
 Then build your encrypted `.env.vault` file.
 
@@ -156,7 +156,7 @@ heroku config:set DOTENV_KEY=dotenv://:key_1234…@dotenv.org/vault/.env.vault?e
 Or use Heroku's UI.
 
 ##### UI
-{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_heroku_environment_variable_settings_sk6fkj.png" %}
+{% include helpers/screenshot_browser.html url="/assets/img/docs/heroku-config-vars.png" www="heroku.com" %}
 
 ## Deploy
 
@@ -164,9 +164,8 @@ Commit those changes safely to code and deploy.
 
 That's it! On deploy, your `.env.vault` file will be decrypted and its production secrets injected as environment variables – just in time.
 
-You'll know things worked correctly when you see `'Loading env from encrypted .env.vault'` in your logs.
+You'll know things worked correctly when you see `'Loading env from encrypted .env.vault'` in your logs. If a `DOTENV_KEY` is not set (for example when developing on your local machine) it will fall back to standard [dotenv](https://github.com/motdotla/dotenv) functionality.
 
-{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv_vault_heroku_logs_encrypted_loading_env_vault_qbwich.png" %}
+{% include helpers/screenshot_browser.html url="/assets/img/docs/heroku-logs-vault.png" www="heroku logs --tail" %}
 
-Additional Note: If a `DOTENV_KEY` is not set (for example when developing on your local machine) it will fall back to standard [dotenv](https://github.com/motdotla/dotenv) functionality.
-
+{% include docs/welldone.html %}
