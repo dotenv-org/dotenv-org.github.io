@@ -46,6 +46,16 @@
     </li>
 
     <li class="py-2">
+      {% include docs/nav_group.html text="Extended Language Guides" %}
+      <ul class="list-unstyled fw-normal ps-1 pb-2 small">
+        {% include layouts/docs_nav_title_grid.html name="NodeJS" icon="nodejs" color="#339933" %}
+        {% include docs/nav_link.html url="/docs/languages/nodejs" text="Overview" %}
+        {% include docs/nav_link.html url="/docs/languages/nodejs/digital-ocean" text="Digital Ocean" %}
+        {% include docs/nav_link.html url="/docs/languages/nodejs/heroku" text="Heroku" %}
+      </ul>
+    </li>
+
+    <li class="py-2">
       {% include docs/nav_group.html text="Tutorials" %}
       <ul class="list-unstyled fw-normal ps-1 pb-2 small">
         {% include docs/nav_link.html url="/docs/tutorials/sync" text="Sync .env files" %}

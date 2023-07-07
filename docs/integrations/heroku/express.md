@@ -1,6 +1,8 @@
 ---
 layout: docs
+section: "Language Guides"
 title: "Heroku with Express - Integrations"
+description: Load environment variables from encrypted .env.vault files, with NodeJS 🚀.
 ---
 
 {% include icons/heroku.html width="50" color="#430098" %}

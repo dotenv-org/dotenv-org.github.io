@@ -1,8 +1,8 @@
 ---
 layout: docs
 section: "Language Guides"
-title: "NodeJS"
-description: Load environment variables from encrypted .env.vault files, with NodeJS 🚀.
+title: "Node.js"
+description: Load environment variables from an encrypted .env.vault file, with Node.js 🚀.
 ---
 
 ## 🌱 Install
