@@ -40,7 +40,6 @@ server.listen(PORT, () => {
 Commit that to code and push it to Heroku.
 
 ##### CLI
-
 ```shell
 heroku create
 git push heroku
