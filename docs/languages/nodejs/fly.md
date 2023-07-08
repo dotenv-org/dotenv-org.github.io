@@ -5,6 +5,9 @@ title: "Deploy a Node.js App to Fly.io"
 description: Deploy a Node.js app with an encrypted .env.vault file to Fly.io.
 ---
 
+{% include docs/headsup.html %}
+{% include docs/example_link.html url="https://github.com/dotenv-org/examples/tree/master/nodejs/fly" %}
+
 ## Initial setup
 
 Create an `index.js` file, if you haven't already done so.
@@ -25,20 +28,14 @@ server.listen(PORT, () => {
 })
 ```
 
-Run `npm init` to generate your `package.json` file. It will look something like this.
+Create a `package.json` file.
 
 ##### package.json
 ```json
 {
-  "name": "yourapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "start": "node index.js"
+  }
 }
 ```
 
@@ -47,9 +44,16 @@ Commit that to code and deploy it to Fly.
 ##### CLI
 ```shell
 brew install flyctl
-fly launch
-fly deploy --remote-only --no-cache
+flyctl launch
+flyctl deploy --remote-only --no-cache
 ```
+
+<div class="alert alert-danger">
+  <p><strong>Fly.io bug:</strong> While writing this guide we ran into the error "failed to fetch an image or build from source: error building: ... node:20.4.0-slim: docker.io/library/node:20.4.0-slim: not found".</p>
+  <hr>
+  <p class="mb-0">If you also experience this set <strong>NODE_VERSION=18.16.1</strong> in your Dockerfile and redeploy.</p>
+</div>
+
 
 Once deployed, your app will say `'Hello undefined'` as it doesn't have a way to access the environment variable yet. Let's do that next.
 
@@ -66,10 +70,12 @@ npx dotenv-vault@latest keys production
 # outputs: dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production
 ```
 
-Set `DOTENV_KEY` on Railway.
+Set `DOTENV_KEY` on Fly.io.
 
-##### UI
-{% include helpers/screenshot_browser.html url="/assets/img/cloudinary/integrations-railway-nodejs_rwo40w.gif" www="railway.com" %}
+##### CLI
+```shell
+flyctl secrets set NODE_ENV=production DOTENV_KEY='dotenv://:key_1234@dotenv.org/vault/.env.vault?environment=production'
+```
 
 ## Deploy
 
@@ -79,6 +85,6 @@ That's it! On deploy, your `.env.vault` file will be decrypted and its productio
 
 You'll know things worked correctly when you see `'Loading env from encrypted .env.vault'` in your logs. If a `DOTENV_KEY` is not set (for example when developing on your local machine) it will fall back to standard [dotenv](https://github.com/motdotla/dotenv) functionality.
 
-{% include helpers/screenshot_browser.html url="/assets/img/docs/railway-logs-vault.png" www="npx @railway/cli@latest logs" %}
+{% include helpers/screenshot_browser.html url="/assets/img/docs/fly-logs-vault.png" www="flyctl logs" %}
 
 {% include docs/welldone.html %}
