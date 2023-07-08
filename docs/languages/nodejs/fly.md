@@ -1,15 +1,9 @@
 ---
 layout: docs
 section: "Language Guides"
-title: "Deploy a Node.js App to Railway"
-description: Deploy a Node.js app with an encrypted .env.vault file to Railway.
-redirect_from:
-  - /docs/integrations/railway-nodejs
-  - /docs/integrations/railway/nodejs
+title: "Deploy a Node.js App to Fly.io"
+description: Deploy a Node.js app with an encrypted .env.vault file to Fly.io.
 ---
-
-{% include docs/headsup.html %}
-{% include docs/example_link.html url="https://github.com/dotenv-org/examples/tree/master/nodejs/railway" %}
 
 ## Initial setup
 
@@ -31,20 +25,30 @@ server.listen(PORT, () => {
 })
 ```
 
-Add an empty `package.json`.
+Run `npm init` to generate your `package.json` file. It will look something like this.
 
 ##### package.json
 ```json
-{}
+{
+  "name": "yourapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
 ```
 
-Commit that to code and deploy it to Railway.
+Commit that to code and deploy it to Fly.
 
 ##### CLI
 ```shell
-npx @railway/cli@latest init
-npx @railway/cli@latest up
-npx @railway/cli@latest domain
+brew install flyctl
+fly launch
+fly deploy --remote-only --no-cache
 ```
 
 Once deployed, your app will say `'Hello undefined'` as it doesn't have a way to access the environment variable yet. Let's do that next.
