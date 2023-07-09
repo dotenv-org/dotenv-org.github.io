@@ -52,9 +52,9 @@ jobs:
         DOTENV_KEY: ${{ secrets.DOTENV_KEY }}{% endraw %}
 ```
 
-Commit that to code and deploy to GitHub.
+Commit that to code and push to GitHub.
 
-Once deployed, the GitHub actions build will say `'Hello undefined'` as it doesn't have a way to access the environment variable yet. Let's do that next.
+Once pushed, the GitHub actions build will say `'Hello undefined'` as it doesn't have a way to access the environment variable yet. Let's do that next.
 
 ##### GitHub Actions
 {% include helpers/screenshot_browser.html url="/assets/img/docs/github-actions-hello-undefined.png" www="github.com/you/app/actions" %}
@@ -79,9 +79,9 @@ Set `DOTENV_KEY` on GitHub Actions.
 
 ## Build CI
 
-Commit those changes safely to code and rerun the build.
+Commit those changes safely to code and re-run the build.
 
-That's it! On deploy, your `.env.vault` file will be decrypted and its CI secrets injected as environment variables – just in time.
+That's it! On re-run, your `.env.vault` file will be decrypted and its CI secrets injected as environment variables – just in time.
 
 You'll know things worked correctly when you see `'Loading env from encrypted .env.vault'` in your logs. If a `DOTENV_KEY` is not set (for example when developing on your local machine) it will fall back to standard [dotenv](https://github.com/motdotla/dotenv) functionality.
 
