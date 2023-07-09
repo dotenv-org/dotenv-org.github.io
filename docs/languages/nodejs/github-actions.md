@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: "CI/CD in Node.js with GitHub Actions"
-description: Use Node.js to run GitHub Actions with an encrypted .env.vault file
+description: Run Node.js CI/CD in GitHub Actions with an encrypted .env.vault file
 redirect_from:
   - /docs/integrations/github/actions-nodejs
   - /docs/integrations/github-actions/nodejs
