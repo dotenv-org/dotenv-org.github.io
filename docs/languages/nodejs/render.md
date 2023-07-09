@@ -5,6 +5,7 @@ title: "Deploy a Node.js App to Render"
 description: Deploy a Node.js app with an encrypted .env.vault file to Render.
 redirect_from:
   - /docs/integrations/render/express
+  - /docs/integrations/render/nodejs
 ---
 
 {% include docs/headsup.html %}
