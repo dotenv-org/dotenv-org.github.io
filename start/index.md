@@ -49,9 +49,11 @@ description: Master the basics of dotenv and dotenv-vault
           </div>
         </div>
         <div class="col-3 my-5 text-center">
-          {% include icons/python.html width="70" color="#979797" %}
+          <a href="/start/python" class="#3776AB">
+          {% include icons/python.html width="70" color="#3776AB" %}
+          </a>
           <div class="mt-3">
-            <a href="" class="btn btn-warning btn-lg">
+            <a href="/start/python" class="btn btn-lg btn-link">
               Python
             </a>
           </div>
