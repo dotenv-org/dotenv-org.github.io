@@ -1,17 +1,22 @@
 ---
 layout: default
 title: "Getting Started on Dotenv with Node.js"
-description: Copy-and-paste guides for mastering the basics of dotenv and dotenv-vault.
+description: Copy-and-paste guides for mastering the basics of dotenv and dotenv-vault with Node.js
 ---
 
 <div class="container">
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      <a href="/start">&larr; back to start</a> 
+    </div>
+  </div>
   <div class="row text-center">
     <div class="col">
       {% include icons/nodejs.html width="50" color="#339933" %}
-      <h1 class="fw-extrabold mt-2 lh-1">Get Started on Dotenv with node.js</h1>
+      <h1 class="fw-extrabold mt-2 lh-1">Getting Started on Dotenv with Node.js</h1>
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
-          <p class="lead text-body-tertiary mt-2 mb-4">Learn how to use dotenv and dotenv-vault in Node.js.</p>
+          <p class="lead text-body-tertiary mt-2 mb-4">Copy-and-paste guides for mastering the basics of dotenv and <span class="fw-extrabold">dotenv-vault</span> with Node.js.</p>
         </div>
       </div>
     </div>
@@ -96,7 +101,7 @@ description: Copy-and-paste guides for mastering the basics of dotenv and dotenv
           {% include helpers/integration2.html icon="aws" url="/docs/integrations/aws-beanstalk/express" name="AWS Beanstalk" color="#2A6A35" %}
         </div>
         <div class="col-6 col-lg-3 d-flex align-items-center">
-          {% include helpers/integration2.html icon="circleci" url="/docs/integrations/circleci/rails" name="CircleCI" color="#343434" %}
+          {% include helpers/integration2.html icon="circleci" url="/docs/integrations/circleci/nodejs" name="CircleCI" color="#343434" %}
         </div>
         <div class="col-6 col-lg-3 d-flex align-items-center">
           {% include helpers/integration2.html icon="travis-ci" url="/docs/integrations/travis-ci/nodejs" name="Travis CI" color="#3EAAAF" %}
