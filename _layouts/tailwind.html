@@ -7,9 +7,8 @@
     {% favicon %}
     <meta name="keywords" content="dotenv, .env, dotenv-vault, environments, encrypt, vault, developer secrets, secret manager, share, secretops">
 
+    <style>[x-cloak]{display:none}</style>
     <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/loader.js"></script>
-
     {% if jekyll.environment == "production" %}
       {% assign cacheBust = site.time | date:'?v=%s' %}
       <link rel="stylesheet" media="all" href="{{ "/assets/css/tw.css" | relative_url | append: cacheBust }}">
@@ -17,11 +16,9 @@
       <script src="https://cdn.tailwindcss.com"></script>
     {% endif %}
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/editor/editor.main.css">
-
     {% include layouts/analytics.html %}
   </head>
-  <body class="font-sans antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-600 dark:text-zinc-400">
+  <body class="font-sans antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-600 dark:text-zinc-400 selection:bg-yellow-300 selection:text-zinc-950">
 
     <!--
     <div class="absolute right-0 top-0 pt-4 pr-2">
