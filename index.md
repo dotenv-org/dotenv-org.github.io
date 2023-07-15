@@ -5,7 +5,6 @@ redirect_from:
   - /why
 ---
 
-{% include v2/nav.html %}
 {% include v2/hero.html %}
 {% include v2/trust.html %}
 {% include v2/works.html %}

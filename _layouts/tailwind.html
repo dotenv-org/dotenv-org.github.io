@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" x-data="{ darkMode: true }" x-bind:class="darkMode ? 'dark' : ''">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,47 +17,9 @@
     {% include layouts/analytics.html %}
   </head>
   <body class="font-sans antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-600 dark:text-zinc-400 selection:bg-yellow-300 selection:text-zinc-950">
-
-    <!--
-    <div class="absolute right-0 top-0 pt-4 pr-2">
-      <a href="https://vault.dotenv.org/login" class="underline underline-offset-6 dark:text-yellow-300 px-5 py-3 text-xs rounded">
-        Log In
-      </a>
-    </div>
-    -->
-
-    <!-- nav -->
-    <!--
-    <nav class="flex flex-col space-y-4 p-5">
-      <div class="flex justify-center">
-        <a href="/">
-          <img src="/assets/img/dotenv.svg" alt="dotenv" width="44" height="44" class="rounded">
-        </a>
-      </div>
-      <div class="flex justify-center space-x-4 text-xs content-center">
-        <a href="/docs" class="underline underline-offset-6 dark:text-yellow-300 py-2">
-          Documentation
-        </a>
-                <a href="/pricing" class="bg-yellow-300 hover:bg-yellow-400 text-stone-900 font-bold py-2 px-3 rounded">
-          Pricing + Sign Up
-        </a>
-      </div>
-    </nav>
-    -->
-
-    <!-- trust1 -->
-    <!--
-    <div class="alert alert-dark px-2 py-2 mb-0 rounded-0 text-center">
-      <a class="fw-light lh-2 text-decoration-none" href="https://github.com/motdotla/dotenv">
-        From the pioneers of <span class="fw-semibold">dotenv</span> ⋅ <span class="star">☆17.4k</span>
-      </a>
-    </div>
-    -->
-
-      {{ content }}
-
-      {% include v2/footer.html %}
-      {% include layouts/js.html %}
-    </div>
+    {% include v2/nav.html %}
+    {{ content }}
+    {% include v2/footer.html %}
+    {% include layouts/js.html %}
   </body>
 </html>

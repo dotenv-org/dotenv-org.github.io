@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   purge: [
     './_includes/**/*.html',
     './_layouts/**/*.html',
@@ -6,7 +7,6 @@ module.exports = {
     './*.md',
     './*.html',
   ],
-  // darkMode: 'class',
   theme: {
     extend: {},
   },
