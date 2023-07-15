@@ -5,15 +5,26 @@
   <div class="max-w-3xl mx-auto">
     <h3 class="text-2xl md:text-3xl font-bold tracking-tight dark:text-zinc-300">Sharing .env files by hand gets messy</h3>
     <p class="my-5">From sharing over Slack, to Email, to copying and pasting across multiple environments, manually managing your secrets is chaotic.</p>
-    <p class="font-bold my-2"><span class="text-red-600">&times;</span> Out of Sync</p>
-    <p class="font-bold my-2"><span class="text-red-600">&times;</span> Zero Access Controls</p>
+
+    <div class="border border-red-300 dark:border-red-950 rounded-lg text-center p-3 my-4">
+      <span class="text-red-500">&times;</span> Out of Sync
+    </div>
+    <div class="border border-red-300 dark:border-red-950 rounded-lg text-center p-3 my-4">
+      <span class="text-red-500">&times;</span> Zero Access Controls
+    </div>
   </div>
 
   <div class="mt-10 max-w-3xl mx-auto">
     <h3 class="text-2xl md:text-3xl font-bold tracking-tight dark:text-zinc-300">Other solutions make you abandon .env files</h3>
     <p class="my-6">Proprietary solutions require a lot from you - code rewrites, lock-in, and third-party integrations that might leak your secrets – it's risky.</p>
-    <p class="font-bold my-2"><span class="text-red-600">&times;</span> Proprietary</p>
-    <p class="font-bold my-2"><span class="text-red-600">&times;</span> Risky Third-party Integrations*</p>
+
+    <div class="border border-red-300 dark:border-red-950 rounded-lg text-center p-3 my-4">
+      <span class="text-red-500">&times;</span> Proprietary
+    </div>
+    <div class="border border-red-300 dark:border-red-950 rounded-lg text-center p-3 my-4">
+      <span class="text-red-500">&times;</span> Risky Third-party Integrations
+    </div>
+
     <p class="my-6 text-sm">*Syncing your secrets over <a href="https://coderpad.io/blog/development/heroku-github-breach/">third-party integrations</a> increases your attack surface area by scattering them in more places, making it more likely your secrets leak. Look what happened to <a href="https://techcrunch.com/2023/01/05/circleci-breach/" class="underline">CircleCI</a>. dotenv-vault removes this risk.</p>
   </div>
 
