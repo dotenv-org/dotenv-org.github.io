@@ -1,4 +1,7 @@
 module.exports = {
+  ignore: [
+    "**/*.scss"
+  ],
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
