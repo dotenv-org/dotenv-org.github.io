@@ -20,7 +20,7 @@
         From: "transform opacity-100 scale-100"
         To: "transform opacity-0 scale-95"
     -->
-    <div x-show="open" class="absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div x-show="open" x-transition class="none absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
       <div class="" role="none">
         <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
         <a x-on:click="open = !open; darkMode = false" class="cursor-pointer text-zinc-600 block p-3 pl-4 text-sm font-semibold hover:text-zinc-950 dark:hover:text-zinc-100" role="menuitem" tabindex="-1" id="menu-item-0">
