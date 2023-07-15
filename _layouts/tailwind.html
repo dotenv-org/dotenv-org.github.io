@@ -7,8 +7,6 @@
     {% favicon %}
     <meta name="keywords" content="dotenv, .env, dotenv-vault, environments, encrypt, vault, developer secrets, secret manager, share, secretops">
 
-    <style>[x-cloak]{display:none}</style>
-    <script src="//unpkg.com/alpinejs" defer></script>
     {% if jekyll.environment == "production" %}
       {% assign cacheBust = site.time | date:'?v=%s' %}
       <link rel="stylesheet" media="all" href="{{ "/assets/css/tw.css" | relative_url | append: cacheBust }}">
@@ -58,8 +56,8 @@
 
       {{ content }}
 
-    	{% include v2/footer.html %}
-    	{% include layouts/js.html %}
+      {% include v2/footer.html %}
+      {% include layouts/js.html %}
     </div>
   </body>
 </html>
