@@ -1,17 +1,17 @@
 ---
-layout: default
-title: "The secrets manager for .env files"
+layout: tailwind
+title: ""
 redirect_from:
   - /why
 ---
 
-{% include landing/hero.html %}
-{% include landing/product_screenshot.html %}
-{% include landing/trust_companies.html %}
-{% include landing/problem.html %}
-{% include landing/solution_3_steps.html %}
-{% include landing/works_everywhere.html %}
-{% include landing/companies.html %}
-{% include landing/quote.html %}
-{% include landing/5minutes.html %}
-{% include landing/faq.html %}
+{% include v2/nav.html %}
+{% include v2/hero.html %}
+{% include v2/trust.html %}
+{% include v2/works.html %}
+{% include v2/problem.html %}
+{% include v2/fix.html %}
+{% include v2/companies.html %}
+{% include v2/quote.html %}
+{% include v2/5minutes.html %}
+{% include v2/faq.html %}
