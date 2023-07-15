@@ -1,0 +1,26 @@
+<div class="relative h-screen max-h-[800px]">
+  <section class="mx-auto h-screen max-w-6xl px-5 md:px-10 pb-8 max-h-[800px]">
+
+    <div class="flex h-full flex-col md:flex-row items-center justify-center pb-28">
+      <div class="origin-center-start max-w-3xl">
+        <h5 class="text-center md:text-left opacity-75 hover:opacity-90 dark:opacity-60 dark:hover:opacity-70 ease-in font-medium dark:font-normal">From the pioneers of {% include v2/dotenv.html %}</h5>
+        <h1 class="mt-8 text-center md:text-start text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent from-zinc-200 from-5% via-black via-20% to-black dark:from-zinc-800 dark:from-5% dark:via-white dark:via-30% dark:to-white leading-tight">Secrets for developers</h1>
+        <p class="mt-8 text-center md:text-start leading-relaxed text-md md:text-lg max-w-xl">A secrets manager for .env files. Sync your secrets between machines, environments, and team members with {% include v2/dotenv-vault.html %}.</p>
+
+        <div class="mt-10 flex flex-col md:flex-row justify-center md:justify-start gap-4">
+          {% include components/btn.html url="https://vault.dotenv.org" text='Create <span class="font-extrabold tracking-tight">Dotenv</span> Account' %}
+          {% include components/btn-secondary.html url="/docs" text="Documentation" %}
+        </div>
+      </div>
+
+      <div class="hidden lg:flex lg:my-20 lg:relative lg:h-full lg:w-[600px] items-center justify-center animate-[pulse_5s_ease-in-out_infinite] hover:animate-none">
+        <div class="lg:transform-gpu lg:blur-2xl lg:opacity-75 lg:sepia lg:hover:blur-0 lg:hover:sepia-0 lg:hover:opacity-100 lg:transition lg:delay-75 lg:duration-700 lg:ease-in-out lg:pl-5 w-50 lg:w-full">
+          <iframe class="w-full aspect-video rounded-3xl border-t-2 border-r-2 border-l-2 border-b-2 border-zinc-900" src="https://www.youtube.com/embed/z-lBjxfhWeY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="-mt-5">
+      <p class="text-center text-6xl text-base text-zinc-500 font-medium">A self-funded and profitable org ⋅ Trusted by thousands of dev teams worldwide</p>
+    </div>
+  </section>
+</div>

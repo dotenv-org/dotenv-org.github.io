@@ -1,0 +1,62 @@
+<section class="max-w-3xl lg:max-w-3xl mx-auto mt-28 lg:mt-60 flex flex-col px-5">
+  <h5 class="text-center text-base font-semibold leading-7 dark:text-yellow-300">Try it for yourself</h5>
+  <h2 class="mx-auto mt-2 max-w-2xl text-center text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent leading-tight text-zinc-950 dark:text-zinc-200">Works with a single command</h2>
+  <p class="mx-auto mt-3 max-w-3xl text-center text-md md:text-lg text-zinc-600 leading-2">Benefit immediately. Run the push command to back up your .env file right now.</p>
+
+  <!--
+  <div class="w-fit mx-auto flex-col place-content-center max-w-lg">
+    <div>
+      <p class="mr-20 text-zinc-700 text-sm w-60">"Back up your .env file right now. Paste the command and try it for yourself."</p>
+      <p>- Mot</p>
+    </div>
+    <img class="inline-block h-20 w-20 rounded-full" src="/assets/img/mot.png" alt="">
+  </div>
+  -->
+
+  <!-- terminal source code -->
+  <div class="w-full mx-auto mt-10 shadow-lg">
+    <div class="border-2 border-zinc-800 text-zinc-100 text-sm font-mono subpixel-antialiased rounded-lg leading-normal overflow-hidden">
+      <div class="px-3 bg-black py-3 border-b border-zinc-800">
+        <div class="flex">
+          <span class="h-3 w-3 bg-red-500/50 dark:bg-red-500/10 rounded-full"></span>
+          <span class="ml-2 h-3 w-3 bg-orange-300/50 dark:bg-orange-300/10 rounded-full"></span>
+          <span class="ml-2 h-3 w-3 bg-green-500/50 dark:bg-green-500/10 rounded-full"></span>
+        </div>
+      </div>
+      <div class="flex flex-col px-5 md:px-10 py-5 md:py-14 bg-zinc-950">
+        <div class="flex text-sm md:text-xl mb-4">
+          <span class="text-green-500">project:~$</span>
+          <p class="flex-1 text-zinc-50 typing items-center pl-3 md:pl-6 md:pr-10">
+            npx dotenv-vault push
+            <br>
+          </p>
+        </div>
+        <div class="flex flex-col text-sm md:text-xl text-zinc-700 overflow-scroll w-100">
+          <span>remote:   Securely pushing (.env)... done</span>
+          <span>remote:   Securely pushed development (.env)</span>
+          <span>remote:   Securely built vault (.env.vault)</span>
+          <span>&nbsp;</span>
+          <span>Run npx dotenv-vault open to view in the ui</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-lg lg:max-w-xl">
+    <figure class="mt-10">
+      <blockquote class="text-center text-md leading-8 sm:text-lg sm:leading-9">
+        <p>“I personally spent a lot of development time on the cli. There is a bit of a learning curve, but I think you will like it.”</p>
+      </blockquote>
+      <figcaption class="mt-6">
+        <a href="https://github.com/motdotla"><img class="border-2 dark:border-zinc-900 mx-auto h-16 w-16 rounded-full" src="/assets/img/mot.png" alt="Mot"></a>
+        <div class="mt-4 flex items-center justify-center space-x-3 text-base text-sm">
+          <div class="">
+            <a href="https://github.com/motdotla">Mot</a>
+          </div>
+          <div class="">⋅</div>
+          <div class="">Creator of Dotenv</div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</section>

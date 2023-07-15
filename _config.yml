@@ -2,7 +2,7 @@ url: "https://www.dotenv.org" # the base hostname & protocol for your site, e.g.
 baseurl: "/" # the subpath of your site, e.g. /blog
 title: "Dotenv" # the name of your site, e.g. ACME Corp.
 logo: "https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg"
-description: "Simplify your secrets"
+description: "Secrets for developers"
 
 # Footer "Edit this page on GitHub" link text
 github_edit_link: true # show or hide edit this page link
@@ -62,6 +62,10 @@ plugins:
   - jekyll-gzip
   - jekyll-loading-lazy
   - jekyll-responsive-image
+  - jekyll-postcss
+
+postcss:
+  cache: false
 
 responsive_image:
   # [Required]

@@ -1,0 +1,21 @@
+<header class="sticky top-0 dark:rounded-lg border-t dark:border-t border-t-yellow-300 bg-zinc-50/[0.95] dark:bg-zinc-950/[0.95] z-20 border-b border-b-zinc-200 dark:border-b-zinc-900">
+  <div class="mx-auto w-full">
+    <div class="mx-auto flex h-16 w-full items-center justify-between transition px-5">
+      <div class="flex">
+        <a href="/" class="inline-block w-10 h-10 mr-3">
+          {% include logos/dotenv.html class="w-10 h-10" %}
+        </a>
+        <div class="hidden md:flex">
+          {% include components/btn-text.html url="/pricing" text="Pricing" %}
+        </div>
+        {% include components/btn-text.html url="/docs" text="Docs" %}
+      </div>
+      <div class="flex space-x-1">
+        {% include components/btn-nav.html url="https://vault.dotenv.org" text="Log in" %}
+        <div class="hidden md:flex">
+          {% include components/btn-nav.html url="https://vault.dotenv.org/signup" text="Create Account" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
