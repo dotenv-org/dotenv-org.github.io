@@ -1,17 +1,17 @@
 module.exports = {
-  // darkMode: 'class',
-  content: [
-    './_drafts/**/*.html',
+  purge: [
     './_includes/**/*.html',
     './_layouts/**/*.html',
     './_posts/*.md',
     './*.md',
     './*.html',
   ],
+  // darkMode: 'class',
   theme: {
-    theme: {
-      extend: {},
-    },
+    extend: {},
   },
-  plugins: []
+  variants: {},
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }
