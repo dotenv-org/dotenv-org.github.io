@@ -21,7 +21,7 @@ redirect_from:
   <tbody>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/motdotla/dotenv">github.com/motdotla/dotenv</a>
@@ -35,7 +35,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/dotenv-org/python-dotenv-vault">github.com/dotenv-org/python-dotenv-vault</a>
@@ -49,7 +49,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/dotenv-org/dotenv-vault-ruby">github.com/dotenv-org/dotenv-vault-ruby</a>
@@ -63,7 +63,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/dotenv-org/phpdotenv-vault">github.com/dotenv-org/phpdotenv-vault</a>
@@ -77,7 +77,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/dotenv-org/godotenvvault">github.com/dotenv-org/godotenvvault</a>
@@ -91,7 +91,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/dotenv-org/dotenv-vault-kotlin">github.com/dotenv-org/dotenv-vault-kotlin</a>
@@ -109,7 +109,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/bkeepers/dotenv">github.com/bkeepers/dotenv</a>
@@ -122,7 +122,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/theskumar/python-dotenv">github.com/theskumar/python-dotenv</a>
@@ -135,7 +135,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/vlucas/phpdotenv">github.com/vlucas/phpdotenv</a>
@@ -148,7 +148,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/joho/godotenv">github.com/joho/godotenv</a>
@@ -161,7 +161,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/cdimascio/dotenv-java">github.com/cdimascio/dotenv-java</a>
@@ -174,7 +174,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/bolorundurowb/dotenv.net">github.com/bolorundurowb/dotenv.net</a>
@@ -187,7 +187,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/cdimascio/dotenv-kotlin">github.com/cdimascio/dotenv-kotlin</a>
@@ -200,7 +200,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/avdi/dotenv_elixir">github.com/avdi/dotenv_elixir</a>
@@ -226,7 +226,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clojure/clojure-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/clojure/clojure-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/LynxEyes/dotenv.clj">github.com/LynxEyes/dotenv.clj</a>
@@ -239,7 +239,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://www.nuget.org/packages/dotenv.net/">nuget.org/packages/dotenv.net/</a>
@@ -252,7 +252,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/adeharo9/cpp-dotenv">github.com/adeharo9/cpp-dotenv</a>
@@ -265,7 +265,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/thebarndog/swift-dotenv">github.com/thebarndog/swift-dotenv</a>
@@ -278,7 +278,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/mockturtl/dotenv">github.com/mockturtl/dotenv</a>
@@ -291,7 +291,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://github.com/book/Dotenv">github.com/book/Dotenv</a>
@@ -304,7 +304,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/erlang/erlang-plain-wordmark.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/erlang/erlang-plain-wordmark.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://hex.pm/packages/dotenv_parser">hex.pm/packages/dotenv_parser</a>
@@ -317,7 +317,7 @@ redirect_from:
     </tr>
     <tr>
       <td class="align-middle text-center">
-        <img height="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg">
+        <img height="30" src="https://fastly.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg">
       </td>
       <td class="align-middle">
         <a class="small" href="https://juliapackages.com/p/dotenv">juliapackages.com/p/dotenv</a>
