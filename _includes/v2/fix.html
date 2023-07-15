@@ -1,4 +1,54 @@
 <section class="max-w-3xl lg:max-w-5xl mx-auto mt-28 lg:mt-60 flex flex-col px-5">
   <h2 class="mx-auto mt-2 max-w-2xl text-center text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent leading-tight text-zinc-950 dark:text-zinc-200">Fix the problem in 3 easy steps</h2>
   <p class="mx-auto mt-3 max-w-3xl text-center text-md md:text-lg text-zinc-600 leading-2">Replace setting your secrets across multiple platforms and tools with a single source of truth.</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+    <div class="flex flex-col space-y-3">
+      <div class="hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-lg border border-zinc-300 dark:border-zinc-700 cursor-pointer">
+        <input type="radio" class="hidden" name="how-radio" id="how-radio1" autocomplete="off" value="1" checked>
+        <label class="p-7 w-100 h-100 block cursor-pointer" for="how-radio1">
+          <h2 class="text-3xl font-bold dark:text-zinc-300">Sync</h2>
+          <p id="step1text" class="mt-5 step-text block">Sync your secrets like you sync your code. Push and pull changes to your .env file. It's quite ergonomic.</p>
+        </label>
+      </div>
+
+      <div class="hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-lg border border-zinc-300 dark:border-zinc-700 cursor-pointer">
+        <input type="radio" class="hidden" name="how-radio" id="how-radio2" autocomplete="off" value="2">
+        <label class="p-7 w-100 h-100 block cursor-pointer" for="how-radio2">
+          <h2 class="text-3xl font-bold dark:text-zinc-300">Manage</h2>
+          <p id="step2text" class="mt-5 step-text hidden">After you've pushed your first .env file, dotenv-vault automatically sets up multiple environments for you with a robust UI to manage them.</p>
+        </label>
+      </div>
+
+      <div class="hover:bg-zinc-100 dark:hover:bg-zinc-900 rounded-lg border border-zinc-300 dark:border-zinc-700 cursor-pointer">
+        <input type="radio" class="hidden" name="how-radio" id="how-radio3" autocomplete="off" value="3">
+        <label class="p-7 w-100 h-100 block cursor-pointer" for="how-radio3">
+          <h2 class="text-3xl font-bold dark:text-zinc-300">Deploy</h2>
+          <p id="step3text" class="mt-5 step-text hidden">Deploy your secrets like you deploy your code. Build the encrypted .env.vault file, commit it safely to code, set your DOTENV_KEY, and deploy.</p>
+        </label>
+      </div>
+    </div>
+
+    <div class="p-0 bg-zinc-950 rounded-lg">
+
+      <div id="step1" class="how-step block relative">
+        <div class="video-container">
+          <video class="object-fill rounded-lg" src="/assets/img/landing/how-dotenv-vault-works-01.mp4" preload autoplay muted loop playsinline poster=""></video>
+        </div>
+      </div>
+
+      <div id="step2" class="how-step hidden relative">
+        <div class="video-container">
+          <video class="object-fill rounded-lg" src="/assets/img/landing/how-dotenv-vault-works-02.mp4" preload autoplay muted loop playsinline poster=""></video>
+        </div>
+      </div>
+
+      <div id="step3" class="how-step hidden relative">
+        <div class="video-container">
+          <video class="object-fill rounded-lg" src="/assets/img/landing/how-dotenv-vault-works-03.mp4" preload autoplay muted loop playsinline poster=""></video>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
