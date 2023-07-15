@@ -1,30 +1,30 @@
 <section class="w-full dark:bg-zinc-950 text-zinc-500">
   <div class="mx-auto py-12 w-5/6 lg:5/6 flex-col gap-4">
-    <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
-      <div class="col-span-3">
-        <a href="/" class="text-xl font-black leading-none select-none logo">
+    <div class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-2 lg:grid-cols-4 lg:gap-20">
+      <div class="col-span-2 md:col-span-2 lg:col-span-1">
+        <a href="/" class="leading-none select-none w-fit block mx-auto md:mx-0">
           {% include logos/dotenv.html class="h-10" %}
         </a>
-        <p class="my-4 text-sm">
+        <p class="mt-4 text-sm text-center md:text-left">
           A secrets manager for .env files.
         </p>
       </div>
-      <nav class="col-span-1 md:col-span-1 lg:col-span-2">
+      <nav class="col-span-1 md:col-span-1 lg:col-span-1">
         <p class="mb-3 text-xs font-semibold tracking-wider uppercase">Product</p>
         <a href="/security" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Security</a>
         <a href="/pricing" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Pricing</a>
         <a href="/install" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Download</a>
         <a href="/blog" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Blog</a>
       </nav>
-      <nav class="col-span-1 md:col-span-1 lg:col-span-2">
+      <nav class="col-span-1 md:col-span-1 lg:col-span-1">
         <p class="mb-3 text-xs font-semibold tracking-wider uppercase">Developers</p>
         <a href="/docs" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Documentation</a>
         <a href="/help" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Help & Support</a>
         <a href="/changelog" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Changelog</a>
         <a href="https://status.dotenv.org" class="flex mb-3 text-sm font-medium transition md:mb-2 dark:hover:text-zinc-50">Status</a>
       </nav>
-      <div class="col-span-5">
-        <span class="inline-flex justify-center w-full mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-end">
+      <div class="col-span-2 md:col-span-2 lg:col-span-1">
+        <span class="inline-flex justify-center w-full space-x-5 md:ml-auto md:mt-0 md:justify-end">
           <a href="https://github.com/dotenv-org" class="dark:hover:text-zinc-50">
             <span class="sr-only">GitHub</span>
             {% include logos/github.html class="w-6 h-6" %}
