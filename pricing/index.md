@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: tailwind
 title: "Pricing"
 ---
 
-{% include pricing/hero.html %}
-{% include pricing/plans.html %}
-{% include pricing/whats_free.html %}
-{% include pricing/save_money.html %}
-{% include pricing/faq.html %}
-{% include pricing/quotes.html %}
+{% include v2/pricing/plans.html %}
+{% include v2/pricing/whats_free.html %}
+{% include v2/pricing/save_money.html %}
+{% include v2/pricing/faq.html %}
+{% include v2/pricing/quotes.html %}
