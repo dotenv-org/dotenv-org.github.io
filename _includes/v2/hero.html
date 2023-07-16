@@ -9,7 +9,8 @@
 
         <div class="mt-10 flex flex-col lg:flex-row justify-center lg:justify-start gap-4">
           {% include components/btn.html url="https://vault.dotenv.org" text='Create <span class="font-extrabold tracking-tight">Dotenv</span> Account' %}
-          {% include components/btn-secondary.html url="/docs" text="Documentation" %}
+          {% include components/btn-secondary.html url="/docs" text="Documentation" class="hidden md:block" %}
+          {% include components/btn-secondary.html url="/pricing" text="See Pricing" class="md:hidden" %}
 
           <a href="https://www.youtube.com/watch?v=z-lBjxfhWeY" role="button" class="text-center rounded-full bg-zinc-50 dark:bg-zinc-950 px-4 py-2.5 text-sm font-semibold text-zinc-700 dark:text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-50 active:bg-zinc-300 dark:active:bg-zinc-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-200 ease-in duration-150 lg:hidden py-4 underline underline-offset-4">
             <div class="flex flex-rows gap-2 items-center mx-auto w-fit">
