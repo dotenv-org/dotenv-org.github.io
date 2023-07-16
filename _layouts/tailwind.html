@@ -1,25 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}" x-data="{ darkMode: true }" :class="darkMode ? 'dark' : ''">
+<html lang="{{ site.lang | default: "en-US" }}" class="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% seo %}
-    {% favicon %}
-    <meta name="keywords" content="dotenv, .env, dotenv-vault, environments, encrypt, vault, developer secrets, secret manager, share, secretops">
-
-    <script src="https://unpkg.com/alpinejs" defer></script>
-    {% if jekyll.environment == "production" %}
-      {% assign cacheBust = site.time | date:'?v=%s' %}
-      <link rel="stylesheet" media="all" href="{{ "/assets/css/tw.css" | relative_url | append: cacheBust }}">
-    {% else %}
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-        tailwind.config = {
-          darkMode: 'class'
-        }
-      </script>
-    {% endif %}
-
+    {% include layouts/meta2.html %}
     {% include layouts/analytics.html %}
   </head>
   <body class="font-sans antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-600 dark:text-zinc-400 selection:bg-yellow-300 selection:text-zinc-950">

@@ -18,9 +18,9 @@
     <div class="border-2 border-zinc-800 text-zinc-100 text-sm subpixel-antialiased rounded-lg leading-normal overflow-hidden">
       <div class="px-3 bg-black border-b border-zinc-800">
         <div class="flex items-center">
-          <span class="h-3 w-3 bg-red-500/50 dark:bg-red-500/10 rounded-full"></span>
-          <span class="ml-2 h-3 w-3 bg-orange-300/50 dark:bg-orange-300/10 rounded-full"></span>
-          <span class="ml-2 h-3 w-3 bg-green-500/50 dark:bg-green-500/10 rounded-full"></span>
+          <span class="h-3 w-3 bg-red-500/50 dark:bg-red-500/30 rounded-full"></span>
+          <span class="ml-2 h-3 w-3 bg-orange-300/50 dark:bg-orange-300/30 rounded-full"></span>
+          <span class="ml-2 h-3 w-3 bg-green-500/50 dark:bg-green-500/30 rounded-full"></span>
 
           <div class="w-fit ml-auto my-1" x-data="{
               copyText: 'npx dotenv-vault@latest push',
@@ -43,17 +43,14 @@
       </div>
       <div class="flex flex-col px-5 md:px-10 py-5 md:py-14 bg-zinc-950 font-mono">
         <div class="flex text-sm md:text-xl mb-4">
-          <span class="text-green-500 opacity-50 md:pt-1.5">project:~$</span>
-          <p class="md:text-3xl flex-1 text-white items-center pl-3 md:pl-4 md:pr-10 animate-[pulse_4s_ease-in-out_infinite]">
+          <span class="text-green-500 opacity-50">project:~$</span>
+          <p class="flex-1 text-white items-center pl-3">
             <span class="">npx dotenv-vault push</span>
             <br>
           </p>
         </div>
         <div class="flex flex-col text-sm md:text-xl text-zinc-700 overflow-scroll w-100">
           <span>remote:   Securely pushing (.env)... done</span>
-          <span>remote:   Securely pushed development (.env)</span>
-          <span>remote:   Securely built vault (.env.vault)</span>
-          <span>&nbsp;</span>
           <span>Run npx dotenv-vault open to view in the ui</span>
         </div>
       </div>
@@ -61,7 +58,7 @@
   </div>
 
   <div class="mx-auto max-w-lg lg:max-w-xl">
-    <figure class="mt-10">
+    <figure class="mt-8">
       <blockquote class="text-center text-md leading-8 sm:text-lg sm:leading-9">
         <p>“I personally spent a lot of development time on the cli. There is a bit of a learning curve, but I think you will like it.”</p>
       </blockquote>

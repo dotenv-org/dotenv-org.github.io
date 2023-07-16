@@ -1,27 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" x-data="{ darkMode: true }" :class="darkMode ? 'dark' : ''">
   <head>
-    {% include layouts/meta.html %}
+    {% include layouts/meta2.html %}
     {% include layouts/analytics.html %}
   </head>
-  <body class="">
-    {% include layouts/nav.html %}
-
-    <div class="container">
-      <div class="row">
-        <div class="col col-lg-10 offset-lg-1">
-          <div class="container my-5">
-            <div class="row">
-              <div class="col-lg-8 offset-lg-2 p-3">
-                {{ content }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {% include layouts/footer.html %}
+  <body class="font-sans antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-600 dark:text-zinc-400 selection:bg-yellow-300 selection:text-zinc-950">
+    {% include v2/nav.html %}
+    <section class="max-w-3xl lg:max-w-5xl mx-auto mt-20 px-5">
+      {{ content }}
+    </section>
+    {% include v2/footer.html %}
     {% include layouts/js.html %}
   </body>
 </html>

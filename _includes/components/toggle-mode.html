@@ -23,13 +23,13 @@
     <div x-show="open" x-transition class="none absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
       <div class="" role="none">
         <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-        <a x-on:click="open = !open; darkMode = false" class="cursor-pointer text-zinc-600 block p-3 pl-4 text-sm font-semibold hover:text-zinc-950 dark:hover:text-zinc-100" role="menuitem" tabindex="-1" id="menu-item-0">
+        <a x-on:click="document.documentElement.classList.remove('dark');localStorage.theme = 'light'" class="cursor-pointer text-zinc-600 block p-3 pl-4 text-sm font-semibold hover:text-zinc-950 dark:hover:text-zinc-100" role="menuitem" tabindex="-1" id="menu-item-0">
           <div class="flex flex-row content-center">
             <span>{% include logos/sun.html class="h-4 w-4" %}</span>
             <span class="ml-1.5 leading-4">Light</span>
           </div>
         </a>
-        <a x-on:click="open = !open; darkMode = true" class="cursor-pointer text-zinc-600 block p-3 pl-4 text-sm font-semibold hover:text-zinc-950 dark:hover:text-zinc-100" role="menuitem" tabindex="-1" id="menu-item-0">
+        <a x-on:click="document.documentElement.classList.add('dark');localStorage.theme = 'dark'" class="cursor-pointer text-zinc-600 block p-3 pl-4 text-sm font-semibold hover:text-zinc-950 dark:hover:text-zinc-100" role="menuitem" tabindex="-1" id="menu-item-0">
           <div class="flex flex-row content-center">
             <span>{% include logos/moon.html class="h-3.5 w-3.5" %}</span>
             <span class="ml-2 leading-3">Dark</span>
