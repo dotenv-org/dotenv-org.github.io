@@ -15,19 +15,37 @@
 
   <!-- terminal source code -->
   <div class="w-full mx-auto mt-10 shadow-lg">
-    <div class="border-2 border-zinc-800 text-zinc-100 text-sm font-mono subpixel-antialiased rounded-lg leading-normal overflow-hidden">
-      <div class="px-3 bg-black py-3 border-b border-zinc-800">
-        <div class="flex">
+    <div class="border-2 border-zinc-800 text-zinc-100 text-sm subpixel-antialiased rounded-lg leading-normal overflow-hidden">
+      <div class="px-3 bg-black border-b border-zinc-800">
+        <div class="flex items-center">
           <span class="h-3 w-3 bg-red-500/50 dark:bg-red-500/10 rounded-full"></span>
           <span class="ml-2 h-3 w-3 bg-orange-300/50 dark:bg-orange-300/10 rounded-full"></span>
           <span class="ml-2 h-3 w-3 bg-green-500/50 dark:bg-green-500/10 rounded-full"></span>
+
+          <div class="w-fit ml-auto my-1" x-data="{
+              copyText: 'npx dotenv-vault@latest push',
+              copyNotification: false,
+              copyToClipboard() {
+                navigator.clipboard.writeText('npx dotenv-vault@latest push');
+                this.copyNotification = true;
+                let that = this;
+                setTimeout(function(){
+                  that.copyNotification = false;
+                }, 3000);
+              }
+          }">
+            <button x-on:click="copyToClipboard();" type="button" class="text-xs py-2 rounded px-2 border-zinc-900 text-zinc-500 bg-zinc-900 hover:bg-zinc-800">
+              <span x-show="!copyNotification">Copy to Clipboard</span>
+              <span x-show="copyNotification" class="tracking-tight text-green-400" x-cloak>Copied to Clipboard</span>
+            </button>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col px-5 md:px-10 py-5 md:py-14 bg-zinc-950">
+      <div class="flex flex-col px-5 md:px-10 py-5 md:py-14 bg-zinc-950 font-mono">
         <div class="flex text-sm md:text-xl mb-4">
-          <span class="text-green-500">project:~$</span>
-          <p class="flex-1 text-zinc-50 typing items-center pl-3 md:pl-6 md:pr-10">
-            npx dotenv-vault push
+          <span class="text-green-500 opacity-50 md:pt-1.5">project:~$</span>
+          <p class="md:text-3xl flex-1 text-white items-center pl-3 md:pl-4 md:pr-10 animate-[pulse_4s_ease-in-out_infinite]">
+            <span class="">npx dotenv-vault push</span>
             <br>
           </p>
         </div>
