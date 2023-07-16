@@ -1,0 +1,13 @@
+<section class="max-w-4xl lg:max-w-5xl mx-auto mt-10 flex flex-col px-5">
+  <h5 class="text-center text-base font-semibold leading-7 dark:text-yellow-300">Invest in Your Security</h5>
+  <h1 class="mx-auto mt-2 max-w-4xl text-center text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent leading-tight text-zinc-950 dark:text-zinc-200">
+    <span x-data="{
+      signups: 601,
+      getSignupCount() {
+        fetch('https://vault.dotenv.org/public/stats')
+          .then(response => response.json())
+          .then(data => { this.signups = data.signups; })
+      }
+    }" x-init="getSignupCount()" x-text="signups">601</span> organizations signed up last month.</h1>
+  <p class="mx-auto mt-3 max-w-3xl text-center text-md md:text-lg text-zinc-600 leading-2"><span class="">Free to use</span> for individuals and small teams.</p>
+</section>
