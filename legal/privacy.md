@@ -4,9 +4,9 @@ title: "Privacy Policy"
 parent: Legal
 ---
 
-<p class="max-w-3xl mx-auto text-xs text-center">The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer's requirements.</p>
+<p class="max-w-3xl mx-auto text-xs text-center mb-20">The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer's requirements.</p>
 
-<section class="max-w-3xl mx-auto my-20 flex flex-col">
+<section class="max-w-3xl mx-auto mb-20 flex flex-col">
   <h2 class="text-left text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent leading-tight text-zinc-950 dark:text-zinc-200">Privacy Policy</h2>
 
   <p class="mt-6">The privacy of your data is paramount to us. It's our entire business. We'll only ever access your account to help you with a problem or squash a software bug. We'll never access the content of a secret unless you ask us to. We log all access to all accounts by IP address, so we can verify that no unauthorized access has happened for as long as the logs are kept.</p>

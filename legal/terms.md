@@ -4,9 +4,9 @@ title: "Terms of Service"
 parent: Legal
 ---
 
-<p class="max-w-3xl mx-auto text-xs text-center">The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer's requirements.</p>
+<p class="max-w-3xl mx-auto text-xs mb-20 text-center">The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer's requirements.</p>
 
-<section class="max-w-3xl mx-auto my-20 flex flex-col">
+<section class="max-w-3xl mx-auto mb-20 flex flex-col">
   <h2 class="text-left text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent leading-tight text-zinc-950 dark:text-zinc-200">Terms of Service</h2>
 
   <p class="mt-6">By using Dotenv ("Service"), you are agreeing to be bound by the following terms and conditions ("Terms of Service").</p>
