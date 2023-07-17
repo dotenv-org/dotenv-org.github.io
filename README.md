@@ -26,7 +26,14 @@ rougify style monokai > _sass/rouge-theme.scss
 
 ```
 JEKYLL_ENV=production bundle exec jekyll build
-cp -a _site/. ../dotenv.org/public/
-mv ../dotenv.org/public/sitemap.xml ../dotenv.org/public/map.xml
-rm ../dotenv.org/public/robots.txt
 ```
+
+## Afterbuild (to include docs2)
+
+```
+npm run build --prefix ../docs
+cp -r ../docs/out/docs _site/docs2
+cp -r ../docs/out/_next _site/_next
+```
+
+
