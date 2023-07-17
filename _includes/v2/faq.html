@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-7xl w-full">
     <div class="mx-auto max-w-4xl divide-y divide-zinc-900">
       <h2 class="text-xl text-center md:text-left md:text-3xl font-bold leading-10 tracking-tight text-zinc-900 dark:text-zinc-100">Frequently asked questions</h2>
-      <dl class="mt-10 space-y-6 divide-y divide-zinc-900">
+      <dl class="mt-10 divide-y divide-zinc-900">
         {% include components/faq-question.html question="Why choose dotenv-vault over other secrets managers?" answer="dotenv-vault is the only secrets manager that works with .env files instead of against them." %}
         {% include components/faq-question.html question="How do other secrets managers work?" answer="Other secrets managers make you replace your environment variables with remote API calls. This means you must rewrite your code, lock yourself into proprietary software, and possibly introduce new attack vectors to your software (It's generally easier for attackers to intercept your web traffic than to gain access to your file system.)" %}
         {% include components/faq-question.html question="Are my secrets safe using dotenv-vault?" answer="Your secrets go through a ten-step process to split their parts, encrypt those parts, and tokenize them into your project's vault. This includes using AES-GCM encryption - trusted by governments to transport top secret information. Read more about the ten-step process on the security page." %}
