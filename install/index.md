@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: tailwind
 title: "Install dotenv-vault"
 redirect_from:
   - /download
 ---
 
-{% include install/hero.html %}
-{% include install/npx.html %}
-{% include install/card.html %}
+{% include v2/install/hero.html %}
+{% include v2/install/npm.html %}
+{% include v2/install/other.html %}
