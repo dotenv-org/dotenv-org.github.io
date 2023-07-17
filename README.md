@@ -32,6 +32,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ```
 npm run build --prefix ../docs
+cp ../docs/out/docs.html _site/docs2.html
 cp -r ../docs/out/docs _site/docs2
 cp -r ../docs/out/_next _site/_next
 ```
