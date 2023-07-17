@@ -1,84 +1,19 @@
-<section class="max-w-3xl lg:max-w-5xl mx-auto mt-28 lg:mt-40 flex flex-col px-5">
-
-  <div class="mx-auto sm:pt-32">
-    <h2 class="text-2xl lg:text-3xl font-bold leading-10 tracking-tight text-zinc-900 dark:text-zinc-100">Frequently asked questions</h2>
-
-    <div class="mt-10">
-      <dl class="space-b-7">
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">Why choose dotenv-vault over other secrets managers?</dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            <span class="">dotenv-vault</span> is the only secrets manager that works with .env files instead of against them.
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">How do other secrets managers work?</dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            Other secrets managers make you replace your environment variables with remote API calls. This means you must rewrite your code, lock yourself into proprietary software, and possibly introduce new attack vectors to your software (It's generally easier for attackers to intercept your web traffic than to gain access to your file system.)
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">Are my secrets safe using dotenv-vault?</dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            Your secrets go through a ten-step process to split their parts, encrypt those parts, and tokenize them into your project's vault. This includes using <span class="">AES-GCM encryption</span> - trusted by governments to transport top secret information. Read more about the ten-step process on the <a href="/security">security page</a>.
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">How does the .env.vault file work?</dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            The <span class="">.env.vault</span> file is an encrypted version of your .env file. It is paired with a decryption key called the <span class="">DOTENV_KEY</span>. The DOTENV_KEY is set on your server or cloud hosting provider and the .env.vault file is committed to code.
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">Is it safe to commit the .env.vault file to code?</dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            Yes. <span class="">AES-256 GCM encryption</span> was developed for the needs of US Government agencies like the CIA. AES-256 takes billions of years to crack using current computing technology. Your secrets are much more likely to be leaked by a third-party. This is why we are so committed to this technology while everyone else is focused on syncing secrets to third-party integrations. We see a better way.
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">How does it protect me from third-party breaches like CircleCI?</dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            In the CircleCI breach the attacker accessed environment variables only. They could not access codebases. To steal your <span class="">.env.vault</span> secrets, an attacker needs need both – the decryption key (stored as an environment variable), AND the encrypted .env.vault file.
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">
-            Is the .env.vault file format a new standard?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            Not officially, but our goal is towards that. We're building things in a way that a cloud service is not necessary. As long as you can generate a <span class="">.env.vault</span> file you can use the technology. It is open to all.
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">
-            What languages are supported?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            The .env.vault file and its encryption algorithm is language-agnostic so technically it works with any language. We've built convenience libraries for it in a handful of languages and are adding more as requested.
-            <br/>
-            <br/>
-            See the <a href="/docs">docs</a> for a complete list.
-          </dd>
-        </div>
-
-        <div class="border-t border-zinc-200 dark:border-zinc-800 py-4">
-          <dt class="text-base font-semibold leading-7 text-zinc-900 dark:text-zinc-100">
-            How do I install dotenv-vault?
-          </dt>
-          <dd class="mt-2 text-base leading-7 text-zinc-400">
-            See the <a href="/install" class="underline">install page</a>. You can use npx, brew, and more.
-          </dd>
-        </div>
+<section class="max-w-3xl lg:max-w-5xl mx-auto mt-40 lg:mt-60 flex flex-col px-5">
+  <div class="mx-auto max-w-7xl w-full">
+    <div class="mx-auto max-w-4xl divide-y divide-zinc-900">
+      <h2 class="text-xl text-center md:text-left md:text-3xl font-bold leading-10 tracking-tight text-zinc-900 dark:text-zinc-100">Frequently asked questions</h2>
+      <dl class="mt-10 space-y-6 divide-y divide-zinc-900">
+        {% include components/faq-question.html question="Why choose dotenv-vault over other secrets managers?" answer="dotenv-vault is the only secrets manager that works with .env files instead of against them." %}
+        {% include components/faq-question.html question="How do other secrets managers work?" answer="Other secrets managers make you replace your environment variables with remote API calls. This means you must rewrite your code, lock yourself into proprietary software, and possibly introduce new attack vectors to your software (It's generally easier for attackers to intercept your web traffic than to gain access to your file system.)" %}
+        {% include components/faq-question.html question="Are my secrets safe using dotenv-vault?" answer="Your secrets go through a ten-step process to split their parts, encrypt those parts, and tokenize them into your project's vault. This includes using AES-GCM encryption - trusted by governments to transport top secret information. Read more about the ten-step process on the security page." %}
+        {% include components/faq-question.html question="How does the .env.vault file work?" answer="The .env.vault file is an encrypted version of your .env file. It is paired with a decryption key called the DOTENV_KEY. The DOTENV_KEY is set on your server or cloud hosting provider and the .env.vault file is committed to code." %}
+        {% include components/faq-question.html question="Is it safe to commit the .env.vault file to code?" answer="Yes. AES-256 GCM encryption was developed for the needs of US Government agencies like the CIA. AES-256 takes billions of years to crack using current computing technology. Your secrets are much more likely to be leaked by a third-party. This is why we are so committed to this technology while everyone else is focused on syncing secrets to third-party integrations. We see a better way." %}
+        {% include components/faq-question.html question="How does it protect me from third-party breaches like CircleCI?" answer="In the CircleCI breach the attacker accessed environment variables only. They could not access codebases. To steal your .env.vault secrets, an attacker needs need both – the decryption key (stored as an environment variable), AND the encrypted .env.vault file." %}
+        {% include components/faq-question.html question="Is the .env.vault file format a new standard?" answer="Not officially, but our goal is towards that. We're building things in a way that a cloud service is not necessary. As long as you can generate a .env.vault file you can use the technology. It is open to all." %}
+        {% include components/faq-question.html question="What languages are supported?" answer="The .env.vault file and its encryption algorithm is language-agnostic so technically it works with any language. We've built convenience libraries for it in a handful of languages and are adding more as requested. See the <a class=\"underline\" href=\"/docs\">docs</a> for a complete list." %}
+        {% include components/faq-question.html question="How do I install dotenv-vault?" answer="See the <a href=\"/install\">install</a> page. You can use npx, brew, and more." %}
       </dl>
     </div>
-
-    <p class="mt-14 max-w-lg text-base leading-7 text-zinc-600 dark:text-zinc-400">Can’t find the answer you’re looking for? Send us an email at <a href="mailto:support@dotenv.org" class="font-semibold text-yellow-600 dark:text-yellow-400 hover:text-yellow-500">support@dotenv.org</a> team. We'd love to hear from you.</p>
+    <p class="mt-14 text-base text-left md:text-center w-100 leading-7 text-zinc-600 dark:text-zinc-400">Can’t find the answer you’re looking for? Send us an email at <a href="mailto:support@dotenv.org" class="font-semibold text-yellow-600 dark:text-yellow-400 hover:text-yellow-500">support@dotenv.org</a> team. We'd love to hear from you.</p>
   </div>
 </section>
