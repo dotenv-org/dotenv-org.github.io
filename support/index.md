@@ -12,7 +12,7 @@ redirect_from:
     <div class="flex flex-col border border-zinc-800 p-4">
       <div class="grow">
         <h4 class="font-bold text-zinc-100">Documentation</h4>
-        <p>Read and view documentation. Learn how to integrate dotenv-vault into your development and production infrastructure.</p>
+        <p class="mb-4">Read and view documentation. Learn how to integrate dotenv-vault into your development and production infrastructure.</p>
       </div>
       <div class="flex-none">
         <hr class="border-zinc-800 mb-4">
@@ -22,7 +22,7 @@ redirect_from:
     <div class="flex flex-col border border-zinc-800 p-4">
       <div class="grow">
         <h4 class="font-bold text-zinc-100">GitHub Issues</h4>
-        <p>Have an issue or bug that you've found? Let us know on GitHub issues. This can be feature requests too.</p>
+        <p class="mb-4">Have an issue or bug that you've found? Let us know on GitHub issues. This can be feature requests too.</p>
       </div>
       <div class="flex-none">
         <hr class="border-zinc-800 mb-4">
@@ -32,7 +32,7 @@ redirect_from:
     <div class="flex flex-col border border-zinc-800 p-4">
       <div class="grow">
         <h4 class="font-bold text-zinc-100">Email Support</h4>
-        <p>Talk to a real person over email at support@dotenv.org. It's the fastest way to get help.</p>
+        <p class="mb-4">Talk to a real person over email at support@dotenv.org. It's the fastest way to get help.</p>
       </div>
       <div class="flex-none">
         <hr class="border-zinc-800 mb-4">
