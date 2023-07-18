@@ -43,6 +43,26 @@ jobs:
       - name: Npm install
         run: npm install
 
+      # Grabs docs2 so can be written under _site
+      - name: curl docs
+        run: curl -L https://github.com/dotenv-org/docs/archive/refs/heads/master.zip > master.zip
+
+      # put in _hidden folder so jekyll doesn't copy it over on build
+      - name: unzip master.zip -d _hidden
+        run: unzip master.zip -d _hidden
+
+      - name: npm install --prefix _hidden/docs-master
+        run: npm install --prefix _hidden/docs-master
+
+      - name: npm run build --prefix _hidden/docs-master
+        run: npm run build --prefix _hidden/docs-master
+
+      - name: cp _hidden/docs-master/out/docs docs2
+        run: cp _hidden/docs-master/out/docs docs2
+
+      - name: cp _hidden/docs-master/out/docs.html docs2/index.html
+        run: cp _hidden/docs-master/out/docs.html docs2/index.html
+      
       # Outputs to the './_site' directory by default
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace
@@ -51,27 +71,9 @@ jobs:
           MEDIUM_USER_ID: ${{ secrets.MEDIUM_USER_ID }}
           MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
 
-      # Grabs docs2 so can be written under _site
-      - name: curl docs
-        run: curl -L https://github.com/dotenv-org/docs/archive/refs/heads/master.zip > master.zip
-
-      - name: unzip docs-master.zip
-        run: unzip master.zip
-
-      - name: npm install --prefix docs-master
-        run: npm install --prefix docs-master
-
-      - name: npm run build --prefix docs-master
-        run: npm run build --prefix docs-master
-
-      - name: cp docs-master/out/docs.html _site/docs2.html
-        run: cp docs-master/out/docs.html _site/docs2.html
-
-      - name: cp -r docs-master/out/docs _site/docs2
-        run: cp -r docs-master/out/docs _site/docs2
-
-      - name: cp -r docs-master/out/_next _site/_next
-        run: cp -r docs-master/out/_next _site/_next
+      # lastly copy _next to _site
+      - name: cp -r _hidden/docs-master/out/_next _site/_next
+        run: cp -r _hidden/docs-master/out/_next _site/_next
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
