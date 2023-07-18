@@ -52,9 +52,26 @@ jobs:
           MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
 
       # Grabs docs2 so can be written under _site
-      - name: Include docs2 under _site
+      - name: curl docs
         run: curl -L https://github.com/dotenv-org/docs/archive/refs/heads/master.zip > master.zip
 
+      - name: unzip docs-master.zip
+        run: unzip master.zip
+
+      - name: npm install --prefix docs-master
+        run: npm install --prefix docs-master
+
+      - name: npm run build --prefix docs-master
+        run: npm run build --prefix docs-master
+
+      - name: cp docs-master/out/docs.html _site/docs2.html
+        run: cp docs-master/out/docs.html _site/docs2.html
+
+      - name: cp -r docs-master/out/docs _site/docs2
+        run: cp -r docs-master/out/docs _site/docs2
+
+      - name: cp -r docs-master/out/_next _site/_next
+        run: cp -r docs-master/out/_next _site/_next
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
