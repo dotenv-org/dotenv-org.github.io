@@ -32,16 +32,46 @@ jobs:
           ruby-version: '3.1' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1 # Increment this number if you need to re-download cached gems
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+
+      - name: Bundle install
+        run: bundle install
+
+      - name: Npm install
+        run: npm install
+
+      # Outputs to the './_site' directory by default
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: npm install && bundle install && bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace
         env:
           JEKYLL_ENV: production
           MEDIUM_USER_ID: ${{ secrets.MEDIUM_USER_ID }}
           MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
+
+      # Grabs docs2 so can be written under _site
+      - name: curl docs
+        run: curl -L https://github.com/dotenv-org/docs/archive/refs/heads/master.zip > master.zip
+
+      - name: unzip docs-master.zip
+        run: unzip master.zip
+
+      - name: npm install --prefix docs-master
+        run: npm install --prefix docs-master
+
+      - name: npm run build --prefix docs-master
+        run: npm run build --prefix docs-master
+
+      - name: cp docs-master/out/docs.html _site/docs2.html
+        run: cp docs-master/out/docs.html _site/docs2.html
+
+      - name: cp -r docs-master/out/docs _site/docs2
+        run: cp -r docs-master/out/docs _site/docs2
+
+      - name: cp -r docs-master/out/_next _site/_next
+        run: cp -r docs-master/out/_next _site/_next
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
