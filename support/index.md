@@ -8,7 +8,7 @@ redirect_from:
 {% include v2/support/hero.html %}
 
 <section class="max-w-5xl mx-auto mt-20 flex flex-col px-5">
-  <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-0">
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-0">
     <div class="flex flex-col border border-zinc-800 p-4">
       <div class="grow">
         <h4 class="font-bold text-zinc-100">Documentation</h4>
