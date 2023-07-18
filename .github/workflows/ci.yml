@@ -53,6 +53,7 @@ jobs:
 
       # Grabs docs2 so can be written under _site
       - name: Include docs2 under _site
+        run: curl -L https://github.com/dotenv-org/docs/archive/refs/heads/master.zip > master.zip
 
 
       - name: Upload artifact
