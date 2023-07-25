@@ -16,7 +16,7 @@ redirect_from:
       </div>
       <div class="flex-none">
         <hr class="border-zinc-800 mb-4">
-        <a href="https://github.com/dotenv-org/dotenv-vault/issues" aria-describedby="tier-starter" class="my-3 rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white bg-zinc-800 hover:bg-zinc-700">Documentation</a>
+        <a href="/docs" aria-describedby="tier-starter" class="my-3 rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white bg-zinc-800 hover:bg-zinc-700">Documentation</a>
       </div>
     </div>
     <div class="flex flex-col border border-zinc-800 p-4">
