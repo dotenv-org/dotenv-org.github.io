@@ -54,12 +54,7 @@ jobs:
       - name: unzip master.zip -d _hidden
         run: unzip master.zip -d _hidden
 
-      - name: npm install --prefix _hidden/docs-master
-        run: npm install --prefix _hidden/docs-master
-
-      - name: npm run build --prefix _hidden/docs-master
-        run: npm run build --prefix _hidden/docs-master
-
+      # copy out folder
       - name: cp -r _hidden/docs-master/out/docs docs
         run: cp -r _hidden/docs-master/out/docs docs
 
