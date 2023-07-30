@@ -57,11 +57,11 @@ jobs:
       - name: npm run build --prefix _hidden/docs-master
         run: npm run build --prefix _hidden/docs-master
 
-      - name: cp -r _hidden/docs-master/out/docs docs2
-        run: cp -r _hidden/docs-master/out/docs docs2
+      - name: cp -r _hidden/docs-master/out/docs docs
+        run: cp -r _hidden/docs-master/out/docs docs
 
-      - name: cp _hidden/docs-master/out/docs.html docs2/index.html
-        run: cp _hidden/docs-master/out/docs.html docs2/index.html
+      - name: cp _hidden/docs-master/out/docs.html docs/index.html
+        run: cp _hidden/docs-master/out/docs.html docs/index.html
       
       # Outputs to the './_site' directory by default
       - name: Build with Jekyll
