@@ -51,15 +51,15 @@ jobs:
         run: curl -L https://github.com/dotenv-org/docs/archive/refs/heads/master.zip > master.zip
 
       # put in _hidden folder so jekyll doesn't copy it over on build
-      - name: unzip master.zip -d _hidden
+      - name: unzip
         run: unzip master.zip -d _hidden
 
       # copy out/docs folder
-      - name: cp -r _hidden/docs-master/out/docs docs
+      - name: copy docs
         run: cp -r _hidden/docs-master/out/docs docs
 
       # move files around
-      - name: cp _hidden/docs-master/out/docs.html docs/index.html
+      - name: copy docs/index.html
         run: cp _hidden/docs-master/out/docs.html docs/index.html
       
       # Outputs to the './_site' directory by default
@@ -71,12 +71,12 @@ jobs:
           MEDIUM_INTEGRATION_TOKEN: ${{ secrets.MEDIUM_INTEGRATION_TOKEN }}
 
       # copy _next to _site
-      - name: cp -r _hidden/docs-master/out/_next _site/_next
+      - name: copy _next
         run: cp -r _hidden/docs-master/out/_next _site/_next
 
       # copy assets to _site
-      - name: cp -r _hidden/docs-master/out/assets _site/assets
-        run: cp -r _hidden/docs-master/out/assets _site/assets
+      - name: copy assets
+        run: cp -r _hidden/docs-master/out/assets _site
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
