@@ -11,7 +11,7 @@ redirect_from:
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-0">
     <div class="flex flex-col border border-zinc-800 p-4">
       <div class="grow">
-        <h4 class="font-bold text-zinc-100">Documentation</h4>
+        <h4 class="font-bold text-zinc-900 dark:text-zinc-100">Documentation</h4>
         <p class="mb-4">Read and view documentation. Learn how to integrate dotenv-vault into your development and production infrastructure.</p>
       </div>
       <div class="flex-none">
@@ -21,7 +21,7 @@ redirect_from:
     </div>
     <div class="flex flex-col border border-zinc-800 p-4">
       <div class="grow">
-        <h4 class="font-bold text-zinc-100">GitHub Issues</h4>
+        <h4 class="font-bold text-zinc-900 dark:text-zinc-100">GitHub Issues</h4>
         <p class="mb-4">Have an issue or bug that you've found? Let us know on GitHub issues. This can be feature requests too.</p>
       </div>
       <div class="flex-none">
@@ -31,7 +31,7 @@ redirect_from:
     </div>
     <div class="flex flex-col border border-zinc-800 p-4">
       <div class="grow">
-        <h4 class="font-bold text-zinc-100">Email Support</h4>
+        <h4 class="font-bold text-zinc-900 dark:text-zinc-100">Email Support</h4>
         <p class="mb-4">Talk to a real person over email at support@dotenv.org. It's the fastest way to get help.</p>
       </div>
       <div class="flex-none">
@@ -40,5 +40,5 @@ redirect_from:
       </div>
     </div>
   </div>
-  <p class="my-4 text-zinc-200"><span class="font-bold">Need to report a security vulnerability?</span> If you believe you have discovered a security or privacy vulnerability in any of Dotenv's services, tools, or libraries, please report it to us at <a href="mailto:security@dotenv.org">security@dotenv.org</a>.</p>
+  <p class="my-4 text-zinc-800 dark:text-zinc-200"><span class="font-bold">Need to report a security vulnerability?</span> If you believe you have discovered a security or privacy vulnerability in any of Dotenv's services, tools, or libraries, please report it to us at <a href="mailto:security@dotenv.org">security@dotenv.org</a>.</p>
 </section>
