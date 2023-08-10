@@ -1,5 +1,5 @@
 module.exports = {
-  // darkMode: 'class',
+  darkMode: 'class',
   purge: [
     './_includes/**/*.html',
     './_layouts/**/*.html',
