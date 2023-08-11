@@ -1,41 +1,9 @@
-<div class="flex items-center mr-3">
-
-  <div x-data="{ open: false }" class="relative inline-block text-left">
-    <div>
-      <button x-on:click="open = ! open" type="button" class="flex items-center rounded-full text-gray-400 hover:text-gray-600 p-2" id="menu-button" aria-expanded="true" aria-haspopup="true">
-        <span class="sr-only">Open options</span>
-        <span class="inline dark:hidden">{% include logos/sun.html class="h-3.5 w-3.5 text-zinc-600" %}</span>
-        <span class="hidden dark:inline">{% include logos/moon.html class="h-3.5 w-3.5 text-zinc-600" %}</span>
-        {% include logos/caret.html class="ml-1 h-3.5 w-3.5 text-zinc-600" %}
-      </button>
-    </div>
-
-    <!--
-      Dropdown menu, show/hide based on menu state.
-
-      Entering: "transition ease-out duration-100"
-        From: "transform opacity-0 scale-95"
-        To: "transform opacity-100 scale-100"
-      Leaving: "transition ease-in duration-75"
-        From: "transform opacity-100 scale-100"
-        To: "transform opacity-0 scale-95"
-    -->
-    <div x-show="open" x-transition class="none absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none py-1" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-      <div class="" role="none">
-        <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-        <a x-on:click="document.documentElement.classList.remove('dark');localStorage.theme = 'light'" class="cursor-pointer text-zinc-600 block p-3 pl-4 text-sm font-semibold hover:text-zinc-950 dark:hover:text-zinc-100" role="menuitem" tabindex="-1" id="menu-item-0">
-          <div class="flex flex-row content-center">
-            <span>{% include logos/sun.html class="h-4 w-4" %}</span>
-            <span class="ml-1.5 leading-4">Light</span>
-          </div>
-        </a>
-        <a x-on:click="document.documentElement.classList.add('dark');localStorage.theme = 'dark'" class="cursor-pointer text-zinc-600 block p-3 pl-4 text-sm font-semibold hover:text-zinc-950 dark:hover:text-zinc-100" role="menuitem" tabindex="-1" id="menu-item-0">
-          <div class="flex flex-row content-center">
-            <span>{% include logos/moon.html class="h-3.5 w-3.5" %}</span>
-            <span class="ml-2 leading-3">Dark</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<button type="button" class="flex h-6 w-6 items-center justify-center rounded-md transition hover:bg-zinc-900/5 dark:hover:bg-white/5" aria-label="Toggle dark mode" onclick="toggleMode()">
+  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="h-5 w-5 stroke-zinc-900 dark:hidden">
+    <path d="M12.5 10a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z"></path>
+    <path stroke-linecap="round" d="M10 5.5v-1M13.182 6.818l.707-.707M14.5 10h1M13.182 13.182l.707.707M10 15.5v-1M6.11 13.889l.708-.707M4.5 10h1M6.11 6.111l.708.707"></path>
+  </svg>
+  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" class="hidden h-5 w-5 stroke-white dark:block">
+    <path d="M15.224 11.724a5.5 5.5 0 0 1-6.949-6.949 5.5 5.5 0 1 0 6.949 6.949Z"></path>
+  </svg>
+</button>
