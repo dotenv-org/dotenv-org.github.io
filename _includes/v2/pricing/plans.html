@@ -5,13 +5,13 @@
         <h5 class="text-center text-base font-semibold leading-7 dark:text-yellow-300">Invest in Your Security</h5>
         <h1 class="mx-auto mt-2 max-w-4xl text-center text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent leading-tight text-zinc-950 dark:text-zinc-200">
           <span x-data="{
-            signups: 601,
+            signups: 682,
             getSignupCount() {
               fetch('https://vault.dotenv.org/public/stats')
                 .then(response => response.json())
                 .then(data => { this.signups = data.signups; })
             }
-          }" x-init="getSignupCount()" x-text="signups">652</span> organizations signed up last month.</h1>
+          }" x-init="getSignupCount()" x-text="signups">682</span> organizations signed up last month.</h1>
 
         <p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-base">Free to use for individuals and small teams.</p>
       </div>
