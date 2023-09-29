@@ -1,9 +1,10 @@
 ---
-layout: docs
+layout: default
 section: "Tutorials"
 title: "Sync .env files"
 description: "Sync environment variables securely with dotenv-vault."
 parent: Docs
+redirect_to: /docs/tutorials/sync
 redirect_from:
   - /cli
   - /sync
@@ -11,113 +12,28 @@ redirect_from:
   - /get-started
 ---
 
-<div class="mb-3" style="width: 328px;">
-  <div class="rounded video border border-success bg-dark">
-    <iframe width="1108" height="625" src="https://www.youtube.com/embed/z-lBjxfhWeY" title="1 Minute Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row my-5 py-5">
+  <div class="col-lg-6 offset-lg-3">
+    <p class="text-center mt-5 pt-5 mb-1 fw-bold">You are being redirected to</p>
+    <p class="text-center">
+      <a class="text-dark" rel="" href="/docs/tutorials/sync"><u>/docs/tutorials/sync</u></a>
+    </p>
+    <p class="text-center mb-1">
+      <a class="btn btn-dark" rel="" href="/docs/tutorials/sync">Continue</a>
+    </p>
+    <p class="text-center mb-5 pb-5 small">in <span id="counter">4</span> second(s)</p>
   </div>
 </div>
 
-## Run dotenv-vault new
-
-Open terminal, enter your project's root directory (where you keep your .env file), and run dotenv-vault new.
-
-```
-$ npx dotenv-vault new
-```
-
-<small>FYI: npx is a very powerful command that lets you run code built with NodeJS and published through the npm registry.</small>
-
-## Name your project
-
-On the page that opens, name your project (typically prefilled for you), and enter your email address.
-
-{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-07-28_at_5.55.15_PM_jnnhto.png" %}
-
-## View .env.vault file (optional)
-
-A .env.vault was generated for your project. It uniquely identifies your project in dotenv-vault. Think of it like a unique git url at GitHub. It identifies your project so that you (and your teammates) pull the correct .env from dotenv-vault.
-
-Run ls -al to view it.
-
-
-```
-$ ls -al
-Jul 28 17:54 .
-Jul 27 13:46 ..
-Jul 27 14:51 .env
-Jul 28 18:09 .env.vault
-Jul 28 17:54 .gitignore
-Jul 27 14:49 index.js
-Jul 27 14:12 node_modules
-Jul 27 14:48 package-lock.json
-Jul 27 14:12 package.json
-```
-
-{% include helpers/screenshot.html url="/assets/img/cloudinary/Screen_Shot_2022-07-28_at_6.46.24_PM_s5qd3s.png" %}
-
-## Run dotenv-vault login
-
-Next, authenticate your machine by running dotenv-vault login.
-
-```
-$ npx dotenv-vault login
-```
-
-## Click log in
-
-On the next screen, follow the login process and click 'Log in'.
-
-{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-vault-login-2_vdb9sq.png" %}
-
-## View .env.me file (optional)
-
-You now have a .env.me file in the root of your project. The .env.me file uniquely authorizes you to access a project's shared .env file. You can think of it like your unique SSH key at GitHub.
-
-Run ls -al to view it.
-
-```
-$ ls -al
-Jul 28 17:54 .
-Jul 27 13:46 ..
-Jul 27 14:51 .env
-Jul 28 18:11 .env.me
-Jul 28 18:09 .env.vault
-Jul 28 17:54 .gitignore
-Jul 27 14:49 index.js
-Jul 27 14:12 node_modules
-Jul 27 14:48 package-lock.json
-Jul 27 14:12 package.json
-```
-
-{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-me_bsffi2.png" %}
-
-## Run dotenv-vault push
-
-Return one last time to terminal and run dotenv-vault push.
-
-This will securely push your .env file to dotenv-vault. Each time you change your .env file, run dotenv-vault push.
-
-```
-$ npx dotenv-vault push
-
-remote:   Securely pushing (.env)... done
-remote:   Securely pushed development (.env)
-
-Run npx dotenv-vault open to view in the ui
-```
-
-Congratulations 🎉, you just pushed (and secured) your first .env file in dotenv-vault.
-
-<small>ProTip: For a list of all available commands, run npx dotenv-vault help.</small>
-
-## Run dotenv-vault open (bonus)
-
-Let's check out the UI. Run dotenv-vault open.
-
-```
-$ npx dotenv-vault open
-```
-
-{% include helpers/screenshot.html url="/assets/img/cloudinary/dotenv-vault-ui_ep5nrs.png" %}
-
-That's it! Thanks for using dotenv-vault.
+<script>
+  var interval
+  interval = setInterval(function() {
+    var div = document.querySelector("#counter")
+    var count = div.textContent * 1 - 1
+    div.textContent = count
+    if (count <= 0) {
+      window.location.replace("https://dotenv.org/docs/tutorials/sync")
+      clearInterval(interval)
+    }
+  }, 1000)
+</script>
