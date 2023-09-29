@@ -3,6 +3,7 @@ layout: docs
 section: "Language Guides"
 title: "Build a Node.js App with Docker"
 description: Build a Node.js app with an encrypted .env.vault file on Docker.
+redirect_to: /docs/languages/nodejs/docker
 redirect_from:
   - /docs/integrations/docker-express
   - /docs/integrations/docker/express

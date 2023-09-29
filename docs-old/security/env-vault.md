@@ -3,6 +3,7 @@ layout: docs
 section: "Security"
 title: ".env.vault"
 description: The .env.vault file uniquely identifies your project in dotenv-vault. You can think of it like a unique git url at GitHub. It identifies your project so that your teammates pull the correct .env file from dotenv-vault.
+redirect_to: /docs/security/env-vault
 redirect_from:
   - /env-vault
 ---
