@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "GitLab CI/CD Quickstart - Integrations"
+redirect_to: /docs/languages/nodejs/gitlab-ci
 redirect_from:
   - /docs/integrations/gitlab-ci-quickstart
 ---
