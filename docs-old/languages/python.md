@@ -3,6 +3,7 @@ layout: docs
 section: "Language Guides"
 title: "Python"
 description: Load environment variables from encrypted .env.vault files, with Python 🐍.
+redirect_to: /docs/languages/python
 ---
 
 <div class="alert alert-info">ⓘ This guide assumes you are already familiar with <a href="https://github.com/theskumar/python-dotenv">python-dotenv</a>. It extends it with <a href="https://github.com/dotenv-org/python-dotenv-vault">python-dotenv-vault</a>.</div>

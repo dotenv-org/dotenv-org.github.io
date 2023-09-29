@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "GitHub Actions with NextJS - Integrations"
+redirect_to: /docs/frameworks/nextjs/github-actions
 redirect_from:
   - /docs/integrations/github/actions-nextjs
 ---

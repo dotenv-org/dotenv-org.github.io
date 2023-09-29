@@ -3,6 +3,7 @@ layout: docs
 section: "Language Guides"
 title: "Deploy a Node.js App to Railway"
 description: Deploy a Node.js app with an encrypted .env.vault file to Railway.
+redirect_to: /docs/languages/nodejs/railway
 redirect_from:
   - /docs/integrations/railway-nodejs
   - /docs/integrations/railway/nodejs

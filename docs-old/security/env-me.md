@@ -3,6 +3,7 @@ layout: docs
 section: "Security"
 title: ".env.me"
 description: The .env.me file uniquely authorizes you to access a project's shared .env file. You can think of it like your unique SSH key at GitHub.
+redirect_to: /docs/security/env-me
 redirect_from:
   - /env-me
 ---
