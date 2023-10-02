@@ -30,11 +30,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ## Afterbuild (to include docs2)
 
-```
-npm run build --prefix ../docs
-cp ../docs/out/docs.html _site/docs2.html
-cp -r ../docs/out/docs _site/docs2
-cp -r ../docs/out/_next _site/_next
-```
+GitHub Actions takes care of building the docs into the deploy.
 
+Make sure you run `npm run build` on the `/docs` project and push that to main before the CI here runs.
 
