@@ -14,9 +14,9 @@
       </div>
       <div class="flex items-center space-x-1">
         {% include components/toggle-mode.html %}
-        {% include components/btn-nav.html url="https://vault.dotenv.org" text="Log in" %}
+        {% include components/btn-nav.html url="https://vault.dotenv.org" text="Log in" dataUmamiEvent="Login Clicked" %}
         <div class="hidden md:flex">
-          {% include components/btn-nav.html url="https://vault.dotenv.org/signup" text="Create Account" %}
+          {% include components/btn-nav.html url="https://vault.dotenv.org/signup" text="Create Account" dataUmamiEvent="Signup Clicked" %}
         </div>
       </div>
     </div>
