@@ -32,5 +32,5 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 GitHub Actions takes care of building the docs into the deploy.
 
-Make sure you run `npm run build` on the `/docs` project and push that to main before the CI here runs.
+Make sure you run `NODE_ENV='production' npm run build` on the `/docs` project and push that to main before the CI here runs.
 
