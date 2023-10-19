@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include layouts/analytics.html %}
-  <style>
+<style>
   * {
     box-sizing: border-box;
   }
@@ -54,45 +49,47 @@
   blockquote {
     border-left: 2px solid;
     padding: .5rem 1rem;
-    margin: 2rem 0
+    margin: 2rem 0;
   }
 
   code {
-    color: orangered;
-    font-family: ui-monospace, monospace;
+    color: #18181b;
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-size: 0.8em;
   }
 
   pre {
-    background: #f0e8e0;
+    background: #18181b;
     border-radius: .3rem;
     margin: .5rem 0;
-    padding: .5rem;
-    overflow: auto
+    padding: 0.8rem;
+    overflow: auto;
   }
 
   pre>code {
+    color: #fbfbfb;
     background: none;
     border: none;
-    padding: 0
+    padding: 0;
+  }
+
+  :not(pre)>code {
+    background: #f6f8fa;
+    padding: .25rem .5rem;
+    border-radius: .5rem;
   }
 
   ul li, ol li {
     margin-top: 0.5rem;
   }
 
-  :not(pre)>code {
-    background: #f0e8e0;
-    padding: .1rem .25rem;
-    border-radius: .25rem;
-  }
-
-  .title {
+  .header {
     display: flex;
     align-items: flex-end;
     gap: 10px;
     margin-bottom: 4rem;
   }
-
+  
   .entrylist {
     list-style-type: none;
     padding-left: 0;
@@ -103,9 +100,12 @@
     margin-bottom: .5rem
   }
 
-  .g {
-    visibility: hidden;
-    color: GrayText
+  .blog-date {
+    margin-bottom: 0rem;
+  }
+
+  .blog-title {
+    margin-top: 0rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -113,18 +113,4 @@
       margin: 1rem
     }
   }
-  </style>
-</head>
-<body class="">
-  <div class="container">
-    <div class="title">
-      <a class="logo" href="/">
-        {% include logos/dotenv.html class="" %}
-      </a>
-      <a href="/blog" class="no-underline">/blog</a>
-    </div>
-
-    {{ content }}
-  </div>
-</body>
-</html>
+</style>

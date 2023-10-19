@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Making secret management easy"
 image: "/assets/img/blog/secret-management-easy/making-secret-management-easy-cover.png"
 excerpt: "Uncover how Dotenv Vault facilitates the secret management process and takes it from manual .env handling to automated code-like synchronization that is just as easy as 1-2-3."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-Making secret management easy
-======
+Uncover how Dotenv Vault facilitates the secret management process and takes it from manual .env handling to automated code-like synchronization that is just as easy as 1-2-3.
 
 The rapidly evolving world of software development necessitates efficient, streamlined processes, particularly in the realm of `.env` file management. These files, integral to application configuration, control how an application operates across different environments. 
 

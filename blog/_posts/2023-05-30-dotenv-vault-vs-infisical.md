@@ -1,16 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
-title: "Dotenv Vault vs Infisical: Face-to-face comparison"
+title: "Dotenv Vault vs Infisical"
 image: "/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-cover.png"
 excerpt: "Discover the ultimate matchup between Dotenv Vault and Infisical as we compare features, experience, integrations, and other key factors face-to-face."
 published: true
 ---
 
-{% include helpers/reading_time.html %}
-
-Dotenv Vault vs Infisical: Face-to-face matchup
-======
+Discover the ultimate matchup between Dotenv Vault and Infisical as we compare features, experience, integrations, and other key factors face-to-face.
 
 As developers ourselves, we understand how crucial it is to safeguard confidential information. A security breach could jeopardize not only our business but also compromise our customers' data.
 

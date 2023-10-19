@@ -1,11 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Use dotenv-vault with Vercel Edge"
 image: "/assets/img/blog/blog-2.png"
 excerpt: "Learn how to use encrypted .env.vault files with Vercel Edge"
-published: true
+published: false
 ---
+
+Learn how to use encrypted .env.vault files with Vercel Edge.
 
 A `.env.vault` file is a great way to deploy your secrets to multiple environments. In this blog post, we'll show you how to do so with Next.js and Vercel.
 

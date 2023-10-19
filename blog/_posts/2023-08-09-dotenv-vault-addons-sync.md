@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Dotenv Vault add-ons to sync secrets with"
 image: "/assets/img/blog/dotenv-vault-addons/dotenv-vault-addons-sync-cover.png"
 excerpt: "Start syncing secrets seamlessly across popular platforms like AWS, Heroku, and Vercel in just a few clicks with these Dotenv Vault add-ons."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-Dotenv Vault add-ons to sync secrets with
-======
+Start syncing secrets seamlessly across popular platforms like AWS, Heroku, and Vercel in just a few clicks with these Dotenv Vault add-ons.
 
 Contrary to popular belief, managing environment variables isn't a daunting task - not when you have Dotenv Vault at your disposal. Our powerful tool employs a myriad of addons designed to enhance your experience and make secret management more efficient than ever. 
 

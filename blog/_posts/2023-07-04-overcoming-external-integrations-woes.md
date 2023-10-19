@@ -1,12 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Overcoming external integrations woes"
 image: "/assets/img/blog/external-integrations/overcoming-external-integrations-woes-cover.png"
 excerpt: "Understand how Dotenv Vault simplifies secret management in an interconnected digital world, enhancing security and compliance with a seamless workflow amid complex external integrations."
+published: false
 ---
 
-# Overcoming external integrations woes
+Understand how Dotenv Vault simplifies secret management in an interconnected digital world, enhancing security and compliance with a seamless workflow amid complex external integrations.
 
 Today, in this interconnected digital world, the words 'secret management' and 'external integrations' echo through the corridors of every software development enterprise. Amid this array of jargon, understanding the essence of what these terms mean, their significance, and the impact they can have on your operations can be challenging. 
 

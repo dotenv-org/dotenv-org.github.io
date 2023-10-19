@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Dotenv Vault add-ons to build and notify with"
 image: "/assets/img/blog/dotenv-vault-addons/dotenv-vault-addons-build-notify-cover.png"
 excerpt: "Learn how to optimize your workflow with GitHub Auto-build, get real-time Slack updates, and boost VSCode productivity with some of Dotenv Vault's practical add-ons."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-Dotenv Vault add-ons to build and notify with
-======
+Learn how to optimize your workflow with GitHub Auto-build, get real-time Slack updates, and boost VSCode productivity with some of Dotenv Vault's practical add-ons.
 
 In the realm of secrets management, Dotenv Vault has carved a unique space for its considerable offering. Our solution brandishes a set of versatile add-ons that provide a holistic and seamless experience to its users. Add-ons, in this context, refer to tools that extend the capabilities of Dotenv Vault, making it more flexible, efficient, and user-friendly.
 

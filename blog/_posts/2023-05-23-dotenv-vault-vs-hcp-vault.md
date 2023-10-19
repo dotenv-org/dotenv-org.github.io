@@ -1,16 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
-title: "Dotenv Vault vs HCP Vault: Secret manager face-off"
+title: "Dotenv Vault vs HCP Vault"
 image: "/assets/img/blog/vault-vs-hcp/dotenv-vault-vs-hcp-cover.png"
 excerpt: "Dive into the features, experience, and other key factors to find your best fit in our comprehensive comparison of Dotenv Vault and HCP Vault."
 published: true
 ---
 
-{% include helpers/reading_time.html %}
-
-Dotenv Vault vs HCP Vault: Secret manager face-off
-======
+Dive into the features, experience, and other key factors to find your best fit in our comprehensive comparison of Dotenv Vault and HCP Vault.
 
 As developers dealing with various kinds of data and information, we understand the importance of security in keeping our systems safe. With many things that can go wrong during data breaches (both for our business and our customers), it's vital to prevent them from happening in the first place.
 

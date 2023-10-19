@@ -9,6 +9,14 @@
   <div class="container">
     {% include layouts/blog_header.html %}
 
+    <p class="blog-date">
+      {{ page.date | date: "%b %d, %Y" }}
+    </p>
+    <h1 class="blog-title">
+      {{ page.title }}
+    </h1>
+    <img src="{{ page.image }}" alt="{{ page.title }}">
+
     {{ content }}
   </div>
 </body>

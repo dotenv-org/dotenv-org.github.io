@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Tackling the pitfalls of manual .env file sharing"
 image: "/assets/img/blog/manual-env-sharing/tackling-manual-env-sharing-cover.png"
 excerpt: "Explore how you can overcome manual .env file sharing woes. Boost security, minimize human error, and streamline workflows, ensuring sensitive data is protected and managed effectively."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-Tackling the pitfalls of manual .env file sharing
-======
+Explore how you can overcome manual .env file sharing woes. Boost security, minimize human error, and streamline workflows, ensuring sensitive data is protected and managed effectively.
 
 Managing secrets in modern applications can be a daunting task, especially when dealing with sensitive information such as API keys, credentials, and passwords. Developers often rely on environment variables to store and manage these secrets, and `.env` files are typically used for this purpose. 
 

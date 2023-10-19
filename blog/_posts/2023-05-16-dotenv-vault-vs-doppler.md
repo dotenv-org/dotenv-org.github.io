@@ -1,16 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
-title: "Dotenv Vault vs Doppler: Head-to-head review"
+title: "Dotenv Vault vs Doppler"
 image: "/assets/img/blog/vault-vs-doppler/dotenv-vault-vs-doppler-cover.png"
 excerpt: "Make an informed choice by examining the core aspects of Dotenv Vault and Doppler in our in-depth review of how they fare against each other."
 published: true
 ---
 
-{% include helpers/reading_time.html %}
-
-Dotenv Vault vs Doppler: Head-to-head review
-======
+Make an informed choice by examining the core aspects of Dotenv Vault and Doppler in our in-depth review of how they fare against each other.
 
 As a developer, you are probably aware of the importance of keeping your confidential information safe. After all, if your solution is hacked, not only could your business be at risk, but your customers' information could be compromised just as well.
 

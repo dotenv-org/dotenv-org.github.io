@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "How Dotenv Vault servers handle data"
 image: "/assets/img/blog/dotenv-vault-server-data/dotenv-vault-server-data-cover.png"
 excerpt: "Examine how Dotenv Vault prioritizes your data's confidentiality and integrity, making it a trusted choice for all your secret management needs."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-How Dotenv Vault servers handle data
-======
+Examine how Dotenv Vault prioritizes your data's confidentiality and integrity, making it a trusted choice for all your secret management needs.
 
 In the evolving digital landscape, we at Dotenv Vault recognize the paramount importance of data security. As the reliance on tools for managing sensitive data grows, understanding the mechanisms behind these tools becomes essential. At Dotenv Vault, we've meticulously designed our system with a profound emphasis on data security. 
 

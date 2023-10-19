@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Embracing the Dotenv Vault workflow"
 image: "/assets/img/blog/embracing-workflow/embracing-dotenv-vault-workflow-cover.png"
 excerpt: "Learn how you can seamlessly manage sensitive data, ensure high-level security, and simplify your developer experience from SecOps to DevOps with the streamlined Dotenv Vault workflow."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-Embracing the Dotenv Vault workflow
-======
+Learn how you can seamlessly manage sensitive data, ensure high-level security, and simplify your developer experience from SecOps to DevOps with the streamlined Dotenv Vault workflow.
 
 Managing application configuration centrally necessitates careful attention to secret data like API keys and database credentials. Such confidential information, often dispersed across codebases, is challenging to manage and exposes security risks. 
 

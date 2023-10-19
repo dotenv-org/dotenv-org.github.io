@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "Unlocking the secrets of Dotenv Vault"
 image: "/assets/img/blog/secrets-dotenv-vault/unlocking-secrets-dotenv-vault-cover.png"
 excerpt: "Uncover the secrets making Dotenv Vault a trusted partner for you to count on to keep your confidential data safe and offer you a seamless means of access whenever and wherever it is needed."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-Unlocking the secrets of Dotenv Vault
-======  
+Uncover the secrets making Dotenv Vault a trusted partner for you to count on to keep your confidential data safe and offer you a seamless means of access whenever and wherever it is needed.
 
 Managing secrets such as API keys, passwords, and other confidential data is a crucial aspect of modern application development. In the past, managing these secrets has been complex and error-prone, often involving the use of multiple tools and platforms.
 

@@ -1,5 +1,5 @@
 ---
-layout: blog2
+layout: blog
 title: "Blog"
 ---
 

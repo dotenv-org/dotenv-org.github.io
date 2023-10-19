@@ -1,15 +1,13 @@
 ---
-layout: blog
+layout: blogpage
 author: mot
 title: "A look into Dotenv Vault file standards"
 image: "/assets/img/blog/dotenv-vault-file-standards/look-into-dotenv-file-standards-cover.png"
 excerpt: "Dive into the world of Dotenv Vault file standards—from .env to the new extensions it brings to life in making secret management more secure, accessible, and optimized for developers worldwide."
+published: false
 ---
 
-{% include helpers/reading_time.html %}
-
-A look into Dotenv Vault file standards
-======
+Dive into the world of Dotenv Vault file standards—from .env to the new extensions it brings to life in making secret management more secure, accessible, and optimized for developers worldwide.
 
 Developers often find themselves at the intersection of rapid development and secure coding practices. A crucial component that helps maintain this balance is the `.env` file format. First brought to light in the throes of application development, it finds a home in every project, yet it carefully stays away from the prying eyes of source control.
 
