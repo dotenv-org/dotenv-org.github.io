@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include layouts/analytics.html %}
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    font: 17px/1.5 system-ui, sans-serif;
+    margin: 10vh;
+    background: Canvas;
+  }
+
+  .container {
+    max-width: 66ch;
+  }
+
+  a,
+  a:visited {
+    color: CanvasText
+  }
+
+  a:hover {
+    color: deepskyblue;
+  }
+
+  a.no-underline {
+    text-decoration: none;
+  }
+
+  a.logo {
+    text-decoration: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+  }
+
+  a.logo svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  blockquote {
+    border-left: 2px solid;
+    padding: .5rem 1rem;
+    margin: 2rem 0
+  }
+
+  code {
+    color: orangered;
+    font-family: ui-monospace, monospace;
+  }
+
+  pre {
+    background: #f0e8e0;
+    border-radius: .3rem;
+    margin: .5rem 0;
+    padding: .5rem;
+    overflow: auto
+  }
+
+  pre>code {
+    background: none;
+    border: none;
+    padding: 0
+  }
+
+  ul li, ol li {
+    margin-top: 0.5rem;
+  }
+
+  :not(pre)>code {
+    background: #f0e8e0;
+    padding: .1rem .25rem;
+    border-radius: .25rem;
+  }
+
+  .title {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 4rem;
+  }
+
+  .entrylist {
+    list-style-type: none;
+    padding-left: 0;
+    color: GrayText
+  }
+
+  .entrylist li:not(:last-child) {
+    margin-bottom: .5rem
+  }
+
+  .g {
+    visibility: hidden;
+    color: GrayText
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      margin: 1rem
+    }
+  }
+  </style>
+</head>
+<body class="">
+  <div class="container">
+    <div class="title">
+      <a class="logo" href="/">
+        {% include logos/dotenv.html class="" %}
+      </a>
+      <a href="/blog" class="no-underline">/blog</a>
+    </div>
+
+    {{ content }}
+  </div>
+</body>
+</html>
