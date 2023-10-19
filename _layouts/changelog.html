@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    {% include layouts/meta.html %}
+    {% include layouts/blog_meta.html %}
+    {% include layouts/blog_css.html %}
+    <style>
+      .container {
+        max-width: 44ch;
+      }
+
+      hr {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+    </style>
     {% include layouts/analytics.html %}
   </head>
-  <body class="">
-    {% include layouts/nav.html %}
-    {% include changelog/single.html %}
-    {% include layouts/footer.html %}
-    {% include layouts/js.html %}
+  <body>
+    <div class="container">
+      {% include layouts/changelog_header.html %}
+
+      {{content}}
+    </div>
   </body>
 </html>
