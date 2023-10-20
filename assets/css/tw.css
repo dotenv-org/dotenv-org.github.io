@@ -4,3 +4,18 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.blog {
+}
+
+.blog h1, .blog h2, .blog h3, .blog h4, .blog h5, .blog h6 {
+  @apply dark:text-zinc-100;
+}
+
+.blog p {
+  @apply dark:text-zinc-300;
+}
+
+.blog code {
+  @apply dark:text-zinc-100;
+}

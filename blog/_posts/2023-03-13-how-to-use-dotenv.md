@@ -1,13 +1,11 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "How to use dotenv"
 image: "/assets/img/blog/blog-1.png"
 excerpt: "Learn the basics of dotenv in 2 minutes."
 published: true
 ---
-
-Learn the basics of dotenv in 2 minutes.
 
 ## Create your project
 
@@ -83,5 +81,5 @@ Hello Universe
 
 Great! You just used dotenv at its foundational layer!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YtkZR0NFd1g" title="How to use dotenv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/YtkZR0NFd1g" title="How to use dotenv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

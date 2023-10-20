@@ -1,14 +1,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% seo %}
-{% favicon %}
 <meta name="keywords" content="dotenv, .env, dotenv-vault, environments, encrypt, vault, developer secrets, secret manager, share, secretops">
 
+{% seo %}
+{% favicon %}
+
 <script src="https://unpkg.com/alpinejs" defer></script>
-{% if jekyll.environment == "production" %}
-  {% assign cacheBust = site.time | date:'?v=%s' %}
-  <link rel="stylesheet" media="all" href="{{ "/assets/css/tw.css" | relative_url | append: cacheBust }}">
-{% else %}
+{% assign cacheBust = site.time | date:'?v=%s' %}
+<link rel="stylesheet" media="all" href="{{ "/assets/css/tw.css" | relative_url | append: cacheBust }}">
+
+{% if jekyll.environment != "production" %}
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
