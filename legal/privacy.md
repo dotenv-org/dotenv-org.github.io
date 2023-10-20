@@ -1,10 +1,10 @@
 ---
-layout: page
+layout: tailwind
 title: "Privacy Policy"
 parent: Legal
 ---
 
-<p class="max-w-3xl mx-auto text-xs text-center mb-20">The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer's requirements.</p>
+<p class="max-w-3xl mx-auto text-xs text-center my-10">The fine print. We make all our policies as clear and readable as possible while still meeting our lawyer's requirements.</p>
 
 <section class="max-w-3xl mx-auto mb-20 flex flex-col">
   <h2 class="text-left text-4xl md:text-5xl font-bold tracking-tight bg-gradient-to-r bg-clip-text text-transparent leading-tight text-zinc-950 dark:text-zinc-200">Privacy Policy</h2>
