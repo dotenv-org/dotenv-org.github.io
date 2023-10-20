@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Dotenv Vault add-ons to sync secrets with"
 image: "/assets/img/blog/dotenv-vault-addons/dotenv-vault-addons-sync-cover.png"

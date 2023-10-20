@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Unlocking the secrets of Dotenv Vault"
 image: "/assets/img/blog/secrets-dotenv-vault/unlocking-secrets-dotenv-vault-cover.png"

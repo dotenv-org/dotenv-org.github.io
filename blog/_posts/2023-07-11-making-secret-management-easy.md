@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Making secret management easy"
 image: "/assets/img/blog/secret-management-easy/making-secret-management-easy-cover.png"

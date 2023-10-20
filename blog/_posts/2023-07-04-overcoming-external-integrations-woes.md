@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Overcoming external integrations woes"
 image: "/assets/img/blog/external-integrations/overcoming-external-integrations-woes-cover.png"

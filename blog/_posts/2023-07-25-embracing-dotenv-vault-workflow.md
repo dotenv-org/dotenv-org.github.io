@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Embracing the Dotenv Vault workflow"
 image: "/assets/img/blog/embracing-workflow/embracing-dotenv-vault-workflow-cover.png"

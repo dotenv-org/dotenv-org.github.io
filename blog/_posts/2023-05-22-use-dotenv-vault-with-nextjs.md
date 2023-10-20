@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Use dotenv-vault with Vercel Edge"
 image: "/assets/img/blog/blog-2.png"

@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Dotenv Vault vs Infisical"
 image: "/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-cover.png"
@@ -35,7 +35,8 @@ First, let's look at the core features of Dotenv Vault and Infisical. There's a 
 
 You'll find multiple environments, version and access controls, logging, notifications, permissions, and IP management features in both tools, each with its own unique approach. However, that's where the similarities end.
 
-{% include helpers/screenshot.html url="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-core-features-comparison.png" %}
+<img src="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-core-features-comparison.png"/>
+
 *Figure 1: Dotenv Vault vs Infisical - Core features comparison*
 
 ### Differences in multiple environments
@@ -43,7 +44,8 @@ Both Dotenv Vault and Infisical allow users to create multiple environments, suc
 
 This environment is particularly useful for creating tutorials or leaving well-documented guidance for new developers. Secrets in the `Example` environment can remain public, allowing you to share information about the format of each value. While this might sound similar to Infisical's `Test` environment, it's not public-facing like ours.
 
-{% include helpers/screenshot.html url="/assets/img/blog/common/dotenv_vault_example_environment.png" %}
+<img src="/assets/img/blog/common/dotenv_vault_example_environment.png"/>
+
 *Figure 2: Dotenv Vault example environment in a Web3 setting*
 
 Moreover, your actual app values remain private when placed in environments like `Development` or `Production`. This eliminates the need to add any `.env` files to `.gitignore`, saving you from the headache of GitGuardian notifications if you happen to forget.
@@ -88,7 +90,8 @@ That's why we've designed Dotenv Vault's in-house secret handling workflow witho
 
 This approach means that even if Vault servers are breached, there would be nothing for attackers to steal. You can find a visual overview of the entire process here: 
 
-{% include helpers/screenshot.html url="/assets/img/blog/common/dotenv_vault_security_overview.png" %}
+<img src="/assets/img/blog/common/dotenv_vault_security_overview.png"/>
+
 *Figure 3: Dotenv Vault security overview*
 
 ### Rate limits and 2FA
@@ -101,7 +104,8 @@ While core features are crucial when choosing between two comparable tools, the 
 
 To clarify, a good developer experience evaluates how accessible a solution is for both newcomers and experienced users. Elements such as visual documentation, beginner tutorials, guided onboarding, sample applications, and descriptive changelogs or readme files contribute to a positive DX. Now let's explore how Dotenv Vault and Infisical fare in this category.
 
-{% include helpers/screenshot.html url="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-developer-experience-comparison.png" %}
+<img src="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-developer-experience-comparison.png" />
+
 *Figure 4: Dotenv Vault vs Infisical - Developer experience comparison*
 
 ### Onboarding
@@ -116,7 +120,8 @@ Extending the onboarding support to the setup process ensures a positive develop
 
 In this regard, Dotenv Vault holds a significant advantage over Infisical, which leaves users to figure things out after the interactive setup guide. Vault, on the other hand, provides descriptive visual feedback and relevant recommendations for completing the setup process.
 
-{% include helpers/screenshot.html url="/assets/img/blog/common/dotenv_vault_guided_setup.png" %}
+<img src="/assets/img/blog/common/dotenv_vault_guided_setup.png"/>
+
 *Figure 5: Dotenv Vault guided setup process*
 
 Vault's approach applies to every interaction with the tool, offering invaluable advice in both CLI and WebUI workflow stages. Furthermore, it seamlessly connects the two, reminiscent of the familiar “Next-next-next” setup wizard.
@@ -150,7 +155,8 @@ HCP Vault also emphasizes addon and plugin integration, offering compatibility w
 ## Dotenv Vault vs Infisical: Supported integrations
 Despite some inconsistencies across OS, Dotenv Vault and Infisical are quite evenly matched in terms of supported integrations.
 
-{% include helpers/screenshot.html url="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-integrations-comparison.png" %}
+<img src="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-integrations-comparison.png" />
+
 *Figure 6: Dotenv Vault vs Infisical – Supported integrations comparison*
 
 However, the primary downside of Infisical's extensive list is that all available options are proprietary technology, meaning new entries can only come from the platform's development team. In contrast, Dotenv Vault's open-source approach makes it more flexible and opens the door to countless community-driven integrations.
@@ -160,7 +166,8 @@ Considering this, it's no surprise that most Dotenv libraries, apart from the ma
 ## Dotenv Vault vs Infisical: Deployment options
 Taking a break from the differences, let's appreciate a similarity between Dotenv Vault and Infisical regarding deployment options – both are SaaS-based and use a combined approach for their workflow through WebUI interactions paired with CLI ones. However, let's not get too excited, as that's where the similarities end.
 
-{% include helpers/screenshot.html url="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-deployment-options-comparison.png" %}
+<img src="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-deployment-options-comparison.png" />
+
 *Figure 7: Dotenv Vault vs Infisical – Deployment options comparison*
 
 Some points from the integrations comparison still apply here, particularly regarding the open-source library versus a proprietary SDK. As an open-source solution, Dotenv Vault enjoys added flexibility in terms of deployment, even if it technically has fewer options than Infisical.
@@ -172,7 +179,8 @@ Contrary to popular belief, code isn't the only factor determining a solution's 
 
 That's why we're examining each alternative's community engagement, focusing on GitHub, as its user base aligns with both use cases better than other platforms. We'll explore Star Rating, number of Forks, Open and Closed Issues, Commit Activity, and Dependents.
 
-{% include helpers/screenshot.html url="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-github-activity-comparison.png" %}
+<img src="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-github-activity-comparison.png"/>
+
 *Figure 8: Dotenv Vault vs Infisical – GitHub activity comparison*
 
 Infisical leads in both Star Rating and the number of forks when compared to Dotenv Vault. A higher Star Rating might indicate greater popularity, while more forks could suggest a desire to add capabilities not available in the stock release. However, these outcomes don't provide absolute certainty.
@@ -187,7 +195,8 @@ Exceptional customer service does wonders for word-of-mouth recommendations whil
 ### Commitment-free access
 First, let's look at tool accessibility without commitment. It's great to see both Dotenv Vault and Infisical offer free versions for users to explore the platforms. The key difference is that Vault doesn't support product trials. But with a commitment-free version available, why avoid a trial subscription? The answer may lie in the fine print of both business models.
 
-{% include helpers/screenshot.html url="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-pricing-support-comparison.png" %}
+<img src="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-pricing-support-comparison.png" />
+
 *Figure 9: Dotenv Vault vs Infisical – Pricing and support comparison*
 
 Dotenv Vault's free version is feature-complete without strict limits like Infisical's request limits. This makes a trial offer unnecessary, as the only reasons to consider it would be to try features like Custom environments, User access controls, Version history, Audit log, Compliance reporting, Trusted IPs, and Webhooks. Although these are advanced capabilities, they are quite common for many developers.
@@ -201,7 +210,8 @@ But what if a user has needs beyond standard plans? That's where customized pric
 
 The main difference lies in the lowest plan price floor. Infisical has a higher minimum starting fee of $6 per user, compared to Dotenv Vault's $4. This is likely because Infisical's free version is less feature-complete, offering a chance to lift some restrictions and lower barriers to fully utilize its capabilities.
 
-{% include helpers/screenshot.html url="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-pricing-plans-comparison.png" %}
+<img src="/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-pricing-plans-comparison.png">
+
 *Figure 10: Dotenv Vault vs Infisical - Pricing plans comparison*
 
 ### Community support options

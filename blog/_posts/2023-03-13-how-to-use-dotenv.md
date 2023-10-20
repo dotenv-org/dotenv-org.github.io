@@ -9,9 +9,7 @@ published: true
 
 ## Create your project
 
-Begin by creating a project.
-
-Let's call it **hello-world**.
+Begin by creating a project. Let's call it `hello-world`.
 
 ```
 $ mkdir hello-world
@@ -32,7 +30,7 @@ Test that it runs correctly.
 $ node index.js
 ```
 
-It will output "Hello World".
+It should output "Hello World".
 
 ## Create your .env file
 
@@ -81,5 +79,5 @@ Hello Universe
 
 Great! You just used dotenv at its foundational layer!
 
-<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/YtkZR0NFd1g" title="How to use dotenv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/YtkZR0NFd1g" title="How to use dotenv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -1,5 +1,5 @@
 ---
-layout: blogpage
+layout: tailwind-blog
 author: mot
 title: "Tackling the pitfalls of manual .env file sharing"
 image: "/assets/img/blog/manual-env-sharing/tackling-manual-env-sharing-cover.png"
