@@ -52,3 +52,7 @@ hr {
 .changelog h2 {
   @apply my-2;
 }
+
+.changelog time {
+  @apply text-zinc-500;
+}

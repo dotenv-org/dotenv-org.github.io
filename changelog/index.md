@@ -10,7 +10,7 @@ New blog design rolled out.
 
 ---
 
-2023-07-03
+<time datetime="2023-07-03">2023-07-03</time>
 ## Experimental Dark Mode
 
 You can now toggle on dark mode. It is experimental at the moment so ymmv (your mileage might vary).
@@ -19,7 +19,7 @@ You can now toggle on dark mode. It is experimental at the moment so ymmv (your 
 
 ---
 
-2023-07-02
+<time datetime="2023-07-02">2023-07-02</time>
 ## Compare Environments
 
 You can now compare environments from a single page.
@@ -32,7 +32,7 @@ You can now compare environments from a single page.
 
 ---
 
-2023-06-30
+<time datetime="2023-06-30">2023-06-30</time>
 ## Dedicated Deploy Page
 
 Each of your projects now has a dedicated deploy page.
@@ -45,7 +45,7 @@ Each of your projects now has a dedicated deploy page.
 
 ---
 
-2023-06-08
+<time datetime="2023-06-08">2023-06-08</time>
 ## Edit Quote Format
 
 Edit an environment variable's quote format in the UI.
@@ -56,7 +56,7 @@ Click the edit button next to your secret, then click Advanced Settings, and the
 
 ---
 
-2023-05-30
+<time datetime="2023-05-30">2023-05-30</time>
 ## Dotenv 16.1.0 Released
 
 dotenv@16.1.0 released.
@@ -67,7 +67,7 @@ BIG release with first-class support for `.env.vault` files.
 
 ---
 
-2023-05-20
+<time datetime="2023-05-20">2023-05-20</time>
 ## dotenv RC Candidate 2
 
 Release Candidate 2 for dotenv@16.1.0 is released. It inludes a slew of additional functionality.
@@ -81,7 +81,7 @@ Release Candidate 2 for dotenv@16.1.0 is released. It inludes a slew of addition
 
 ---
 
-2023-05-07
+<time datetime="2023-05-07">2023-05-07</time>
 ## Spanish language README
 
 We added a README in Español. Thank you to Francisco Hernandez for this contribution.
@@ -92,7 +92,7 @@ Visit [README-es.md](https://github.com/motdotla/dotenv/blob/master/README-es.md
 
 ---
 
-2023-05-06
+<time datetime="2023-05-06">2023-05-06</time>
 ## Windows Installer
 
 Prefer to install dotenv-vault as an executable on Windows, rather than npx? Now you can.
@@ -107,7 +107,7 @@ Visit [/install](/install) for more details.
 
 ---
 
-2023-05-05
+<time datetime="2023-05-05">2023-05-05</time>
 ## Homebrew Binary
 
 Prefer to install dotenv-vault with homebrew, rather than npx? Now you can.
@@ -126,7 +126,7 @@ Visit [/install](/install) for more details.
 
 ---
 
-2023-05-05
+<time datetime="2023-05-05">2023-05-05</time>
 ## dotenv-vault@1.22.0
 
 Node 16 (and greater) is now required to use dotenv-vault 1.22 (and greater).
@@ -137,7 +137,7 @@ If you have an older version of node that you cannot upgrade, please install dot
 
 ---
 
-2023-05-03
+<time datetime="2023-05-03">2023-05-03</time>
 ## GitHub Pages
 
 We've moved our www site to GitHub pages. This includes all docs.
@@ -148,7 +148,7 @@ Anyone can suggest edits [here](https://github.com/dotenv-org/dotenv-org.github.
 
 ---
 
-2023-05-02
+<time datetime="2023-05-02">2023-05-02</time>
 ## Golang .env.vault support
 
 If you're a Golang developer you can now use `.env.vault` files with your deployments.
@@ -188,7 +188,7 @@ Visit [github.com/dotenv-org/godotenvvault](https://github.com/dotenv-org/godote
 
 ---
 
-2023-04-07
+<time datetime="2023-04-07">2023-04-07</time>
 ## NodeJS .env.vault support
 
 [dotenv](https://github.com/motdotla/dotenv/tree/v16.1.0-rc1) is getting first-class native support for decrypting .env.vault files.
@@ -199,7 +199,7 @@ It's currently released as an RC candidate. Once released, [dotenv](https://gith
 
 ---
 
-2023-04-06
+<time datetime="2023-04-06">2023-04-06</time>
 ## dotenv-vault local commands
 
 You can now run the following three commands to generate your own **.env.vault** file, without relying on dotenv.org to do it for. It works by managing all your secrets completely locally.
@@ -212,7 +212,7 @@ Upgrade to [dotenv-vault@1.19.0](https://github.com/dotenv-org/dotenv-vault/blob
 
 ---
 
-2023-03-25
+<time datetime="2023-03-25">2023-03-25</time>
 ## New Website
 
 We've redesigned the www site to better describe the benefits of using **dotenv-vault**.
@@ -223,7 +223,7 @@ Our goal is toward better explaining the innovation around **.env.vault** and ho
 
 ---
 
-2022-12-20
+<time datetime="2022-12-20">2022-12-20</time>
 ## GitHub Add-on
 
 Auto-build your encrypted .env.vault file on each environment change.
@@ -234,7 +234,7 @@ It can become a chore to run `npx dotenv-vault build` each time you are ready to
 
 ---
 
-2022-12-11
+<time datetime="2022-12-11">2022-12-11</time>
 ## Billing Improvements
 
 Billing teams will be happy. We've added:
@@ -246,7 +246,7 @@ Billing teams will be happy. We've added:
 
 ---
 
-2022-12-07
+<time datetime="2022-12-07">2022-12-07</time>
 ## Dotenv VSCode Rust Support
 
 Added [Rust](https://www.rust-lang.org/) support to [dotenv-vscode](https://github.com/dotenv-org/dotenv-vscode).
@@ -268,7 +268,7 @@ Dotenv VSCode now has syntax, auto-cloaking, auto-completion, and in-code secret
 
 ---
 
-2022-11-18
+<time datetime="2022-11-18">2022-11-18</time>
 ## DOTENV_KEY rotation for dotenv-vault-rails
 
 Added support for rotating <strong>DOTENV_KEY</strong> in [dotenv-vault-rails](https://github.com/dotenv-org/dotenv-vault-ruby).
@@ -281,7 +281,7 @@ Update to <strong>0.10.0</strong> or greater to support key rotation in Ruby and
 
 ---
 
-2022-11-08
+<time datetime="2022-11-08">2022-11-08</time>
 ## Smarter Encrypted Builds
 
 Now, `npx dotenv-vault build` regenerates itself only if there are changes.
@@ -296,7 +296,7 @@ It improves DX because it follows the principle of least surprise. You will see 
 
 ---
 
-2022-11-06
+<time datetime="2022-11-06">2022-11-06</time>
 ## python-dotenv-vault further extended
 
 [python-dotenv-vault](https://github.com/dotenv-org/python-dotenv-vault) has extended support for:
@@ -310,7 +310,7 @@ These changes put python-dotenv-vault at parity with [dotenv](https://github.com
 
 ---
 
-2022-10-30
+<time datetime="2022-10-30">2022-10-30</time>
 ## python-dotenv-vault
 
 Decryption support for .env.vault files has been added to Python. If you're using [Flask](https://flask.palletsprojects.com/), [Django](https://www.djangoproject.com/), [FastAPI](https://fastapi.tiangolo.com/), or plain ol' Python, you can use Dotenv Vault with it.
@@ -321,7 +321,7 @@ Check it out at [python-dotenv-vault](https://github.com/dotenv-org/python-doten
 
 ---
 
-2022-10-27
+<time datetime="2022-10-27">2022-10-27</time>
 ## Rotate Dotenv Key
 
 Rotate your <strong>DOTENV_KEY</strong> with the following command:
@@ -342,7 +342,7 @@ Then:
 
 ---
 
-2022-10-22
+<time datetime="2022-10-22">2022-10-22</time>
 ## New Integrations
 
 We added a handful of new integrations. What should we add next?
@@ -356,7 +356,7 @@ We added a handful of new integrations. What should we add next?
 
 ---
 
-2022-10-15
+<time datetime="2022-10-15">2022-10-15</time>
 ## Spam Protection with Turnstile
 
 We swapped our honeypot spam protection mechanism for [Cloudflare Turnstile](https://blog.cloudflare.com/turnstile-private-captcha-alternative/). It is more reliable at catching spam and the experience is still good – no annoying captchas identifying traffic signs. 
@@ -365,7 +365,7 @@ We swapped our honeypot spam protection mechanism for [Cloudflare Turnstile](htt
 
 ---
 
-2022-10-06
+<time datetime="2022-10-06">2022-10-06</time>
 ## New Docs
 
 We have updated our [/docs](/docs) site. It's built with [Jekyll](https://jekyllrb.com/). This way we've been able to make it [public on GitHub](https://github.com/dotenv-org/www) – making it easy to edit.
@@ -374,7 +374,7 @@ We have updated our [/docs](/docs) site. It's built with [Jekyll](https://jekyll
 
 ---
 
-2022-10-02
+<time datetime="2022-10-02">2022-10-02</time>
 ## Integrate Everywhere
 
 Integrate Everywhere™ is our new approach to integrations. It works everywhere you can deploy your code. No more brittle integrations coordinating API calls. Instead, build and encrypt your local .env.vault file, commit it to code, and deploy. There's nothing else like it.
@@ -389,7 +389,7 @@ $ git push
 
 ---
 
-2022-05-02
+<time datetime="2022-05-02">2022-05-02</time>
 ## Unlimited Projects
 
 You can now create an unlimited amount of projects.
@@ -402,7 +402,7 @@ You can now create an unlimited amount of projects.
 
 ---
 
-2022-04-02
+<time datetime="2022-04-02">2022-04-02</time>
 ## Multiple Environments
 
 Manage your secrets across multiple environments.
