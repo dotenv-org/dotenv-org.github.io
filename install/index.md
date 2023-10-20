@@ -1,5 +1,4 @@
 ---
-layout: tailwind
 title: "Install dotenv-vault"
 redirect_from:
   - /download

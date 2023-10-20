@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Keep track of all versions of your .env file"
 redirect_from:
   - /version-history

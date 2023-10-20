@@ -1,5 +1,5 @@
 ---
-layout: tailwind-blog
+layout: blog
 author: mot
 title: "Dotenv Vault vs HCP Vault"
 image: "/assets/img/blog/vault-vs-hcp/dotenv-vault-vs-hcp-cover.png"

@@ -3,6 +3,13 @@ layout: changelog
 title: "Changelog"
 ---
 
+2023-10-20
+## New Blog
+
+New blog design rolled out.
+
+---
+
 2023-07-03
 ## Experimental Dark Mode
 

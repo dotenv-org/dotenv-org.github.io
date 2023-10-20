@@ -44,3 +44,7 @@
 .prose a {
   @apply dark:text-zinc-100;
 }
+
+hr {
+  @apply border-zinc-100 dark:border-zinc-800;
+}

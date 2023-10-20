@@ -1,5 +1,4 @@
 ---
-layout: tailwind
 title: "Terms of Service"
 parent: Legal
 ---

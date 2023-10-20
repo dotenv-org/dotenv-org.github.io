@@ -1,5 +1,4 @@
 ---
-layout: tailwind
 title: "Security"
 redirect_from:
   - /p1/security

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Redirect
 # redirect_to: https://github.com/motdotla/dotenv
 ---

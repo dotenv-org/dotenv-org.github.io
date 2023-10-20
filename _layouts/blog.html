@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-<head>
-  {% include layouts/dark-mode.html %}
-  {% include layouts/blog_meta.html %}
-  {% include layouts/blog_css.html %}
-  {% include layouts/analytics.html %}
-</head>
-<body>
-  <div class="container">
-    {% include layouts/blog_header.html %}
+<html lang="{{ site.lang | default: "en-US" }}" class="dark">
+  <head>
+    {% include layouts/dark-mode.html %}
+    {% include layouts/meta.html %}
+    {% include layouts/analytics.html %}
+  </head>
+  <body class="font-sans antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-600 dark:text-zinc-400 selection:bg-yellow-300 selection:text-zinc-950">
+    {% include v2/nav.html %}
+    <main class="mx-5 lg:mx-auto pt-10 max-w-5xl">
+      <img class="mx-auto h-14 w-14 rounded-full" src="/assets/img/mot.png" alt="Mot" />
+      <p class="text-center text-lg my-1 text-zinc-500 font-medium">Mot</p>
 
-    {{ content }}
-  </div>
-</body>
+      <p class="text-zinc-400 dark:text-zinc-600 text-center font-medium mt-10 mb-2">
+        <time datetime="{{ page.date | date: "%Y-%m-%d"  }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      </p>
+      <article>
+        <h1 class="text-4xl md:text-5xl text-zinc-900 dark:text-zinc-100 font-bold text-center mb-16">
+          {{ page.title }}
+        </h1>
+
+        <!--<p class="mt-0 text-lg lg:text-xl font-normal text-zinc-500 text-center">{{ page.excerpt }}</p>-->
+        <!--<img src="{{ page.image }}" alt="{{ page.title }}" class="w-full my-6 lg:my-10 rounded-lg">-->
+
+        <div class="prose prose-lg mx-auto max-w-prose">
+          {{ content }}
+        </div>
+      </article>
+    </main>
+
+    {% include v2/footer.html %}
+    {% include layouts/js.html %}
+  </body>
 </html>

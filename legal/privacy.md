@@ -1,5 +1,4 @@
 ---
-layout: tailwind
 title: "Privacy Policy"
 parent: Legal
 ---

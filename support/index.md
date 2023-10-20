@@ -1,5 +1,4 @@
 ---
-layout: tailwind
 title: "Help & Support"
 redirect_from:
   - /help

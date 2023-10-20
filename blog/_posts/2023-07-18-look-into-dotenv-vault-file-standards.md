@@ -1,5 +1,5 @@
 ---
-layout: tailwind-blog
+layout: blog
 author: mot
 title: "A look into Dotenv Vault file standards"
 image: "/assets/img/blog/dotenv-vault-file-standards/look-into-dotenv-file-standards-cover.png"

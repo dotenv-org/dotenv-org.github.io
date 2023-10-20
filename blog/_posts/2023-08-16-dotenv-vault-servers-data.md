@@ -1,5 +1,5 @@
 ---
-layout: tailwind-blog
+layout: blog
 author: mot
 title: "How Dotenv Vault servers handle data"
 image: "/assets/img/blog/dotenv-vault-server-data/dotenv-vault-server-data-cover.png"

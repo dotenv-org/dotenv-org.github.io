@@ -1,5 +1,4 @@
 ---
-layout: default
 title: VSCode
 redirect_to: https://marketplace.visualstudio.com/items?itemName=dotenv.dotenv-vscode
 ---

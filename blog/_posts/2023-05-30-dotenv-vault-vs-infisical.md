@@ -1,5 +1,5 @@
 ---
-layout: tailwind-blog
+layout: blog
 author: mot
 title: "Dotenv Vault vs Infisical"
 image: "/assets/img/blog/vault-vs-infisical/dotenv-vault-vs-infisical-cover.png"

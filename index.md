@@ -1,5 +1,4 @@
 ---
-layout: tailwind
 title: ""
 redirect_from:
   - /why

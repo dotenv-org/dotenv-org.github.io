@@ -1,5 +1,5 @@
 ---
-layout: tailwind-blog
+layout: blog
 author: mot
 title: "How to use dotenv"
 image: "/assets/img/blog/blog-1.png"
@@ -78,6 +78,8 @@ Hello Universe
 ```
 
 Great! You just used dotenv at its foundational layer!
+
+---
 
 <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/YtkZR0NFd1g" title="How to use dotenv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

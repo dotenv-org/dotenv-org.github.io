@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Custom Environments"
 redirect_from:
   - /custom-environments

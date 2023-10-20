@@ -1,5 +1,5 @@
 ---
-layout: tailwind-blog
+layout: blog
 author: mot
 title: "Dotenv Vault vs Doppler"
 image: "/assets/img/blog/vault-vs-doppler/dotenv-vault-vs-doppler-cover.png"
