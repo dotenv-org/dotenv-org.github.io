@@ -31,7 +31,7 @@ defaults:
       path: ""
     values:
       image: "/assets/img/default-cover-image.png"
-      layout: "tailwind"
+      layout: "default"
 
 # For Favicon Plugin
 favicon:

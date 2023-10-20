@@ -8,14 +8,12 @@
   <body class="font-sans antialiased bg-zinc-50 dark:bg-zinc-950 text-zinc-600 dark:text-zinc-400 selection:bg-yellow-300 selection:text-zinc-950">
     {% include v2/nav.html %}
     <main class="mx-5 lg:mx-auto pt-10 max-w-5xl">
-      <article>
-        <h1 class="text-4xl md:text-5xl text-zinc-900 dark:text-zinc-100 font-bold text-center mb-16">
+      <article class="prose prose-lg mx-auto max-w-prose changelog">
+        <h1 class="text-3xl md:text-4xl text-zinc-900 dark:text-zinc-100 font-bold mb-16">
           Changelog
         </h1>
 
-        <div class="prose prose-lg mx-auto max-w-prose">
-          {{ content }}
-        </div>
+        {{ content }}
       </article>
     </main>
 

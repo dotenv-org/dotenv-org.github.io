@@ -3,7 +3,7 @@ layout: changelog
 title: "Changelog"
 ---
 
-2023-10-20
+<time datetime="2023-10-20">2023-10-20</time>
 ## New Blog
 
 New blog design rolled out.

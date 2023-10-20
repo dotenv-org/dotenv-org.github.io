@@ -48,3 +48,7 @@
 hr {
   @apply border-zinc-100 dark:border-zinc-800;
 }
+
+.changelog h2 {
+  @apply my-2;
+}
