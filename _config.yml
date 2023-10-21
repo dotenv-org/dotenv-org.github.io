@@ -54,7 +54,6 @@ highlighter: none
 plugins:
   - jekyll-redirect-from
   - liquid_pluralize
-  - liquid_reading_time
   - jekyll-timeago
   - jekyll-sitemap
   - jekyll-seo-tag
