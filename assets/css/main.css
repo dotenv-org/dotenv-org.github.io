@@ -9,11 +9,9 @@ layout: null
 .prose {
   @apply dark:text-zinc-300;
 }
-
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
   @apply dark:text-zinc-100;
 }
-
 .prose h2 {
   @apply text-3xl;
 }
@@ -29,19 +27,15 @@ layout: null
 .prose h6 {
   @apply text-base;
 }
-
 .prose p, .prose ol, .prose ul, .prose li, .prose strong {
   @apply dark:text-zinc-300 text-xl;
 }
-
 .prose p {
   @apply leading-7;
 }
-
 .prose code {
   @apply dark:text-zinc-100;
 }
-
 .prose a {
   @apply dark:text-zinc-100;
 }
