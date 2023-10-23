@@ -58,4 +58,9 @@ title: "Blog"
       {% endif %}
     {% endfor %}
   </ul>
+
+  <div class="prose prose-lg mx-auto max-w-prose">
+    <p class="text-center my-10"><a href="/feed.xml" class="link-primary underline">Subscribe to this blog's feed</a></p>
+  </div>
 </section>
+
