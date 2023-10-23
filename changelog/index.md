@@ -4,9 +4,11 @@ title: "Changelog"
 ---
 
 <time datetime="2023-10-20">2023-10-20</time>
-## New Blog
+## Blog launched
 
-New blog design rolled out.
+We have launched our blog. You can get the rss feed at [dotenv.org/feed.xml](https://www.dotenv.org/feed.xml)
+
+![](/assets/img/changelog/new-blog.png)
 
 ---
 
