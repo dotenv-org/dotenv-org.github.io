@@ -3,8 +3,17 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-10-23">2023-10-23</time>
+## My Activity Feed (beta)
+
+Your account now includes an activity feed of your latest actions. See a history of your pushes, pulls, logins, and more.
+
+![](/assets/img/changelog/activity-feed-beta.png)
+
+---
+
 <time datetime="2023-10-20">2023-10-20</time>
-## Blog launched
+## Blog Launched
 
 We have launched our blog. You can get the rss feed at [dotenv.org/feed.xml](https://www.dotenv.org/feed.xml)
 
