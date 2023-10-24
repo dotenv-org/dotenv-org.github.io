@@ -123,6 +123,8 @@ Hello production
 
 As you can see, it loads your env from your encrypted `.env.vault` file and successfully outputs `Hello production`. Elegant!
 
+(Other languages are supported too. See [dotenv.org/docs](https://dotenv.org/docs))
+
 ## Security Advantages
 
 Do you remember the [CircleCI data breach](https://techcrunch.com/2023/01/05/circleci-breach/)? An attacker gained access to everyone's environment variables putting their software products at major risk.
