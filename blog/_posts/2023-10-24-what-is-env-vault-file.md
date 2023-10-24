@@ -7,6 +7,8 @@ excerpt: "A .env.vault file is an encrypted copy of your .env files."
 published: true
 ---
 
+<img src="/assets/img/blog/what-is-env-file-example.png" />
+
 It's an encrypted copy of your `.env` files.
 
 It is easiest to understand if you generate one. So let's do that. Then I'll show you how to use it in production. Lastly, we'll talk about its security advantages.
@@ -131,9 +133,9 @@ Do you remember the [CircleCI data breach](https://techcrunch.com/2023/01/05/cir
 
 But if you were using `.env.vault` files, you were not at risk. Why?
 
-The attacker solely gained access to environment variables, not code. So he had your `DOTENV_KEY`, but not your `.env.vault` file. But without both he could not access your sensitive secrets.
+The attacker solely gained access to environment variables, not code. He had your `DOTENV_KEY` but not your `.env.vault` file. He needed both to access your secrets.
 
-This takes the [Twelve-Factor App](https://12factor.net/config)'s' principle of 'strict separation of config from code' to the next level - where even your **config** is separated.
+This takes the [Twelve-Factor App](https://12factor.net/config)'s principle of *strict separation of config from code* to the next level - where even your *config* is separated.
 
 This leads to some great second order effects.
 
@@ -141,7 +143,9 @@ This leads to some great second order effects.
 * Your secrets are easier to manage in one central place close to your code which means less chance of fat-fingering or forgetting to set a secret
 * You add more friction to attackers and remove friction for yourself - no more hard work managing secrets across multiple servers
 
-I hope you enjoyed reading this. I am loving using `.env.vault` files. They are simple files that don't require any additional secret manager processes to be kept running. `.env` files were simple, useful, and added additional security. I think `.env.vault` files maintain that same spirit while adding a much higher level of security. What do you think, let me know at [@dotenvorg](https://twitter.com/dotenvorg) or [@motdotla](https://twitter.com/motdotla).
+I'd encourage you to give `.env.vault` files a try. I think you will like them after the initial adoption hump. They are simple files that don't require any additional secret manager processes to be kept running.
+
+`.env` files were simple, useful, and added additional security. `.env.vault` files maintain that same spirit while adding a much higher level of security. What do you think, let me know at [@dotenvorg](https://twitter.com/dotenvorg) or [@motdotla](https://twitter.com/motdotla).
 
 ---
 
