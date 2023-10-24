@@ -83,3 +83,12 @@ Great! You just used dotenv at its foundational layer!
 
 <iframe class="w-full aspect-video rounded-lg" src="https://www.youtube.com/embed/YtkZR0NFd1g" title="How to use dotenv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+---
+
+### dotenv-vault — A secrets manager for .env and .env.vault files.
+
+<img src="/assets/img/blog/dotenv-vault-screenshot.png" />
+
+If you are looking to backup and manage your `.env` files across multiple projects, a larger team, complete with permissions, versions, and history then create a [Dotenv Account](https://dotenv.org). It's free with premium features.
+
+[https://dotenv.org/signup](https://dotenv.org/signup)
