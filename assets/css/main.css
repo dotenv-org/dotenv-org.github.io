@@ -39,6 +39,9 @@ layout: null
 .prose a {
   @apply dark:text-zinc-100;
 }
+.prose img {
+  @apply rounded-lg border-zinc-800;
+}
 
 hr {
   @apply border-zinc-100 dark:border-zinc-800;
