@@ -17,7 +17,7 @@ It is easiest to understand if you generate one. So let's do that. Then I'll sho
 
 We're going to use the command `npx dotenv-vault local build`.
 
-#### Prerequisites
+### Prerequisites
 
 Enter a project where you already have `.env.*` file(s) and have installed [dotenv](https://github.com/motdotla/dotenv).
 
@@ -50,7 +50,7 @@ Hello development
 
 Let's build the `.env.vault` file.
 
-#### Generate .env.vault
+### Generate .env.vault
 
 Run the **local build** command.
 
