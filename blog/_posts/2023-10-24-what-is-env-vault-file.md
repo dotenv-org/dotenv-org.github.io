@@ -9,7 +9,7 @@ published: true
 
 It's an encrypted copy of your `.env` files.
 
-It' easiest to understand if you generate one. So let's do that. Then I'll show you how to use it in production. Lastly, we'll talk about its security advantages.
+It is easiest to understand if you generate one. So let's do that. Then I'll show you how to use it in production. Lastly, we'll talk about its security advantages.
 
 ## Generating
 
@@ -17,7 +17,9 @@ We're going to use the command `npx dotenv-vault local build`.
 
 #### Prerequisites
 
-Enter a project where you already have `.env.*` file(s) and have installed [dotenv](https://github.com/motdotla/dotenv). For example, I have a project with 3 files in it. See [example code](https://github.com/dotenv-org/examples/tree/master/dotenv-blog/what-is-env-vault-file).
+Enter a project where you already have `.env.*` file(s) and have installed [dotenv](https://github.com/motdotla/dotenv).
+
+For example, I have a project with 3 files in it. See [example code](https://github.com/dotenv-org/examples/tree/master/dotenv-blog/what-is-env-vault-file).
 
 * index.js
 * .env
@@ -44,9 +46,11 @@ $ node index.js
 Hello development
 ```
 
+Let's build the `.env.vault` file.
+
 #### Generate .env.vault
 
-Run the local build command.
+Run the **local build** command.
 
 ```bash
 $ npx dotenv-vault local build
@@ -70,7 +74,10 @@ It contains two keys.
 * `DOTENV_VAULT_DEVELOPMENT`
 * `DOTENV_VAULT_PRODUCTION`
 
-These contain encrypted copies of your `.env` file and your `.env.production` file.
+These contain encrypted copies of:
+
+* your `.env` file
+* your `.env.production` file.
 
 A `.env.keys` file was also generated. These keys decrypt the contents of `DOTENV_VAULT_${ENVIRONMENT}`.
 
@@ -85,6 +92,8 @@ $ npx dotenv-vault local keys
 DOTENV_KEY_DEVELOPMENT="dotenv://:key_f4516b0077d9aefad9fa7b36cec570e05dcb7cd6d5de1dac2562b6421af7d185@dotenv.local/vault/.env.vault?environment=development"
 DOTENV_KEY_PRODUCTION="dotenv://:key_18a137f844e3511022dbf1de2b1bd5e3bd6d1ef4c78988e2521ce9f05abc506a@dotenv.local/vault/.env.vault?environment=production"
 ```
+
+**See the pattern?** A `.env.${ENVIRONMENT}` file corresponds to a `DOTENV_VAULT_${ENVIRONMENT}` secret and `DOTENV_KEY_${ENVIRONMENT}` decryption key.
 
 Try decrypting the contents of `DOTENV_VAULT_PRODUCTION`.
 
