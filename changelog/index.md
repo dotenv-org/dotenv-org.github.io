@@ -3,6 +3,16 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-10-27">2023-10-27</time>
+## Four new quickstart guides
+
+We added four new quickstart guides to Dotenv's [docs](/docs).
+
+* [Sync `.env` files](https://dotenv.org/docs/quickstart/sync)
+* [Manage multiple environments](https://dotenv.org/docs/quickstart/environments)
+* [Load `.env` files](https://dotenv.org/docs/quickstart/development)
+* [Deploy `.env.vault` files](https://dotenv.org/docs/quickstart/deploy)
+
 <time datetime="2023-10-23">2023-10-23</time>
 ## My Activity Feed (beta)
 
