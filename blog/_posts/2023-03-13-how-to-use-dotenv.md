@@ -85,10 +85,10 @@ Great! You just used dotenv at its foundational layer!
 
 ---
 
-### dotenv-vault — A secrets manager for .env and .env.vault files.
+### Using `.env` files?
 
-<img src="/assets/img/blog/dotenv-vault-screenshot.png" />
+[dotenv-vault](https://github.com/dotenv-org/dotenv-vault) is a secrets manager for securely managing them. [Create your Dotenv Account](https://dotenv.org) and try it today.
 
-If you are looking to backup and manage your `.env` files across multiple projects, a larger team, complete with permissions, versions, and history then create a [Dotenv Account](https://dotenv.org). It's free with premium features.
+<img src="/assets/img/blog/dotenv-vault-screenshot2.png" />
 
 [https://dotenv.org/signup](https://dotenv.org/signup)

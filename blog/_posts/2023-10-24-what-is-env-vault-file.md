@@ -13,6 +13,8 @@ It's an encrypted copy of your `.env` files.
 
 It is easiest to understand if you generate one. So let's do that. Then I'll show you how to use it in production. Lastly, we'll talk about its security advantages.
 
+{% include components/note.html url="https://github.com/dotenv-org/examples/tree/master/dotenv-blog/2023-10-24" %}
+
 ## Generating
 
 We're going to use the command `npx dotenv-vault local build`.
@@ -21,7 +23,7 @@ We're going to use the command `npx dotenv-vault local build`.
 
 Enter a project where you already have `.env.*` file(s) and have installed [dotenv](https://github.com/motdotla/dotenv).
 
-For example, I have a project with 3 files in it. See [example code](https://github.com/dotenv-org/examples/tree/master/dotenv-blog/what-is-env-vault-file).
+For example, I have a project with 3 files in it. 
 
 * index.js
 * .env
@@ -151,7 +153,7 @@ I'd encourage you to give `.env.vault` files a try. I think you will like them a
 
 ### dotenv-vault — A secrets manager for .env and .env.vault files.
 
-<img src="/assets/img/blog/dotenv-vault-screenshot.png" />
+<img src="/assets/img/blog/dotenv-vault-screenshot2.png" />
 
 If you are looking to also manage your `.env` and `.env.vault` files across a larger team, complete with permissions, versions, and history then create a [Dotenv Account](https://dotenv.org). It's free with premium features.
 

@@ -9,7 +9,7 @@ title: "Blog"
         <li class="col-span-full">
           <a href="{{ post.url }}">
             <div class="space-y-2 md:grid md:grid-cols-3 md:gap-4">
-              <img alt="{{ post.title }}" loading="lazy" width="395" height="208" decoding="async" class="col-span-2 w-full object-cover rounded lg:rounded-md border border-zinc-800" style="color:transparent" src="{{ post.image }}">
+              <img alt="{{ post.title }}" loading="lazy" width="395" height="208" decoding="async" class="col-span-2 w-full object-cover rounded lg:rounded-md border border-zinc-50 dark:border-zinc-700 shadow-sm" style="color:transparent" src="{{ post.image }}">
 
               <div class="mt-2 lg:mt-0">
 
