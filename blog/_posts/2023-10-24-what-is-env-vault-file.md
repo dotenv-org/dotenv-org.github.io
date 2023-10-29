@@ -5,6 +5,9 @@ title: "What is a .env.vault file"
 image: "/assets/img/blog/what-is-env-vault.png"
 excerpt: "A .env.vault file is an encrypted copy of your .env files."
 published: true
+redirect_from:
+  - /env-vault
+  - /env-me
 ---
 
 <img src="/assets/img/blog/what-is-env-file-example.png" />

@@ -5,6 +5,8 @@ title: "How to use dotenv"
 image: "/assets/img/blog/blog-1.png"
 excerpt: "Learn the basics of dotenv in 2 minutes."
 published: true
+redirect_from:
+  - /env
 ---
 
 ## Create your project
