@@ -73,7 +73,7 @@ The biggest *current* caveat is that this is still an experimental feature. That
 
 <img src="/assets/img/blog/hacker-news-node-dotenv-support.png" />
 
-I also want stress the word *current* because this is all still under active development. These things take time. By the time you read this, some of these caveats might no longer be around.
+I also want to stress the word *current* because this is all still under active development. These things take time. By the time you read this, some of these caveats might no longer be around.
 
 ### Missing multiline support
 
