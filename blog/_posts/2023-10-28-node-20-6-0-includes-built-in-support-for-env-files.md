@@ -162,7 +162,7 @@ DOTENV_VAULT_PRODUCTION="t9van8HefnTIHVlK3vQ6WYLtWEOvPunEnOphV3Hw3aBTBDuwLq22yU0
 
 ## Conclusion
 
-In conclusion, built-in support for `.env` files (even if currently experimental) is a huge and welcome step forward for Node. We should particularly thank Yagiz Nizipli for making this happen. [Go sponsor him on GitHub](https://github.com/sponsors/anonrig). He is doing incredible work for Node.
+In conclusion, built-in support for `.env` files (even if currently experimental) is a huge and welcome step forward for Node. Big thanks to Yagiz Nizipli for making this happen. [Go sponsor him on GitHub](https://github.com/sponsors/anonrig). He is doing incredible work for Node.
 
 But there are some current caveats, and I would recommend against npm uninstall-ing dotenv for your production apps at this time. Wait until it is non-experimental and has added support for the missing features above.
 
