@@ -34,7 +34,7 @@ title: "Blog"
         <li>
           <a href="{{ post.url }}">
             <div class="space-y-2">
-              <img alt="{{ post.title }}" loading="lazy" width="395" height="208" decoding="async" class="col-span-2 w-full object-cover rounded lg:rounded-md" style="color:transparent" src="{{ post.image }}">
+              <img alt="{{ post.title }}" loading="lazy" width="395" height="208" decoding="async" class="col-span-2 w-full object-cover rounded lg:rounded-md border border-zinc-50 dark:border-zinc-700 shadow-sm" style="color:transparent" src="{{ post.image }}">
 
               <div class="col-span-2">
 
