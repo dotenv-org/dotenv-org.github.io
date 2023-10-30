@@ -121,7 +121,7 @@ If you need to do this then continue using dotenv with [its override option](htt
 
 ### Missing variable expansion
 
-It's important to note that variable expansion support has always existed in a separate library [dotenv-expand](https://github.com/motdotla/dotenv-expand). But it is so [widely used with 13 million downloads](https://www.npmjs.com/package/dotenv-expand) that it defacto considered part of dotenv.
+Variable expansion support for dotenv exists in a separate library [dotenv-expand](https://github.com/motdotla/dotenv-expand). But it is so [widely used with 13 million downloads](https://www.npmjs.com/package/dotenv-expand) weekly that it is defacto considered part of dotenv.
 
 As of this writing, Node does not support variable expansion. Instead, it will output the variable as a string.
 
@@ -143,9 +143,11 @@ So if you need variable expansion, you should continue using [dotenv](https://gi
 
 ### Missing `.env.vault` support
 
-The `.env.vault` file is the spiritual successor to the `.env` file. They have multiple security advantages which you can [read about here](https://www.dotenv.org/blog/2023/10/24/what-is-env-vault-file.html).
+`.env.vault` files are the spiritual successors to `.env` files. They have multiple security advantages over `.env` files which you can [read about here](https://www.dotenv.org/blog/2023/10/24/what-is-env-vault-file.html).
 
-They are [quite new](https://github.com/motdotla/dotenv/pull/730) but also quite useful for production and ci. They are gaining adoption across multiple languages like [python](https://github.com/dotenv-org/python-dotenv-vault) and [rust](https://docs.rs/dotenv-vault/latest/dotenv_vault/). [dotenv](https://github.com/motdotla/dotenv) supports them but Node's implementation of `.env` files does not at this time.
+They are quite [new](https://github.com/motdotla/dotenv/pull/730), but also quite useful for production and ci, and are gaining adoption across multiple communities like [node](https://github.com/motdotla/dotenv), [python](https://github.com/dotenv-org/python-dotenv-vault), [rust](https://docs.rs/dotenv-vault/latest/dotenv_vault/), and more.
+
+But as a new technology, they are unlikely to be adopted natively by Node until they earn similar widespread use to `.env` files. So keep using [dotenv](https://github.com/motdotla/dotenv) if you plan to make use of them.
 
 ```
 #/-------------------.env.vault---------------------/
@@ -162,7 +164,7 @@ DOTENV_VAULT_PRODUCTION="t9van8HefnTIHVlK3vQ6WYLtWEOvPunEnOphV3Hw3aBTBDuwLq22yU0
 
 In conclusion, built-in support for `.env` files (even if currently experimental) is a huge and welcome step forward for Node. We should particularly thank Yagiz Nizipli for making this happen. [Go sponsor him on GitHub](https://github.com/sponsors/anonrig). He is doing incredible work for Node.
 
-That said, there are some caveats, and I would recommend against npm uninstall-ing dotenv for your production apps at this time. Wait until it is non-experimental and has added support for the missing features above.
+But there are some current caveats, and I would recommend against npm uninstall-ing dotenv for your production apps at this time. Wait until it is non-experimental and has added support for the missing features above.
 
 ---
 
