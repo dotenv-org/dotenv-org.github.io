@@ -3,6 +3,15 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-10-31">2023-10-31</time>
+## Organization Activity Feed (beta/premium)
+
+See a history of your team's pushes, pulls, secret changes, and more.
+
+![](/assets/img/changelog/organization-activity-feed-beta.jpg)
+
+---
+
 <time datetime="2023-10-27">2023-10-27</time>
 ## Four new quickstart guides
 
@@ -12,6 +21,8 @@ We added four new quickstart guides to Dotenv's [docs](/docs).
 * [Manage multiple environments](https://dotenv.org/docs/quickstart/environments)
 * [Load `.env` files](https://dotenv.org/docs/quickstart/development)
 * [Deploy `.env.vault` files](https://dotenv.org/docs/quickstart/deploy)
+
+---
 
 <time datetime="2023-10-23">2023-10-23</time>
 ## My Activity Feed (beta)
