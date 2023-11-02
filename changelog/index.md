@@ -3,6 +3,15 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-11-01">2023-11-01</time>
+## Docs adds features
+
+[Docs](/docs/) now includes a section where you can view and better understand features.
+
+![](/assets/img/changelog/docs-features.png)
+
+---
+
 <time datetime="2023-10-31">2023-10-31</time>
 ## Organization Activity Feed (beta/premium)
 
