@@ -3,6 +3,15 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-11-04">2023-11-04</time>
+## Added PHP support
+
+We added [php support for .env.vault files](https://github.com/dotenv-org/phpdotenv-vault).
+
+![](/assets/img/changelog/added-php-support.png)
+
+---
+
 <time datetime="2023-11-01">2023-11-01</time>
 ## Docs adds features
 
