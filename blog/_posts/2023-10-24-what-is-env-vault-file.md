@@ -8,6 +8,7 @@ published: true
 redirect_from:
   - /env-vault
   - /env-me
+  - /env-keys
 ---
 
 <img src="/assets/img/blog/what-is-env-file-example.png" />
