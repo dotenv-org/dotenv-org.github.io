@@ -2,6 +2,7 @@
 title: ""
 redirect_from:
   - /why
+  - /vault
 ---
 
 {% include v2/hero.html %}
