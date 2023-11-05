@@ -3,6 +3,15 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-11-05">2023-11-05</time>
+## Added Laravel support
+
+You can now [use `.env.vault` files with Laravel](/docs/frameworks/laravel).
+
+![](/assets/img/changelog/added-laravel-support.png)
+
+---
+
 <time datetime="2023-11-04">2023-11-04</time>
 ## Added PHP support
 
