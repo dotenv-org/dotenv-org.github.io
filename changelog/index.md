@@ -3,6 +3,15 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-11-07">2023-11-07</time>
+## Full Edit mode
+
+Now you can fully edit your `.env` files from the UI. It's riskier than editing individual keys, but sometimes you just want to fully paste in a pre-existing `.env` file. Use with care.
+
+![](/assets/img/changelog/full-edit-mode.gif)
+
+---
+
 <time datetime="2023-11-06">2023-11-06</time>
 ## Transfer ownership
 
