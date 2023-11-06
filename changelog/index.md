@@ -3,6 +3,15 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-11-06">2023-11-06</time>
+## Transfer ownership
+
+Need to transfer ownership of your organization to another team member? Now you can.
+
+Find the transfer form in the **Danger Zone** of your **Organization Settings** page.
+
+![](/assets/img/changelog/transfer-ownership.png)
+
 <time datetime="2023-11-05">2023-11-05</time>
 ## Added Laravel support
 
