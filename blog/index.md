@@ -31,7 +31,7 @@ title: "Blog"
           </a>
         </li>
       {% else %}
-        <li>
+        <li class="my-6 sm:my-0">
           <a href="{{ post.url }}">
             <div class="space-y-2">
               <img alt="{{ post.title }}" loading="lazy" width="395" height="208" decoding="async" class="col-span-2 w-full object-cover rounded lg:rounded-md border border-zinc-50 dark:border-zinc-700 shadow-sm" style="color:transparent" src="{{ post.image }}">
