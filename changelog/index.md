@@ -8,7 +8,7 @@ title: "Changelog"
 
 You can now [use `.env.vault` files with Laravel](/docs/frameworks/laravel) thanks to Laravel expert and Dotenv community member David Cochrum! 
 
-Find it at [davidcochrum/dotenv-vault-laravel](https://github.com/davidcochrum/dotenv-vault-laravel).
+Find it at [davidcochrum/dotenv-vault-laravel](https://github.com/davidcochrum/dotenv-vault-laravel). We use it in all our [Laravel guides](https://dotenv.org/docs/frameworks/laravel).
 
 ![](/assets/img/changelog/dotenv-vault-laravel.png)
 
