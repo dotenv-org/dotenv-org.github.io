@@ -1,4 +1,4 @@
-<div class="sticky top-0 dark:rounded-t-lg border-t dark:border-t border-t-yellow-300 backdrop-blur-md z-20 border-b border-b-zinc-200 dark:border-b-zinc-900">
+<div class="top-0 dark:rounded-t-lg border-t dark:border-t border-t-yellow-300 z-20">
   <div class="mx-auto w-full">
     <div class="mx-auto flex h-16 w-full items-center justify-between transition px-5">
       <div class="flex">
@@ -20,10 +20,12 @@
       </div>
       <div class="flex items-center space-x-1">
         {% include components/toggle-mode.html %}
-        {% include components/btn-nav.html url="https://vault.dotenv.org" text="Log in" dataUmamiEvent="Login Clicked" %}
+        {% include components/btn-nav.html url="https://vault.dotenv.org" text="Log in" dataUmamiEvent="Login Clicked" classes="" %}
+        <!--
         <div class="hidden md:flex">
           {% include components/btn-nav.html url="https://vault.dotenv.org/signup" text="Create Account" dataUmamiEvent="Signup Clicked" %}
         </div>
+        -->
       </div>
     </div>
   </div>

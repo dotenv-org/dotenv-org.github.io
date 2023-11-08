@@ -7,12 +7,16 @@
 
   function updateMode() {
     let isSystemDarkMode = darkModeMediaQuery.matches
-    let isDarkMode = window.localStorage.isDarkMode === 'true' || !('isDarkMode' in window.localStorage) // is true or value does not exist in localStorage yet. will default to dark mode as a result for first time visitor
+    let isDarkMode = window.localStorage.isDarkMode === 'true' || (!('isDarkMode' in window.localStorage) && isSystemDarkMode)
 
     if (isDarkMode) {
       document.documentElement.classList.add('dark')
     } else {
       document.documentElement.classList.remove('dark')
+    }
+
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode
     }
   }
 
@@ -35,6 +39,10 @@
     let isSystemDarkMode = darkModeMediaQuery.matches
     let isDarkMode = document.documentElement.classList.toggle('dark')
 
-    window.localStorage.isDarkMode = isDarkMode
+    if (isDarkMode === isSystemDarkMode) {
+      delete window.localStorage.isDarkMode
+    } else {
+      window.localStorage.isDarkMode = isDarkMode
+    }
   }
 </script>
