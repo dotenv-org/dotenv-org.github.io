@@ -4,6 +4,17 @@ title: "Changelog"
 ---
 
 <time datetime="2023-11-07">2023-11-07</time>
+## Community Contribution: dotenv-vault-laravel
+
+You can now [use `.env.vault` files with Laravel](/docs/frameworks/laravel) thanks to Laravel expert and Dotenv community member David Cochrum! 
+
+Find it at [davidcochrum/dotenv-vault-laravel](https://github.com/davidcochrum/dotenv-vault-laravel).
+
+![](/assets/img/changelog/dotenv-vault-laravel.png)
+
+---
+
+<time datetime="2023-11-07">2023-11-06</time>
 ## Full Edit mode
 
 Now you can fully edit your `.env` files from the UI. It's riskier than editing individual keys, but sometimes you just want to fully paste in a pre-existing `.env` file. Use with care.
@@ -12,7 +23,7 @@ Now you can fully edit your `.env` files from the UI. It's riskier than editing 
 
 ---
 
-<time datetime="2023-11-06">2023-11-06</time>
+<time datetime="2023-11-05">2023-11-05</time>
 ## Transfer ownership
 
 Need to transfer ownership of your organization to another team member? Now you can.
@@ -20,13 +31,6 @@ Need to transfer ownership of your organization to another team member? Now you 
 Find the transfer form in the **Danger Zone** of your **Organization Settings** page.
 
 ![](/assets/img/changelog/transfer-ownership.png)
-
-<time datetime="2023-11-05">2023-11-05</time>
-## Added Laravel support
-
-You can now [use `.env.vault` files with Laravel](/docs/frameworks/laravel).
-
-![](/assets/img/changelog/added-laravel-support.png)
 
 ---
 
