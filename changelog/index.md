@@ -3,6 +3,15 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-11-12">2023-11-12</time>
+## python-dotenv-vault CVE-2023-38325
+
+[`python-dotenv-vault@0.6.4`](https://github.com/dotenv-org/python-dotenv-vault/blob/master/CHANGELOG.md#064) bumps cryptography to `41.0.3` or higher to patch [high severity CVE-2023-38325](https://nvd.nist.gov/vuln/detail/CVE-2023-38325).
+
+Thank you to community member [Rob Aleck](https://github.com/mnbf9rca) for the [PR](https://github.com/dotenv-org/python-dotenv-vault/pull/20).
+
+![](/assets/img/changelog/python-dotenv-vault-security-release.png)
+
 <time datetime="2023-11-07">2023-11-07</time>
 ## Community Contribution: dotenv-vault-laravel
 
