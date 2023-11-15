@@ -170,7 +170,7 @@ But there are some current caveats, and I would recommend against npm uninstall-
 
 ### Using the new `--env-file` flag?
 
-[dotenv-vault](https://github.com/dotenv-org/dotenv-vault) is the perfect companion. Use it to sync your `.env` files and easily switch between environments. For, example `npx dotenv-vault pull production .env` to pull your production secrets to your `.env` file. [Create your Dotenv Account](https://dotenv.org) and try it today.
+[dotenv-vault](https://github.com/dotenv-org/dotenv-vault) is the perfect companion. Use it to sync your `.env` files and easily switch between environments. [Create your Dotenv Account](https://dotenv.org) and try it today.
 
 <img src="/assets/img/blog/dotenv-vault-screenshot2.png" />
 
