@@ -3,6 +3,17 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2023-11-15">2023-11-15</time>
+## Community Contribution: dotenv-vault-rs
+
+You can now [use `.env.vault` files with Rust](/docs/languages/rust) thanks to Rust dev and Dotenv community member [Mark Lagae](https://github.com/Minebomber)! 
+
+Find it at [minebomber/dotenv-vault-rs](https://github.com/Minebomber/dotenv-vault-rs). We use it in all our [Rust guides](https://dotenv.org/docs/languages/rust).
+
+![](/assets/img/changelog/dotenv-vault-rs.png)
+
+---
+
 <time datetime="2023-11-12">2023-11-12</time>
 ## python-dotenv-vault CVE-2023-38325
 
@@ -11,6 +22,8 @@ title: "Changelog"
 Thank you to community member [Rob Aleck](https://github.com/mnbf9rca) for the [PR](https://github.com/dotenv-org/python-dotenv-vault/pull/20).
 
 ![](/assets/img/changelog/python-dotenv-vault-security-release.png)
+
+---
 
 <time datetime="2023-11-07">2023-11-07</time>
 ## Community Contribution: dotenv-vault-laravel
