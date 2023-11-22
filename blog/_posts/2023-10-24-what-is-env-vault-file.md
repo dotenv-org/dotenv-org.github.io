@@ -151,7 +151,7 @@ This leads to some great second order effects.
 
 I'd encourage you to give `.env.vault` files a try. I think you will like them after the initial adoption hump. They are simple files that don't require any additional secret manager processes to be kept running.
 
-`.env` files were simple, useful, and added additional security. `.env.vault` files maintain that same spirit while adding a much higher level of security. What do you think, let me know at [@dotenvorg](https://twitter.com/dotenvorg) or [@motdotla](https://twitter.com/motdotla).
+`.env` files were simple, useful, and added additional security. `.env.vault` files maintain that same spirit while adding a much higher level of security. What do you think, let me know at [@dotenvx](https://twitter.com/dotenvx) or [@motdotla](https://twitter.com/motdotla).
 
 ---
 
