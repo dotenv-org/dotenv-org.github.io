@@ -40,5 +40,5 @@ parent: Legal
 
   <p class="mt-6">Dotenv may update this policy from time to time - we'll notify you about significant changes by email or by placing a prominent notice on our site. You can access, change or delete your personal information any time by contacting <a class="underline" href="mailto:support@dotenv.org">our support team</a>.</p>
 
-  <p class="mt-6">Questions about this privacy policy? Please <a href="support@dotenv.org">get in touch</a> and we'll be happy to answer them.</p>
+  <p class="mt-6">Questions about this privacy policy? Please <a href="mailto:support@dotenv.org">get in touch</a> and we'll be happy to answer them.</p>
 </section>
