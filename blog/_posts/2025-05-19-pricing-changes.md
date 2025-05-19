@@ -36,9 +36,7 @@ We know pricing changes are disruptive.
 
 We did consider open sourcing Dotenv.org, but felt it would split the community between two overlapping tools. [Dotenvx](https://github.com/dotenvx/dotenvx) is better positioned to serve developers long-term — it's open-source, doesn't require any backend infrastructure, and works anywhere.
 
-If you have questions or need help transitioning to Dotenvx, reach out — we're happy to help. Migrating is straightforward.
-
-[Read migration steps &rarr;](https://github.com/dotenv-org/dotenv-vault?tab=readme-ov-file#migrating-to-dotenvx).
+If you have questions or need help transitioning to Dotenvx, reach out — we're happy to help. Migrating is straightforward. [Read migration steps &rarr;](https://github.com/dotenv-org/dotenv-vault?tab=readme-ov-file#migrating-to-dotenvx).
 
 Thanks for using Dotenv all these years. We're excited about what comes next.
 
