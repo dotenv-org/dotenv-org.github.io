@@ -3,6 +3,11 @@ layout: changelog
 title: "Changelog"
 ---
 
+<time datetime="2025-05-19">2025-05-19</time>
+## Pricing Changes
+
+Starting June 1st, Dotenv.org is removing its free plan and updating pricing. The new **Solo Plan** will cost $5/month, and Team Plan pricing is increasing from **$4 to $8 per seat**. If you're currently on a free plan, you'll need to upgrade or migrate to [Dotenvx](https://github.com/dotenvx/dotenvx), our open-source alternative.
+
 <time datetime="2023-11-15">2023-11-15</time>
 ## Community Contribution: dotenv-vault-rs
 
