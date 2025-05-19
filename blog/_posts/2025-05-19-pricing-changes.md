@@ -20,7 +20,7 @@ The **free plan is going away**. If you're on a free Dotenv.org account, you'll 
 
 ## 👥 Team Plan: $8/seat/month
 
-For organizations, the **Team Plan** is increasing from **$4 to $8 per seat**. This applies to all existing orgs starting August 1st. If your team relies on Dotenv.org, this helps us scale support, security, and reliability.
+For organizations, the **Team Plan** is increasing from **$4 to $8 per seat**. This applies to all existing orgs starting **August 1st**. If your team relies on Dotenv.org, this helps us scale support, security, and reliability.
 
 ## 💡 Why the Change?
 
