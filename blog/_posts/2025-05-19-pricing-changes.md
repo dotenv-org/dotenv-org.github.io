@@ -3,13 +3,13 @@ layout: blog
 author: mot
 title: "Changes to Dotenv.org Pricing"
 image: "/assets/img/blog/pricing-changes.png"
-excerpt: "Starting June 1st, Dotenv.org is removing its free plan and updating pricing."
+excerpt: "Starting July 1st, Dotenv.org is removing its free plan and updating pricing."
 published: true
 ---
 
 <img src="/assets/img/blog/pricing-changes.png" />
 
-Starting **June 1st**, we’re making changes to Dotenv.org's pricing. These updates reflect the real cost of maintaining a reliable, secure, and developer-friendly platform — and will help us continue supporting the ecosystem long-term.
+Starting **July 1st**, we’re making changes to Dotenv.org's pricing. These updates reflect the real cost of maintaining a reliable, secure, and developer-friendly platform — and will help us continue supporting the ecosystem long-term.
 
 ## 📦 Solo Plan: $5/month
 
