@@ -1,5 +1,7 @@
 ---
 title: "Pricing"
+redirect_from:
+  - /pricing
 ---
 
 {% include v1/pricing/header.html %}
