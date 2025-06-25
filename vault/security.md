@@ -2,6 +2,7 @@
 title: "Security"
 redirect_from:
   - /p1/security
+  - /security
 ---
 
 {% include v2/security/hero.html %}
