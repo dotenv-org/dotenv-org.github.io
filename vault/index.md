@@ -1,7 +1,5 @@
 ---
-title: ""
-redirect_from:
-  - /why
+title: "Vault"
 ---
 
 {% include v1/hero.html %}
