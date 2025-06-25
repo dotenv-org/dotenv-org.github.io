@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem "activesupport", "7.0.4.3"
 gem "jekyll"
 gem "webrick"
 gem "jekyll-redirect-from"
@@ -18,3 +17,7 @@ gem "jekyll-loading-lazy"
 gem "jekyll-responsive-image"
 gem "jekyll-postcss"
 gem "jekyll-commonmark"
+
+# pin for github deployment reasons/issues
+gem "jekyll-sass-converter", "3.0.0"
+gem "activesupport", "7.0.4.3"
