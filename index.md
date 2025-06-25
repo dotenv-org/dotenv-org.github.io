@@ -30,9 +30,25 @@ redirect_from:
   </p>
 </section>
 
-<section class="w-full max-w-4xl mx-auto my-10 mb-20 md:mb-32">
+<section class="w-full max-w-6xl mx-auto my-10 mb-20 md:mb-32">
   <div class="md:py-0 rounded-lg overflow-hidden">
-    <div class="flex gap-5 lg:gap-10 items-center justify-center">
+    <div class="flex flex-col sm:flex-row gap-0 items-center justify-center gap-2">
+      <a class="flex-1 relative border-2 border-zinc-50 dark:border-zinc-950 hover:border-sky-500 dark:hover:border-sky-500 rounded overflow-hidden p-3" href="https://github.com/motdotla/dotenv">
+        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded w-fit z-10 text-lg font-bold font-mono bg-[#ECD53F] text-zinc-950 shadow px-4 py-2">dotenv</span>
+        <img src="/assets/img/browser-dotenv.png" class="max-w-full h-auto basis-0 flex-1" />
+        <p class="text-center text-zinc-950 dark:text-zinc-50 font-light">Classic – still solid.</p>
+      </a>
+      <a class="flex-1 relative border-2 border-zinc-50 dark:border-zinc-950 hover:border-sky-500 dark:hover:border-sky-500 rounded overflow-hidden p-3" href="https://dotenvx.com">
+        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded w-fit z-10 text-xl font-bold font-mono bg-zinc-950 text-[#ECD53F] shadow px-4 py-2">dotenvx</span>
+        <img src="/assets/img/browser-dotenvx.png" class="max-w-full h-auto basis-0 flex-1" />
+        <p class="text-center text-zinc-950 dark:text-zinc-50 font-semibold">Recommended – adds encryption.</p>
+      </a>
+      <a class="flex-1 relative border-2 border-zinc-50 dark:border-zinc-950 hover:border-sky-500 dark:hover:border-sky-500 rounded overflow-hidden p-3" href="https://dotenv.org/vault">
+        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded w-fit z-10 text-sm font-bold font-mono bg-zinc-50 text-zinc-600 shadow px-4 py-2">dotenv-vault</span>
+        <img src="/assets/img/browser-dotenv-vault.png" class="max-w-full h-auto basis-0 flex-1" />
+        <p class="text-center text-zinc-950 dark:text-zinc-50 font-light">Legacy – paid cloud only.</p>
+      </a>
     </div>
   </div>
 </section>
+
