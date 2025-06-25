@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "activesupport", "7.0.4.3"
 gem "jekyll"
 gem "webrick"
 gem "jekyll-redirect-from"
