@@ -9,7 +9,7 @@ published: true
 
 <img src="/assets/img/blog/pricing-changes.png" />
 
-Starting **July 1st**, we’re making changes to Dotenv.org's pricing. These updates reflect the real cost of maintaining a reliable, secure, and developer-friendly platform — and will help us continue supporting the ecosystem long-term.
+Starting **July 1st** (for your June bill), we’re making changes to Dotenv.org's pricing. These updates reflect the real cost of maintaining a reliable, secure, and developer-friendly platform — and will help us continue supporting the ecosystem long-term.
 
 ## 📦 Solo Plan: $5/month
 
@@ -20,7 +20,7 @@ The **free plan is going away**. If you're on a free Dotenv.org account, you'll 
 
 ## 👥 Team Plan: $8/seat/month
 
-For organizations, the **Team Plan** is increasing from **$4 to $8 per seat**. This applies to all existing orgs starting **August 1st**. If your team relies on Dotenv.org, this helps us scale support, security, and reliability.
+For organizations, the **Team Plan** is increasing from **$4 to $8 per seat**. This applies to all existing orgs starting **August 1st** (for your July bill). If your team relies on Dotenv.org, this helps us scale support, security, and reliability.
 
 ## 💡 Why the Change?
 
