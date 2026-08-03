@@ -15,7 +15,7 @@ node --env-file=.env index.js
 
 Wow, cool!
 
-Is [dotenv](https://github.com/motdotla/dotenv) [dead](https://francoisbest.com/posts/2023/dotenv-is-dead?ref=dailydev)? [Stop using it](https://medium.com/@tony.infisical/stop-using-dotenv-in-node-js-v20-6-0-8febf98f6314)? Not so fast. **Don't drop dotenv** just yet. There are some caveats you should know first. 
+Is [dotenv](https://github.com/motdotla/dotenv) [dead](https://francoisbest.com/posts/2023/dotenv-is-dead?ref=dailydev)? Not so fast. **Don't drop dotenv** just yet. There are some caveats you should know first. 
 
 First, let me say, it is great to see the NodeJS team adopt first-class `.env` support for developers. As [one of the pioneers of dotenv](https://github.com/motdotla/dotenv/graphs/contributors), it's an honor. **dotenv** is depended on by more than [14 Million](https://github.com/motdotla/dotenv/network/dependents) open source repos on GitHub alone and downloaded more than [35 Million](https://www.npmjs.com/package/dotenv) times per week. [dotenv](https://github.com/motdotla/dotenv) has proven itself as a trusty friend to millions of developers worldwide.
 
