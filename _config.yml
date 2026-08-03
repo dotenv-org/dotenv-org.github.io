@@ -1,5 +1,5 @@
 url: "https://www.dotenv.org" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/"
 title: "Dotenv" # the name of your site, e.g. ACME Corp.
 logo: "https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg"
 description: "Secrets for developers"
@@ -58,7 +58,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-favicon
-  - jekyll-feed
   - jemoji
   - jekyll-gzip
   - jekyll-loading-lazy
