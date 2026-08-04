@@ -4,9 +4,9 @@ redirect_from:
   - /pricing
 ---
 
-{% include v1/pricing/header.html %}
-{% include v1/pricing/plans.html %}
-{% include v2/pricing/whats_solo.html %}
-{% include v2/pricing/faq.html %}
-{% include v2/pricing/quotes.html %}
+{% include pricing/header.html %}
+{% include pricing/plans.html %}
+{% include pricing/whats_solo.html %}
+{% include pricing/faq.html %}
+{% include pricing/quotes.html %}
 {% include v2/faq.html %}
